@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "hookId": 693026324,
+  "error": "Signed GitHub ping did not reach vpnbar receiver; stopping before paid model trials",
+  "failedAt": "2026-10-06T12:21:59.615Z",
+  "paidModelTrialsStarted": 0,
+  "retrospectivelyRecorded": true,
+  "sources": [
+    "campaign-driver.jsonl",
+    "github-cleanup-supplemental.json"
+  ]
+}

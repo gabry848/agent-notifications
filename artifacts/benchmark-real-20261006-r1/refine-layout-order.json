@@ -1,0 +1,114 @@
+[
+  {
+    "name": "S3",
+    "seed": 901,
+    "payload": "full",
+    "position": "before-input",
+    "cache": "stable"
+  },
+  {
+    "name": "S3",
+    "seed": 901,
+    "payload": "full",
+    "position": "before-input",
+    "cache": "implicit"
+  },
+  {
+    "name": "S3",
+    "seed": 901,
+    "payload": "full",
+    "position": "tail",
+    "cache": "stable"
+  },
+  {
+    "name": "S3",
+    "seed": 901,
+    "payload": "full",
+    "position": "tail",
+    "cache": "implicit"
+  },
+  {
+    "name": "S3",
+    "seed": 902,
+    "payload": "full",
+    "position": "tail",
+    "cache": "implicit"
+  },
+  {
+    "name": "S3",
+    "seed": 902,
+    "payload": "full",
+    "position": "tail",
+    "cache": "stable"
+  },
+  {
+    "name": "S3",
+    "seed": 902,
+    "payload": "full",
+    "position": "before-input",
+    "cache": "implicit"
+  },
+  {
+    "name": "S3",
+    "seed": 902,
+    "payload": "full",
+    "position": "before-input",
+    "cache": "stable"
+  },
+  {
+    "name": "S6",
+    "seed": 951,
+    "payload": "compact",
+    "position": "before-input",
+    "cache": "stable"
+  },
+  {
+    "name": "S6",
+    "seed": 951,
+    "payload": "compact",
+    "position": "tail",
+    "cache": "implicit"
+  },
+  {
+    "name": "S6",
+    "seed": 951,
+    "payload": "compact",
+    "position": "before-input",
+    "cache": "implicit"
+  },
+  {
+    "name": "S6",
+    "seed": 951,
+    "payload": "compact",
+    "position": "tail",
+    "cache": "stable"
+  },
+  {
+    "name": "S6",
+    "seed": 952,
+    "payload": "compact",
+    "position": "before-input",
+    "cache": "implicit"
+  },
+  {
+    "name": "S6",
+    "seed": 952,
+    "payload": "compact",
+    "position": "tail",
+    "cache": "stable"
+  },
+  {
+    "name": "S6",
+    "seed": 952,
+    "payload": "compact",
+    "position": "before-input",
+    "cache": "stable"
+  },
+  {
+    "name": "S6",
+    "seed": 952,
+    "payload": "compact",
+    "position": "tail",
+    "cache": "implicit"
+  }
+]

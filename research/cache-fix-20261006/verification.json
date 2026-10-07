@@ -1,0 +1,39 @@
+{
+  "measuredEpisodes": 6,
+  "attempts": 42,
+  "allComplete": true,
+  "correct": true,
+  "allSettled": true,
+  "sameDefaultAndStableFields": true,
+  "authLinksRemoved": true,
+  "controlHashMismatches": [],
+  "ownPiProcessesRemaining": [],
+  "ownReceivers": [
+    {
+      "id": "current-pair1",
+      "live": false
+    },
+    {
+      "id": "baseline-pair1",
+      "live": false
+    },
+    {
+      "id": "journal-pair1",
+      "live": false
+    },
+    {
+      "id": "fixed-pair2",
+      "live": false
+    },
+    {
+      "id": "baseline-pair2",
+      "live": false
+    },
+    {
+      "id": "current-pair2",
+      "live": false
+    }
+  ],
+  "allOwnReceiversClosed": true,
+  "externalHttpCountMatchesLedger": true
+}

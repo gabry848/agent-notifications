@@ -1,0 +1,15 @@
+{"time":"2026-10-06T10:24:51.152Z","monoMs":412042765.507166,"type":"protocol_message","method":"initialize"}
+{"time":"2026-10-06T10:24:51.157Z","monoMs":412042769.772791,"type":"protocol_message","method":"notifications/initialized"}
+{"time":"2026-10-06T10:24:51.158Z","monoMs":412042770.116583,"type":"protocol_message","method":"tools/list"}
+{"time":"2026-10-06T10:24:51.158Z","monoMs":412042770.251708,"type":"tools_list"}
+{"time":"2026-10-06T10:24:54.450Z","monoMs":412046062.911833,"type":"protocol_message","method":"tools/call"}
+{"time":"2026-10-06T10:24:54.452Z","monoMs":412046064.665083,"type":"tools_call","name":"start_job","args":{"ids":["validation"]}}
+{"time":"2026-10-06T10:24:54.455Z","monoMs":412046067.511208,"type":"job_started","jobId":"validation"}
+{"time":"2026-10-06T10:24:54.455Z","monoMs":412046067.78825,"type":"tools_result","name":"start_job"}
+{"time":"2026-10-06T10:25:08.303Z","monoMs":412059915.051083,"type":"protocol_message","method":"tools/call"}
+{"time":"2026-10-06T10:25:08.303Z","monoMs":412059915.719833,"type":"tools_call","name":"await_jobs","args":{"ids":["validation"]}}
+{"time":"2026-10-06T10:25:14.497Z","monoMs":412066109.509416,"type":"job_finished","jobId":"validation","revision":1,"status":"succeeded","result":{"maxBatch":22,"release":"v1.4","region":"eu-west-1"},"finished":{"time":"2026-10-06T10:25:14.489Z","monoMs":412066103.009208}}
+{"time":"2026-10-06T10:25:14.498Z","monoMs":412066110.107541,"type":"notify_attempt","jobId":"validation","attempt":1,"bytes":192}
+{"time":"2026-10-06T10:25:14.529Z","monoMs":412066140.887791,"type":"notify_accepted","jobId":"validation","notification":{"id":"notif_fd38a32a-acd0-4f7d-9e3a-57355a887d21","sessionId":"5ed0d131-609d-498d-a2dc-ee4060d931cf","source":"Validation","message":"{\"jobId\":\"validation\",\"revision\":1,\"status\":\"succeeded\",\"result\":{\"maxBatch\":22,\"release\":\"v1.4\",\"region\":\"eu-west-1\"},\"finished\":{\"time\":\"2026-10-06T10:25:14.489Z\",\"monoMs\":412066103.009208}}","createdAt":"2026-10-06T10:25:14.524Z","firstVisibleCall":null,"dismissedAt":null}}
+{"time":"2026-10-06T10:25:14.529Z","monoMs":412066141.062541,"type":"await_completed","ids":["validation"]}
+{"time":"2026-10-06T10:25:14.529Z","monoMs":412066141.126166,"type":"tools_result","name":"await_jobs"}

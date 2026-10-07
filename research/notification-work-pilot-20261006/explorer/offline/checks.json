@@ -1,0 +1,48 @@
+{
+  "phase": "offline-preparation",
+  "piRequests": 0,
+  "passed": true,
+  "checks": [
+    {
+      "name": "unfinished fixture fails",
+      "passed": true,
+      "tests": 0
+    },
+    {
+      "name": "reference implementation passes actual Node and HTTP/SQLite checks",
+      "passed": true,
+      "tests": 14
+    },
+    {
+      "name": "release oracle rejects missing facts and accepts matching actual audit",
+      "passed": true
+    },
+    {
+      "name": "real test-progress publication and immediate/timeout await semantics",
+      "passed": true
+    },
+    {
+      "name": "informational control does not change deployment facts",
+      "passed": true
+    }
+  ],
+  "report": {
+    "reportId": "audit-4101",
+    "kind": "compatibility",
+    "revision": 1,
+    "records": 4096,
+    "sha256": "1707ad42daf27c0d4beab040452efd52d6811be0285d9eae78174848d239824a",
+    "deployment": {
+      "maxPayloadBytes": 8192,
+      "retryCapMs": 4999,
+      "preferredRegion": "eu-west"
+    }
+  },
+  "referenceTests": {
+    "passed": true,
+    "exitCode": 0,
+    "passedTests": 14,
+    "failedTests": 0,
+    "output": "TAP version 13\n# Subtest: envelope validation and independent copy\nok 1 - envelope validation and independent copy\n  ---\n  duration_ms: 0.562291\n  type: 'test'\n  ...\n# Subtest: topic patterns cover zero/multiple segments and invalid syntax\nok 2 - topic patterns cover zero/multiple segments and invalid syntax\n  ---\n  duration_ms: 0.087959\n  type: 'test'\n  ...\n# Subtest: subscription expiration, replacement, sorting and isolation\nok 3 - subscription expiration, replacement, sorting and isolation\n  ---\n  duration_ms: 4.926291\n  type: 'test'\n  ...\n# Subtest: revision tracking separates producer and preserves monotonicity\nok 4 - revision tracking separates producer and preserves monotonicity\n  ---\n  duration_ms: 0.078292\n  type: 'test'\n  ...\n# Subtest: retry caps exponential and server retry after\nok 5 - retry caps exponential and server retry after\n  ---\n  duration_ms: 0.083\n  type: 'test'\n  ...\n# Subtest: bounded FIFO accepts falsy values\nok 6 - bounded FIFO accepts falsy values\n  ---\n  duration_ms: 0.062375\n  type: 'test'\n  ...\n# Subtest: redaction recursively copies arrays and nested objects\nok 7 - redaction recursively copies arrays and nested objects\n  ---\n  duration_ms: 0.093875\n  type: 'test'\n  ...\n# Subtest: SQLite journal survives reopen and rejects stale data\nok 8 - SQLite journal survives reopen and rejects stale data\n  ---\n  duration_ms: 3.050208\n  type: 'test'\n  ...\n# Subtest: router matches once and never reroutes duplicate events\nok 9 - router matches once and never reroutes duplicate events\n  ---\n  duration_ms: 0.502166\n  type: 'test'\n  ...\n# Subtest: dispatcher bounds concurrency, settles errors and preserves order\nok 10 - dispatcher bounds concurrency, settles errors and preserves order\n  ---\n  duration_ms: 0.2185\n  type: 'test'\n  ...\n# Subtest: HTTP hub routes real requests and persists event\nok 11 - HTTP hub routes real requests and persists event\n  ---\n  duration_ms: 25.170375\n  type: 'test'\n  ...\n# Subtest: deployment policy validates data and reloads changes\nok 12 - deployment policy validates data and reloads changes\n  ---\n  duration_ms: 0.846666\n  type: 'test'\n  ...\n# Subtest: HTTP sender honors status, caps and live retry policy\nok 13 - HTTP sender honors status, caps and live retry policy\n  ---\n  duration_ms: 0.217083\n  type: 'test'\n  ...\n# Subtest: configured HTTP server applies new payload policy without restart\nok 14 - configured HTTP server applies new payload policy without restart\n  ---\n  duration_ms: 6.520625\n  type: 'test'\n  ...\n1..14\n# tests 14\n# suites 0\n# pass 14\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 88.610125\n"
+  }
+}

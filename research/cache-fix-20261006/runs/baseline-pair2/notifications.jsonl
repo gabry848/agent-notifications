@@ -1,0 +1,18 @@
+{"time":"2026-10-06T14:54:48.438Z","monoMs":428240097.832041,"type":"session_selected","url":"http://127.0.0.1:50575","sessionId":"01a111b5-c85b-731b-ad66-8630355ec449","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/research/cache-fix-20261006/runs/baseline-pair2/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-06T14:54:48.438Z","monoMs":428240097.92525,"type":"server_ready","url":"http://127.0.0.1:50575","sessionId":"01a111b5-c85b-731b-ad66-8630355ec449","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/research/cache-fix-20261006/runs/baseline-pair2/notifications.sqlite"}
+{"time":"2026-10-06T14:54:48.485Z","monoMs":428240144.949083,"type":"provider_request","attempt":1}
+{"time":"2026-10-06T14:54:49.360Z","monoMs":428241020.362208,"type":"provider_response","status":200}
+{"time":"2026-10-06T14:54:51.032Z","monoMs":428242692.268375,"type":"provider_request","attempt":2}
+{"time":"2026-10-06T14:54:52.230Z","monoMs":428243890.129291,"type":"provider_response","status":200}
+{"time":"2026-10-06T14:54:55.193Z","monoMs":428246852.75175,"type":"notification_received","notification":{"id":"notif_5d8441e6-1cdf-4d6b-8d3e-93905cfeaca9","sessionId":"01a111b5-c85b-731b-ad66-8630355ec449","source":"controlled-policy-audit","message":"policy limit=47","createdAt":"2026-10-06T14:54:55.192Z","firstVisibleCall":null,"dismissedAt":null},"lastContextCall":0}
+{"time":"2026-10-06T14:54:55.198Z","monoMs":428246857.736416,"type":"provider_request","attempt":3}
+{"time":"2026-10-06T14:54:58.494Z","monoMs":428250154.017416,"type":"provider_response","status":200}
+{"time":"2026-10-06T14:55:00.460Z","monoMs":428252119.965291,"type":"provider_request","attempt":4}
+{"time":"2026-10-06T14:55:01.639Z","monoMs":428253299.061416,"type":"provider_response","status":200}
+{"time":"2026-10-06T14:55:04.771Z","monoMs":428256431.181416,"type":"notification_received","notification":{"id":"notif_15237086-002c-4f96-a313-e5cd5cbeb8fc","sessionId":"01a111b5-c85b-731b-ad66-8630355ec449","source":"controlled-policy-audit","message":"policy limit=47; audit verified","createdAt":"2026-10-06T14:55:04.771Z","firstVisibleCall":null,"dismissedAt":null},"lastContextCall":0}
+{"time":"2026-10-06T14:55:04.776Z","monoMs":428256435.729,"type":"provider_request","attempt":5}
+{"time":"2026-10-06T14:55:06.589Z","monoMs":428258248.679875,"type":"provider_response","status":200}
+{"time":"2026-10-06T14:55:09.135Z","monoMs":428260794.390791,"type":"provider_request","attempt":6}
+{"time":"2026-10-06T14:55:10.150Z","monoMs":428261810.017,"type":"provider_response","status":200}
+{"time":"2026-10-06T14:55:13.921Z","monoMs":428265580.613083,"type":"provider_request","attempt":7}
+{"time":"2026-10-06T14:55:15.070Z","monoMs":428266729.763083,"type":"provider_response","status":200}

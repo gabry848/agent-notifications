@@ -1,0 +1,6 @@
+{
+  "maxPayloadBytes": 65536,
+  "retryCapMs": 30000,
+  "preferredRegion": "local",
+  "auditRevision": 0
+}

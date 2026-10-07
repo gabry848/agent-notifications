@@ -1,0 +1,3 @@
+mode,passed,groupTurnMs,apiEquivalentUsd,unknownReservedApiEquivalentUsd,httpAttempts,tokens,tools,mcpTools,boardChecks,eventChecks,awaitCalls,verifiedOverlapCount
+N,false,204673,1.1725596,0,54,776871,131,49,9,0,5,5
+PA,true,209434,0.5027344,0,82,1168728,124,63,8,16,4,6

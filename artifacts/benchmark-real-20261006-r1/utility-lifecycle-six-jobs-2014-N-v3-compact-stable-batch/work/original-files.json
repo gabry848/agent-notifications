@@ -1,0 +1,10 @@
+{
+  "module-0.mjs": "export const FACTOR = 7;\nexport const OFFSET = 1;\nexport function transform(n) { throw new Error('TODO'); }\n",
+  "module-1.mjs": "export const FACTOR = 8;\nexport const OFFSET = 2;\nexport function transform(n) { throw new Error('TODO'); }\n",
+  "module-2.mjs": "export const FACTOR = 2;\nexport const OFFSET = 3;\nexport function transform(n) { throw new Error('TODO'); }\n",
+  "module-3.mjs": "export const FACTOR = 3;\nexport const OFFSET = 4;\nexport function transform(n) { throw new Error('TODO'); }\n",
+  "module-4.mjs": "export const FACTOR = 4;\nexport const OFFSET = 5;\nexport function transform(n) { throw new Error('TODO'); }\n",
+  "module-5.mjs": "export const FACTOR = 5;\nexport const OFFSET = 6;\nexport function transform(n) { throw new Error('TODO'); }\n",
+  "module-6.mjs": "export const FACTOR = 6;\nexport const OFFSET = 7;\nexport function transform(n) { throw new Error('TODO'); }\n",
+  "module-7.mjs": "export const FACTOR = 7;\nexport const OFFSET = 8;\nexport function transform(n) { throw new Error('TODO'); }\n"
+}

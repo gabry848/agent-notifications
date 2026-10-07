@@ -1,0 +1,15 @@
+{"time":"2026-10-06T12:25:42.516Z","monoMs":419294231.124083,"type":"protocol_message","method":"initialize"}
+{"time":"2026-10-06T12:25:42.521Z","monoMs":419294235.882458,"type":"protocol_message","method":"notifications/initialized"}
+{"time":"2026-10-06T12:25:42.522Z","monoMs":419294236.188958,"type":"protocol_message","method":"tools/list"}
+{"time":"2026-10-06T12:25:44.764Z","monoMs":419296478.043458,"type":"protocol_message","method":"tools/call"}
+{"time":"2026-10-06T12:25:44.766Z","monoMs":419296480.253416,"type":"tools_call","name":"start_job","args":{"ids":["validation"]}}
+{"time":"2026-10-06T12:25:44.766Z","monoMs":419296480.555416,"type":"job_started","jobId":"validation"}
+{"time":"2026-10-06T12:25:44.766Z","monoMs":419296480.667875,"type":"github_api","args":["api","--method","POST","repos/gabry848/pi-notifications-bench-20261006/actions/workflows/bench.yml/dispatches","-f","ref=codex/notification-benchmark-fixture","-f","inputs[experiment_id]=benchmark-real-20261006-r1-GH-success-3003-N","-f","inputs[outcome]=success"]}
+{"time":"2026-10-06T12:25:54.739Z","monoMs":419306453.675625,"type":"tools_result","name":"start_job"}
+{"time":"2026-10-06T12:26:07.533Z","monoMs":419319247.480666,"type":"protocol_message","method":"tools/call"}
+{"time":"2026-10-06T12:26:07.533Z","monoMs":419319247.874625,"type":"tools_call","name":"await_jobs","args":{"ids":["validation"]}}
+{"time":"2026-10-06T12:26:17.831Z","monoMs":419329546.316625,"type":"notify_attempt","jobId":"validation","attempt":1}
+{"time":"2026-10-06T12:26:17.839Z","monoMs":419329553.839291,"type":"notify_accepted","jobId":"validation","notification":{"id":"notif_6ed8f6cd-122f-46be-bc85-394c85692750","sessionId":"967ce947-e79b-4d78-9149-81d56ebcb949","source":"GitHub Actions","message":"{\"jobId\":\"validation\",\"revision\":1,\"status\":\"succeeded\",\"result\":{\"maxBatch\":0,\"conclusion\":\"success\",\"runId\":37463172477,\"region\":\"eu-west-1\",\"release\":\"v1.4\"}}","createdAt":"2026-10-06T12:26:17.837Z","firstVisibleCall":null,"dismissedAt":null}}
+{"time":"2026-10-06T12:26:17.843Z","monoMs":419329546.275791,"type":"job_finished","jobId":"validation","revision":1,"status":"succeeded","result":{"maxBatch":0,"conclusion":"success","runId":37463172477,"region":"eu-west-1","release":"v1.4"},"finished":{"time":"2026-10-06T12:26:17.831Z","monoMs":419329546.275791},"timeSource":"webhook_received"}
+{"time":"2026-10-06T12:26:17.844Z","monoMs":419329559.022916,"type":"await_completed","ids":["validation"]}
+{"time":"2026-10-06T12:26:17.844Z","monoMs":419329559.175875,"type":"tools_result","name":"await_jobs"}

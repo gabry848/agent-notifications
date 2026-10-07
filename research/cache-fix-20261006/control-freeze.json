@@ -1,0 +1,27 @@
+{
+  "time": "2026-10-06T14:50:03.355Z",
+  "sourceHashes": {
+    "src/pi-extension.ts": "88528808cf1c61206520fa625da01a359ca7b5ed987ef0942641c5487b1a203e",
+    "src/store.mjs": "050bb0f524589a3064fc0e7625c86ab2e4d3359db6fe64302411f0d6b577c06a",
+    "src/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+    "prompts/v2.txt": "39fc96aa3b244eab831b73e44a557fde9af1d590a6db12f7ff89ccd04caaf171",
+    "research/cache-fix-20261006/control/src/pi-extension.ts": "88528808cf1c61206520fa625da01a359ca7b5ed987ef0942641c5487b1a203e",
+    "research/cache-fix-20261006/control/src/store.mjs": "050bb0f524589a3064fc0e7625c86ab2e4d3359db6fe64302411f0d6b577c06a",
+    "research/cache-fix-20261006/control/src/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+    "research/cache-fix-20261006/control/prompts/v2.txt": "39fc96aa3b244eab831b73e44a557fde9af1d590a6db12f7ff89ccd04caaf171"
+  },
+  "installedRuntime": {
+    "binary": "/Users/gabry848/.nvm/versions/node/v24.18.0/bin/pi",
+    "cli": "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/cli.js",
+    "piVersion": "0.99.2",
+    "providerLoader": "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-3YAHQSW6.js",
+    "providerImplementation": "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/openai-codex-responses-3GKGNXC4.js",
+    "fileHashes": {
+      "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/cli.js": "e79626f2dd6f94aa45d30f3fa63cd84319a6eefcd150b353cfaf274366926774",
+      "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/package.json": "066850c1badb43cf107c26e5b95262dbde84e3514c75348f363009d5ba9ce42d",
+      "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-3YAHQSW6.js": "12483435ca5a250213e8860009cd6e258afcfc13003d7dcb6a2b2f63cda71e00",
+      "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/openai-codex-responses-3GKGNXC4.js": "0eb713fc6fcb5fe7bae865c422cd7f534929a1ee01fe16d2eafa97e53370c15c"
+    },
+    "note": "Loader paths and hashes observed from the actual installed CLI bundle; runtime model/API is separately captured from RPC get_state."
+  }
+}

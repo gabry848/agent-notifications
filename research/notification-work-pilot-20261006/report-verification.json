@@ -1,0 +1,24 @@
+{
+  "verifiedAt": "2026-10-06T14:33:07.780Z",
+  "ledgerReconciled": true,
+  "anchorsUnique": true,
+  "allLocalLinksExist": true,
+  "embeddedDataMatches": true,
+  "scriptSyntaxValid": true,
+  "browser": "BrowserOS neo",
+  "incompleteEpisodeToggleVerified": true,
+  "desktop": {
+    "viewportWidth": 1816,
+    "documentWidth": 1816,
+    "visualCheckPassed": true
+  },
+  "mobile": {
+    "viewportWidth": 390,
+    "documentWidth": 390,
+    "navigationHeight": 50.4453125,
+    "tableScrollable": true,
+    "visualCheckPassed": true
+  },
+  "newModelInferences": 0,
+  "scope": "Public local report; no new benchmark execution"
+}

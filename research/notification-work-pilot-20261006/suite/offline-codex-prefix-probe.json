@@ -1,0 +1,21 @@
+{
+  "paidInference": false,
+  "piSessions": 0,
+  "httpAttempts": 0,
+  "providerImplementation": "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/openai-codex-responses-3GKGNXC4.js",
+  "notificationIndexes": [
+    2,
+    3
+  ],
+  "inputLengths": [
+    3,
+    4
+  ],
+  "equalLeadingInputItems": 2,
+  "promptCacheKeys": [
+    "offline-prefix-fixture",
+    "offline-prefix-fixture"
+  ],
+  "notificationsAreLastInputItem": true,
+  "scope": "Synthetic native Codex provider serialization only. No token cache-hit inference; does not reconstruct measured Pi contexts or explain their observed cache fraction."
+}

@@ -1,0 +1,90 @@
+{
+  "id": "explorer-compatibility-N-4101-847cae3a",
+  "mode": "N",
+  "kind": "compatibility",
+  "seed": 4101,
+  "uuid": "977ef5b8-0d90-4074-89d5-342a7ab11015",
+  "createdAt": "2026-10-06T13:28:22.149Z",
+  "designVersion": "delivery-hub-v2",
+  "spec": {
+    "seed": 4101,
+    "kind": "compatibility",
+    "records": 4096,
+    "sha256": "1707ad42daf27c0d4beab040452efd52d6811be0285d9eae78174848d239824a"
+  },
+  "runtimeHashes": {
+    "meter.mjs": "dbf58b5922b8d8d6933b384da577779d96322387503203a15d9f987ccc65f04e",
+    "meter-extension.ts": "93848234e98899a0429d0f5335a79a3956a7df6bc789bfc5a913e39004ec8b15",
+    "pi-runtime.mjs": "168923281687167e0f83e614ac37357dce0a17741375048ace7dfa9cc00f8eae",
+    "transport/pi-extension.ts": "2a460f6eaca63192223964373a6704c3b3106ee68e9113b4f76f9ef079648630",
+    "transport/store.mjs": "b275836b38b52b7522e607709200456ca8e044fc79cbf3b805aeb546a9c7cc18",
+    "transport/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+    "transport/prompt-v3.txt": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b"
+  },
+  "frozenOwn": {
+    "fixture.mjs": "b0d5402726b7dbb74bfcda401f0508e217c1e3e4133b33be97f1f9cd64a94c29",
+    "feed.mjs": "b716fc0c813afb93b3a1122d48f9618e79ee912eccbdb4225df8b81d1ebf146e",
+    "feed-extension.ts": "81aac28e72771cc297ccce641af62f8f10022d84bccd16c90869da9e110d2413",
+    "audit-worker.mjs": "764e5057c0a45c1b171976329d0822ddb833ff107f0dd6a990ff7b5555d321a9"
+  },
+  "modelPolicy": "Pi default, no provider/model/thinking override",
+  "config": {
+    "settings": {
+      "defaultModel": "gpt-6.1-sol",
+      "defaultProvider": "openai-codex",
+      "defaultThinkingLevel": "medium",
+      "compaction": {
+        "enabled": true
+      },
+      "transport": "sse",
+      "retry": {
+        "enabled": false,
+        "maxRetries": 0
+      },
+      "packages": [],
+      "extensions": []
+    },
+    "accounting": {
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "currency": "USD",
+      "actualBilling": null,
+      "estimateKind": "API-equivalent; subscription billing unavailable",
+      "tariffProvenance": "Existing verified campaign benchmark/meter.mjs and installed Pi 0.99.2 Codex catalog agree",
+      "perMillion": {
+        "input": 2,
+        "output": 10,
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5
+      },
+      "longContextThreshold": 272000,
+      "longPerMillion": {
+        "input": 4,
+        "output": 15,
+        "cacheRead": 0.2,
+        "cacheWrite": 5
+      },
+      "maxOutputTokens": 128000,
+      "contextWindow": 272000,
+      "normalization": "Raw input_tokens includes cached tokens; subtract cacheRead and cacheWrite once. Reasoning tokens are an output subset.",
+      "reserves": "UTF-8 payload bytes + 8192 framing as input-token upper bound, all uncached at highest input/write tariff; maximum 128000 output tokens. Failed/unknown calls retain full reservation.",
+      "cachePolicy": "Provider-native Codex cache only; no API-specific cache schema injected",
+      "transport": "sse"
+    },
+    "authReused": true,
+    "deviations": [
+      "isolated config",
+      "transport=sse equally across modes",
+      "agent retries disabled; provider-internal retries still guarded",
+      "installed extensions/skills/context files disabled; explicit extensions and native file tools only"
+    ]
+  },
+  "targetMinutes": 10,
+  "timeoutMs": 900000,
+  "receipt": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/audit/explorer-first-GO.json",
+  "importantLimits": [
+    "progress-gated laboratory report, not real external latency",
+    "one case per mode, exploratory",
+    "actual default Codex subscription charge unknown"
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "runId": "github-GH-success-3003-N-v3-compact-stable-batch",
+  "phase": "github",
+  "scenario": "GH-success",
+  "seed": 3003,
+  "mode": "N",
+  "variant": "v3",
+  "payload": "compact",
+  "position": "tail",
+  "cache": "stable",
+  "dismiss": "batch",
+  "contextEnabled": true,
+  "flow": "normal",
+  "created": {
+    "time": "2026-10-06T12:25:42.272Z",
+    "monoMs": 419293986.768791
+  },
+  "begun": {
+    "time": "2026-10-06T12:25:42.536Z",
+    "monoMs": 419294250.860041
+  },
+  "ended": {
+    "time": "2026-10-06T12:26:25.644Z",
+    "monoMs": 419337358.87475
+  },
+  "error": null,
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 0,
+    "status": "ready",
+    "jobIds": [
+      "validation"
+    ]
+  },
+  "filesPassed": true,
+  "transcriptBlockPersisted": false,
+  "assessment": {
+    "passed": true,
+    "failures": [],
+    "deliveryFailures": [],
+    "injectionFailures": [],
+    "logicalModelResponses": 8,
+    "modeCompliance": true
+  },
+  "metrics": {
+    "wallMs": 43108.01470899582,
+    "taskMs": 37284.127749979496,
+    "providerAttempts": 8,
+    "logicalModelCalls": 8,
+    "tokens": {
+      "input": 518,
+      "output": 689,
+      "cacheRead": 14567,
+      "cacheWrite": 3493,
+      "totalTokens": 19267,
+      "reasoning": 0
+    },
+    "estimatedUsd": 0.018115199999999998,
+    "unconfirmedReservedUsd": 0,
+    "cacheHitRate": 0.7840994724943482,
+    "toolCalls": 14,
+    "toolNames": {
+      "start_job": 1,
+      "read_files": 1,
+      "write_file": 8,
+      "verify_files": 1,
+      "await_jobs": 1,
+      "submit_plan": 1,
+      "notifications_dismiss": 1
+    },
+    "mcpCalls": 2,
+    "externalApiInvocations": 1,
+    "mcpProtocolMessages": 5,
+    "statusChecks": 0,
+    "notificationHttpAttempts": 1,
+    "dismissCalls": 1,
+    "historyCalls": 0,
+    "fallbackAwaits": 1,
+    "notificationBytes": 1462,
+    "injectionMs": 2.9962910413742065,
+    "postSubmissionWorkCalls": 0,
+    "postSubmissionWork": [],
+    "reactions": [
+      {
+        "jobId": "validation",
+        "timeSource": "webhook_received",
+        "producerMs": 33065.72037500143,
+        "deliveryMs": 7.563499987125397,
+        "exposureMs": 15.02574998140335,
+        "reactionUpperBoundMs": 1988.7120000123978,
+        "exposedAtNaturalBoundary": true,
+        "receivedWhileAwaiting": true
+      }
+    ],
+    "providerLatencies": [
+      {
+        "requestId": "26e3f6f0-6769-4b62-8e88-fe7c6ea469f9",
+        "durationMs": 2195.824459016323,
+        "firstTokenMs": 2036.745709002018
+      },
+      {
+        "requestId": "dff97d69-ba21-4ed3-b8b1-c61314fd7b51",
+        "durationMs": 1717.1633749604225,
+        "firstTokenMs": 1710.4939579963684
+      },
+      {
+        "requestId": "63e40583-bc72-4fdd-a063-1b1a56cb9dff",
+        "durationMs": 6594.726999998093,
+        "firstTokenMs": 6491.031584024429
+      },
+      {
+        "requestId": "45190b1a-699c-40ad-ae46-f5ed991b5acc",
+        "durationMs": 2252.290250003338,
+        "firstTokenMs": 2130.6309170126915
+      },
+      {
+        "requestId": "5119e87d-1a0e-43c2-adf1-df57f61d20bd",
+        "durationMs": 2020.3564580082893,
+        "firstTokenMs": 1772.7479999661446
+      },
+      {
+        "requestId": "746089b4-d3f1-46ce-9ba4-cd37749167b3",
+        "durationMs": 1911.928791999817,
+        "firstTokenMs": 1751.7914580106735
+      },
+      {
+        "requestId": "d56d1709-95ab-4b13-b6f0-c02fa8de1897",
+        "durationMs": 2164.167582988739,
+        "firstTokenMs": 1625.574333012104
+      },
+      {
+        "requestId": "f7e7488d-a57a-4356-bb44-d6911c27f0f6",
+        "durationMs": 3372.801624953747,
+        "firstTokenMs": 2178.0166249871254
+      }
+    ],
+    "providerTotalMs": 22229.259541928768,
+    "pollingIntervalsMs": [],
+    "requestedPausesSeconds": [],
+    "startupMs": 264.0912500023842,
+    "totalWallMs": 43372.1059589982,
+    "notificationState": {
+      "total": 1,
+      "active": 0,
+      "dismissed": 1
+    }
+  },
+  "accounting": {
+    "requests": 8,
+    "estimatedUsd": 0.018115199999999998,
+    "unconfirmedReservedUsd": 0,
+    "tokens": {
+      "input": 518,
+      "output": 689,
+      "cacheRead": 14567,
+      "cacheWrite": 3493,
+      "totalTokens": 19267,
+      "reasoning": 0
+    },
+    "rows": [
+      {
+        "id": "26e3f6f0-6769-4b62-8e88-fe7c6ea469f9",
+        "run_id": "github-GH-success-3003-N-v3-compact-stable-batch",
+        "phase": "github",
+        "reserved": 0.14507350000000002,
+        "cost": 0.003781,
+        "response_id": "resp_041dfbe92ccf7892016ac4e8c70ba087d29c304b10c972e405",
+        "usage": {
+          "input": 38,
+          "cacheRead": 0,
+          "cacheWrite": 1406,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 1463
+        },
+        "state": "settled"
+      },
+      {
+        "id": "dff97d69-ba21-4ed3-b8b1-c61314fd7b51",
+        "run_id": "github-GH-success-3003-N-v3-compact-stable-batch",
+        "phase": "github",
+        "reserved": 0.15026,
+        "cost": 0.00047910000000000004,
+        "response_id": "resp_041dfbe92ccf7892016ac4e8d32a2487d284f51c575f658c89",
+        "usage": {
+          "input": 38,
+          "cacheRead": 1406,
+          "cacheWrite": 49,
+          "output": 14,
+          "reasoning": 0,
+          "totalTokens": 1507
+        },
+        "state": "settled"
+      },
+      {
+        "id": "63e40583-bc72-4fdd-a063-1b1a56cb9dff",
+        "run_id": "github-GH-success-3003-N-v3-compact-stable-batch",
+        "phase": "github",
+        "reserved": 0.1686685,
+        "cost": 0.0056515,
+        "response_id": "resp_041dfbe92ccf7892016ac4e8d4fb0887d2bd641dc8a416a807",
+        "usage": {
+          "input": 38,
+          "cacheRead": 1455,
+          "cacheWrite": 364,
+          "output": 452,
+          "reasoning": 0,
+          "totalTokens": 2309
+        },
+        "state": "settled"
+      },
+      {
+        "id": "45190b1a-699c-40ad-ae46-f5ed991b5acc",
+        "run_id": "github-GH-success-3003-N-v3-compact-stable-batch",
+        "phase": "github",
+        "reserved": 0.19723000000000002,
+        "cost": 0.0033761,
+        "response_id": "resp_041dfbe92ccf7892016ac4e8db91b487d2a92e0248e0356908",
+        "usage": {
+          "input": 38,
+          "cacheRead": 1201,
+          "cacheWrite": 1216,
+          "output": 14,
+          "reasoning": 0,
+          "totalTokens": 2469
+        },
+        "state": "settled"
+      },
+      {
+        "id": "5119e87d-1a0e-43c2-adf1-df57f61d20bd",
+        "run_id": "github-GH-success-3003-N-v3-compact-stable-batch",
+        "phase": "github",
+        "reserved": 0.20659650000000002,
+        "cost": 0.0009977,
+        "response_id": "resp_041dfbe92ccf7892016ac4e8dddce087d2bde6848417003e4b",
+        "usage": {
+          "input": 38,
+          "cacheRead": 2417,
+          "cacheWrite": 196,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 2670
+        },
+        "state": "settled"
+      },
+      {
+        "id": "746089b4-d3f1-46ce-9ba4-cd37749167b3",
+        "run_id": "github-GH-success-3003-N-v3-compact-stable-batch",
+        "phase": "github",
+        "reserved": 0.214566,
+        "cost": 0.0011838,
+        "response_id": "resp_041dfbe92ccf7892016ac4e8ea6d0487d2b1c1b7441280614a",
+        "usage": {
+          "input": 145,
+          "cacheRead": 2613,
+          "cacheWrite": 81,
+          "output": 43,
+          "reasoning": 0,
+          "totalTokens": 2882
+        },
+        "state": "settled"
+      },
+      {
+        "id": "d56d1709-95ab-4b13-b6f0-c02fa8de1897",
+        "run_id": "github-GH-success-3003-N-v3-compact-stable-batch",
+        "phase": "github",
+        "reserved": 0.220748,
+        "cost": 0.0011969,
+        "response_id": "resp_041dfbe92ccf7892016ac4e8ec5ffc87d296ce060bfc0ffed6",
+        "usage": {
+          "input": 145,
+          "cacheRead": 2694,
+          "cacheWrite": 87,
+          "output": 42,
+          "reasoning": 0,
+          "totalTokens": 2968
+        },
+        "state": "settled"
+      },
+      {
+        "id": "f7e7488d-a57a-4356-bb44-d6911c27f0f6",
+        "run_id": "github-GH-success-3003-N-v3-compact-stable-batch",
+        "phase": "github",
+        "reserved": 0.22506,
+        "cost": 0.0014490999999999998,
+        "response_id": "resp_041dfbe92ccf7892016ac4e8ee9d6087d28c4e27dcbc3659fc",
+        "usage": {
+          "input": 38,
+          "cacheRead": 2781,
+          "cacheWrite": 94,
+          "output": 86,
+          "reasoning": 0,
+          "totalTokens": 2999
+        },
+        "state": "settled"
+      }
+    ]
+  },
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "thinking": "medium",
+    "pricing": {
+      "model": "gpt-6.1-sol",
+      "currency": "USD",
+      "tier": "default",
+      "checkedAt": "2026-10-06",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "perMillion": {
+        "input": 2,
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "output": 10
+      },
+      "longContextThreshold": 272000
+    },
+    "sourceHash": "1b1daeaa6fa877cab3a231f68379a9a6a474b9c34f02d82d3f6287a333dbd84a",
+    "sourceHashes": {
+      "src/pi-extension.ts": "4ba39fa3f47c6dfdc5c186a9f1adee6f4a370b79ee4381f62de6faad0f6c25c8",
+      "src/store.mjs": "d905b654f31ee20643a7ec4e0889c3a0de6c3f94e3219dfb924c08cef3c4252d",
+      "src/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+      "benchmark/extension.ts": "df5500805027246e8d70d20f9d1ef4726bac71ded4a46e998a3dd29ba2b917a9",
+      "benchmark/run.mjs": "747529cd089416877d2b6aeeb6a0b02ef195ebf6a7546d6890a33d765d7276b4",
+      "benchmark/pi-client.mjs": "24f86e44ef36bff4a461620db7f7ea644e5756aaf37a2d77d5994ae1d12a617b",
+      "benchmark/jobs-server.mjs": "22f88ea60f6e51f209934ef8ea0d7e16d988bae7f1e402ed9bc4d18acc0c586b",
+      "benchmark/worker.mjs": "7d4696d4f189f1a55d1b9e45c9c39f6ffe7c94cc70c98ee4bbeacb8ee92a4743",
+      "benchmark/scenarios.mjs": "85d2e12cd77fb20469b571186753891d6fbe26bb865d9dc547b0189ba5b3ee58",
+      "benchmark/cache.mjs": "ed2a2abb0323462501bf0c70eb03746df632338baa431b603a89ab7c61454f64",
+      "benchmark/meter.mjs": "83dc728485f7afce7b7284e18f9d58b855676a06f5ff98f0693b9e0f6ef02fb4",
+      "benchmark/common.mjs": "3759ad5a84f6739ae3df5b86e3278deeb70d68109962b64f6b3deb3154f4c56b",
+      "benchmark/metrics.mjs": "88da81fbdc3f4312d2e3467a11f6f42bcfb941e7a7e7313bd76bd62af118b72f",
+      "benchmark/conclusions.mjs": "5c0610c9d8ec53057ffc38d1187e3bae26e7e122a4be89f635f6c36c7b702118",
+      "benchmark/sources.mjs": "c2dbb7aa641a69d65929b5243f71bd1d69c1b47d781b0359cd8f571579f7128f",
+      "prompts/v2.txt": "ace535bcfefbb4e7dddaf8313955f5c0e3e9c991f9c0c37f9edae266b7964efb",
+      "prompts/v3.txt": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+      "package.json": "df3dae03dcf528b5f6c7d77b352c1a5499bdea67ea730afd9acbc40362b75ea7",
+      "package-lock.json": "99488b53f03906b6b7fc0b71ae928aa15eafe072a65c951af3e1a0a18c90bf3d"
+    },
+    "promptHash": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+    "taskHash": "b71121ed208abc35130698afabc94530723b0f2060223001728cef1ddef95b47",
+    "specHash": "d9d500fe3ce15b9efdd9e87acb5d494e563d64285cefafa35d15cc6c0332bbb7"
+  },
+  "budgetConservativeTotalUsd": 6.125407
+}

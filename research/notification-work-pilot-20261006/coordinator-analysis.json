@@ -1,0 +1,130 @@
+{
+  "analyzedAt": "2026-10-06T14:06:04.791Z",
+  "scope": "Final suite and auditor deliverables; no new inference",
+  "independentLedgerCheck": {
+    "http": 148,
+    "tokens": 2066247,
+    "estimatedApiEquivalentUsd": 1.8158540000000003,
+    "unsettled": 0,
+    "non200": 0
+  },
+  "groups": [
+    {
+      "mode": "PA",
+      "completed": true,
+      "http": 82,
+      "tools": 124,
+      "mcpTools": 63,
+      "getUpdates": 16,
+      "await": 4,
+      "tokens": {
+        "input": 122473,
+        "output": 15471,
+        "cacheRead": 1030784,
+        "cacheWrite": 0,
+        "totalTokens": 1168728
+      },
+      "estimatedApiEquivalentUsd": 0.5027344,
+      "cacheReadFraction": 0.8938025088943748
+    },
+    {
+      "mode": "N",
+      "completed": false,
+      "http": 54,
+      "tools": 131,
+      "mcpTools": 49,
+      "getUpdates": 0,
+      "await": 5,
+      "tokens": {
+        "input": 486810,
+        "output": 17165,
+        "cacheRead": 272896,
+        "cacheWrite": 0,
+        "totalTokens": 776871
+      },
+      "estimatedApiEquivalentUsd": 1.1725596,
+      "cacheReadFraction": 0.3592126427854986
+    }
+  ],
+  "toolStarts": {
+    "PA": {
+      "read": 25,
+      "check_conflicts": 8,
+      "upsert_activity": 3,
+      "get_updates": 16,
+      "update_activity": 13,
+      "write": 9,
+      "bash": 13,
+      "post_message": 16,
+      "edit": 10,
+      "await_next": 4,
+      "finish_activity": 3,
+      "find": 2,
+      "ls": 2
+    },
+    "N": {
+      "check_conflicts": 9,
+      "read": 32,
+      "ls": 2,
+      "upsert_activity": 3,
+      "write": 8,
+      "edit": 10,
+      "bash": 12,
+      "update_activity": 12,
+      "post_message": 18,
+      "notifications_dismiss": 17,
+      "await_next": 5,
+      "finish_activity": 2,
+      "notifications_history": 1
+    }
+  },
+  "observedCostDifference": {
+    "apiEquivalentUsd": 0.6698252,
+    "uncachedInputContributionUsd": 0.728674,
+    "cachedInputContributionUsd": -0.0757888,
+    "outputContributionUsd": 0.01694,
+    "interpretation": "Diagnostic observed cost mix, not an eligible task-efficiency comparison"
+  },
+  "cacheDiagnostic": {
+    "suite-PA-view": {
+      "http": 27,
+      "requestsWithZeroCachedConversationItems": 1
+    },
+    "suite-N-view": {
+      "http": 16,
+      "requestsWithZeroCachedConversationItems": 13
+    }
+  },
+  "notifications": {
+    "delivered": 72,
+    "uniqueExposed": 66,
+    "appearances": 155,
+    "reinjections": 89,
+    "neverExposedPersistedBacklog": 6
+  },
+  "conclusions": {
+    "contextNotificationAndCodeActionDemonstrated": true,
+    "noToolRetrievalForContractOnNView": true,
+    "totalEfficiencyBenefitDemonstrated": false,
+    "cacheCauseEstablished": false,
+    "longUsefulSessionsDemonstrated": false,
+    "hardLockOrUniversalRaceFreedomDemonstrated": false
+  },
+  "recommendations": [
+    "Fix reservation scheduling with bounded waiting under the same cap and identical policy for every condition",
+    "Diagnose actual request-prefix stability and native cache using private payload hashes or redacted captures, not only synthetic serialization",
+    "Reduce redundant status exposure and batch notification management; make fallback cursor aware of already observed events",
+    "Calibrate genuinely incremental useful maintenance on a clearly identified baseline, preserving short or negative outcomes",
+    "Only then freeze and run complete comparable N/PA/W pairs with repeated counterbalanced conditions"
+  ],
+  "references": [
+    "suite/report.md",
+    "suite/findings.md",
+    "audit/report.md",
+    "audit/metrics.json",
+    "audit/contract-action-evidence.json",
+    "audit/reservation-guard-diagnostic.json",
+    "suite/offline-codex-prefix-probe.json",
+    "explorer/proposed-v3/PLAN.md"
+  ]
+}

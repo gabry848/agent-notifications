@@ -1,0 +1,58 @@
+{
+  "id": "notification-work-pilot-20261006",
+  "status": "partial-pilot-reservation-interruption",
+  "codexModel": "inherited-from-main",
+  "piDefault": {
+    "provider": "openai-codex",
+    "model": "gpt-6.1-sol",
+    "thinking": "medium",
+    "version": "0.99.2"
+  },
+  "aoverviewDetail": "medium",
+  "apiEquivalentBudgetCapUsd": 10,
+  "actualSubscriptionBilling": null,
+  "scopeCaps": {
+    "adapter": 2,
+    "explorer": 2,
+    "suite": 6
+  },
+  "longRunsAuthorized": false,
+  "tasks": [
+    {
+      "id": "adapter",
+      "agent": "/root/coordinator_adapter",
+      "status": "completed-preparation",
+      "aoverviewSessionId": "s_f9b16439-cdad-4a27-895e-e25df82ba62e",
+      "output": "adapter/"
+    },
+    {
+      "id": "explorer",
+      "agent": "/root/notification_explorer",
+      "status": "completed-bounded-deliverable",
+      "aoverviewSessionId": "s_5ab9e3ab-ca44-49ba-a57c-f87e2f7d28b3",
+      "output": "explorer/"
+    },
+    {
+      "id": "suite",
+      "agent": "/root/notification_fixed_suite",
+      "status": "partial-deliverable-reviewed-comparison-incomplete",
+      "aoverviewSessionId": "s_3a1835c8-3295-4396-86bb-1b5e7001b57c",
+      "output": "suite/"
+    },
+    {
+      "id": "audit",
+      "agent": "/root/notification_auditor",
+      "status": "completed-independent-audit",
+      "aoverviewSessionId": "s_2758dcde-9493-4b7b-bc61-11249a79315e",
+      "output": "audit/"
+    }
+  ],
+  "updatedAt": "2026-10-06T14:33:07.780Z",
+  "validEfficiencyComparisons": 0,
+  "measuredPiSessions": 7,
+  "estimatedApiEquivalentUsd": 1.815854,
+  "analysis": "coordinator-analysis.json",
+  "report": "research.html",
+  "reportData": "report-data.json",
+  "reportVerification": "report-verification.json"
+}

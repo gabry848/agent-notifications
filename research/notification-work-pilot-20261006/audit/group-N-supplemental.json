@@ -1,0 +1,134 @@
+{
+  "auditedAt": "2026-10-06T13:45:16.740Z",
+  "directory": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work",
+  "readOnlyFixture": true,
+  "newModelCalls": 0,
+  "passed": true,
+  "checks": [
+    {
+      "name": "all-eighteen-public-functions-preserved",
+      "passed": true,
+      "detail": [
+        {
+          "role": "ingest",
+          "name": "parseEvent",
+          "present": true
+        },
+        {
+          "role": "ingest",
+          "name": "eventKey",
+          "present": true
+        },
+        {
+          "role": "ingest",
+          "name": "normalizeSubscriptions",
+          "present": true
+        },
+        {
+          "role": "ingest",
+          "name": "recipientsFor",
+          "present": true
+        },
+        {
+          "role": "ingest",
+          "name": "newestByEntity",
+          "present": true
+        },
+        {
+          "role": "ingest",
+          "name": "routeBatch",
+          "present": true
+        },
+        {
+          "role": "delivery",
+          "name": "retryDelay",
+          "present": true
+        },
+        {
+          "role": "delivery",
+          "name": "initialDelivery",
+          "present": true
+        },
+        {
+          "role": "delivery",
+          "name": "transitionDelivery",
+          "present": true
+        },
+        {
+          "role": "delivery",
+          "name": "dueDeliveries",
+          "present": true
+        },
+        {
+          "role": "delivery",
+          "name": "summarizeQueue",
+          "present": true
+        },
+        {
+          "role": "delivery",
+          "name": "mergeQueue",
+          "present": true
+        },
+        {
+          "role": "view",
+          "name": "turnAge",
+          "present": true
+        },
+        {
+          "role": "view",
+          "name": "compactMessage",
+          "present": true
+        },
+        {
+          "role": "view",
+          "name": "visibleEvents",
+          "present": true
+        },
+        {
+          "role": "view",
+          "name": "renderNotification",
+          "present": true
+        },
+        {
+          "role": "view",
+          "name": "renderContext",
+          "present": true
+        },
+        {
+          "role": "view",
+          "name": "groupBySource",
+          "present": true
+        }
+      ]
+    },
+    {
+      "name": "observed-policy-is-192",
+      "passed": true
+    },
+    {
+      "name": "compact-default-uses-current-policy",
+      "passed": true
+    },
+    {
+      "name": "render-notification-default-uses-current-policy",
+      "passed": true
+    },
+    {
+      "name": "render-context-default-uses-current-policy",
+      "passed": true
+    },
+    {
+      "name": "render-observes-policy-without-hardcoded-limit",
+      "passed": true
+    },
+    {
+      "name": "all-role-handoff-sections-preserved",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "Final runtime actor attribution and cleanup require run logs.",
+    "No performance or ten-minute duration conclusion from these functional probes."
+  ]
+}

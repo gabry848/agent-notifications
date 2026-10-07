@@ -1,0 +1,13 @@
+node_modules/
+.pi/
+.env*
+.DS_Store
+auth.json
+*.producer.key
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+artifacts/**/events.jsonl
+artifacts/**/runtime.jsonl
+artifacts/**/provider.jsonl
+artifacts/**/stderr.log

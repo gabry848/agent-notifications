@@ -1,0 +1,29 @@
+{
+  "repo": "gabry848/pi-notifications-bench-20261006",
+  "repoId": 1406995355,
+  "ref": "codex/notification-benchmark-fixture",
+  "workflow": "bench.yml",
+  "url": "https://github.com/gabry848/pi-notifications-bench-20261006",
+  "private": true,
+  "commit": "550c5ba",
+  "localCheckout": "/private/tmp/pi-notifications-bench-20261006",
+  "workflowId": 376203237,
+  "workflowState": "active",
+  "workflowHash": "e70b504e06cbb984a6c712d52fc3767da08ecbf64d570802f1ffea49e2f1d680",
+  "remoteContentVerifiedAt": "2026-10-06T09:06:24.788Z",
+  "publicUrl": "https://application-morning-unexpected-leaves.trycloudflare.com",
+  "hookId": 693028293,
+  "pricing": {
+    "perMinuteUsd": 0.006,
+    "source": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+    "checkedAt": "2026-10-06"
+  },
+  "sourceHash": "dfcf87e9c5107504b5c5b1f7cab60ab9e6f3261fce7e1d6e990486ec411aa275",
+  "sourceHashes": {
+    "server.mjs": "e4c2cf05661d235efeccd8b0a7475a875ea0e5767453184df82e347571b4740d",
+    "webhook.mjs": "2135f8880700ca33c98b20edb58af08d7a4733be0cb5ba004a6b39b455c2a139",
+    "bench.yml": "e70b504e06cbb984a6c712d52fc3767da08ecbf64d570802f1ffea49e2f1d680",
+    "run.mjs": "187e29dfad68d5cc2a1642e4feb709bf7205d04c46092db02dddd2e765579e9a"
+  },
+  "startedAt": "2026-10-06T12:25:42.265Z"
+}

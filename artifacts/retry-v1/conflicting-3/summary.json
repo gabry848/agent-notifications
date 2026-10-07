@@ -1,0 +1,160 @@
+{
+  "name": "conflicting",
+  "repetition": 3,
+  "prompt": "v1",
+  "provider": "openai",
+  "model": "gpt-6.1-sol",
+  "thinking": "medium",
+  "started": "2026-10-06T07:15:02.312Z",
+  "finished": "2026-10-06T07:15:16.978Z",
+  "notifications": [
+    {
+      "id": "notif_ddc09e61-787b-42e4-8037-9a273eca36e2",
+      "source": "Validation",
+      "message": "Invoice-service workload validation finished. Validated maxBatch is 30 for release v1.4 in eu-west-1.",
+      "createdAt": "2026-10-06T07:15:04.569Z",
+      "firstVisibleCall": null,
+      "dismissedAt": null
+    },
+    {
+      "id": "notif_6d30a0fe-3916-434e-907e-55c733c3a5d1",
+      "source": "Validation",
+      "message": "Invoice-service workload validation finished. Validated maxBatch is 30 for release v1.4 in eu-west-1.",
+      "createdAt": "2026-10-06T07:15:04.572Z",
+      "firstVisibleCall": null,
+      "dismissedAt": null
+    },
+    {
+      "id": "notif_93a6f7c5-4b9f-4ea7-9022-99c0ef9d1ebb",
+      "source": "Validation",
+      "message": "A different validation run for the same release and workload reports validated maxBatch 35. Its result conflicts with the earlier run; neither run has been superseded.",
+      "createdAt": "2026-10-06T07:15:04.577Z",
+      "firstVisibleCall": null,
+      "dismissedAt": null
+    }
+  ],
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 30,
+    "status": "blocked",
+    "notes": "All three source snapshots read sequentially. Code review, unit tests, and configuration review passed; dependencies are available. Workload validation for v1.4 in eu-west-1 reports maxBatch 30 (duplicated notification) and a conflicting maxBatch 35 from another run; neither run has been superseded. Use 30 as a conservative provisional batch size rather than the default 50, but block the plan until the validation conflict is resolved. Region remains user-required eu-west-1. No deployment or external service contact performed."
+  },
+  "idleVerified": null,
+  "historyText": "",
+  "assistantText": "Saved the local deployment plan to `result.json`:\n\n- **Region:** `eu-west-1`\n- **Release:** `v1.4`\n- **maxBatch:** `30` (provisional)\n- **Status:** `blocked`\n\nAll snapshot checks passed, but validation runs conflict on maxBatch (`30` versus `35`), with neither superseded. The plan remains blocked pending resolution. No deployment or external service contact occurred.",
+  "error": null,
+  "assessment": {
+    "injectionPass": true,
+    "injectionFailures": [],
+    "providerChecks": [
+      {
+        "call": 1,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 2,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 3
+      },
+      {
+        "call": 3,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 3
+      },
+      {
+        "call": 4,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 3
+      },
+      {
+        "call": 5,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 3
+      }
+    ],
+    "behaviorPass": true,
+    "behaviorMismatches": [],
+    "historyPass": null,
+    "exposure": [
+      {
+        "id": "notif_ddc09e61-787b-42e4-8037-9a273eca36e2",
+        "ages": [
+          {
+            "call": 2,
+            "age": 0
+          },
+          {
+            "call": 3,
+            "age": 1
+          },
+          {
+            "call": 4,
+            "age": 2
+          },
+          {
+            "call": 5,
+            "age": 3
+          }
+        ],
+        "dismissed": false
+      },
+      {
+        "id": "notif_6d30a0fe-3916-434e-907e-55c733c3a5d1",
+        "ages": [
+          {
+            "call": 2,
+            "age": 0
+          },
+          {
+            "call": 3,
+            "age": 1
+          },
+          {
+            "call": 4,
+            "age": 2
+          },
+          {
+            "call": 5,
+            "age": 3
+          }
+        ],
+        "dismissed": false
+      },
+      {
+        "id": "notif_93a6f7c5-4b9f-4ea7-9022-99c0ef9d1ebb",
+        "ages": [
+          {
+            "call": 2,
+            "age": 0
+          },
+          {
+            "call": 3,
+            "age": 1
+          },
+          {
+            "call": 4,
+            "age": 2
+          },
+          {
+            "call": 5,
+            "age": 3
+          }
+        ],
+        "dismissed": false
+      }
+    ],
+    "lifecycleExplicitlyRequested": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "auditedAt": "2026-10-06T13:33:48.576Z",
+  "id": "explorer-compatibility-N-4101-847cae3a",
+  "newModelCalls": 0,
+  "originalSummaryUnchanged": true,
+  "originalTaskPassed": false,
+  "originalPassed": false,
+  "independentTaskPassed": true,
+  "checksPassed": true,
+  "parserIssue": "Static supplemental checker excluded src/ CLI candidates although task permits free organization; CLI behavioral check is separate evidence, not a rewritten original result.",
+  "demo": {
+    "passed": true,
+    "exitCode": 0,
+    "stdout": "Hub: http://127.0.0.1:60554 (policy: /Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/audit/traces/explorer-calibration-demo/deployment.json)\n{\"deliveries\":1,\"results\":[{\"ok\":true,\"value\":{\"received\":\"demo-1f1b6804-f9ac-4765-ab79-59c79cfb75f3\"}}]}\n",
+    "stderr": "",
+    "body": {
+      "deliveries": 1,
+      "results": [
+        {
+          "ok": true,
+          "value": {
+            "received": "demo-1f1b6804-f9ac-4765-ab79-59c79cfb75f3"
+          }
+        }
+      ]
+    }
+  },
+  "cleanup": {
+    "pidAlive": null,
+    "groupAlive": null,
+    "ownedProcesses": [],
+    "cleanupLogErrors": [],
+    "ownedRuntimeStopped": true,
+    "endpointClosed": true,
+    "activeNotifications": 0,
+    "authLinkRemoved": true,
+    "limit": "No PID cleanup line is emitted if the owned process group was already absent at final SIGTERM; process inventory is matched by the exact run path/session UUID and the receiver connection is checked independently."
+  },
+  "accounting": {
+    "consistent": true,
+    "attempts": 12,
+    "unknownReservedUsd": 0,
+    "estimatedApiEquivalentUsd": 0.14056,
+    "actualSubscriptionBillingUsd": null
+  },
+  "observed": {
+    "turnMs": 212329,
+    "tenMinuteSession": false,
+    "publicMilestonesBeforeEvent": 14,
+    "publicMilestonesAfterEvent": 0,
+    "exposureLatencyMs": 11190.703916966915,
+    "artifactConsequenceLatencyMs": 111649.7765839696,
+    "awaitCalls": 0,
+    "getUpdates": 0
+  },
+  "limits": [
+    "No paired efficiency conclusion from this single calibration.",
+    "All14 public milestones passed before publication; documentation/additional tests and CLI were subsequent real work.",
+    "Artifact consequence is a configuration/result write, not proof of earlier production request handling."
+  ]
+}

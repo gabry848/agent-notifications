@@ -1,0 +1,13 @@
+{
+  "verifiedAt": "2026-10-06T12:27:51Z",
+  "githubHooks": [],
+  "vpnbarShareStatus": "Nessuna condivisione attiva.",
+  "completedWorkflowCount": 13,
+  "unfinishedWorkflowCount": 0,
+  "method": [
+    "gh api repos/gabry848/pi-notifications-bench-20261006/hooks",
+    "vpnbar share status",
+    "signed workflow_run receipts and GitHub jobs API evidence"
+  ],
+  "auditGithubApiRequests": 1
+}

@@ -1,0 +1,40 @@
+{
+  "auditedAt": "2026-10-06T13:49:57.521Z",
+  "newModelCalls": 0,
+  "cases": [
+    {
+      "mode": "PA",
+      "eventId": "coord:82efead1-3f8d-448e-8307-969930ac2ef3:7",
+      "producerAcknowledgedAt": "2026-10-06T13:35:35.762Z",
+      "firstExposedAt": "2026-10-06T13:36:03.308Z",
+      "firstCorrectCodeActionAt": "2026-10-06T13:36:08.021Z",
+      "exposureAfterAckMs": 27545.61154204607,
+      "codeActionAfterAckMs": 32258.97441703081,
+      "openPeerTurnsAtAction": [
+        "ingest",
+        "delivery"
+      ],
+      "channel": "get_updates",
+      "completedAllTurns": true,
+      "interpretation": "Complete adaptive baseline"
+    },
+    {
+      "mode": "N",
+      "eventId": "coord:cbc4bba8-a88e-4b86-9036-527c4e69dfbe:6",
+      "producerAcknowledgedAt": "2026-10-06T13:41:06.194Z",
+      "firstExposedAt": "2026-10-06T13:41:11.474Z",
+      "firstCorrectCodeActionAt": "2026-10-06T13:41:26.722Z",
+      "exposureAfterAckMs": 5280.649875044823,
+      "codeActionAfterAckMs": 20527.99845904112,
+      "openPeerTurnsAtAction": [
+        "ingest",
+        "delivery"
+      ],
+      "channel": "context injection",
+      "completedAllTurns": false,
+      "interpretation": "Functional policy action observed before local guard; incomplete final turn prevents efficiency comparison"
+    }
+  ],
+  "performanceConclusion": false,
+  "limit": "One case per mode and N interrupted: latencies are observations, not an efficiency win. Latencies start at the producer acknowledgment; event creation precedes that acknowledgment and is not the latency origin."
+}

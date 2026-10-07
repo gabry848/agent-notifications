@@ -1,0 +1,82 @@
+{
+  "auditedAt": "2026-10-06T13:28:33.526Z",
+  "verdict": "first-real-usage-reconciled",
+  "firstTwoSettled": [
+    {
+      "id": "c1fc7b80-bcc3-4a8c-8bc3-8ac88a13c27f",
+      "responseId": "resp_0a0af867582aa466016ac4f7776e9c87d28e531b0ec8fdce7f",
+      "status": 200,
+      "usage": {
+        "input": 2904,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "output": 34,
+        "reasoning": 0,
+        "totalTokens": 2938
+      },
+      "normalizationMatches": true,
+      "estimateMatches": true,
+      "reserveMatches": true,
+      "costWithinReserve": true,
+      "outputWithinModelMaximum": true,
+      "estimatedApiEquivalentUsd": 0.006148
+    },
+    {
+      "id": "1730768f-38d7-4456-ab10-71d3a78aef64",
+      "responseId": "resp_0a0af867582aa466016ac4f77bc21887d28805fb3c3068d4e7",
+      "status": 200,
+      "usage": {
+        "input": 3269,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "output": 47,
+        "reasoning": 0,
+        "totalTokens": 3316
+      },
+      "normalizationMatches": true,
+      "estimateMatches": true,
+      "reserveMatches": true,
+      "costWithinReserve": true,
+      "outputWithinModelMaximum": true,
+      "estimatedApiEquivalentUsd": 0.007008
+    }
+  ],
+  "run": {
+    "runId": "explorer-compatibility-N-4101-847cae3a",
+    "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/explorer/runs/explorer-compatibility-N-4101-847cae3a",
+    "ledgerAttempts": 3,
+    "traceHttpAttempts": 3,
+    "requestCountMatches": true,
+    "settledCount": 2,
+    "unsettledCount": 1,
+    "unsettledReservedUsd": 1.3427925,
+    "sdkMessageCount": 2,
+    "sdkEventsCaughtUp": true,
+    "sdkUsageMatches": true,
+    "normalizedTotals": {
+      "input": 6173,
+      "output": 81,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "totalTokens": 6254
+    },
+    "sdkTotals": {
+      "input": 6173,
+      "output": 81,
+      "cacheRead": 0,
+      "cacheWrite": 0,
+      "totalTokens": 6254
+    },
+    "wrongModel": false,
+    "accountingConsistent": true
+  },
+  "global": {
+    "estimated": 0.013156000000000001,
+    "pendingReserve": 1.3427925
+  },
+  "scopeExpansionAuthorized": false,
+  "limits": [
+    "Pending reservation belongs to active next HTTP, not unknown failed usage",
+    "Actual subscription billing unavailable"
+  ]
+}

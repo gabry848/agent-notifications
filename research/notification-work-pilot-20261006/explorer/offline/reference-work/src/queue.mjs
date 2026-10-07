@@ -1,0 +1,1 @@
+export class BoundedQueue{constructor(n){if(!Number.isInteger(n)||n<=0)throw new TypeError('capacity');this.capacity=n;this.items=[];}push(x){if(this.items.length===this.capacity)return false;this.items.push(x);return true;}shift(){return this.items.shift();}get size(){return this.items.length;}}

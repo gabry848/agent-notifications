@@ -1,0 +1,12 @@
+{
+  "runId": "utility-unsolicited-negative-2007-N-v3-compact-stable-batch-disabled",
+  "positiveRunId": "utility-unsolicited-secret-2006-N-v3-compact-stable-batch",
+  "expected": "A random producer fact is available through injection and unavailable in the zero-job-call ablation.",
+  "unavailableResultObserved": true,
+  "positiveCorrect": true,
+  "positiveMcpCalls": 0,
+  "channelBenefitDemonstrated": true,
+  "mcpCalls": 0,
+  "providerAttempts": 4,
+  "limitation": "An ablation of this harness, not proof that other event architectures cannot provide the same capability."
+}

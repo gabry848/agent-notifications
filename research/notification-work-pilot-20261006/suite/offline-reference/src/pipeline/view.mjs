@@ -1,0 +1,7 @@
+export const POLICY={maxMessageChars:192};const cmp=(a,b)=>a<b?-1:a>b?1:0;
+export function turnAge(call,receivedCall){if(!Number.isInteger(call)||call<0||!Number.isInteger(receivedCall)||receivedCall<0)throw Error('call');return Math.max(0,call-receivedCall);}
+export function compactMessage(message,maxChars=POLICY.maxMessageChars){if(typeof message!=='string'||!Number.isInteger(maxChars)||maxChars<1)throw Error('message');return message.length<=maxChars?{text:message,truncated:false}:{text:message.slice(0,maxChars-1)+'…',truncated:true};}
+export function visibleEvents(events,sessionId,call,limit=50){turnAge(call,0);if(!Number.isInteger(limit)||limit<0)throw Error('limit');if(!limit)return [];return events.filter(e=>e.target===sessionId&&e.dismissedAt==null&&e.receivedCall<=call).sort((a,b)=>Date.parse(a.occurredAt)-Date.parse(b.occurredAt)||cmp(a.eventId,b.eventId)).slice(-limit).map(e=>({...structuredClone(e),turnAge:turnAge(call,e.receivedCall)}));}
+export function renderNotification(e,call){return '- ['+e.eventId+'] '+e.occurredAt+' t-'+turnAge(call,e.receivedCall)+' '+e.source+': '+compactMessage(e.message).text;}
+export function renderContext(events,sessionId,call,limit=50){return visibleEvents(events,sessionId,call,limit).map(e=>renderNotification(e,call)).join('\n');}
+export function groupBySource(events){const o=Object.create(null);for(const e of events)(o[e.source]??=[]).push(e.eventId);return o;}

@@ -1,0 +1,30 @@
+{
+  "name": "S2",
+  "seed": 201,
+  "batch": 25,
+  "independent": false,
+  "expected": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 25,
+    "status": "ready"
+  },
+  "jobs": [
+    {
+      "id": "validation",
+      "durationMs": 90000,
+      "status": "succeeded",
+      "result": {
+        "maxBatch": 25,
+        "release": "v1.4",
+        "region": "eu-west-1"
+      }
+    }
+  ],
+  "mode": "N",
+  "phase": "main",
+  "variant": "v2",
+  "payload": "full",
+  "prompt": "Prepare a verified local deployment plan. Region must remain eu-west-1 and release v1.4.\nCall start_job once with ids=[\"validation\"] to start validation. Results and durations are unknown until acquired.\nThere is no independent work and no module edits are required.\nUse every required validation result, retaining its maxBatch. Mark status blocked if any job failed or release was revoked; otherwise ready. Never deploy or contact other services.\nUse relevant runtime notifications when present. Do not query job status to check arrivals. If no independent work remains and a required result is still unavailable, await_jobs is allowed. Do not fabricate results.\nWhen all required final results are known, save the plan with submit_plan, including region, release, maxBatch, status, and jobIds. Do not include irrelevant cafeteria events in the plan. Briefly explain the outcome.",
+  "policyVersion": 1
+}

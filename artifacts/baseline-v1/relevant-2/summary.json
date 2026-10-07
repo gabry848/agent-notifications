@@ -1,0 +1,100 @@
+{
+  "name": "relevant",
+  "repetition": 2,
+  "prompt": "v1",
+  "provider": "openai",
+  "model": "gpt-6.1-sol",
+  "thinking": "medium",
+  "started": "2026-10-05T20:35:49.733Z",
+  "finished": "2026-10-05T20:36:03.808Z",
+  "notifications": [
+    {
+      "id": "notif_75ddeeb1-d022-48dc-9a03-38cbcb53ed9a",
+      "source": "Validation",
+      "message": "Invoice-service workload validation finished. Validated maxBatch is 25 for release v1.4 in eu-west-1.",
+      "createdAt": "2026-10-05T20:35:52.093Z",
+      "firstVisibleCall": null,
+      "dismissedAt": null
+    }
+  ],
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 25,
+    "status": "ready",
+    "notes": "All three source snapshots read sequentially. Code review, unit tests, and configuration review passed; dependencies available. Workload validation confirms maxBatch 25 for v1.4 in eu-west-1, replacing the default 50. No release revocation or unresolved validation conflict reported. Local plan only; no deployment or external service contact."
+  },
+  "idleVerified": null,
+  "historyText": "",
+  "assistantText": "Saved the local deployment plan to `result.json`:\n\n- **Region:** `eu-west-1`\n- **Release:** `v1.4`\n- **maxBatch:** `25`, based on workload validation rather than the default 50\n- **Status:** `ready`\n\nAll source checks passed, dependencies are available, and no revocation or unresolved validation conflict was reported. Nothing was deployed and no external service was contacted.",
+  "error": null,
+  "assessment": {
+    "injectionPass": true,
+    "injectionFailures": [],
+    "providerChecks": [
+      {
+        "call": 1,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 2,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      },
+      {
+        "call": 3,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      },
+      {
+        "call": 4,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      },
+      {
+        "call": 5,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      }
+    ],
+    "behaviorPass": true,
+    "behaviorMismatches": [],
+    "historyPass": null,
+    "exposure": [
+      {
+        "id": "notif_75ddeeb1-d022-48dc-9a03-38cbcb53ed9a",
+        "ages": [
+          {
+            "call": 2,
+            "age": 0
+          },
+          {
+            "call": 3,
+            "age": 1
+          },
+          {
+            "call": 4,
+            "age": 2
+          },
+          {
+            "call": 5,
+            "age": 3
+          }
+        ],
+        "dismissed": false
+      }
+    ],
+    "lifecycleExplicitlyRequested": false
+  }
+}

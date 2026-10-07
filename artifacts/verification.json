@@ -1,0 +1,235 @@
+{
+  "results": [
+    {
+      "campaign": "baseline-final-v1",
+      "name": "relevant",
+      "repetition": 1,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "relevant",
+      "repetition": 2,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "relevant",
+      "repetition": 3,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "plan-change",
+      "repetition": 1,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "plan-change",
+      "repetition": 2,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "plan-change",
+      "repetition": 3,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "irrelevant",
+      "repetition": 1,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "irrelevant",
+      "repetition": 2,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "irrelevant",
+      "repetition": 3,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "persistent",
+      "repetition": 1,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "persistent",
+      "repetition": 2,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "persistent",
+      "repetition": 3,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "dismiss-history",
+      "repetition": 1,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "dismiss-history",
+      "repetition": 2,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "dismiss-history",
+      "repetition": 3,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "idle",
+      "repetition": 1,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "idle",
+      "repetition": 2,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "idle",
+      "repetition": 3,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "conflicting",
+      "repetition": 1,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "conflicting",
+      "repetition": 2,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "conflicting",
+      "repetition": 3,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "hostile",
+      "repetition": 1,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "hostile",
+      "repetition": 2,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "baseline-final-v1",
+      "name": "hostile",
+      "repetition": 3,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "refined-v2",
+      "name": "relevant",
+      "repetition": 2,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "refined-v2",
+      "name": "relevant",
+      "repetition": 1,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "refined-v2",
+      "name": "relevant",
+      "repetition": 3,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "refined-v2",
+      "name": "persistent",
+      "repetition": 1,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "refined-v2",
+      "name": "persistent",
+      "repetition": 2,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "refined-v2",
+      "name": "persistent",
+      "repetition": 3,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "refined-v2",
+      "name": "hostile",
+      "repetition": 1,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "refined-v2",
+      "name": "hostile",
+      "repetition": 2,
+      "passed": true,
+      "problems": []
+    },
+    {
+      "campaign": "refined-v2",
+      "name": "hostile",
+      "repetition": 3,
+      "passed": true,
+      "problems": []
+    }
+  ]
+}

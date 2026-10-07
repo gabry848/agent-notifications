@@ -1,0 +1,16 @@
+{
+  "variant": "fixed",
+  "label": "diagnostic",
+  "offline": true,
+  "durationMs": 273,
+  "failure": null,
+  "authLinkRemoved": true,
+  "result": {
+    "offline": true,
+    "step": 6,
+    "calls": 7,
+    "finished": true,
+    "journalRecords": 7,
+    "journalSessionIsolated": true
+  }
+}

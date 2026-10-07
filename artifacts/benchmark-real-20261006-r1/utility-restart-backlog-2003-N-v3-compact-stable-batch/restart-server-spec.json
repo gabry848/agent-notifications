@@ -1,0 +1,45 @@
+{
+  "name": "unsolicited",
+  "seed": 2003,
+  "batch": 29,
+  "independent": true,
+  "expected": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 29,
+    "status": "ready"
+  },
+  "jobs": [
+    {
+      "id": "validation-0",
+      "durationMs": 100,
+      "status": "succeeded",
+      "result": {
+        "maxBatch": 29,
+        "release": "v1.4",
+        "region": "eu-west-1"
+      }
+    },
+    {
+      "id": "validation-1",
+      "durationMs": 300,
+      "status": "succeeded",
+      "result": {
+        "maxBatch": 29,
+        "release": "v1.4",
+        "region": "eu-west-1"
+      }
+    },
+    {
+      "id": "validation-2",
+      "durationMs": 600,
+      "status": "succeeded",
+      "result": {
+        "maxBatch": 29,
+        "release": "v1.4",
+        "region": "eu-west-1"
+      }
+    }
+  ],
+  "unsolicited": false
+}

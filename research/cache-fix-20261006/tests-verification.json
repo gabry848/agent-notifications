@@ -1,0 +1,7 @@
+{
+  "unitRegression": {"command":"npm test","passed":44,"failed":0},
+  "sandboxFirstRun": {"passed":35,"failed":9,"reason":"loopback listen EPERM","retainedInExperiments":true},
+  "offlinePiIntegration": {"command":"npm run test:pi","passed":1,"failed":0,"paidInference":false},
+  "nativeOfflineCorrection": {"command":"node research/cache-fix-20261006/run.mjs fixed diagnostic offline","simulatedProviderResponses":7,"correct":true,"journalRecords":7},
+  "durableSessionRestart": {"command":"node research/cache-fix-20261006/offline-resume.mjs","passed":true,"paidInference":false,"assertions":"offline/durable-resume/assertions.json"}
+}

@@ -1,0 +1,34 @@
+{
+  "run": {
+    "runId": 37461378414,
+    "url": "https://github.com/gabry848/pi-notifications-bench-20261006/actions/runs/37461378414",
+    "status": "completed",
+    "conclusion": "success",
+    "createdAt": "2026-10-06T12:10:26Z",
+    "startedAt": "2026-10-06T12:10:26Z",
+    "updatedAt": "2026-10-06T12:10:55Z",
+    "received": {
+      "time": "2026-10-06T12:10:57.309Z",
+      "monoMs": 418408951.326875
+    },
+    "notificationDelivered": true
+  },
+  "jobs": [
+    {
+      "id": 112261538862,
+      "name": "validation",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-10-06T12:10:31Z",
+      "completedAt": "2026-10-06T12:10:55Z",
+      "url": "https://github.com/gabry848/pi-notifications-bench-20261006/actions/runs/37461378414/job/112261538862"
+    }
+  ],
+  "estimatedRunnerUsd": 0.006,
+  "invoiceConfirmed": false,
+  "queueMs": 0,
+  "timingNote": "Local MCP completion is webhook receipt or API observation, not the remote worker finish. Queue and job UTC timestamps are preserved separately.",
+  "mcpServerGithubRequests": 1,
+  "automaticCancellationRequests": 0,
+  "driverGithubRequestsExcludedFromServerMetric": 1
+}

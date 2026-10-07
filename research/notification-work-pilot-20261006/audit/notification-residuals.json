@@ -1,0 +1,71 @@
+{
+  "auditedAt": "2026-10-06T13:48:21.363Z",
+  "actors": [
+    {
+      "role": "ingest",
+      "received": 24,
+      "active": [
+        {
+          "id": "notif_569598f6cb2d53dc3528fb29914f62fdca309999873c0271a95a56f2787f121a",
+          "createdAt": "2026-10-06T13:43:17.285Z",
+          "firstVisibleCall": null,
+          "kind": "message",
+          "actor": "N-delivery"
+        },
+        {
+          "id": "notif_f0ea6c9e7c7a7e2ee254a3fe20c23bd03b554557719f41b54c8cf9bd1f0652e3",
+          "createdAt": "2026-10-06T13:43:17.290Z",
+          "firstVisibleCall": null,
+          "kind": "activity",
+          "actor": "N-delivery"
+        }
+      ],
+      "neverExposedActive": 2,
+      "previouslyExposedActive": 0
+    },
+    {
+      "role": "delivery",
+      "received": 23,
+      "active": [],
+      "neverExposedActive": 0,
+      "previouslyExposedActive": 0
+    },
+    {
+      "role": "view",
+      "received": 25,
+      "active": [
+        {
+          "id": "notif_f298b0887875e7f780bb278be28ea6b583ea949e0bf39bb53620106c1054c27a",
+          "createdAt": "2026-10-06T13:43:09.243Z",
+          "firstVisibleCall": null,
+          "kind": "message",
+          "actor": "N-ingest"
+        },
+        {
+          "id": "notif_7b75c268090165e044277caa22ae9bbc3577016318a461ce058d8aafab86f06f",
+          "createdAt": "2026-10-06T13:43:14.486Z",
+          "firstVisibleCall": null,
+          "kind": "activity",
+          "actor": "N-ingest"
+        },
+        {
+          "id": "notif_4f8fd92ff39cf1743cc8d8d954490d726201ff55758473704f8f869f6600f8bc",
+          "createdAt": "2026-10-06T13:43:17.287Z",
+          "firstVisibleCall": null,
+          "kind": "message",
+          "actor": "N-delivery"
+        },
+        {
+          "id": "notif_5b50cf480d5a31dbf4599adda6bf61de53f9ae03d9d008b4a51fb6bf5f549ac8",
+          "createdAt": "2026-10-06T13:43:17.292Z",
+          "firstVisibleCall": null,
+          "kind": "activity",
+          "actor": "N-delivery"
+        }
+      ],
+      "neverExposedActive": 4,
+      "previouslyExposedActive": 0
+    }
+  ],
+  "interpretation": "All six active events were received after the actor's last context snapshot and have never been exposed. They are persisted backlog, not lost notifications. View had already stopped its turn on the local guard; ingest was producing its final response. Arrival does not wake inference."
+}

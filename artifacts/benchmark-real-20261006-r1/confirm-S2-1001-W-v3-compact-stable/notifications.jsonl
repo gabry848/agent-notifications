@@ -1,0 +1,10 @@
+{"time":"2026-10-06T10:50:03.383Z","monoMs":413555050.225875,"type":"session_selected","url":"http://127.0.0.1:63778","sessionId":"53a23ff0-d257-4b94-a1e1-21910cbc7499","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/confirm-S2-1001-W-v3-compact-stable/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-06T10:50:03.383Z","monoMs":413555050.323958,"type":"server_ready","url":"http://127.0.0.1:63778","sessionId":"53a23ff0-d257-4b94-a1e1-21910cbc7499","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/confirm-S2-1001-W-v3-compact-stable/notifications.sqlite"}
+{"time":"2026-10-06T10:50:03.479Z","monoMs":413555146.229333,"type":"provider_request","attempt":1}
+{"time":"2026-10-06T10:50:04.162Z","monoMs":413555828.832125,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:50:05.272Z","monoMs":413556939.27875,"type":"provider_request","attempt":2}
+{"time":"2026-10-06T10:50:06.141Z","monoMs":413557807.8945,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:51:35.314Z","monoMs":413646981.882791,"type":"provider_request","attempt":3}
+{"time":"2026-10-06T10:51:36.178Z","monoMs":413647845.81225,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:51:37.213Z","monoMs":413648880.909583,"type":"provider_request","attempt":4}
+{"time":"2026-10-06T10:51:38.124Z","monoMs":413649791.651291,"type":"provider_response","status":200}

@@ -1,0 +1,4 @@
+{"time":"2026-10-06T08:34:52.531Z","monoMs":405444145.998833,"type":"protocol_message","method":"initialize"}
+{"time":"2026-10-06T08:34:52.536Z","monoMs":405444150.677125,"type":"protocol_message","method":"notifications/initialized"}
+{"time":"2026-10-06T08:34:52.536Z","monoMs":405444150.996791,"type":"protocol_message","method":"tools/list"}
+{"time":"2026-10-06T08:34:52.537Z","monoMs":405444151.135541,"type":"tools_list"}

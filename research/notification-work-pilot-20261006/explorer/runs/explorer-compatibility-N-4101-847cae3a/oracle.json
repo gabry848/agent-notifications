@@ -1,0 +1,128 @@
+{
+  "tests": {
+    "passed": true,
+    "exitCode": 0,
+    "passedTests": 14,
+    "failedTests": 0,
+    "output": "TAP version 13\n# Subtest: envelope validation and independent copy\nok 1 - envelope validation and independent copy\n  ---\n  duration_ms: 0.547375\n  type: 'test'\n  ...\n# Subtest: topic patterns cover zero/multiple segments and invalid syntax\nok 2 - topic patterns cover zero/multiple segments and invalid syntax\n  ---\n  duration_ms: 0.103459\n  type: 'test'\n  ...\n# Subtest: subscription expiration, replacement, sorting and isolation\nok 3 - subscription expiration, replacement, sorting and isolation\n  ---\n  duration_ms: 0.400792\n  type: 'test'\n  ...\n# Subtest: revision tracking separates producer and preserves monotonicity\nok 4 - revision tracking separates producer and preserves monotonicity\n  ---\n  duration_ms: 0.072167\n  type: 'test'\n  ...\n# Subtest: retry caps exponential and server retry after\nok 5 - retry caps exponential and server retry after\n  ---\n  duration_ms: 0.092083\n  type: 'test'\n  ...\n# Subtest: bounded FIFO accepts falsy values\nok 6 - bounded FIFO accepts falsy values\n  ---\n  duration_ms: 0.068042\n  type: 'test'\n  ...\n# Subtest: redaction recursively copies arrays and nested objects\nok 7 - redaction recursively copies arrays and nested objects\n  ---\n  duration_ms: 0.099417\n  type: 'test'\n  ...\n# Subtest: SQLite journal survives reopen and rejects stale data\nok 8 - SQLite journal survives reopen and rejects stale data\n  ---\n  duration_ms: 3.019708\n  type: 'test'\n  ...\n# Subtest: router matches once and never reroutes duplicate events\nok 9 - router matches once and never reroutes duplicate events\n  ---\n  duration_ms: 0.179584\n  type: 'test'\n  ...\n# Subtest: dispatcher bounds concurrency, settles errors and preserves order\nok 10 - dispatcher bounds concurrency, settles errors and preserves order\n  ---\n  duration_ms: 0.204458\n  type: 'test'\n  ...\n# Subtest: HTTP hub routes real requests and persists event\nok 11 - HTTP hub routes real requests and persists event\n  ---\n  duration_ms: 23.844667\n  type: 'test'\n  ...\n# Subtest: deployment policy validates data and reloads changes\nok 12 - deployment policy validates data and reloads changes\n  ---\n  duration_ms: 0.598792\n  type: 'test'\n  ...\n# Subtest: HTTP sender honors status, caps and live retry policy\nok 13 - HTTP sender honors status, caps and live retry policy\n  ---\n  duration_ms: 0.247833\n  type: 'test'\n  ...\n# Subtest: configured HTTP server applies new payload policy without restart\nok 14 - configured HTTP server applies new payload policy without restart\n  ---\n  duration_ms: 5.554625\n  type: 'test'\n  ...\n1..14\n# tests 14\n# suites 0\n# pass 14\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 81.536459\n",
+    "publicTestsUnmodified": true
+  },
+  "release": {
+    "passed": true,
+    "errors": [],
+    "deployment": {
+      "maxPayloadBytes": 8192,
+      "retryCapMs": 4999,
+      "preferredRegion": "eu-west",
+      "auditRevision": 1
+    },
+    "note": {
+      "reportId": "audit-4101",
+      "kind": "compatibility",
+      "records": 4096,
+      "sha256": "1707ad42daf27c0d4beab040452efd52d6811be0285d9eae78174848d239824a"
+    }
+  },
+  "reportPublished": true,
+  "milestones": [
+    [
+      "envelope validation and independent copy",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131689.953875
+      }
+    ],
+    [
+      "topic patterns cover zero/multiple segments and invalid syntax",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.016666
+      }
+    ],
+    [
+      "subscription expiration, replacement, sorting and isolation",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.046041
+      }
+    ],
+    [
+      "revision tracking separates producer and preserves monotonicity",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.073625
+      }
+    ],
+    [
+      "retry caps exponential and server retry after",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.098666
+      }
+    ],
+    [
+      "bounded FIFO accepts falsy values",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.128583
+      }
+    ],
+    [
+      "redaction recursively copies arrays and nested objects",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.153083
+      }
+    ],
+    [
+      "SQLite journal survives reopen and rejects stale data",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.177333
+      }
+    ],
+    [
+      "router matches once and never reroutes duplicate events",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.202333
+      }
+    ],
+    [
+      "dispatcher bounds concurrency, settles errors and preserves order",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.228375
+      }
+    ],
+    [
+      "HTTP hub routes real requests and persists event",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.253833
+      }
+    ],
+    [
+      "deployment policy validates data and reloads changes",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.283
+      }
+    ],
+    [
+      "HTTP sender honors status, caps and live retry policy",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.306291
+      }
+    ],
+    [
+      "configured HTTP server applies new payload policy without restart",
+      {
+        "time": "2026-10-06T13:29:40.071Z",
+        "monoMs": 423131690.32925
+      }
+    ]
+  ],
+  "addedTestFiles": []
+}

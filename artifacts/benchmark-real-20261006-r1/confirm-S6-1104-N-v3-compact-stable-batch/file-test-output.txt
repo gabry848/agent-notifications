@@ -1,0 +1,16 @@
+✔ module-0.mjs (0.565625ms)
+✔ module-1.mjs (0.5485ms)
+✔ module-2.mjs (0.259833ms)
+✔ module-3.mjs (0.191458ms)
+✔ module-4.mjs (0.197625ms)
+✔ module-5.mjs (0.186541ms)
+✔ module-6.mjs (0.173667ms)
+✔ module-7.mjs (0.168375ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 37.311209

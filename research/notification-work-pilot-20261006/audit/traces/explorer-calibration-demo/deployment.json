@@ -1,0 +1,6 @@
+{
+  "maxPayloadBytes": 8192,
+  "retryCapMs": 4999,
+  "preferredRegion": "eu-west",
+  "auditRevision": 1
+}

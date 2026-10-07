@@ -1,0 +1,1 @@
+export function normalizeEvent(x){if(!x||typeof x!=='object'||typeof x.id!=='string'||!x.id.trim()||typeof x.topic!=='string'||!x.topic.trim()||!Number.isInteger(x.revision)||x.revision<0||!x.payload||typeof x.payload!=='object'||Array.isArray(x.payload))throw new TypeError('invalid event');return structuredClone({id:x.id,topic:x.topic,revision:x.revision,payload:x.payload});}

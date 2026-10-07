@@ -1,0 +1,22 @@
+{
+  "src/pi-extension.ts": "f63002aacc2814eb7643ba29cdccd340d4db26d71ca9d4502a4ec061c833eaeb",
+  "src/store.mjs": "050bb0f524589a3064fc0e7625c86ab2e4d3359db6fe64302411f0d6b577c06a",
+  "src/notification-context.mjs": "4192d234844aca40ee49c0bd6883c18884242e25ab1dd9c211fb0c9052b88f9c",
+  "prompts/v1.txt": "cf0a3634c31bf20f7bdf7316d20c490962a79ff9ca832ff660ca50c321bf52e8",
+  "prompts/v2.txt": "867fdd05c1f8c791436d26de3996bbe858adea3512ef9a2ec049db0f9d361a40",
+  "prompts/v3.txt": "2231ba242982554204b763d485fb83797d4eb0f070da253e452f19180a3d16be",
+  "tests/notification-cache.test.mjs": "572db3759e3c8acde22f37bc2cf744d7a0ae1b39dae862097722d75081924b35",
+  "research/cache-fix-20261006/run.mjs": "183cecf14cb74fa2f67a9810916735bcde949a267aaefe710c314c110b56a651",
+  "research/cache-fix-20261006/pi-runtime.mjs": "5b3fb383036db07c06b7dfbd2b0a9fb056f3b32246bc12e553a565a6879277bc",
+  "research/cache-fix-20261006/probe-extension.ts": "069d6daf34532fc2140e63f3de433182d9e85db0bd7eec040a2e7db0f330826c",
+  "research/cache-fix-20261006/journal-prototype.ts": "970862e3cffbe2a84b729d9ab6c3f2dfe71016a6610aac98029787fe9af4d4c1",
+  "research/cache-fix-20261006/meter.mjs": "0d840106093b9daec941a0da115a8b51f11d31e69cfa7b77e90e65d7c33ff3ba",
+  "research/cache-fix-20261006/meter-extension.ts": "93848234e98899a0429d0f5335a79a3956a7df6bc789bfc5a913e39004ec8b15",
+  "research/cache-fix-20261006/offline-resume.mjs": "7e902efe41048b3e8120fc71e652f18d5af222a8ad49a56b33b969910d9919e9",
+  "research/cache-fix-20261006/verification-prompt.txt": "867fdd05c1f8c791436d26de3996bbe858adea3512ef9a2ec049db0f9d361a40",
+  "research/cache-fix-20261006/report.mjs": "8f88c82e16df67e3c663f262897714bf25f951736b99cc491a2b5ae38a318d5c",
+  "research/cache-fix-20261006/report.md": "9ff5eb6b819a82063214331efcbd4fcc9eb502a55ee3c04b582d2eddd5a56b72",
+  "research/cache-fix-20261006/experiments.md": "efcdad74e33de8a927c6b15cf1147a9ae720397802a5a00136b8a20559e18b9e",
+  "research/cache-fix-20261006/task.json": "6ba26ef83db280fc61f76c97bd65d343e8f2278356aea2fb4a28afda871485a5",
+  "research/cache-fix-20261006/tests-verification.json": "4624324c2c5a1f07673455a9ec2693bd1a6be94bbffbcde7f64f58bb9df6f732"
+}

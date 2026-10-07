@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "workload": "concurrent-pipeline-3pi-v1",
+  "reason": "Coordinator decision before measured runs: three simultaneous requests require conservative 128k-output reservations without changing default Pi output limits.",
+  "previousSuiteApiEquivalentCapUsd": 4,
+  "effectiveSuiteApiEquivalentCapUsd": 6,
+  "globalApiEquivalentCapUsd": 10,
+  "adapterApiEquivalentCapUsd": 2,
+  "explorerApiEquivalentCapUsd": 2,
+  "maxGroups": 3,
+  "maxPiSessions": 9,
+  "measuredRunsBeforeAmendment": 0,
+  "workloadOraclesChanged": false,
+  "actualSubscriptionBillingKnown": false,
+  "providerOutputLimitChanged": false,
+  "note": "This explicit pre-run budget amendment supersedes the 4 USD cap in the original frozen workload manifest; source hashes and workload remain unchanged."
+}

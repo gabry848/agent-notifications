@@ -1,0 +1,43 @@
+{
+  "name": "GH-failure",
+  "seed": 3102,
+  "independent": true,
+  "batch": 0,
+  "jobs": [
+    {
+      "id": "validation",
+      "outcome": "failure"
+    }
+  ],
+  "expected": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 0,
+    "status": "blocked"
+  },
+  "github": {
+    "repo": "gabry848/pi-notifications-bench-20261006",
+    "repoId": 1406995355,
+    "ref": "codex/notification-benchmark-fixture",
+    "workflow": "bench.yml",
+    "url": "https://github.com/gabry848/pi-notifications-bench-20261006",
+    "private": true,
+    "commit": "550c5ba",
+    "localCheckout": "/private/tmp/pi-notifications-bench-20261006",
+    "workflowId": 376203237,
+    "workflowState": "active",
+    "workflowHash": "e70b504e06cbb984a6c712d52fc3767da08ecbf64d570802f1ffea49e2f1d680",
+    "remoteContentVerifiedAt": "2026-10-06T09:06:24.788Z",
+    "controlDir": "/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/github-control",
+    "experimentId": "benchmark-real-20261006-r1-GH-failure-3102-P10"
+  },
+  "mode": "P10",
+  "phase": "github",
+  "variant": "v3",
+  "payload": "compact",
+  "position": "tail",
+  "cache": "stable",
+  "dismiss": "single",
+  "prompt": "Prepare a verified local deployment plan. Region must remain eu-west-1 and release v1.4.\nCall start_job once with ids=[\"validation\"] to start validation. Results and durations are unknown until acquired.\nIndependent work: read modules in fixture/, replace each TODO implementation so transform(n) returns n * FACTOR + OFFSET from that module. These edits do not depend on validation; run verify_files before final submission.\nUse every required validation result, retaining its maxBatch. Mark status blocked if any job failed or release was revoked; otherwise ready. Never deploy or contact other services.\nAcquire job results with get_job. While jobs are pending, perform available independent work; between consecutive pending checks wait at least 10 seconds using pause. Aggregate all IDs in each check. Do not use await_jobs in this polling mode.\nWhen all required final results are known, save the plan with submit_plan, including region, release, maxBatch, status, and jobIds. Do not include irrelevant cafeteria events in the plan. Briefly explain the outcome.",
+  "policyVersion": 1
+}

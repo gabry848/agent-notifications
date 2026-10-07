@@ -1,0 +1,8 @@
+{
+  "phase": "offline-preparation",
+  "piRequests": 0,
+  "command": "node explorer/offline-check.mjs",
+  "result": "Reference implementation reached ten passing checks, but loopback HTTP test failed with listen EPERM under the sandbox.",
+  "additionalObservation": "Node's default reporter used spec format; checkpoint parser expected TAP. Runtime checker was corrected to explicitly request the TAP reporter before measured tests.",
+  "retry": "Same bounded local HTTP/SQLite checks require execution outside the loopback-restricted sandbox. No external network or provider requests are part of this offline test."
+}

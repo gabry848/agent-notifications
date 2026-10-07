@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-06T13:33:08.704Z",
+  "ownedLoopbackEndpoints": [
+    {
+      "url": "http://127.0.0.1:59774",
+      "closed": true,
+      "code": "ECONNREFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:60314",
+      "closed": true,
+      "code": "ECONNREFUSED"
+    }
+  ],
+  "authLinkRemoved": true,
+  "allCheckedEndpointsClosed": true,
+  "limitation": "Verifies owned notification/demo endpoint lifecycle; not a whole-machine process inventory."
+}

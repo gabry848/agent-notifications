@@ -1,0 +1,912 @@
+{
+  "status": "partial_or_waiting",
+  "workload": "concurrent-pipeline-3pi-v1",
+  "measuredGroups": 2,
+  "piSessions": 6,
+  "estimatedPiUsd": 1.675294,
+  "accounting": {
+    "kind": "API-equivalent estimate, not subscription invoice",
+    "actualBilling": null
+  },
+  "limits": {
+    "groups": 3,
+    "piSessions": 9,
+    "apiEquivalentUsd": 6,
+    "globalApiEquivalentUsd": 10
+  },
+  "groups": [
+    {
+      "mode": "N",
+      "workload": "concurrent-pipeline-3pi-v1",
+      "passed": false,
+      "taskOracle": true,
+      "immutablePreserved": true,
+      "errors": [
+        {
+          "stage": "pi",
+          "role": "view",
+          "error": "pilot usage limit: conservative reservation exceeds budget",
+          "time": "2026-10-06T13:42:52.180Z",
+          "monoMs": 423923823.750166
+        }
+      ],
+      "groupTurnMs": 204673,
+      "startupAndTurnMs": 205546,
+      "apiEquivalentUsd": 1.1725596,
+      "unknownReservedApiEquivalentUsd": 0,
+      "sdkNominalCostUsd": 1.1725596,
+      "actualBillingUsd": null,
+      "httpAttempts": 54,
+      "tokens": 776871,
+      "tools": 131,
+      "mcpTools": 49,
+      "boardChecks": 9,
+      "eventChecks": 0,
+      "awaitCalls": 5,
+      "verifiedOverlapCount": 5,
+      "participants": [
+        {
+          "role": "ingest",
+          "ok": true,
+          "resolved": {
+            "id": "gpt-6.1-sol",
+            "name": "GPT-6.1 Sol",
+            "api": "openai-codex-responses",
+            "provider": "openai-codex",
+            "baseUrl": "https://chatgpt.com/backend-api",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 2,
+              "output": 10,
+              "cacheRead": 0.1,
+              "cacheWrite": 2.5,
+              "tiers": [
+                {
+                  "inputTokensAbove": 272000,
+                  "input": 4,
+                  "output": 15,
+                  "cacheRead": 0.2,
+                  "cacheWrite": 5
+                }
+              ]
+            },
+            "contextWindow": 272000,
+            "maxTokens": 128000,
+            "thinkingLevelMap": {
+              "off": null,
+              "minimal": "low",
+              "low": "low",
+              "medium": "medium",
+              "high": "high",
+              "xhigh": "xhigh",
+              "max": "max"
+            },
+            "compat": {
+              "supportsOpenAIGrammarTools": true,
+              "supportsAdditionalTools": true,
+              "supportsToolSearch": true,
+              "supportsMidConvoSystemMessages": true
+            },
+            "inputLimits": {
+              "images": {
+                "resize": {
+                  "maxWidth": 2000,
+                  "maxHeight": 2000,
+                  "maxBytes": 4718592,
+                  "jpegQuality": 80
+                }
+              }
+            },
+            "type": "chat"
+          },
+          "turnMs": 202958,
+          "firstSubmissionMs": 188423,
+          "modelHttpAttempts": 19,
+          "modelLogicalRequests": 19,
+          "tokens": {
+            "input": 157082,
+            "output": 5753,
+            "cacheRead": 80000,
+            "cacheWrite": 0,
+            "totalTokens": 242835,
+            "reasoning": 324
+          },
+          "estimatedApiEquivalentUsd": 0.379694,
+          "unknownReservedApiEquivalentUsd": 0,
+          "sdkNominalCostUsd": 0.379694,
+          "actualBillingUsd": null,
+          "tools": 45,
+          "mcpTools": 15,
+          "boardChecks": 2,
+          "eventChecks": 0,
+          "awaitCalls": 2,
+          "notificationDismiss": 7,
+          "notificationHistory": 0,
+          "notificationsReceived": 24,
+          "notificationExposures": 42,
+          "notificationUniqueExposures": 22,
+          "notificationReinjections": 20,
+          "notificationDismissed": 22,
+          "successfulRoleVerifications": 1,
+          "verifiedOverlap": [
+            {
+              "time": "2026-10-06T13:41:08.086Z",
+              "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+              "proof": "role test command succeeded while another real Pi turn was still open",
+              "scope": "verified task work; turn overlap alone does not prove the peer was continuously computing"
+            }
+          ],
+          "eventMetrics": [
+            {
+              "kind": "noise",
+              "eventId": "coord:cbc4bba8-a88e-4b86-9036-527c4e69dfbe:7",
+              "producedAt": "2026-10-06T13:41:06Z",
+              "producerAckAt": "2026-10-06T13:41:06.197Z",
+              "firstExposedAt": "2026-10-06T13:41:08.087Z",
+              "exposureChannel": "context_notification",
+              "exposureMs": 2087,
+              "firstUsefulActionAt": null,
+              "actionMs": null,
+              "classification": "no action required"
+            },
+            {
+              "kind": "receipt",
+              "eventId": "coord:cbc4bba8-a88e-4b86-9036-527c4e69dfbe:8",
+              "producedAt": "2026-10-06T13:41:08Z",
+              "producerAckAt": "2026-10-06T13:41:08.207Z",
+              "firstExposedAt": "2026-10-06T13:41:17.326Z",
+              "exposureChannel": "context_notification",
+              "exposureMs": 9326,
+              "firstUsefulActionAt": "2026-10-06T13:43:09.243Z",
+              "actionMs": 121243,
+              "classification": "end-only result recording"
+            }
+          ]
+        },
+        {
+          "role": "delivery",
+          "ok": true,
+          "resolved": {
+            "id": "gpt-6.1-sol",
+            "name": "GPT-6.1 Sol",
+            "api": "openai-codex-responses",
+            "provider": "openai-codex",
+            "baseUrl": "https://chatgpt.com/backend-api",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 2,
+              "output": 10,
+              "cacheRead": 0.1,
+              "cacheWrite": 2.5,
+              "tiers": [
+                {
+                  "inputTokensAbove": 272000,
+                  "input": 4,
+                  "output": 15,
+                  "cacheRead": 0.2,
+                  "cacheWrite": 5
+                }
+              ]
+            },
+            "contextWindow": 272000,
+            "maxTokens": 128000,
+            "thinkingLevelMap": {
+              "off": null,
+              "minimal": "low",
+              "low": "low",
+              "medium": "medium",
+              "high": "high",
+              "xhigh": "xhigh",
+              "max": "max"
+            },
+            "compat": {
+              "supportsOpenAIGrammarTools": true,
+              "supportsAdditionalTools": true,
+              "supportsToolSearch": true,
+              "supportsMidConvoSystemMessages": true
+            },
+            "inputLimits": {
+              "images": {
+                "resize": {
+                  "maxWidth": 2000,
+                  "maxHeight": 2000,
+                  "maxBytes": 4718592,
+                  "jpegQuality": 80
+                }
+              }
+            },
+            "type": "chat"
+          },
+          "turnMs": 204672,
+          "firstSubmissionMs": 187420,
+          "modelHttpAttempts": 19,
+          "modelLogicalRequests": 19,
+          "tokens": {
+            "input": 138336,
+            "output": 5969,
+            "cacheRead": 156160,
+            "cacheWrite": 0,
+            "totalTokens": 300465,
+            "reasoning": 255
+          },
+          "estimatedApiEquivalentUsd": 0.351978,
+          "unknownReservedApiEquivalentUsd": 0,
+          "sdkNominalCostUsd": 0.351978,
+          "actualBillingUsd": null,
+          "tools": 44,
+          "mcpTools": 19,
+          "boardChecks": 4,
+          "eventChecks": 0,
+          "awaitCalls": 3,
+          "notificationDismiss": 6,
+          "notificationHistory": 0,
+          "notificationsReceived": 23,
+          "notificationExposures": 50,
+          "notificationUniqueExposures": 23,
+          "notificationReinjections": 27,
+          "notificationDismissed": 23,
+          "successfulRoleVerifications": 2,
+          "verifiedOverlap": [
+            {
+              "time": "2026-10-06T13:41:17.691Z",
+              "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+              "proof": "role test command succeeded while another real Pi turn was still open",
+              "scope": "verified task work; turn overlap alone does not prove the peer was continuously computing"
+            },
+            {
+              "time": "2026-10-06T13:43:00.423Z",
+              "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs && npm test",
+              "proof": "role test command succeeded while another real Pi turn was still open",
+              "scope": "verified task work; turn overlap alone does not prove the peer was continuously computing"
+            }
+          ],
+          "eventMetrics": [
+            {
+              "kind": "noise",
+              "eventId": "coord:cbc4bba8-a88e-4b86-9036-527c4e69dfbe:7",
+              "producedAt": "2026-10-06T13:41:06Z",
+              "producerAckAt": "2026-10-06T13:41:06.197Z",
+              "firstExposedAt": "2026-10-06T13:41:11.705Z",
+              "exposureChannel": "context_notification",
+              "exposureMs": 5705,
+              "firstUsefulActionAt": null,
+              "actionMs": null,
+              "classification": "no action required"
+            },
+            {
+              "kind": "receipt",
+              "eventId": "coord:cbc4bba8-a88e-4b86-9036-527c4e69dfbe:8",
+              "producedAt": "2026-10-06T13:41:08Z",
+              "producerAckAt": "2026-10-06T13:41:08.207Z",
+              "firstExposedAt": "2026-10-06T13:41:11.705Z",
+              "exposureChannel": "context_notification",
+              "exposureMs": 3705,
+              "firstUsefulActionAt": "2026-10-06T13:43:08.241Z",
+              "actionMs": 120241,
+              "classification": "end-only result recording"
+            }
+          ]
+        },
+        {
+          "role": "view",
+          "ok": false,
+          "error": "pilot usage limit: conservative reservation exceeds budget",
+          "resolved": {
+            "id": "gpt-6.1-sol",
+            "name": "GPT-6.1 Sol",
+            "api": "openai-codex-responses",
+            "provider": "openai-codex",
+            "baseUrl": "https://chatgpt.com/backend-api",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 2,
+              "output": 10,
+              "cacheRead": 0.1,
+              "cacheWrite": 2.5,
+              "tiers": [
+                {
+                  "inputTokensAbove": 272000,
+                  "input": 4,
+                  "output": 15,
+                  "cacheRead": 0.2,
+                  "cacheWrite": 5
+                }
+              ]
+            },
+            "contextWindow": 272000,
+            "maxTokens": 128000,
+            "thinkingLevelMap": {
+              "off": null,
+              "minimal": "low",
+              "low": "low",
+              "medium": "medium",
+              "high": "high",
+              "xhigh": "xhigh",
+              "max": "max"
+            },
+            "compat": {
+              "supportsOpenAIGrammarTools": true,
+              "supportsAdditionalTools": true,
+              "supportsToolSearch": true,
+              "supportsMidConvoSystemMessages": true
+            },
+            "inputLimits": {
+              "images": {
+                "resize": {
+                  "maxWidth": 2000,
+                  "maxHeight": 2000,
+                  "maxBytes": 4718592,
+                  "jpegQuality": 80
+                }
+              }
+            },
+            "type": "chat"
+          },
+          "turnMs": 171359,
+          "firstSubmissionMs": null,
+          "modelHttpAttempts": 16,
+          "modelLogicalRequests": 17,
+          "tokens": {
+            "input": 191392,
+            "output": 5443,
+            "cacheRead": 36736,
+            "cacheWrite": 0,
+            "totalTokens": 233571,
+            "reasoning": 167
+          },
+          "estimatedApiEquivalentUsd": 0.4408876,
+          "unknownReservedApiEquivalentUsd": 0,
+          "sdkNominalCostUsd": 0.44088759999999994,
+          "actualBillingUsd": null,
+          "tools": 42,
+          "mcpTools": 15,
+          "boardChecks": 3,
+          "eventChecks": 0,
+          "awaitCalls": 0,
+          "notificationDismiss": 4,
+          "notificationHistory": 1,
+          "notificationsReceived": 25,
+          "notificationExposures": 63,
+          "notificationUniqueExposures": 21,
+          "notificationReinjections": 42,
+          "notificationDismissed": 21,
+          "successfulRoleVerifications": 2,
+          "verifiedOverlap": [
+            {
+              "time": "2026-10-06T13:41:38.749Z",
+              "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+              "proof": "role test command succeeded while another real Pi turn was still open",
+              "scope": "verified task work; turn overlap alone does not prove the peer was continuously computing"
+            },
+            {
+              "time": "2026-10-06T13:42:14.817Z",
+              "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+              "proof": "role test command succeeded while another real Pi turn was still open",
+              "scope": "verified task work; turn overlap alone does not prove the peer was continuously computing"
+            }
+          ],
+          "eventMetrics": [
+            {
+              "kind": "contract",
+              "eventId": "coord:cbc4bba8-a88e-4b86-9036-527c4e69dfbe:6",
+              "producedAt": "2026-10-06T13:41:06Z",
+              "producerAckAt": "2026-10-06T13:41:06.194Z",
+              "firstExposedAt": "2026-10-06T13:41:11.474Z",
+              "exposureChannel": "context_notification",
+              "exposureMs": 5474,
+              "firstUsefulActionAt": "2026-10-06T13:41:26.722Z",
+              "actionMs": 20722,
+              "classification": "implementation policy"
+            },
+            {
+              "kind": "noise",
+              "eventId": "coord:cbc4bba8-a88e-4b86-9036-527c4e69dfbe:7",
+              "producedAt": "2026-10-06T13:41:06Z",
+              "producerAckAt": "2026-10-06T13:41:06.197Z",
+              "firstExposedAt": "2026-10-06T13:41:11.474Z",
+              "exposureChannel": "context_notification",
+              "exposureMs": 5474,
+              "firstUsefulActionAt": null,
+              "actionMs": null,
+              "classification": "no action required"
+            },
+            {
+              "kind": "receipt",
+              "eventId": "coord:cbc4bba8-a88e-4b86-9036-527c4e69dfbe:8",
+              "producedAt": "2026-10-06T13:41:08Z",
+              "producerAckAt": "2026-10-06T13:41:08.207Z",
+              "firstExposedAt": "2026-10-06T13:41:11.474Z",
+              "exposureChannel": "context_notification",
+              "exposureMs": 3474,
+              "firstUsefulActionAt": null,
+              "actionMs": null,
+              "classification": "end-only result recording"
+            }
+          ]
+        }
+      ],
+      "cleanup": {
+        "serverExited": true,
+        "piExitCodes": {
+          "ingest": 0,
+          "delivery": 0,
+          "view": 0
+        },
+        "finishedAt": {
+          "time": "2026-10-06T13:43:25.826Z",
+          "monoMs": 423957469.240416
+        }
+      },
+      "evidence": "traces/group-N/summary.json",
+      "limits": [
+        "Three agents share machine/provider resources. One group per mode.",
+        "Telemetry changes between tool results may include another actor edit; exact tool arguments and source history must be checked for actor attribution.",
+        "This is a real implementation fixture, not production compile/CI and not an artificially timed 10-minute job."
+      ]
+    },
+    {
+      "mode": "PA",
+      "workload": "concurrent-pipeline-3pi-v1",
+      "passed": true,
+      "taskOracle": true,
+      "immutablePreserved": true,
+      "errors": [],
+      "groupTurnMs": 209434,
+      "startupAndTurnMs": 210369,
+      "apiEquivalentUsd": 0.5027344,
+      "unknownReservedApiEquivalentUsd": 0,
+      "sdkNominalCostUsd": 0.5027344,
+      "actualBillingUsd": null,
+      "httpAttempts": 82,
+      "tokens": 1168728,
+      "tools": 124,
+      "mcpTools": 63,
+      "boardChecks": 8,
+      "eventChecks": 16,
+      "awaitCalls": 4,
+      "verifiedOverlapCount": 6,
+      "participants": [
+        {
+          "role": "ingest",
+          "ok": true,
+          "resolved": {
+            "id": "gpt-6.1-sol",
+            "name": "GPT-6.1 Sol",
+            "api": "openai-codex-responses",
+            "provider": "openai-codex",
+            "baseUrl": "https://chatgpt.com/backend-api",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 2,
+              "output": 10,
+              "cacheRead": 0.1,
+              "cacheWrite": 2.5,
+              "tiers": [
+                {
+                  "inputTokensAbove": 272000,
+                  "input": 4,
+                  "output": 15,
+                  "cacheRead": 0.2,
+                  "cacheWrite": 5
+                }
+              ]
+            },
+            "contextWindow": 272000,
+            "maxTokens": 128000,
+            "thinkingLevelMap": {
+              "off": null,
+              "minimal": "low",
+              "low": "low",
+              "medium": "medium",
+              "high": "high",
+              "xhigh": "xhigh",
+              "max": "max"
+            },
+            "compat": {
+              "supportsOpenAIGrammarTools": true,
+              "supportsAdditionalTools": true,
+              "supportsToolSearch": true,
+              "supportsMidConvoSystemMessages": true
+            },
+            "inputLimits": {
+              "images": {
+                "resize": {
+                  "maxWidth": 2000,
+                  "maxHeight": 2000,
+                  "maxBytes": 4718592,
+                  "jpegQuality": 80
+                }
+              }
+            },
+            "type": "chat"
+          },
+          "turnMs": 209434,
+          "firstSubmissionMs": 191301,
+          "modelHttpAttempts": 24,
+          "modelLogicalRequests": 24,
+          "tokens": {
+            "input": 49140,
+            "output": 5463,
+            "cacheRead": 300160,
+            "cacheWrite": 0,
+            "totalTokens": 354763,
+            "reasoning": 346
+          },
+          "estimatedApiEquivalentUsd": 0.182926,
+          "unknownReservedApiEquivalentUsd": 0,
+          "sdkNominalCostUsd": 0.182926,
+          "actualBillingUsd": null,
+          "tools": 40,
+          "mcpTools": 21,
+          "boardChecks": 2,
+          "eventChecks": 5,
+          "awaitCalls": 2,
+          "notificationDismiss": 0,
+          "notificationHistory": 0,
+          "notificationsReceived": 0,
+          "notificationExposures": 0,
+          "notificationUniqueExposures": 0,
+          "notificationReinjections": 0,
+          "notificationDismissed": 0,
+          "successfulRoleVerifications": 2,
+          "verifiedOverlap": [
+            {
+              "time": "2026-10-06T13:36:06.226Z",
+              "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+              "proof": "role test command succeeded while another real Pi turn was still open",
+              "scope": "verified task work; turn overlap alone does not prove the peer was continuously computing"
+            },
+            {
+              "time": "2026-10-06T13:36:58.077Z",
+              "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+              "proof": "role test command succeeded while another real Pi turn was still open",
+              "scope": "verified task work; turn overlap alone does not prove the peer was continuously computing"
+            }
+          ],
+          "eventMetrics": [
+            {
+              "kind": "noise",
+              "eventId": "coord:82efead1-3f8d-448e-8307-969930ac2ef3:8",
+              "producedAt": "2026-10-06T13:35:35Z",
+              "producerAckAt": "2026-10-06T13:35:35.765Z",
+              "firstExposedAt": "2026-10-06T13:36:06.141Z",
+              "exposureChannel": "get_updates",
+              "exposureMs": 31141,
+              "firstUsefulActionAt": null,
+              "actionMs": null,
+              "classification": "no action required"
+            },
+            {
+              "kind": "receipt",
+              "eventId": "coord:82efead1-3f8d-448e-8307-969930ac2ef3:9",
+              "producedAt": "2026-10-06T13:36:03Z",
+              "producerAckAt": "2026-10-06T13:36:03.450Z",
+              "firstExposedAt": "2026-10-06T13:36:06.141Z",
+              "exposureChannel": "get_updates",
+              "exposureMs": 3141,
+              "firstUsefulActionAt": "2026-10-06T13:37:58.481Z",
+              "actionMs": 115481,
+              "classification": "end-only result recording"
+            }
+          ]
+        },
+        {
+          "role": "delivery",
+          "ok": true,
+          "resolved": {
+            "id": "gpt-6.1-sol",
+            "name": "GPT-6.1 Sol",
+            "api": "openai-codex-responses",
+            "provider": "openai-codex",
+            "baseUrl": "https://chatgpt.com/backend-api",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 2,
+              "output": 10,
+              "cacheRead": 0.1,
+              "cacheWrite": 2.5,
+              "tiers": [
+                {
+                  "inputTokensAbove": 272000,
+                  "input": 4,
+                  "output": 15,
+                  "cacheRead": 0.2,
+                  "cacheWrite": 5
+                }
+              ]
+            },
+            "contextWindow": 272000,
+            "maxTokens": 128000,
+            "thinkingLevelMap": {
+              "off": null,
+              "minimal": "low",
+              "low": "low",
+              "medium": "medium",
+              "high": "high",
+              "xhigh": "xhigh",
+              "max": "max"
+            },
+            "compat": {
+              "supportsOpenAIGrammarTools": true,
+              "supportsAdditionalTools": true,
+              "supportsToolSearch": true,
+              "supportsMidConvoSystemMessages": true
+            },
+            "inputLimits": {
+              "images": {
+                "resize": {
+                  "maxWidth": 2000,
+                  "maxHeight": 2000,
+                  "maxBytes": 4718592,
+                  "jpegQuality": 80
+                }
+              }
+            },
+            "type": "chat"
+          },
+          "turnMs": 208810,
+          "firstSubmissionMs": 194735,
+          "modelHttpAttempts": 31,
+          "modelLogicalRequests": 31,
+          "tokens": {
+            "input": 47303,
+            "output": 4918,
+            "cacheRead": 378752,
+            "cacheWrite": 0,
+            "totalTokens": 430973,
+            "reasoning": 230
+          },
+          "estimatedApiEquivalentUsd": 0.18166120000000002,
+          "unknownReservedApiEquivalentUsd": 0,
+          "sdkNominalCostUsd": 0.18166120000000002,
+          "actualBillingUsd": null,
+          "tools": 39,
+          "mcpTools": 19,
+          "boardChecks": 3,
+          "eventChecks": 4,
+          "awaitCalls": 1,
+          "notificationDismiss": 0,
+          "notificationHistory": 0,
+          "notificationsReceived": 0,
+          "notificationExposures": 0,
+          "notificationUniqueExposures": 0,
+          "notificationReinjections": 0,
+          "notificationDismissed": 0,
+          "successfulRoleVerifications": 2,
+          "verifiedOverlap": [
+            {
+              "time": "2026-10-06T13:36:20.446Z",
+              "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+              "proof": "role test command succeeded while another real Pi turn was still open",
+              "scope": "verified task work; turn overlap alone does not prove the peer was continuously computing"
+            },
+            {
+              "time": "2026-10-06T13:37:51.809Z",
+              "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs && npm test",
+              "proof": "role test command succeeded while another real Pi turn was still open",
+              "scope": "verified task work; turn overlap alone does not prove the peer was continuously computing"
+            }
+          ],
+          "eventMetrics": [
+            {
+              "kind": "noise",
+              "eventId": "coord:82efead1-3f8d-448e-8307-969930ac2ef3:8",
+              "producedAt": "2026-10-06T13:35:35Z",
+              "producerAckAt": "2026-10-06T13:35:35.765Z",
+              "firstExposedAt": "2026-10-06T13:36:24.130Z",
+              "exposureChannel": "get_updates",
+              "exposureMs": 49130,
+              "firstUsefulActionAt": null,
+              "actionMs": null,
+              "classification": "no action required"
+            },
+            {
+              "kind": "receipt",
+              "eventId": "coord:82efead1-3f8d-448e-8307-969930ac2ef3:9",
+              "producedAt": "2026-10-06T13:36:03Z",
+              "producerAckAt": "2026-10-06T13:36:03.450Z",
+              "firstExposedAt": "2026-10-06T13:36:24.130Z",
+              "exposureChannel": "get_updates",
+              "exposureMs": 21130,
+              "firstUsefulActionAt": "2026-10-06T13:38:01.915Z",
+              "actionMs": 118915,
+              "classification": "end-only result recording"
+            }
+          ]
+        },
+        {
+          "role": "view",
+          "ok": true,
+          "resolved": {
+            "id": "gpt-6.1-sol",
+            "name": "GPT-6.1 Sol",
+            "api": "openai-codex-responses",
+            "provider": "openai-codex",
+            "baseUrl": "https://chatgpt.com/backend-api",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 2,
+              "output": 10,
+              "cacheRead": 0.1,
+              "cacheWrite": 2.5,
+              "tiers": [
+                {
+                  "inputTokensAbove": 272000,
+                  "input": 4,
+                  "output": 15,
+                  "cacheRead": 0.2,
+                  "cacheWrite": 5
+                }
+              ]
+            },
+            "contextWindow": 272000,
+            "maxTokens": 128000,
+            "thinkingLevelMap": {
+              "off": null,
+              "minimal": "low",
+              "low": "low",
+              "medium": "medium",
+              "high": "high",
+              "xhigh": "xhigh",
+              "max": "max"
+            },
+            "compat": {
+              "supportsOpenAIGrammarTools": true,
+              "supportsAdditionalTools": true,
+              "supportsToolSearch": true,
+              "supportsMidConvoSystemMessages": true
+            },
+            "inputLimits": {
+              "images": {
+                "resize": {
+                  "maxWidth": 2000,
+                  "maxHeight": 2000,
+                  "maxBytes": 4718592,
+                  "jpegQuality": 80
+                }
+              }
+            },
+            "type": "chat"
+          },
+          "turnMs": 202302,
+          "firstSubmissionMs": 188801,
+          "modelHttpAttempts": 27,
+          "modelLogicalRequests": 27,
+          "tokens": {
+            "input": 26030,
+            "output": 5090,
+            "cacheRead": 351872,
+            "cacheWrite": 0,
+            "totalTokens": 382992,
+            "reasoning": 183
+          },
+          "estimatedApiEquivalentUsd": 0.1381472,
+          "unknownReservedApiEquivalentUsd": 0,
+          "sdkNominalCostUsd": 0.13814720000000003,
+          "actualBillingUsd": null,
+          "tools": 45,
+          "mcpTools": 23,
+          "boardChecks": 3,
+          "eventChecks": 7,
+          "awaitCalls": 1,
+          "notificationDismiss": 0,
+          "notificationHistory": 0,
+          "notificationsReceived": 0,
+          "notificationExposures": 0,
+          "notificationUniqueExposures": 0,
+          "notificationReinjections": 0,
+          "notificationDismissed": 0,
+          "successfulRoleVerifications": 2,
+          "verifiedOverlap": [
+            {
+              "time": "2026-10-06T13:36:03.392Z",
+              "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+              "proof": "role test command succeeded while another real Pi turn was still open",
+              "scope": "verified task work; turn overlap alone does not prove the peer was continuously computing"
+            },
+            {
+              "time": "2026-10-06T13:36:29.096Z",
+              "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+              "proof": "role test command succeeded while another real Pi turn was still open",
+              "scope": "verified task work; turn overlap alone does not prove the peer was continuously computing"
+            }
+          ],
+          "eventMetrics": [
+            {
+              "kind": "contract",
+              "eventId": "coord:82efead1-3f8d-448e-8307-969930ac2ef3:7",
+              "producedAt": "2026-10-06T13:35:35Z",
+              "producerAckAt": "2026-10-06T13:35:35.762Z",
+              "firstExposedAt": "2026-10-06T13:36:03.308Z",
+              "exposureChannel": "get_updates",
+              "exposureMs": 28308,
+              "firstUsefulActionAt": "2026-10-06T13:36:08.021Z",
+              "actionMs": 33021,
+              "classification": "implementation policy"
+            },
+            {
+              "kind": "noise",
+              "eventId": "coord:82efead1-3f8d-448e-8307-969930ac2ef3:8",
+              "producedAt": "2026-10-06T13:35:35Z",
+              "producerAckAt": "2026-10-06T13:35:35.765Z",
+              "firstExposedAt": "2026-10-06T13:36:03.308Z",
+              "exposureChannel": "get_updates",
+              "exposureMs": 28308,
+              "firstUsefulActionAt": null,
+              "actionMs": null,
+              "classification": "no action required"
+            },
+            {
+              "kind": "receipt",
+              "eventId": "coord:82efead1-3f8d-448e-8307-969930ac2ef3:9",
+              "producedAt": "2026-10-06T13:36:03Z",
+              "producerAckAt": "2026-10-06T13:36:03.450Z",
+              "firstExposedAt": "2026-10-06T13:36:29.013Z",
+              "exposureChannel": "get_updates",
+              "exposureMs": 26013,
+              "firstUsefulActionAt": "2026-10-06T13:37:55.982Z",
+              "actionMs": 112982,
+              "classification": "end-only result recording"
+            }
+          ]
+        }
+      ],
+      "cleanup": {
+        "serverExited": true,
+        "piExitCodes": {
+          "ingest": 0,
+          "delivery": 0,
+          "view": 0
+        },
+        "finishedAt": {
+          "time": "2026-10-06T13:38:16.952Z",
+          "monoMs": 423648596.224041
+        }
+      },
+      "evidence": "traces/group-PA/summary.json",
+      "limits": [
+        "Three agents share machine/provider resources. One group per mode.",
+        "Telemetry changes between tool results may include another actor edit; exact tool arguments and source history must be checked for actor attribution.",
+        "This is a real implementation fixture, not production compile/CI and not an artificially timed 10-minute job."
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "baseline": "PA",
+      "valid": false,
+      "absoluteApiEquivalentDeltaUsd": -0.6698252,
+      "relativeApiEquivalentSaving": -1.3323639679321724,
+      "absoluteWholeTurnDeltaMs": 4761,
+      "relativeWholeTurnSaving": 0.02273269860672097,
+      "absoluteTokenDelta": 391857,
+      "relativeTokenSaving": 0.3352850278251227,
+      "absoluteHttpDelta": 28,
+      "note": "Positive deltas favor N. Incomplete tasks cannot establish speed or efficiency benefits. One paired group per mode, exploratory."
+    }
+  ]
+}

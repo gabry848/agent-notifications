@@ -1,0 +1,399 @@
+{
+  "runId": "utility-lifecycle-six-jobs-2014-N-v3-compact-stable-batch",
+  "phase": "utility",
+  "scenario": "lifecycle-six-jobs",
+  "seed": 2014,
+  "mode": "N",
+  "variant": "v3",
+  "payload": "compact",
+  "position": "tail",
+  "cache": "stable",
+  "dismiss": "batch",
+  "contextEnabled": true,
+  "flow": "normal",
+  "created": {
+    "time": "2026-10-06T12:03:24.808Z",
+    "monoMs": 417956435.088291
+  },
+  "begun": {
+    "time": "2026-10-06T12:03:25.069Z",
+    "monoMs": 417956696.286
+  },
+  "ended": {
+    "time": "2026-10-06T12:04:39.306Z",
+    "monoMs": 418030932.010166
+  },
+  "error": null,
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 40,
+    "status": "blocked",
+    "jobIds": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ]
+  },
+  "filesPassed": true,
+  "transcriptBlockPersisted": false,
+  "assessment": {
+    "passed": true,
+    "failures": [],
+    "deliveryFailures": [],
+    "injectionFailures": [],
+    "logicalModelResponses": 8,
+    "modeCompliance": true
+  },
+  "metrics": {
+    "wallMs": 74235.72416597605,
+    "taskMs": 66068.26345801353,
+    "providerAttempts": 8,
+    "logicalModelCalls": 8,
+    "tokens": {
+      "input": 1904,
+      "output": 923,
+      "cacheRead": 16550,
+      "cacheWrite": 4658,
+      "totalTokens": 24035,
+      "reasoning": 12
+    },
+    "estimatedUsd": 0.026338000000000007,
+    "unconfirmedReservedUsd": 0,
+    "cacheHitRate": 0.7160782277604707,
+    "toolCalls": 14,
+    "toolNames": {
+      "start_job": 1,
+      "read_files": 1,
+      "write_file": 8,
+      "verify_files": 1,
+      "await_jobs": 1,
+      "submit_plan": 1,
+      "notifications_dismiss": 1
+    },
+    "mcpCalls": 2,
+    "externalApiInvocations": 0,
+    "mcpProtocolMessages": 5,
+    "statusChecks": 0,
+    "notificationHttpAttempts": 6,
+    "dismissCalls": 1,
+    "historyCalls": 0,
+    "fallbackAwaits": 1,
+    "notificationBytes": 5030,
+    "injectionMs": 2.9463329315185547,
+    "postSubmissionWorkCalls": 0,
+    "postSubmissionWork": [],
+    "reactions": [
+      {
+        "jobId": "b",
+        "timeSource": "local_worker_finished",
+        "producerMs": 10045.2326669693,
+        "deliveryMs": 39.49887502193451,
+        "exposureMs": 5219.286625027657,
+        "reactionUpperBoundMs": 52926.54845803976,
+        "exposedAtNaturalBoundary": true,
+        "receivedWhileAwaiting": false
+      },
+      {
+        "jobId": "d",
+        "timeSource": "local_worker_finished",
+        "producerMs": 20043.45383399725,
+        "deliveryMs": 10.095541000366211,
+        "exposureMs": 40012.01008296013,
+        "reactionUpperBoundMs": 42926.82345801592,
+        "exposedAtNaturalBoundary": true,
+        "receivedWhileAwaiting": false
+      },
+      {
+        "jobId": "f",
+        "timeSource": "local_worker_finished",
+        "producerMs": 30045.34945899248,
+        "deliveryMs": 8.097458004951477,
+        "exposureMs": 30008.021582961082,
+        "reactionUpperBoundMs": 32922.83495801687,
+        "exposedAtNaturalBoundary": true,
+        "receivedWhileAwaiting": true
+      },
+      {
+        "jobId": "c",
+        "timeSource": "local_worker_finished",
+        "producerMs": 40043.753167033195,
+        "deliveryMs": 9.378499984741211,
+        "exposureMs": 20012.40258294344,
+        "reactionUpperBoundMs": 22927.21595799923,
+        "exposedAtNaturalBoundary": true,
+        "receivedWhileAwaiting": true
+      },
+      {
+        "jobId": "e",
+        "timeSource": "local_worker_finished",
+        "producerMs": 50044.520084023476,
+        "deliveryMs": 6.010707974433899,
+        "exposureMs": 10010.323582947254,
+        "reactionUpperBoundMs": 12925.136958003044,
+        "exposedAtNaturalBoundary": true,
+        "receivedWhileAwaiting": true
+      },
+      {
+        "jobId": "a",
+        "timeSource": "local_worker_finished",
+        "producerMs": 60046.1534999609,
+        "deliveryMs": 9.306416034698486,
+        "exposureMs": 11.978332996368408,
+        "reactionUpperBoundMs": 2926.7917080521584,
+        "exposedAtNaturalBoundary": true,
+        "receivedWhileAwaiting": true
+      }
+    ],
+    "providerLatencies": [
+      {
+        "requestId": "c0d33552-e1ad-4176-97fb-dbb503d405c1",
+        "durationMs": 3080.5687910318375,
+        "firstTokenMs": 2712.054540991783
+      },
+      {
+        "requestId": "633f43ac-6f22-444b-abc6-6789cd6344dc",
+        "durationMs": 1750.3937919735909,
+        "firstTokenMs": 1632.4747079610825
+      },
+      {
+        "requestId": "42a04c9a-2baf-4cbb-9917-6ebfcb4a5f73",
+        "durationMs": 7806.188583016396,
+        "firstTokenMs": 7686.158749997616
+      },
+      {
+        "requestId": "6ebdcb6c-3adc-4bc6-84df-9e372a3776dd",
+        "durationMs": 5456.247708022594,
+        "firstTokenMs": 5374.551916003227
+      },
+      {
+        "requestId": "0e702f82-0be7-41b0-a7e0-14a80899cbac",
+        "durationMs": 6226.355417013168,
+        "firstTokenMs": 5274.75020802021
+      },
+      {
+        "requestId": "671099de-84d8-46e6-809c-bdf79216f76f",
+        "durationMs": 2806.9830000400543,
+        "firstTokenMs": 2250.697791993618
+      },
+      {
+        "requestId": "03e4aeb3-76e8-437e-960a-f3d50d132bda",
+        "durationMs": 4612.028375029564,
+        "firstTokenMs": 2609.686542034149
+      },
+      {
+        "requestId": "236f96ae-af92-4a0a-8d83-2c066f475266",
+        "durationMs": 3181.8779159784317,
+        "firstTokenMs": 1817.5622909665108
+      }
+    ],
+    "providerTotalMs": 34920.64358210564,
+    "pollingIntervalsMs": [],
+    "requestedPausesSeconds": [],
+    "startupMs": 261.1977090239525,
+    "totalWallMs": 74496.921875,
+    "notificationState": {
+      "total": 6,
+      "active": 0,
+      "dismissed": 6
+    }
+  },
+  "accounting": {
+    "requests": 8,
+    "estimatedUsd": 0.026338000000000007,
+    "unconfirmedReservedUsd": 0,
+    "tokens": {
+      "input": 1904,
+      "output": 923,
+      "cacheRead": 16550,
+      "cacheWrite": 4658,
+      "totalTokens": 24035,
+      "reasoning": 12
+    },
+    "rows": [
+      {
+        "id": "c0d33552-e1ad-4176-97fb-dbb503d405c1",
+        "run_id": "utility-lifecycle-six-jobs-2014-N-v3-compact-stable-batch",
+        "phase": "utility",
+        "reserved": 0.1452385,
+        "cost": 0.0039135,
+        "response_id": "resp_05eebd96a70324f0016ac4e38d6f1887d2a4cdb95bc23a0645",
+        "usage": {
+          "input": 38,
+          "cacheRead": 0,
+          "cacheWrite": 1419,
+          "output": 29,
+          "reasoning": 0,
+          "totalTokens": 1486
+        },
+        "state": "settled"
+      },
+      {
+        "id": "633f43ac-6f22-444b-abc6-6789cd6344dc",
+        "run_id": "utility-lifecycle-six-jobs-2014-N-v3-compact-stable-batch",
+        "phase": "utility",
+        "reserved": 0.154088,
+        "cost": 0.0010629,
+        "response_id": "resp_05eebd96a70324f0016ac4e390696c87d2868276f804b63428",
+        "usage": {
+          "input": 38,
+          "cacheRead": 1419,
+          "cacheWrite": 282,
+          "output": 14,
+          "reasoning": 0,
+          "totalTokens": 1753
+        },
+        "state": "settled"
+      },
+      {
+        "id": "42a04c9a-2baf-4cbb-9917-6ebfcb4a5f73",
+        "run_id": "utility-lifecycle-six-jobs-2014-N-v3-compact-stable-batch",
+        "phase": "utility",
+        "reserved": 0.1725625,
+        "cost": 0.005676100000000001,
+        "response_id": "resp_05eebd96a70324f0016ac4e392a61c87d2a3850541d386c535",
+        "usage": {
+          "input": 38,
+          "cacheRead": 1701,
+          "cacheWrite": 364,
+          "output": 452,
+          "reasoning": 0,
+          "totalTokens": 2555
+        },
+        "state": "settled"
+      },
+      {
+        "id": "6ebdcb6c-3adc-4bc6-84df-9e372a3776dd",
+        "run_id": "utility-lifecycle-six-jobs-2014-N-v3-compact-stable-batch",
+        "phase": "utility",
+        "reserved": 0.20125600000000002,
+        "cost": 0.0039839,
+        "response_id": "resp_05eebd96a70324f0016ac4e39a2d1087d2ad6409d966a0e8f2",
+        "usage": {
+          "input": 38,
+          "cacheRead": 1204,
+          "cacheWrite": 1459,
+          "output": 14,
+          "reasoning": 0,
+          "totalTokens": 2715
+        },
+        "state": "settled"
+      },
+      {
+        "id": "0e702f82-0be7-41b0-a7e0-14a80899cbac",
+        "run_id": "utility-lifecycle-six-jobs-2014-N-v3-compact-stable-batch",
+        "phase": "utility",
+        "reserved": 0.21285,
+        "cost": 0.0020488000000000004,
+        "response_id": "resp_05eebd96a70324f0016ac4e39fafc887d2932f2ba6626bd904",
+        "usage": {
+          "input": 160,
+          "cacheRead": 2663,
+          "cacheWrite": 197,
+          "output": 97,
+          "reasoning": 12,
+          "totalTokens": 3117
+        },
+        "state": "settled"
+      },
+      {
+        "id": "671099de-84d8-46e6-809c-bdf79216f76f",
+        "run_id": "utility-lifecycle-six-jobs-2014-N-v3-compact-stable-batch",
+        "phase": "utility",
+        "reserved": 0.2439415,
+        "cost": 0.0034775,
+        "response_id": "resp_05eebd96a70324f0016ac4e3ccf61487d2ad45e116d29c3f91",
+        "usage": {
+          "input": 777,
+          "cacheRead": 2860,
+          "cacheWrite": 443,
+          "output": 53,
+          "reasoning": 0,
+          "totalTokens": 4133
+        },
+        "state": "settled"
+      },
+      {
+        "id": "03e4aeb3-76e8-437e-960a-f3d50d132bda",
+        "run_id": "utility-lifecycle-six-jobs-2014-N-v3-compact-stable-batch",
+        "phase": "utility",
+        "reserved": 0.250338,
+        "cost": 0.0037868000000000003,
+        "response_id": "resp_05eebd96a70324f0016ac4e3cf8ce087d29029eef2774f6fff",
+        "usage": {
+          "input": 777,
+          "cacheRead": 3303,
+          "cacheWrite": 97,
+          "output": 166,
+          "reasoning": 0,
+          "totalTokens": 4343
+        },
+        "state": "settled"
+      },
+      {
+        "id": "236f96ae-af92-4a0a-8d83-2c066f475266",
+        "run_id": "utility-lifecycle-six-jobs-2014-N-v3-compact-stable-batch",
+        "phase": "utility",
+        "reserved": 0.249964,
+        "cost": 0.0023885,
+        "response_id": "resp_05eebd96a70324f0016ac4e3d4376087d282b7b1edca047372",
+        "usage": {
+          "input": 38,
+          "cacheRead": 3400,
+          "cacheWrite": 397,
+          "output": 98,
+          "reasoning": 0,
+          "totalTokens": 3933
+        },
+        "state": "settled"
+      }
+    ]
+  },
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "thinking": "medium",
+    "pricing": {
+      "model": "gpt-6.1-sol",
+      "currency": "USD",
+      "tier": "default",
+      "checkedAt": "2026-10-06",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "perMillion": {
+        "input": 2,
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "output": 10
+      },
+      "longContextThreshold": 272000
+    },
+    "sourceHash": "1b1daeaa6fa877cab3a231f68379a9a6a474b9c34f02d82d3f6287a333dbd84a",
+    "sourceHashes": {
+      "src/pi-extension.ts": "4ba39fa3f47c6dfdc5c186a9f1adee6f4a370b79ee4381f62de6faad0f6c25c8",
+      "src/store.mjs": "d905b654f31ee20643a7ec4e0889c3a0de6c3f94e3219dfb924c08cef3c4252d",
+      "src/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+      "benchmark/extension.ts": "df5500805027246e8d70d20f9d1ef4726bac71ded4a46e998a3dd29ba2b917a9",
+      "benchmark/run.mjs": "747529cd089416877d2b6aeeb6a0b02ef195ebf6a7546d6890a33d765d7276b4",
+      "benchmark/pi-client.mjs": "24f86e44ef36bff4a461620db7f7ea644e5756aaf37a2d77d5994ae1d12a617b",
+      "benchmark/jobs-server.mjs": "22f88ea60f6e51f209934ef8ea0d7e16d988bae7f1e402ed9bc4d18acc0c586b",
+      "benchmark/worker.mjs": "7d4696d4f189f1a55d1b9e45c9c39f6ffe7c94cc70c98ee4bbeacb8ee92a4743",
+      "benchmark/scenarios.mjs": "85d2e12cd77fb20469b571186753891d6fbe26bb865d9dc547b0189ba5b3ee58",
+      "benchmark/cache.mjs": "ed2a2abb0323462501bf0c70eb03746df632338baa431b603a89ab7c61454f64",
+      "benchmark/meter.mjs": "83dc728485f7afce7b7284e18f9d58b855676a06f5ff98f0693b9e0f6ef02fb4",
+      "benchmark/common.mjs": "3759ad5a84f6739ae3df5b86e3278deeb70d68109962b64f6b3deb3154f4c56b",
+      "benchmark/metrics.mjs": "88da81fbdc3f4312d2e3467a11f6f42bcfb941e7a7e7313bd76bd62af118b72f",
+      "benchmark/conclusions.mjs": "5c0610c9d8ec53057ffc38d1187e3bae26e7e122a4be89f635f6c36c7b702118",
+      "benchmark/sources.mjs": "c2dbb7aa641a69d65929b5243f71bd1d69c1b47d781b0359cd8f571579f7128f",
+      "prompts/v2.txt": "ace535bcfefbb4e7dddaf8313955f5c0e3e9c991f9c0c37f9edae266b7964efb",
+      "prompts/v3.txt": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+      "package.json": "df3dae03dcf528b5f6c7d77b352c1a5499bdea67ea730afd9acbc40362b75ea7",
+      "package-lock.json": "99488b53f03906b6b7fc0b71ae928aa15eafe072a65c951af3e1a0a18c90bf3d"
+    },
+    "promptHash": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+    "taskHash": "3185a570e909f1dcfcf2aaad6d5cdbec0aac8a8df446870826f28d4a799d1595",
+    "specHash": "1461269053ef88541dfd7533ecdf8c48009bce5ebec94a6cb24a14a75a85b143"
+  },
+  "budgetConservativeTotalUsd": 5.6436021
+}

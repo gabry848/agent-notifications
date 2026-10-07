@@ -1,0 +1,278 @@
+{
+  "selected": {
+    "variant": "v3",
+    "position": "tail",
+    "cache": "stable",
+    "payload": "compact",
+    "dismiss": "batch",
+    "promptHash": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+    "runtime": {
+      "hash": "1b1daeaa6fa877cab3a231f68379a9a6a474b9c34f02d82d3f6287a333dbd84a",
+      "hashes": {
+        "src/pi-extension.ts": "4ba39fa3f47c6dfdc5c186a9f1adee6f4a370b79ee4381f62de6faad0f6c25c8",
+        "src/store.mjs": "d905b654f31ee20643a7ec4e0889c3a0de6c3f94e3219dfb924c08cef3c4252d",
+        "src/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+        "benchmark/extension.ts": "df5500805027246e8d70d20f9d1ef4726bac71ded4a46e998a3dd29ba2b917a9",
+        "benchmark/run.mjs": "747529cd089416877d2b6aeeb6a0b02ef195ebf6a7546d6890a33d765d7276b4",
+        "benchmark/pi-client.mjs": "24f86e44ef36bff4a461620db7f7ea644e5756aaf37a2d77d5994ae1d12a617b",
+        "benchmark/jobs-server.mjs": "22f88ea60f6e51f209934ef8ea0d7e16d988bae7f1e402ed9bc4d18acc0c586b",
+        "benchmark/worker.mjs": "7d4696d4f189f1a55d1b9e45c9c39f6ffe7c94cc70c98ee4bbeacb8ee92a4743",
+        "benchmark/scenarios.mjs": "85d2e12cd77fb20469b571186753891d6fbe26bb865d9dc547b0189ba5b3ee58",
+        "benchmark/cache.mjs": "ed2a2abb0323462501bf0c70eb03746df632338baa431b603a89ab7c61454f64",
+        "benchmark/meter.mjs": "83dc728485f7afce7b7284e18f9d58b855676a06f5ff98f0693b9e0f6ef02fb4",
+        "benchmark/common.mjs": "3759ad5a84f6739ae3df5b86e3278deeb70d68109962b64f6b3deb3154f4c56b",
+        "benchmark/metrics.mjs": "88da81fbdc3f4312d2e3467a11f6f42bcfb941e7a7e7313bd76bd62af118b72f",
+        "benchmark/conclusions.mjs": "5c0610c9d8ec53057ffc38d1187e3bae26e7e122a4be89f635f6c36c7b702118",
+        "benchmark/sources.mjs": "c2dbb7aa641a69d65929b5243f71bd1d69c1b47d781b0359cd8f571579f7128f",
+        "prompts/v2.txt": "ace535bcfefbb4e7dddaf8313955f5c0e3e9c991f9c0c37f9edae266b7964efb",
+        "prompts/v3.txt": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+        "package.json": "df3dae03dcf528b5f6c7d77b352c1a5499bdea67ea730afd9acbc40362b75ea7",
+        "package-lock.json": "99488b53f03906b6b7fc0b71ae928aa15eafe072a65c951af3e1a0a18c90bf3d"
+      }
+    },
+    "selection": {
+      "prompt": [
+        {
+          "variant": "v3",
+          "correct": 10,
+          "cost": 0.0336144
+        },
+        {
+          "variant": "v2",
+          "correct": 9,
+          "cost": 0.033507150000000006
+        }
+      ],
+      "layout": [
+        {
+          "position": "tail",
+          "cache": "stable",
+          "n": 4,
+          "correct": 4,
+          "cost": 0.0234702,
+          "cacheHitRate": 0.6603636574880911
+        },
+        {
+          "position": "before-input",
+          "cache": "stable",
+          "n": 4,
+          "correct": 4,
+          "cost": 0.0277248,
+          "cacheHitRate": 0.5726076419905469
+        },
+        {
+          "position": "before-input",
+          "cache": "implicit",
+          "n": 4,
+          "correct": 4,
+          "cost": 0.038369150000000005,
+          "cacheHitRate": 0.3871772996354067
+        },
+        {
+          "position": "tail",
+          "cache": "implicit",
+          "n": 4,
+          "correct": 4,
+          "cost": 0.0404316,
+          "cacheHitRate": 0.375996287758109
+        }
+      ],
+      "payload": [
+        {
+          "payload": "compact",
+          "correct": 2,
+          "cost": 0.0302288
+        },
+        {
+          "payload": "full",
+          "correct": 0,
+          "cost": 0.030951649999999997
+        }
+      ],
+      "dismiss": [
+        {
+          "dismiss": "batch",
+          "n": 4,
+          "correct": 4,
+          "cleanupComplete": 4,
+          "cost": 0.03261975,
+          "modelHttp": 7,
+          "toolCalls": 13,
+          "dismissCalls": 1,
+          "tokens": 21722.5,
+          "turnSeconds": 26.90147618749738
+        },
+        {
+          "dismiss": "single",
+          "n": 4,
+          "correct": 4,
+          "cleanupComplete": 0,
+          "cost": 0.029926349999999997,
+          "modelHttp": 7,
+          "toolCalls": 13,
+          "dismissCalls": 1,
+          "tokens": 22570,
+          "turnSeconds": 22.679097896009687
+        }
+      ],
+      "dismissComparison": [
+        {
+          "scenario": "S6",
+          "reference": "single",
+          "metric": "estimatedUsd",
+          "pairs": 4,
+          "medianSaving": -0.0025341500000000024,
+          "medianSavingPct": -8.92975521755291,
+          "ci95": [
+            -0.005354699999999997,
+            0.006471199999999996
+          ],
+          "evidence": "exploratory"
+        },
+        {
+          "scenario": "S6",
+          "reference": "single",
+          "metric": "tokens.totalTokens",
+          "pairs": 4,
+          "medianSaving": 1594.5,
+          "medianSavingPct": 7.032229098023156,
+          "ci95": [
+            -1645,
+            7156
+          ],
+          "evidence": "exploratory"
+        },
+        {
+          "scenario": "S6",
+          "reference": "single",
+          "metric": "toolCalls",
+          "pairs": 4,
+          "medianSaving": 0,
+          "medianSavingPct": 0,
+          "ci95": [
+            -1,
+            1
+          ],
+          "evidence": "exploratory"
+        },
+        {
+          "scenario": "S6",
+          "reference": "single",
+          "metric": "providerAttempts",
+          "pairs": 4,
+          "medianSaving": 0.5,
+          "medianSavingPct": 6.25,
+          "ci95": [
+            0,
+            1
+          ],
+          "evidence": "exploratory"
+        },
+        {
+          "scenario": "S6",
+          "reference": "single",
+          "metric": "wallMs",
+          "pairs": 4,
+          "medianSaving": -4348.965104013681,
+          "medianSavingPct": -19.854770490027803,
+          "ci95": [
+            -9317.651207983494,
+            -1675.305833041668
+          ],
+          "evidence": "exploratory"
+        }
+      ],
+      "dismissRule": "Only consider a strategy with 4/4 verified tasks and zero active notifications after every turn; choose lower median cost. Otherwise retain single.",
+      "incompatible": []
+    },
+    "rule": "Development only. Correctness first; median API cost second. No changes after holdout starts.",
+    "createdAt": "2026-10-06T10:47:59.121Z"
+  },
+  "scenarios": [
+    {
+      "name": "S2",
+      "reference": "PA",
+      "developmentSavingPct": 23.47014529642592,
+      "developmentValidPairs": 5,
+      "notificationCorrect": 5,
+      "notificationTotal": 5,
+      "notificationAllAttemptsCostUsd": 0.053649999999999996
+    },
+    {
+      "name": "S6",
+      "reference": "P10",
+      "developmentSavingPct": null,
+      "developmentValidPairs": 0,
+      "notificationCorrect": 0,
+      "notificationTotal": 5,
+      "notificationAllAttemptsCostUsd": 0.32915
+    }
+  ],
+  "ranking": [
+    {
+      "name": "S2",
+      "reference": "PA",
+      "developmentSavingPct": 23.47014529642592,
+      "developmentValidPairs": 5,
+      "notificationCorrect": 5,
+      "notificationTotal": 5,
+      "notificationAllAttemptsCostUsd": 0.053649999999999996
+    },
+    {
+      "name": "S1",
+      "reference": "P10",
+      "developmentSavingPct": -14.006270665910478,
+      "developmentValidPairs": 5,
+      "notificationCorrect": 5,
+      "notificationTotal": 5,
+      "notificationAllAttemptsCostUsd": 0.053570000000000007
+    },
+    {
+      "name": "S4",
+      "reference": "PA",
+      "developmentSavingPct": -88.17040427100953,
+      "developmentValidPairs": 4,
+      "notificationCorrect": 4,
+      "notificationTotal": 5,
+      "notificationAllAttemptsCostUsd": 0.262424
+    },
+    {
+      "name": "S5",
+      "reference": "PA",
+      "developmentSavingPct": -100.8143864854228,
+      "developmentValidPairs": 5,
+      "notificationCorrect": 5,
+      "notificationTotal": 5,
+      "notificationAllAttemptsCostUsd": 0.1612015
+    },
+    {
+      "name": "S3",
+      "reference": "P10",
+      "developmentSavingPct": -104.7698911970744,
+      "developmentValidPairs": 5,
+      "notificationCorrect": 5,
+      "notificationTotal": 5,
+      "notificationAllAttemptsCostUsd": 0.16937
+    },
+    {
+      "name": "S6",
+      "reference": "P10",
+      "developmentSavingPct": null,
+      "developmentValidPairs": 0,
+      "notificationCorrect": 0,
+      "notificationTotal": 5,
+      "notificationAllAttemptsCostUsd": 0.32915
+    }
+  ],
+  "repeat": 10,
+  "criterion": {
+    "minimumCorrect": 9,
+    "minimumValidPairs": 10,
+    "costOrTokensSavingPct": 15,
+    "timeSavingPct": 10,
+    "timeMetric": "wallMs",
+    "pairedCi95LowerBound": 0
+  },
+  "selectionRule": "Best and worst development cost saving versus the most correct, then cheapest polling policy. W always included. Baselines receive the same cache strategy. Time benefit uses the complete turn including post-submission work, not the first submission alone.",
+  "createdAt": "2026-10-06T10:47:59.983Z"
+}

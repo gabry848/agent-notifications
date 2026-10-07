@@ -1,0 +1,553 @@
+{
+  "runId": "github-GH-cancelled-3202-P10-v3-compact-stable",
+  "phase": "github",
+  "scenario": "GH-cancelled",
+  "seed": 3202,
+  "mode": "P10",
+  "variant": "v3",
+  "payload": "compact",
+  "position": "tail",
+  "cache": "stable",
+  "dismiss": "single",
+  "contextEnabled": true,
+  "flow": "normal",
+  "created": {
+    "time": "2026-10-06T12:18:41.091Z",
+    "monoMs": 418872731.418541
+  },
+  "begun": {
+    "time": "2026-10-06T12:18:41.353Z",
+    "monoMs": 418872993.652333
+  },
+  "ended": {
+    "time": "2026-10-06T12:21:15.811Z",
+    "monoMs": 419027450.74875
+  },
+  "error": null,
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 0,
+    "status": "blocked",
+    "jobIds": [
+      "validation"
+    ]
+  },
+  "filesPassed": true,
+  "transcriptBlockPersisted": false,
+  "assessment": {
+    "passed": true,
+    "failures": [],
+    "deliveryFailures": [],
+    "injectionFailures": [],
+    "logicalModelResponses": 17,
+    "modeCompliance": true
+  },
+  "metrics": {
+    "wallMs": 154457.09641695023,
+    "taskMs": 147485.96674996614,
+    "providerAttempts": 17,
+    "logicalModelCalls": 17,
+    "tokens": {
+      "input": 2032,
+      "output": 914,
+      "cacheRead": 30219,
+      "cacheWrite": 4236,
+      "totalTokens": 37401,
+      "reasoning": 16
+    },
+    "estimatedUsd": 0.0268159,
+    "unconfirmedReservedUsd": 0,
+    "cacheHitRate": 0.8282127881163154,
+    "toolCalls": 23,
+    "toolNames": {
+      "start_job": 1,
+      "read_files": 1,
+      "get_job": 6,
+      "write_file": 8,
+      "verify_files": 1,
+      "pause": 5,
+      "submit_plan": 1
+    },
+    "mcpCalls": 12,
+    "mcpProtocolMessages": 15,
+    "statusChecks": 6,
+    "notificationHttpAttempts": 0,
+    "dismissCalls": 0,
+    "historyCalls": 0,
+    "fallbackAwaits": 0,
+    "notificationBytes": 0,
+    "injectionMs": 0,
+    "postSubmissionWorkCalls": 0,
+    "postSubmissionWork": [],
+    "reactions": [
+      {
+        "jobId": "validation",
+        "timeSource": "webhook_received",
+        "producerMs": 96965.21495902538,
+        "deliveryMs": null,
+        "exposureMs": 39743.57312500477,
+        "reactionUpperBoundMs": 47033.53533297777,
+        "exposedAtNaturalBoundary": false,
+        "receivedWhileAwaiting": false
+      }
+    ],
+    "providerLatencies": [
+      {
+        "requestId": "1c1e607c-67fc-4ffa-9085-ca52035cca1d",
+        "durationMs": 3476.6899160146713,
+        "firstTokenMs": 3156.755208015442
+      },
+      {
+        "requestId": "f3600463-cb52-490b-9fea-3cb31a8cfae0",
+        "durationMs": 3140.0331670045853,
+        "firstTokenMs": 3137.2117500305176
+      },
+      {
+        "requestId": "b7cd3719-270e-43fe-b7b4-4f1b82344f89",
+        "durationMs": 3586.863832950592,
+        "firstTokenMs": 3370.9322080016136
+      },
+      {
+        "requestId": "4eb9c89b-e1d6-4fc0-8f80-654e25079682",
+        "durationMs": 7469.972833991051,
+        "firstTokenMs": 7352.852874994278
+      },
+      {
+        "requestId": "88f7eb2f-a55d-4ae7-94a1-e278cca80edf",
+        "durationMs": 1952.710667014122,
+        "firstTokenMs": 1945.9944170117378
+      },
+      {
+        "requestId": "a61335b6-0e2c-4006-b64f-38921c5bc8cd",
+        "durationMs": 2254.1647920012474,
+        "firstTokenMs": 2122.0485419631004
+      },
+      {
+        "requestId": "39358280-a21e-4f38-a460-603ee89ef228",
+        "durationMs": 1725.7234579920769,
+        "firstTokenMs": 1532.5463750362396
+      },
+      {
+        "requestId": "3f1cbafd-f16d-4538-93e2-22960ee54456",
+        "durationMs": 3672.90945905447,
+        "firstTokenMs": 3135.84604203701
+      },
+      {
+        "requestId": "4b72802a-9fb4-4574-92b5-8c60e69d5971",
+        "durationMs": 2868.574624955654,
+        "firstTokenMs": 2762.9378330111504
+      },
+      {
+        "requestId": "1c6401b4-ccc7-4323-b5cc-fdbbf321d431",
+        "durationMs": 3476.9401670098305,
+        "firstTokenMs": 3369.321332991123
+      },
+      {
+        "requestId": "45feddcd-881d-4e1c-a1f6-9f07c26c838c",
+        "durationMs": 3884.2931669950485,
+        "firstTokenMs": 3774.2787079811096
+      },
+      {
+        "requestId": "0f51213a-8bdc-42e7-a687-459e863f9e77",
+        "durationMs": 4326.950874984264,
+        "firstTokenMs": 4037.9516249895096
+      },
+      {
+        "requestId": "8a044506-09eb-46e0-9027-83206497cf2c",
+        "durationMs": 5219.3766250014305,
+        "firstTokenMs": 4938.0910840034485
+      },
+      {
+        "requestId": "9a94f7e8-f96a-4463-85a1-442fcca502a8",
+        "durationMs": 5354.134832978249,
+        "firstTokenMs": 4469.272166967392
+      },
+      {
+        "requestId": "b114c02f-3dcf-4c89-a3c6-51a6bd484ed6",
+        "durationMs": 6886.816083014011,
+        "firstTokenMs": 6503.5909160375595
+      },
+      {
+        "requestId": "680ff47e-0fab-4771-8ee4-745d7a555f7e",
+        "durationMs": 7187.039958000183,
+        "firstTokenMs": 6821.0943749547005
+      },
+      {
+        "requestId": "3d2da24a-cf5a-4aa5-b96e-4093a9d3f069",
+        "durationMs": 6802.265208005905,
+        "firstTokenMs": 5131.378499984741
+      }
+    ],
+    "providerTotalMs": 73285.45966696739,
+    "pollingIntervalsMs": [
+      24010.34500002861,
+      17147.227458000183,
+      17982.952458024025,
+      20058.08891695738,
+      42832.550042033195
+    ],
+    "requestedPausesSeconds": [
+      10,
+      10,
+      10,
+      10,
+      30
+    ],
+    "startupMs": 262.23379200696945,
+    "totalWallMs": 154719.3302089572,
+    "notificationState": {
+      "total": 0,
+      "active": 0,
+      "dismissed": 0
+    }
+  },
+  "accounting": {
+    "requests": 17,
+    "estimatedUsd": 0.0268159,
+    "unconfirmedReservedUsd": 0,
+    "tokens": {
+      "input": 2032,
+      "output": 914,
+      "cacheRead": 30219,
+      "cacheWrite": 4236,
+      "totalTokens": 37401,
+      "reasoning": 16
+    },
+    "rows": [
+      {
+        "id": "1c1e607c-67fc-4ffa-9085-ca52035cca1d",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.140866,
+        "cost": 0.002128,
+        "response_id": "resp_0089e9ba638eb533016ac4e721c10087d2a237d1905bc13c7b",
+        "usage": {
+          "input": 969,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 988
+        },
+        "state": "settled"
+      },
+      {
+        "id": "f3600463-cb52-490b-9fea-3cb31a8cfae0",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.1460635,
+        "cost": 0.002176,
+        "response_id": "resp_0089e9ba638eb533016ac4e72cb66887d2994a13c200ec61b0",
+        "usage": {
+          "input": 1018,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "output": 14,
+          "reasoning": 0,
+          "totalTokens": 1032
+        },
+        "state": "settled"
+      },
+      {
+        "id": "b7cd3719-270e-43fe-b7b4-4f1b82344f89",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.1642905,
+        "cost": 0.0036435,
+        "response_id": "resp_0089e9ba638eb533016ac4e73057fc87d29f6be6169450ce02",
+        "usage": {
+          "input": 3,
+          "cacheRead": 0,
+          "cacheWrite": 1379,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 1401
+        },
+        "state": "settled"
+      },
+      {
+        "id": "4eb9c89b-e1d6-4fc0-8f80-654e25079682",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.16934500000000002,
+        "cost": 0.0047789,
+        "response_id": "resp_0089e9ba638eb533016ac4e733dc3487d291257880910c4488",
+        "usage": {
+          "input": 3,
+          "cacheRead": 1379,
+          "cacheWrite": 46,
+          "output": 452,
+          "reasoning": 0,
+          "totalTokens": 1880
+        },
+        "state": "settled"
+      },
+      {
+        "id": "88f7eb2f-a55d-4ae7-94a1-e278cca80edf",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.1978955,
+        "cost": 0.0052035,
+        "response_id": "resp_0089e9ba638eb533016ac4e73b567887d2bb181c5d8630d8fa",
+        "usage": {
+          "input": 3,
+          "cacheRead": 0,
+          "cacheWrite": 2023,
+          "output": 14,
+          "reasoning": 0,
+          "totalTokens": 2040
+        },
+        "state": "settled"
+      },
+      {
+        "id": "a61335b6-0e2c-4006-b64f-38921c5bc8cd",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.2072235,
+        "cost": 0.0008707999999999999,
+        "response_id": "resp_0089e9ba638eb533016ac4e73d4ed087d287ee4a5d3d6141df",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2023,
+          "cacheWrite": 197,
+          "output": 17,
+          "reasoning": 0,
+          "totalTokens": 2240
+        },
+        "state": "settled"
+      },
+      {
+        "id": "39358280-a21e-4f38-a460-603ee89ef228",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.21202500000000002,
+        "cost": 0.000503,
+        "response_id": "resp_0089e9ba638eb533016ac4e749b33c87d2b17b841612b3d897",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2220,
+          "cacheWrite": 34,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 2276
+        },
+        "state": "settled"
+      },
+      {
+        "id": "3f1cbafd-f16d-4538-93e2-22960ee54456",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.217261,
+        "cost": 0.0006064,
+        "response_id": "resp_0089e9ba638eb533016ac4e74bcf8087d282d40a53b3f49b58",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2254,
+          "cacheWrite": 46,
+          "output": 26,
+          "reasoning": 7,
+          "totalTokens": 2329
+        },
+        "state": "settled"
+      },
+      {
+        "id": "4b72802a-9fb4-4574-92b5-8c60e69d5971",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.229966,
+        "cost": 0.0005335,
+        "response_id": "resp_0089e9ba638eb533016ac4e759c75887d28dad0e5e59306801",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2300,
+          "cacheWrite": 43,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 2365
+        },
+        "state": "settled"
+      },
+      {
+        "id": "1c6401b4-ccc7-4323-b5cc-fdbbf321d431",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.23505900000000002,
+        "cost": 0.0005252999999999999,
+        "response_id": "resp_0089e9ba638eb533016ac4e75cf2e087d2a66b4a3346cce022",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2343,
+          "cacheWrite": 46,
+          "output": 17,
+          "reasoning": 0,
+          "totalTokens": 2409
+        },
+        "state": "settled"
+      },
+      {
+        "id": "45feddcd-881d-4e1c-a1f6-9f07c26c838c",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.239921,
+        "cost": 0.0005199,
+        "response_id": "resp_0089e9ba638eb533016ac4e76aa54887d29fabaa20f92da903",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2389,
+          "cacheWrite": 34,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 2445
+        },
+        "state": "settled"
+      },
+      {
+        "id": "0f51213a-8bdc-42e7-a687-459e863f9e77",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.245091,
+        "cost": 0.0005333,
+        "response_id": "resp_0089e9ba638eb533016ac4e76ef4c487d28bf6e8d220c4a02b",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2423,
+          "cacheWrite": 46,
+          "output": 17,
+          "reasoning": 0,
+          "totalTokens": 2489
+        },
+        "state": "settled"
+      },
+      {
+        "id": "8a044506-09eb-46e0-9027-83206497cf2c",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.2498815,
+        "cost": 0.0005279,
+        "response_id": "resp_0089e9ba638eb533016ac4e77d65e887d2b649a668c32f8e23",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2469,
+          "cacheWrite": 34,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 2525
+        },
+        "state": "settled"
+      },
+      {
+        "id": "9a94f7e8-f96a-4463-85a1-442fcca502a8",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.2551175,
+        "cost": 0.0011413,
+        "response_id": "resp_0089e9ba638eb533016ac4e782fabc87d2ab1409ecfce8cbce",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2503,
+          "cacheWrite": 46,
+          "output": 77,
+          "reasoning": 9,
+          "totalTokens": 2629
+        },
+        "state": "settled"
+      },
+      {
+        "id": "b114c02f-3dcf-4c89-a3c6-51a6bd484ed6",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.26966500000000004,
+        "cost": 0.0006859,
+        "response_id": "resp_0089e9ba638eb533016ac4e7a6a77887d29d8943a660817df8",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2549,
+          "cacheWrite": 94,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 2665
+        },
+        "state": "settled"
+      },
+      {
+        "id": "680ff47e-0fab-4771-8ee4-745d7a555f7e",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.2754455,
+        "cost": 0.0009027999999999999,
+        "response_id": "resp_0089e9ba638eb533016ac4e7add99487d2a46a4daa5b9578dc",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2643,
+          "cacheWrite": 81,
+          "output": 43,
+          "reasoning": 0,
+          "totalTokens": 2770
+        },
+        "state": "settled"
+      },
+      {
+        "id": "3d2da24a-cf5a-4aa5-b96e-4093a9d3f069",
+        "run_id": "github-GH-cancelled-3202-P10-v3-compact-stable",
+        "phase": "github",
+        "reserved": 0.2817045,
+        "cost": 0.0015359000000000002,
+        "response_id": "resp_0089e9ba638eb533016ac4e7b52c9087d2b7a9b304bda08392",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2724,
+          "cacheWrite": 87,
+          "output": 104,
+          "reasoning": 0,
+          "totalTokens": 2918
+        },
+        "state": "settled"
+      }
+    ]
+  },
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "thinking": "medium",
+    "pricing": {
+      "model": "gpt-6.1-sol",
+      "currency": "USD",
+      "tier": "default",
+      "checkedAt": "2026-10-06",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "perMillion": {
+        "input": 2,
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "output": 10
+      },
+      "longContextThreshold": 272000
+    },
+    "sourceHash": "1b1daeaa6fa877cab3a231f68379a9a6a474b9c34f02d82d3f6287a333dbd84a",
+    "sourceHashes": {
+      "src/pi-extension.ts": "4ba39fa3f47c6dfdc5c186a9f1adee6f4a370b79ee4381f62de6faad0f6c25c8",
+      "src/store.mjs": "d905b654f31ee20643a7ec4e0889c3a0de6c3f94e3219dfb924c08cef3c4252d",
+      "src/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+      "benchmark/extension.ts": "df5500805027246e8d70d20f9d1ef4726bac71ded4a46e998a3dd29ba2b917a9",
+      "benchmark/run.mjs": "747529cd089416877d2b6aeeb6a0b02ef195ebf6a7546d6890a33d765d7276b4",
+      "benchmark/pi-client.mjs": "24f86e44ef36bff4a461620db7f7ea644e5756aaf37a2d77d5994ae1d12a617b",
+      "benchmark/jobs-server.mjs": "22f88ea60f6e51f209934ef8ea0d7e16d988bae7f1e402ed9bc4d18acc0c586b",
+      "benchmark/worker.mjs": "7d4696d4f189f1a55d1b9e45c9c39f6ffe7c94cc70c98ee4bbeacb8ee92a4743",
+      "benchmark/scenarios.mjs": "85d2e12cd77fb20469b571186753891d6fbe26bb865d9dc547b0189ba5b3ee58",
+      "benchmark/cache.mjs": "ed2a2abb0323462501bf0c70eb03746df632338baa431b603a89ab7c61454f64",
+      "benchmark/meter.mjs": "83dc728485f7afce7b7284e18f9d58b855676a06f5ff98f0693b9e0f6ef02fb4",
+      "benchmark/common.mjs": "3759ad5a84f6739ae3df5b86e3278deeb70d68109962b64f6b3deb3154f4c56b",
+      "benchmark/metrics.mjs": "88da81fbdc3f4312d2e3467a11f6f42bcfb941e7a7e7313bd76bd62af118b72f",
+      "benchmark/conclusions.mjs": "5c0610c9d8ec53057ffc38d1187e3bae26e7e122a4be89f635f6c36c7b702118",
+      "benchmark/sources.mjs": "c2dbb7aa641a69d65929b5243f71bd1d69c1b47d781b0359cd8f571579f7128f",
+      "prompts/v2.txt": "ace535bcfefbb4e7dddaf8313955f5c0e3e9c991f9c0c37f9edae266b7964efb",
+      "prompts/v3.txt": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+      "package.json": "df3dae03dcf528b5f6c7d77b352c1a5499bdea67ea730afd9acbc40362b75ea7",
+      "package-lock.json": "99488b53f03906b6b7fc0b71ae928aa15eafe072a65c951af3e1a0a18c90bf3d"
+    },
+    "promptHash": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+    "taskHash": "3c7653ff55c3c5f0613154824d44c006c9dce7dfeb1e1586a54fbf711ab72656",
+    "specHash": "eb94fad007999bcf1eb0029ed46fe13d291650760cd3c98d625cffd624be96a9"
+  },
+  "budgetConservativeTotalUsd": 6.0952918
+}

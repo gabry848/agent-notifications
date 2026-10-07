@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "verifiedAt": "2026-10-06T15:23:53.597594+00:00",
+  "scope": "Consolidated research artifact; no new benchmark execution",
+  "data": {
+    "generatedAt": "2026-10-06T15:23:31.156Z",
+    "allLedgersReconciled": true,
+    "allRunsReconciled": true,
+    "settledRequests": 2359,
+    "measuredRuns": 283,
+    "initialAttemptsSeparate": 42,
+    "uniqueHtmlIds": true,
+    "allLocalLinksExist": true,
+    "scriptSyntaxValid": true,
+    "embeddedDataMatches": true,
+    "cacheDeliveryHashMismatches": [],
+    "originalArtifactsOverwritten": false,
+    "newModelInferences": 0,
+    "browserVerification": "passed; see verification.json"
+  },
+  "csvRows": {
+    "runs": 283,
+    "requests": 2359,
+    "comparisons": 196,
+    "initialAttempts": 42
+  },
+  "csvTokensAndCostsReconciled": true,
+  "sourceHashMismatches": 0,
+  "browser": "BrowserOS neo",
+  "desktop": {
+    "viewportWidth": 1816,
+    "documentWidth": 1816,
+    "visualCheckPassed": true
+  },
+  "mobile": {
+    "viewportWidth": 390,
+    "documentWidth": 390,
+    "navigationHeight": 50.09375,
+    "appendixTableScrollable": true,
+    "visualCheckPassed": true
+  },
+  "interactions": {
+    "cacheMetricSelection": true,
+    "prototypeSelection": true,
+    "campaignFilter": true,
+    "incompleteEpisodeFilter": true,
+    "search": true,
+    "pagination": true,
+    "appendixDisclosure42Rows": true
+  },
+  "newModelInferences": 0,
+  "artifactSha256": {
+    "research.html": "3ad287bffd2aa952daf00c9b3f468edb875d118e53d0e1f75b33c448c697d9c7",
+    "data.json": "304a9e779c28749c765b3c9e5a0e671820e0d90f110133700956ea468df94ea8",
+    "runs.csv": "9b022e3fee7e7a4d873b4070fd19178ce86faaac0566945e71e022cd57f72542",
+    "requests.csv": "80b4db82864476647259297fdb70c2a19e3a72758a769acb5cbdd4a1e6ef4fd9",
+    "comparisons.csv": "15aa7609f2df9a3c255073b1675b0916c0ec25241841d0af048be076629b964d",
+    "initial-observations.csv": "da5d3e01a656edc66adbacfaa0db968f4a6699fb5dd9cedd7f585ee6e17c46a6",
+    "source-manifest.json": "1a46fb095922a1e7475b860b56e585af90c4537f10124b028c85037d86a79636",
+    "data-verification.json": "f25cf07ca81d1b82ddde5e0d5a93941ca5c5ea57139dace0f865bbb7bb09aaed",
+    "template.html": "84a356d3bb505e7a8833b1851137d3078c4e0f0302d6b654933cf98e46cd2d6b",
+    "build.mjs": "7314f0a910c176b61df670e1ba9d79029313853e2f6405fc139bfa96b1740def"
+  }
+}

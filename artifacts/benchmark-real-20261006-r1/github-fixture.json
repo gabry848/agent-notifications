@@ -1,0 +1,14 @@
+{
+  "repo": "gabry848/pi-notifications-bench-20261006",
+  "repoId": 1406995355,
+  "ref": "codex/notification-benchmark-fixture",
+  "workflow": "bench.yml",
+  "url": "https://github.com/gabry848/pi-notifications-bench-20261006",
+  "private": true,
+  "commit": "550c5ba",
+  "localCheckout": "/private/tmp/pi-notifications-bench-20261006",
+  "workflowId": 376203237,
+  "workflowState": "active",
+  "workflowHash": "e70b504e06cbb984a6c712d52fc3767da08ecbf64d570802f1ffea49e2f1d680",
+  "remoteContentVerifiedAt": "2026-10-06T09:06:24.788Z"
+}

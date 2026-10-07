@@ -1,0 +1,40 @@
+{
+  "name": "conflicting",
+  "repetition": 3,
+  "prompt": "v1",
+  "provider": "openai",
+  "model": "gpt-6.1-sol",
+  "thinking": "medium",
+  "started": "2026-10-05T20:48:52.774Z",
+  "finished": "2026-10-05T20:48:53.996Z",
+  "notifications": [],
+  "idleVerified": null,
+  "historyText": "",
+  "assistantText": "",
+  "error": "Connection error.",
+  "assessment": {
+    "injectionPass": false,
+    "injectionFailures": [
+      "Connection error.",
+      "Not all notifications were delivered"
+    ],
+    "providerChecks": [
+      {
+        "call": 1,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      }
+    ],
+    "behaviorPass": false,
+    "behaviorMismatches": [
+      "region: expected eu-west-1, got undefined",
+      "release: expected v1.4, got undefined",
+      "status: expected blocked, got undefined"
+    ],
+    "historyPass": null,
+    "exposure": [],
+    "lifecycleExplicitlyRequested": false
+  }
+}

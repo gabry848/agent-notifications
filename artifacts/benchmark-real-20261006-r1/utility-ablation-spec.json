@@ -1,0 +1,25 @@
+{
+  "name": "unsolicited",
+  "seed": 2006,
+  "batch": 772392740,
+  "independent": true,
+  "expected": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 772392740,
+    "status": "ready"
+  },
+  "jobs": [
+    {
+      "id": "validation",
+      "durationMs": 3000,
+      "status": "succeeded",
+      "result": {
+        "maxBatch": 772392740,
+        "release": "v1.4",
+        "region": "eu-west-1"
+      }
+    }
+  ],
+  "unsolicited": true
+}

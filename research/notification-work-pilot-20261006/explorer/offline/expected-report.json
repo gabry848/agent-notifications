@@ -1,0 +1,12 @@
+{
+  "reportId": "audit-4101",
+  "kind": "compatibility",
+  "revision": 1,
+  "records": 4096,
+  "sha256": "1707ad42daf27c0d4beab040452efd52d6811be0285d9eae78174848d239824a",
+  "deployment": {
+    "maxPayloadBytes": 8192,
+    "retryCapMs": 4999,
+    "preferredRegion": "eu-west"
+  }
+}

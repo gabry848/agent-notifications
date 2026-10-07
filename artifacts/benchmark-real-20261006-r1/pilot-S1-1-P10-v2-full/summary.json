@@ -1,0 +1,222 @@
+{
+  "runId": "pilot-S1-1-P10-v2-full",
+  "phase": "pilot",
+  "scenario": "S1",
+  "seed": 1,
+  "mode": "P10",
+  "variant": "v2",
+  "payload": "full",
+  "created": {
+    "time": "2026-10-06T08:35:23.506Z",
+    "monoMs": 405475120.634083
+  },
+  "begun": {
+    "time": "2026-10-06T08:35:23.766Z",
+    "monoMs": 405475380.565791
+  },
+  "ended": {
+    "time": "2026-10-06T08:35:47.317Z",
+    "monoMs": 405498930.728625
+  },
+  "error": null,
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 11,
+    "status": "ready",
+    "jobIds": [
+      "validation"
+    ]
+  },
+  "filesPassed": true,
+  "transcriptBlockPersisted": false,
+  "assessment": {
+    "passed": true,
+    "failures": [],
+    "injectionFailures": [],
+    "logicalModelResponses": 6,
+    "modeCompliance": true
+  },
+  "metrics": {
+    "wallMs": 23550.162833988667,
+    "taskMs": 21168.432958960533,
+    "providerAttempts": 6,
+    "logicalModelCalls": 6,
+    "tokens": {
+      "input": 1950,
+      "output": 178,
+      "cacheRead": 3419,
+      "cacheWrite": 1324,
+      "totalTokens": 6871,
+      "reasoning": 0
+    },
+    "estimatedUsd": 0.009331899999999999,
+    "unconfirmedReservedUsd": 0,
+    "toolCalls": 5,
+    "toolNames": {
+      "start_job": 1,
+      "get_job": 2,
+      "pause": 1,
+      "submit_plan": 1
+    },
+    "mcpCalls": 4,
+    "mcpProtocolMessages": 7,
+    "statusChecks": 2,
+    "notificationHttpAttempts": 0,
+    "dismissCalls": 0,
+    "historyCalls": 0,
+    "fallbackAwaits": 0,
+    "notificationBytes": 0,
+    "injectionMs": 0,
+    "reactions": [
+      {
+        "jobId": "validation",
+        "producerMs": 2048.4889999628067,
+        "deliveryMs": null,
+        "exposureMs": 14557.397125005722,
+        "reactionUpperBoundMs": 17035.3471249938,
+        "receivedDuringActiveWork": false
+      }
+    ],
+    "startupMs": 259.93170803785324
+  },
+  "accounting": {
+    "requests": 6,
+    "estimatedUsd": 0.009331899999999999,
+    "unconfirmedReservedUsd": 0,
+    "tokens": {
+      "input": 1950,
+      "output": 178,
+      "cacheRead": 3419,
+      "cacheWrite": 1324,
+      "totalTokens": 6871,
+      "reasoning": 0
+    },
+    "rows": [
+      {
+        "id": "e6a117f8-735b-4486-84c5-5af8ef413b8a",
+        "run_id": "pilot-S1-1-P10-v2-full",
+        "phase": "pilot",
+        "reserved": 0.13985950000000003,
+        "cost": 0.002056,
+        "response_id": "resp_05c4cd2a3369ed9c016ac4b2cc2a6887d2b47f668ebd9507f2",
+        "usage": {
+          "input": 933,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 952
+        },
+        "state": "settled"
+      },
+      {
+        "id": "5510acc4-39dd-4e3a-bb46-d1c3242fae0b",
+        "run_id": "pilot-S1-1-P10-v2-full",
+        "phase": "pilot",
+        "reserved": 0.145376,
+        "cost": 0.0022,
+        "response_id": "resp_05c4cd2a3369ed9c016ac4b2ce1e4487d2b339d70030e826cb",
+        "usage": {
+          "input": 1005,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 1024
+        },
+        "state": "settled"
+      },
+      {
+        "id": "d156ba71-d5e9-473a-9e52-57283b9b2388",
+        "run_id": "pilot-S1-1-P10-v2-full",
+        "phase": "pilot",
+        "reserved": 0.15072200000000002,
+        "cost": 0.002861,
+        "response_id": "resp_05c4cd2a3369ed9c016ac4b2d003d087d29c7a20d8060eb6d8",
+        "usage": {
+          "input": 3,
+          "cacheRead": 0,
+          "cacheWrite": 1074,
+          "output": 17,
+          "reasoning": 0,
+          "totalTokens": 1094
+        },
+        "state": "settled"
+      },
+      {
+        "id": "3063e5d2-a122-4c52-822a-73bb9609a371",
+        "run_id": "pilot-S1-1-P10-v2-full",
+        "phase": "pilot",
+        "reserved": 0.1554575,
+        "cost": 0.00038839999999999995,
+        "response_id": "resp_05c4cd2a3369ed9c016ac4b2dd10f487d2822faae5945ff2fa",
+        "usage": {
+          "input": 3,
+          "cacheRead": 1074,
+          "cacheWrite": 34,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 1130
+        },
+        "state": "settled"
+      },
+      {
+        "id": "95e256f6-a3fe-4ea5-aa6f-ce96477d8c52",
+        "run_id": "pilot-S1-1-P10-v2-full",
+        "phase": "pilot",
+        "reserved": 0.161931,
+        "cost": 0.0008692999999999999,
+        "response_id": "resp_05c4cd2a3369ed9c016ac4b2deb3e487d28f46aed5ba09fce2",
+        "usage": {
+          "input": 3,
+          "cacheRead": 1108,
+          "cacheWrite": 129,
+          "output": 43,
+          "reasoning": 0,
+          "totalTokens": 1283
+        },
+        "state": "settled"
+      },
+      {
+        "id": "d438b880-f1e2-456e-8a57-531648b60e2a",
+        "run_id": "pilot-S1-1-P10-v2-full",
+        "phase": "pilot",
+        "reserved": 0.16819,
+        "cost": 0.0009572000000000001,
+        "response_id": "resp_05c4cd2a3369ed9c016ac4b2e1498c87d2902e118a8acfcf65",
+        "usage": {
+          "input": 3,
+          "cacheRead": 1237,
+          "cacheWrite": 87,
+          "output": 61,
+          "reasoning": 0,
+          "totalTokens": 1388
+        },
+        "state": "settled"
+      }
+    ]
+  },
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "thinking": "medium",
+    "pricing": {
+      "model": "gpt-6.1-sol",
+      "currency": "USD",
+      "tier": "default",
+      "checkedAt": "2026-10-06",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "perMillion": {
+        "input": 2,
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "output": 10
+      },
+      "longContextThreshold": 272000
+    },
+    "promptHash": "ace535bcfefbb4e7dddaf8313955f5c0e3e9c991f9c0c37f9edae266b7964efb",
+    "taskHash": "dbd54b03a18bbfd1edd61f89e370b6decab021984be34a68d63f2f5426a04dc3",
+    "specHash": "33384d401aafdafb54afd597c4bcdd4fcc7cb52e642ff6d5f9ece6a41bd24ac8"
+  },
+  "budgetConservativeTotalUsd": 0.0175546
+}

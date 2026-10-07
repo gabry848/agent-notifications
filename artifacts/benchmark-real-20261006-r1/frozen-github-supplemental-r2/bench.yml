@@ -1,0 +1,29 @@
+name: Notification benchmark
+run-name: bench-${{ inputs.experiment_id }}
+on:
+  workflow_dispatch:
+    inputs:
+      experiment_id:
+        required: true
+        type: string
+      outcome:
+        required: true
+        type: choice
+        options: [success, failure, cancelled]
+permissions:
+  contents: read
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Run real validation process
+        env:
+          OUTCOME: ${{ inputs.outcome }}
+        run: |
+          node --input-type=module -e '
+            import { setTimeout } from "node:timers/promises";
+            await setTimeout(process.env.OUTCOME === "cancelled" ? 120000 : 20000);
+            console.log(JSON.stringify({status: process.env.OUTCOME}));
+            if (process.env.OUTCOME === "failure") process.exit(1);
+          '

@@ -1,0 +1,29 @@
+{
+  "repo": "gabry848/pi-notifications-bench-20261006",
+  "repoId": 1406995355,
+  "ref": "codex/notification-benchmark-fixture",
+  "workflow": "bench.yml",
+  "url": "https://github.com/gabry848/pi-notifications-bench-20261006",
+  "private": true,
+  "commit": "550c5ba",
+  "localCheckout": "/private/tmp/pi-notifications-bench-20261006",
+  "workflowId": 376203237,
+  "workflowState": "active",
+  "workflowHash": "e70b504e06cbb984a6c712d52fc3767da08ecbf64d570802f1ffea49e2f1d680",
+  "remoteContentVerifiedAt": "2026-10-06T09:06:24.788Z",
+  "publicUrl": "https://punk-sitting-foto-residential.trycloudflare.com",
+  "hookId": 693017253,
+  "pricing": {
+    "perMinuteUsd": 0.006,
+    "source": "https://docs.github.com/en/billing/reference/actions-runner-pricing",
+    "checkedAt": "2026-10-06"
+  },
+  "sourceHash": "deba80be40dd1ebfc35880bd50d673fd3a06f94120d5e2562b85e21270c40eac",
+  "sourceHashes": {
+    "server.mjs": "1ad498f4ed92bb38229eb5da79e84977f2607b648973fde0078d59923944adca",
+    "webhook.mjs": "d51febd35a70445becd8e3734d1d06ec0b134212144818fbf2f34e3197ff7083",
+    "bench.yml": "e70b504e06cbb984a6c712d52fc3767da08ecbf64d570802f1ffea49e2f1d680",
+    "run.mjs": "b074c0420e2c57b1e836fe795023191f74ae6c13b00a84d0de8e00aa9190534e"
+  },
+  "startedAt": "2026-10-06T12:05:21.480Z"
+}

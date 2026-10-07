@@ -1,0 +1,1 @@
+export function matchesTopic(p,t){if(typeof p!=='string'||typeof t!=='string')return false;const a=p.split('.'),b=t.split('.');if(a.some(x=>!x)||b.some(x=>!x)||a.slice(0,-1).includes('**'))return false;for(let i=0;i<a.length;i++){if(a[i]==='**')return true;if(b[i]===undefined||a[i]!=='*'&&a[i]!==b[i])return false;}return a.length===b.length;}

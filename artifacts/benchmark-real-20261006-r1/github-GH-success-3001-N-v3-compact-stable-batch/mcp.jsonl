@@ -1,0 +1,10 @@
+{"time":"2026-10-06T12:05:21.726Z","monoMs":418073352.242333,"type":"protocol_message","method":"initialize"}
+{"time":"2026-10-06T12:05:21.731Z","monoMs":418073356.770291,"type":"protocol_message","method":"notifications/initialized"}
+{"time":"2026-10-06T12:05:21.731Z","monoMs":418073357.085291,"type":"protocol_message","method":"tools/list"}
+{"time":"2026-10-06T12:05:23.822Z","monoMs":418075447.377333,"type":"protocol_message","method":"tools/call"}
+{"time":"2026-10-06T12:05:23.823Z","monoMs":418075448.813666,"type":"tools_call","name":"start_job","args":{"ids":["validation"]}}
+{"time":"2026-10-06T12:05:23.823Z","monoMs":418075448.912291,"type":"job_started","jobId":"validation"}
+{"time":"2026-10-06T12:05:23.823Z","monoMs":418075449.001791,"type":"github_api","args":["api","--method","POST","repos/gabry848/pi-notifications-bench-20261006/actions/workflows/bench.yml/dispatches","-f","ref=codex/notification-benchmark-fixture","-f","inputs.experiment_id=benchmark-real-20261006-r1-GH-success-3001-N","-f","inputs.outcome=success"]}
+{"time":"2026-10-06T12:05:24.331Z","monoMs":418075957.279125,"type":"tools_error","name":"start_job","error":"Command failed: gh api --method POST repos/gabry848/pi-notifications-bench-20261006/actions/workflows/bench.yml/dispatches -f ref=codex/notification-benchmark-fixture -f inputs.experiment_id=benchmark-real-20261006-r1-GH-success-3001-N -f inputs.outcome=success\ngh: Invalid request.\n\n\"inputs.experiment_id\", \"inputs.outcome\" are not permitted keys. (HTTP 422)\n"}
+{"time":"2026-10-06T12:05:39.471Z","monoMs":418091097.195958,"type":"protocol_message","method":"tools/call"}
+{"time":"2026-10-06T12:05:39.472Z","monoMs":418091097.518708,"type":"tools_call","name":"await_jobs","args":{"ids":["validation"]}}

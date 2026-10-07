@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "current",
+    "label": "pair1",
+    "directory": "/Users/gabry848/Documents/Projects/pi-notifications/research/cache-fix-20261006/runs/current-pair1",
+    "time": "2026-10-06T14:50:29.225Z"
+  },
+  {
+    "variant": "baseline",
+    "label": "pair1",
+    "directory": "/Users/gabry848/Documents/Projects/pi-notifications/research/cache-fix-20261006/runs/baseline-pair1",
+    "time": "2026-10-06T14:51:11.070Z"
+  },
+  {
+    "variant": "journal",
+    "label": "pair1",
+    "directory": "/Users/gabry848/Documents/Projects/pi-notifications/research/cache-fix-20261006/runs/journal-pair1",
+    "time": "2026-10-06T14:51:52.197Z"
+  },
+  {
+    "variant": "fixed",
+    "label": "pair2",
+    "directory": "/Users/gabry848/Documents/Projects/pi-notifications/research/cache-fix-20261006/runs/fixed-pair2",
+    "time": "2026-10-06T14:54:09.152Z"
+  },
+  {
+    "variant": "baseline",
+    "label": "pair2",
+    "directory": "/Users/gabry848/Documents/Projects/pi-notifications/research/cache-fix-20261006/runs/baseline-pair2",
+    "time": "2026-10-06T14:54:48.308Z"
+  },
+  {
+    "variant": "current",
+    "label": "pair2",
+    "directory": "/Users/gabry848/Documents/Projects/pi-notifications/research/cache-fix-20261006/runs/current-pair2",
+    "time": "2026-10-06T14:55:49.977Z"
+  }
+]

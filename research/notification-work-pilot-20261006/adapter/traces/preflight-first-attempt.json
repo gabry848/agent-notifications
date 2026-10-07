@@ -1,0 +1,14 @@
+{
+  "command": "node --test research/notification-work-pilot-20261006/adapter/preflight.test.mjs",
+  "sandbox": "default",
+  "tests": 4,
+  "pass": 2,
+  "fail": 2,
+  "durationMs": 20177.059292,
+  "failures": [
+    {"test": "actual Coordinator MCP", "error": "Timeout board ready", "durationMs": 10014.386208},
+    {"test": "actual default Pi", "error": "Timeout board ready", "durationMs": 10013.277333}
+  ],
+  "inferences": 0,
+  "limitation": "Daemon stderr was not captured on this initial attempt. Same code subsequently passed with authorized loopback access; no provider/model behavior inferred from startup timeout."
+}

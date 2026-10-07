@@ -1,0 +1,16 @@
+{"time":"2026-10-06T10:16:11.664Z","monoMs":411523288.4715,"type":"session_selected","url":"http://127.0.0.1:61149","sessionId":"c09d5534-5e58-4880-b63b-ad94cbda9d12","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/main-S6-602-W-v2-full/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-06T10:16:11.664Z","monoMs":411523288.571958,"type":"server_ready","url":"http://127.0.0.1:61149","sessionId":"c09d5534-5e58-4880-b63b-ad94cbda9d12","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/main-S6-602-W-v2-full/notifications.sqlite"}
+{"time":"2026-10-06T10:16:11.756Z","monoMs":411523380.028916,"type":"provider_request","attempt":1}
+{"time":"2026-10-06T10:16:12.455Z","monoMs":411524079.063958,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:16:13.395Z","monoMs":411525019.4335,"type":"provider_request","attempt":2}
+{"time":"2026-10-06T10:16:13.939Z","monoMs":411525563.289625,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:16:15.714Z","monoMs":411527338.224,"type":"provider_request","attempt":3}
+{"time":"2026-10-06T10:16:16.317Z","monoMs":411527941.287,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:16:22.344Z","monoMs":411533967.836791,"type":"provider_request","attempt":4}
+{"time":"2026-10-06T10:16:22.968Z","monoMs":411534592.544166,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:16:24.489Z","monoMs":411536113.286583,"type":"provider_request","attempt":5}
+{"time":"2026-10-06T10:16:24.990Z","monoMs":411536614.211875,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:16:26.247Z","monoMs":411537871.584083,"type":"provider_request","attempt":6}
+{"time":"2026-10-06T10:16:26.807Z","monoMs":411538430.875041,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:16:28.319Z","monoMs":411539943.195541,"type":"provider_request","attempt":7}
+{"time":"2026-10-06T10:16:29.299Z","monoMs":411540923.355208,"type":"provider_response","status":200}

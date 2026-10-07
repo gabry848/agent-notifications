@@ -1,0 +1,27 @@
+{
+  "id": "cache-fix-20261006",
+  "status": "assigned",
+  "objective": "Diagnose and fix native cache-prefix loss with Pi runtime notifications; verify comparable caching of stable history without removing notification functionality.",
+  "codexAgentModel": "inherited-from-parent",
+  "aoverviewDetail": "medium",
+  "piModel": "actual Pi default, recorded before inference; no model/provider/thinking override",
+  "oldPilotArtifactsReadOnly": true,
+  "oldPilotLedgerReadOnly": true,
+  "newLedger": "research/cache-fix-20261006/budget.sqlite",
+  "scope": "cache",
+  "scopeCapApiEquivalentUsd": 2,
+  "globalCapApiEquivalentUsd": 2,
+  "maxMeasuredPiSessions": 6,
+  "maxModelHttpAttempts": 60,
+  "measuredConcurrency": 1,
+  "actualSubscriptionBillingUsd": null,
+  "longBenchmarkRunsAuthorized": false,
+  "requirements": [
+    "Offline diagnosis and payload instrumentation before paid probes",
+    "Preserve default provider-native cache schema and credentials",
+    "Do not silently remove facts, history, notification lifecycle or wildcard dismiss",
+    "Separate immutable current-runtime control from proposed correction",
+    "Record attempted and failed cases, raw usage and absolute token/cost deltas",
+    "No success claim solely from synthetic prefix equality or a single cache-hit percentage"
+  ]
+}

@@ -1,0 +1,16 @@
+{"time":"2026-10-06T12:14:17.181Z","monoMs":418608822.771458,"type":"protocol_message","method":"initialize"}
+{"time":"2026-10-06T12:14:17.186Z","monoMs":418608827.46575,"type":"protocol_message","method":"notifications/initialized"}
+{"time":"2026-10-06T12:14:17.187Z","monoMs":418608827.803166,"type":"protocol_message","method":"tools/list"}
+{"time":"2026-10-06T12:14:20.350Z","monoMs":418611991.304583,"type":"protocol_message","method":"tools/call"}
+{"time":"2026-10-06T12:14:20.352Z","monoMs":418611992.906291,"type":"tools_call","name":"start_job","args":{"ids":["validation"]}}
+{"time":"2026-10-06T12:14:20.352Z","monoMs":418611993.037791,"type":"job_started","jobId":"validation"}
+{"time":"2026-10-06T12:14:20.352Z","monoMs":418611993.121375,"type":"github_api","args":["api","--method","POST","repos/gabry848/pi-notifications-bench-20261006/actions/workflows/bench.yml/dispatches","-f","ref=codex/notification-benchmark-fixture","-f","inputs[experiment_id]=benchmark-real-20261006-r1-GH-cancelled-3201-N","-f","inputs[outcome]=cancelled"]}
+{"time":"2026-10-06T12:14:27.849Z","monoMs":418619490.655958,"type":"tools_result","name":"start_job"}
+{"time":"2026-10-06T12:14:37.849Z","monoMs":418629490.618375,"type":"github_api","args":["api","--method","POST","repos/gabry848/pi-notifications-bench-20261006/actions/runs/37461837216/cancel"]}
+{"time":"2026-10-06T12:14:41.409Z","monoMs":418633050.130375,"type":"protocol_message","method":"tools/call"}
+{"time":"2026-10-06T12:14:41.409Z","monoMs":418633050.641375,"type":"tools_call","name":"await_jobs","args":{"ids":["validation"]}}
+{"time":"2026-10-06T12:14:54.618Z","monoMs":418646259.226875,"type":"notify_attempt","jobId":"validation","attempt":1}
+{"time":"2026-10-06T12:14:54.625Z","monoMs":418646265.802666,"type":"notify_accepted","jobId":"validation","notification":{"id":"notif_4ea43165-7490-48e8-94ad-1d1dc4d5cc27","sessionId":"e745a6a6-e545-47d3-a775-bc7cc058cdfc","source":"GitHub Actions","message":"{\"jobId\":\"validation\",\"revision\":1,\"status\":\"failed\",\"result\":{\"maxBatch\":0,\"conclusion\":\"cancelled\",\"runId\":37461837216,\"region\":\"eu-west-1\",\"release\":\"v1.4\"}}","createdAt":"2026-10-06T12:14:54.623Z","firstVisibleCall":null,"dismissedAt":null}}
+{"time":"2026-10-06T12:14:54.635Z","monoMs":418646259.213833,"type":"job_finished","jobId":"validation","revision":1,"status":"failed","result":{"maxBatch":0,"conclusion":"cancelled","runId":37461837216,"region":"eu-west-1","release":"v1.4"},"finished":{"time":"2026-10-06T12:14:54.618Z","monoMs":418646259.213833},"timeSource":"webhook_received"}
+{"time":"2026-10-06T12:14:54.636Z","monoMs":418646277.478125,"type":"await_completed","ids":["validation"]}
+{"time":"2026-10-06T12:14:54.637Z","monoMs":418646277.671625,"type":"tools_result","name":"await_jobs"}

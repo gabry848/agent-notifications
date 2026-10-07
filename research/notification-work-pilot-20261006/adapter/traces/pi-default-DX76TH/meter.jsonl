@@ -1,0 +1,1 @@
+{"time":"2026-10-06T13:19:59.634Z","monoMs":422551259.237541,"type":"resolved_model","model":"gpt-6.1-sol","provider":"openai-codex","api":"openai-codex-responses","nominalTariff":{"input":2,"output":10,"cacheRead":0.1,"cacheWrite":2.5,"tiers":[{"inputTokensAbove":272000,"input":4,"output":15,"cacheRead":0.2,"cacheWrite":5}]}}

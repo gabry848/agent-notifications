@@ -1,0 +1,100 @@
+{
+  "name": "irrelevant",
+  "repetition": 1,
+  "prompt": "v1",
+  "provider": "openai",
+  "model": "gpt-6.1-sol",
+  "thinking": "medium",
+  "started": "2026-10-05T20:36:32.126Z",
+  "finished": "2026-10-05T20:36:44.049Z",
+  "notifications": [
+    {
+      "id": "notif_54297199-3eff-44db-9d6e-91a952bb0edf",
+      "source": "Cafeteria",
+      "message": "Lunch menu: mushroom soup and salad. Applies to the office cafeteria only.",
+      "createdAt": "2026-10-05T20:36:34.093Z",
+      "firstVisibleCall": null,
+      "dismissedAt": null
+    }
+  ],
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 50,
+    "status": "ready",
+    "notes": "invoice-service: code review, unit tests, and configuration review passed; dependencies available. No relevant validation conflicts or release revocation reported. Region remains eu-west-1 as required. Local plan only; no deployment or external service contact."
+  },
+  "idleVerified": null,
+  "historyText": "",
+  "assistantText": "Saved the local plan to `result.json`:\n\n- **Service:** invoice-service\n- **Region:** eu-west-1\n- **Release:** v1.4\n- **maxBatch:** 50\n- **Status:** ready\n\nAll reviews and unit tests passed, and dependencies are available. No release revocation or conflicting validation facts were reported. Nothing was deployed, and no external service was contacted.",
+  "error": null,
+  "assessment": {
+    "injectionPass": true,
+    "injectionFailures": [],
+    "providerChecks": [
+      {
+        "call": 1,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 2,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      },
+      {
+        "call": 3,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      },
+      {
+        "call": 4,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      },
+      {
+        "call": 5,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      }
+    ],
+    "behaviorPass": true,
+    "behaviorMismatches": [],
+    "historyPass": null,
+    "exposure": [
+      {
+        "id": "notif_54297199-3eff-44db-9d6e-91a952bb0edf",
+        "ages": [
+          {
+            "call": 2,
+            "age": 0
+          },
+          {
+            "call": 3,
+            "age": 1
+          },
+          {
+            "call": 4,
+            "age": 2
+          },
+          {
+            "call": 5,
+            "age": 3
+          }
+        ],
+        "dismissed": false
+      }
+    ],
+    "lifecycleExplicitlyRequested": false
+  }
+}

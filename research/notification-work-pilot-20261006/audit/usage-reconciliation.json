@@ -1,0 +1,3060 @@
+{
+  "auditedAt": "2026-10-06T13:45:16.646Z",
+  "ledgerPath": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/budget.sqlite",
+  "readOnly": true,
+  "attempts": 148,
+  "apiEquivalentEstimatedUsd": 1.8158540000000003,
+  "reservedUnknownOrPendingUsd": 0,
+  "actualSubscriptionBillingUsd": null,
+  "runs": [
+    {
+      "runId": "explorer-compatibility-N-4101-847cae3a",
+      "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/explorer/runs/explorer-compatibility-N-4101-847cae3a",
+      "ledgerAttempts": 12,
+      "traceHttpAttempts": 12,
+      "requestCountMatches": true,
+      "settledCount": 12,
+      "unsettledCount": 0,
+      "unsettledReservedUsd": 0,
+      "sdkMessageCount": 12,
+      "sdkMessagesWithModelUsage": 12,
+      "sdkZeroUsageErrors": [],
+      "sdkEventsCaughtUp": true,
+      "sdkUsageMatches": true,
+      "normalizedTotals": {
+        "input": 26320,
+        "output": 7928,
+        "cacheRead": 86400,
+        "cacheWrite": 0,
+        "totalTokens": 120648
+      },
+      "sdkTotals": {
+        "input": 26320,
+        "output": 7928,
+        "cacheRead": 86400,
+        "cacheWrite": 0,
+        "totalTokens": 120648
+      },
+      "wrongModel": false,
+      "settled": [
+        {
+          "id": "c1fc7b80-bcc3-4a8c-8bc3-8ac88a13c27f",
+          "responseId": "resp_0a0af867582aa466016ac4f7776e9c87d28e531b0ec8fdce7f",
+          "status": 200,
+          "usage": {
+            "input": 2904,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 34,
+            "reasoning": 0,
+            "totalTokens": 2938
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.006148
+        },
+        {
+          "id": "1730768f-38d7-4456-ab10-71d3a78aef64",
+          "responseId": "resp_0a0af867582aa466016ac4f77bc21887d28805fb3c3068d4e7",
+          "status": 200,
+          "usage": {
+            "input": 3269,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 47,
+            "reasoning": 0,
+            "totalTokens": 3316
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.007008
+        },
+        {
+          "id": "2c19a8f1-33a1-473f-bb4e-5b3879fb0550",
+          "responseId": "resp_0a0af867582aa466016ac4f77f660c87d294c2daa00a8a9646",
+          "status": 200,
+          "usage": {
+            "input": 355,
+            "cacheRead": 3072,
+            "cacheWrite": 0,
+            "output": 140,
+            "reasoning": 0,
+            "totalTokens": 3567
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0024172
+        },
+        {
+          "id": "d29f079d-829f-41aa-ad20-905617a0448d",
+          "responseId": "resp_0a0af867582aa466016ac4f785228887d2b9f35a5f94dc7b13",
+          "status": 200,
+          "usage": {
+            "input": 3188,
+            "cacheRead": 3072,
+            "cacheWrite": 0,
+            "output": 28,
+            "reasoning": 0,
+            "totalTokens": 6288
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0069632
+        },
+        {
+          "id": "4fc710fd-187c-42b9-9149-c53e7e822800",
+          "responseId": "resp_0a0af867582aa466016ac4f787c50087d280d7cbb28a082416",
+          "status": 200,
+          "usage": {
+            "input": 275,
+            "cacheRead": 6144,
+            "cacheWrite": 0,
+            "output": 3127,
+            "reasoning": 13,
+            "totalTokens": 9546
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0324344
+        },
+        {
+          "id": "d51df011-0b7b-4dac-b64b-a8af9f7f79c5",
+          "responseId": "resp_0a0af867582aa466016ac4f7c6804887d2abd314afaf02d333",
+          "status": 200,
+          "usage": {
+            "input": 3482,
+            "cacheRead": 6272,
+            "cacheWrite": 0,
+            "output": 70,
+            "reasoning": 33,
+            "totalTokens": 9824
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0082912
+        },
+        {
+          "id": "5b04c0f5-643c-4430-98ab-03edbbaa00ca",
+          "responseId": "resp_0a0af867582aa466016ac4f7cfddb087d28e186aadc315cda3",
+          "status": 200,
+          "usage": {
+            "input": 662,
+            "cacheRead": 9600,
+            "cacheWrite": 0,
+            "output": 96,
+            "reasoning": 14,
+            "totalTokens": 10358
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.003244
+        },
+        {
+          "id": "6fb0c80e-b47b-4b9b-a982-7de741a259cb",
+          "responseId": "resp_0a0af867582aa466016ac4f7d4f1d087d28f2e3b12cdd27880",
+          "status": 200,
+          "usage": {
+            "input": 865,
+            "cacheRead": 9600,
+            "cacheWrite": 0,
+            "output": 4037,
+            "reasoning": 177,
+            "totalTokens": 14502
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.04306
+        },
+        {
+          "id": "dd451ee7-81fa-4cab-800c-20b900ea4a6e",
+          "responseId": "resp_0a0af867582aa466016ac4f834628087d281f05dd311b0d872",
+          "status": 200,
+          "usage": {
+            "input": 5000,
+            "cacheRead": 9600,
+            "cacheWrite": 0,
+            "output": 75,
+            "reasoning": 24,
+            "totalTokens": 14675
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.01171
+        },
+        {
+          "id": "6e32ea7f-fd7b-4fa7-a9f8-5866419ea279",
+          "responseId": "resp_0a0af867582aa466016ac4f838ab1087d2b9f345e79ff6591a",
+          "status": 200,
+          "usage": {
+            "input": 4984,
+            "cacheRead": 9600,
+            "cacheWrite": 0,
+            "output": 27,
+            "reasoning": 0,
+            "totalTokens": 14611
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.011198
+        },
+        {
+          "id": "fa0b2521-bc7c-43fb-a1ca-27ac50d0884f",
+          "responseId": "resp_0a0af867582aa466016ac4f83c2da087d2a7808e3f46c3633f",
+          "status": 200,
+          "usage": {
+            "input": 669,
+            "cacheRead": 14464,
+            "cacheWrite": 0,
+            "output": 171,
+            "reasoning": 131,
+            "totalTokens": 15304
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0044944
+        },
+        {
+          "id": "700ea448-6778-4c68-bf7d-4b2222451a71",
+          "responseId": "resp_0a0af867582aa466016ac4f8469adc87d2a50181ad0c92e1f4",
+          "status": 200,
+          "usage": {
+            "input": 667,
+            "cacheRead": 14976,
+            "cacheWrite": 0,
+            "output": 76,
+            "reasoning": 0,
+            "totalTokens": 15719
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0035916000000000003
+        }
+      ],
+      "accountingConsistent": true
+    },
+    {
+      "runId": "suite-N-ingest",
+      "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/ingest",
+      "ledgerAttempts": 19,
+      "traceHttpAttempts": 19,
+      "requestCountMatches": true,
+      "settledCount": 19,
+      "unsettledCount": 0,
+      "unsettledReservedUsd": 0,
+      "sdkMessageCount": 19,
+      "sdkMessagesWithModelUsage": 19,
+      "sdkZeroUsageErrors": [],
+      "sdkEventsCaughtUp": true,
+      "sdkUsageMatches": true,
+      "normalizedTotals": {
+        "input": 157082,
+        "output": 5753,
+        "cacheRead": 80000,
+        "cacheWrite": 0,
+        "totalTokens": 242835
+      },
+      "sdkTotals": {
+        "input": 157082,
+        "output": 5753,
+        "cacheRead": 80000,
+        "cacheWrite": 0,
+        "totalTokens": 242835
+      },
+      "wrongModel": false,
+      "settled": [
+        {
+          "id": "f3dbfbd0-bc1d-4c3b-bc08-398cbda6e043",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fa317a8887d2afb4daf469bd774e",
+          "status": 200,
+          "usage": {
+            "input": 3355,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 150,
+            "reasoning": 0,
+            "totalTokens": 3505
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.00821
+        },
+        {
+          "id": "865760f4-2e16-4ff3-bff6-0411195e1018",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fa36d7b487d2bb2b8354cd45b9dd",
+          "status": 200,
+          "usage": {
+            "input": 4089,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 190,
+            "reasoning": 0,
+            "totalTokens": 4279
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.010078
+        },
+        {
+          "id": "409d2e50-852a-4726-a135-d7d6e6ca6168",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fa3cf41087d2b339714eeab35245",
+          "status": 200,
+          "usage": {
+            "input": 1455,
+            "cacheRead": 3968,
+            "cacheWrite": 0,
+            "output": 1118,
+            "reasoning": 159,
+            "totalTokens": 6541
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0144868
+        },
+        {
+          "id": "3fdb3f00-e103-4b19-b55e-21cc0ed97fa6",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fa5358f487d2a98209d6482eff37",
+          "status": 200,
+          "usage": {
+            "input": 2427,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 102,
+            "reasoning": 44,
+            "totalTokens": 7777
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0063988000000000005
+        },
+        {
+          "id": "7867f9f7-e601-4bc7-9551-17933e0fb33c",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fa5a7f6887d290b8fc258103c14e",
+          "status": 200,
+          "usage": {
+            "input": 2556,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 1078,
+            "reasoning": 0,
+            "totalTokens": 8882
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0164168
+        },
+        {
+          "id": "99991ce0-fdcf-43b5-860d-45cf88d560f6",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fa6f90dc87d2b9e80982391302fd",
+          "status": 200,
+          "usage": {
+            "input": 3655,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 160,
+            "reasoning": 0,
+            "totalTokens": 9063
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0094348
+        },
+        {
+          "id": "2617e0a7-8863-4b6c-9b51-d5e5e5d93215",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fa74ef5087d2ad4f6aac03103137",
+          "status": 200,
+          "usage": {
+            "input": 4593,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 401,
+            "reasoning": 0,
+            "totalTokens": 10242
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0137208
+        },
+        {
+          "id": "bc2b3652-e403-4c5c-b4a7-30ca23a46a00",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fa7e1f0487d2816354734de41547",
+          "status": 200,
+          "usage": {
+            "input": 4836,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 105,
+            "reasoning": 35,
+            "totalTokens": 10189
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0112468
+        },
+        {
+          "id": "0f4013da-79db-466a-a907-ad837dc5573a",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fa8498cc87d2a0a8d37d2a28fea3",
+          "status": 200,
+          "usage": {
+            "input": 4990,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 266,
+            "reasoning": 0,
+            "totalTokens": 10504
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.013164799999999999
+        },
+        {
+          "id": "9c7061d7-aa10-4fba-950a-7d762719a25a",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fa8c68fc87d28edf7df64f1ce5e2",
+          "status": 200,
+          "usage": {
+            "input": 6453,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 476,
+            "reasoning": 0,
+            "totalTokens": 12177
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0181908
+        },
+        {
+          "id": "27191a53-d792-4746-b1e6-0e2fcd281567",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fa97c22087d280093ae73f829430",
+          "status": 200,
+          "usage": {
+            "input": 7968,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 275,
+            "reasoning": 38,
+            "totalTokens": 13491
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0192108
+        },
+        {
+          "id": "adff81ad-55ad-4a57-91fb-9eb355392959",
+          "responseId": "resp_0da6efd2c3d3162e016ac4faa063b487d29354dae37c66d9bf",
+          "status": 200,
+          "usage": {
+            "input": 10515,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 290,
+            "reasoning": 9,
+            "totalTokens": 16053
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0244548
+        },
+        {
+          "id": "793acee0-c224-4fe1-a3e6-b43939d35c2d",
+          "responseId": "resp_0da6efd2c3d3162e016ac4faab385887d28ff1c3a161520bea",
+          "status": 200,
+          "usage": {
+            "input": 11480,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 71,
+            "reasoning": 15,
+            "totalTokens": 16799
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0241948
+        },
+        {
+          "id": "ca7a8399-d693-43c2-9eb4-f8cdaa31d00e",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fabb1f9c87d2bb08ba63cccd0541",
+          "status": 200,
+          "usage": {
+            "input": 17137,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 224,
+            "reasoning": 24,
+            "totalTokens": 17361
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.036514
+        },
+        {
+          "id": "330600b2-2982-40f7-b190-63bb3124075e",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fac49b1487d2ab9b27145aa53216",
+          "status": 200,
+          "usage": {
+            "input": 12934,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 54,
+            "reasoning": 0,
+            "totalTokens": 18236
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0269328
+        },
+        {
+          "id": "6e9bf562-6b23-4b8c-8999-ce98410150b7",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fadcbca487d2a6236e4458fc5993",
+          "status": 200,
+          "usage": {
+            "input": 16000,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 233,
+            "reasoning": 0,
+            "totalTokens": 18793
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.034586
+        },
+        {
+          "id": "b9e99dde-4dee-4288-aabb-f435f0c474eb",
+          "responseId": "resp_0da6efd2c3d3162e016ac4fae36f0487d2a3038bd2ca23fdef",
+          "status": 200,
+          "usage": {
+            "input": 13995,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 419,
+            "reasoning": 0,
+            "totalTokens": 19662
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0327048
+        },
+        {
+          "id": "7968b457-1bf3-4f2b-a2c0-e0f2612f8191",
+          "responseId": "resp_0da6efd2c3d3162e016ac4faee301087d2aa35385c4ac04242",
+          "status": 200,
+          "usage": {
+            "input": 14162,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 81,
+            "reasoning": 0,
+            "totalTokens": 19491
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0296588
+        },
+        {
+          "id": "09e0b1ba-0254-4086-ab98-bab0280e90a7",
+          "responseId": "resp_0da6efd2c3d3162e016ac4faf3e93887d2812d5113e5d81cf6",
+          "status": 200,
+          "usage": {
+            "input": 14482,
+            "cacheRead": 5248,
+            "cacheWrite": 0,
+            "output": 60,
+            "reasoning": 0,
+            "totalTokens": 19790
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0300888
+        }
+      ],
+      "accountingConsistent": true
+    },
+    {
+      "runId": "suite-N-delivery",
+      "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/delivery",
+      "ledgerAttempts": 19,
+      "traceHttpAttempts": 19,
+      "requestCountMatches": true,
+      "settledCount": 19,
+      "unsettledCount": 0,
+      "unsettledReservedUsd": 0,
+      "sdkMessageCount": 19,
+      "sdkMessagesWithModelUsage": 19,
+      "sdkZeroUsageErrors": [],
+      "sdkEventsCaughtUp": true,
+      "sdkUsageMatches": true,
+      "normalizedTotals": {
+        "input": 138336,
+        "output": 5969,
+        "cacheRead": 156160,
+        "cacheWrite": 0,
+        "totalTokens": 300465
+      },
+      "sdkTotals": {
+        "input": 138336,
+        "output": 5969,
+        "cacheRead": 156160,
+        "cacheWrite": 0,
+        "totalTokens": 300465
+      },
+      "wrongModel": false,
+      "settled": [
+        {
+          "id": "4e9aed7e-0fa8-4883-8ff8-385f078b1829",
+          "responseId": "resp_006f1063ac5748f8016ac4fa31788087d2a18abb2b6e5222f2",
+          "status": 200,
+          "usage": {
+            "input": 3350,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 139,
+            "reasoning": 0,
+            "totalTokens": 3489
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.00809
+        },
+        {
+          "id": "6c894e64-a46f-4666-9968-dd474f973e6c",
+          "responseId": "resp_006f1063ac5748f8016ac4fa37c22487d29f15d446bc1f2af2",
+          "status": 200,
+          "usage": {
+            "input": 882,
+            "cacheRead": 3200,
+            "cacheWrite": 0,
+            "output": 251,
+            "reasoning": 0,
+            "totalTokens": 4333
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.004594
+        },
+        {
+          "id": "a5f9f48d-e97c-4417-a273-cd9fb5ec1e45",
+          "responseId": "resp_006f1063ac5748f8016ac4fa402df487d29b22f61bc3cff812",
+          "status": 200,
+          "usage": {
+            "input": 2370,
+            "cacheRead": 3968,
+            "cacheWrite": 0,
+            "output": 1162,
+            "reasoning": 172,
+            "totalTokens": 7500
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0167568
+        },
+        {
+          "id": "771110d0-2f7f-46ef-880a-c32ae64c43a4",
+          "responseId": "resp_006f1063ac5748f8016ac4fa5ed62487d284628140e754a6db",
+          "status": 200,
+          "usage": {
+            "input": 3825,
+            "cacheRead": 3968,
+            "cacheWrite": 0,
+            "output": 1141,
+            "reasoning": 0,
+            "totalTokens": 8934
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0194568
+        },
+        {
+          "id": "3f100aab-df38-4b07-9100-57e6dfc7f49c",
+          "responseId": "resp_006f1063ac5748f8016ac4fa7866fc87d290c928ea841b9ad6",
+          "status": 200,
+          "usage": {
+            "input": 5534,
+            "cacheRead": 3968,
+            "cacheWrite": 0,
+            "output": 193,
+            "reasoning": 0,
+            "totalTokens": 9695
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0133948
+        },
+        {
+          "id": "4f70f60d-c945-4011-ab95-a7172c3b62ac",
+          "responseId": "resp_006f1063ac5748f8016ac4fa7e7e8087d289407d2c0c5773d7",
+          "status": 200,
+          "usage": {
+            "input": 10916,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 466,
+            "reasoning": 0,
+            "totalTokens": 11382
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.026492
+        },
+        {
+          "id": "71fb383a-2bba-413c-bbab-4b255071f5c0",
+          "responseId": "resp_006f1063ac5748f8016ac4fa8acb3887d2888a631533563f34",
+          "status": 200,
+          "usage": {
+            "input": 10742,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 117,
+            "reasoning": 41,
+            "totalTokens": 13419
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.02291
+        },
+        {
+          "id": "b767aebf-05bf-46a7-8269-535b3f18738a",
+          "responseId": "resp_006f1063ac5748f8016ac4fa922f9087d2b0eb6145ff3302d3",
+          "status": 200,
+          "usage": {
+            "input": 9747,
+            "cacheRead": 3968,
+            "cacheWrite": 0,
+            "output": 373,
+            "reasoning": 31,
+            "totalTokens": 14088
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0236208
+        },
+        {
+          "id": "d7ba2d8b-3a5a-443d-ace3-5df124fef331",
+          "responseId": "resp_006f1063ac5748f8016ac4fa9c7d5c87d2a6f11ae2c064b84a",
+          "status": 200,
+          "usage": {
+            "input": 11179,
+            "cacheRead": 3968,
+            "cacheWrite": 0,
+            "output": 272,
+            "reasoning": 0,
+            "totalTokens": 15419
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0254748
+        },
+        {
+          "id": "09a8e6b4-4280-4887-87eb-d5cf6cf1bd5f",
+          "responseId": "resp_006f1063ac5748f8016ac4faa4e02487d281e6a191bdb28227",
+          "status": 200,
+          "usage": {
+            "input": 14190,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 292,
+            "reasoning": 0,
+            "totalTokens": 17042
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.031556
+        },
+        {
+          "id": "b5a8f7ba-ab47-408e-97eb-e725296d5e5e",
+          "responseId": "resp_006f1063ac5748f8016ac4faaeca7c87d29f1e16ec78bde29b",
+          "status": 200,
+          "usage": {
+            "input": 13993,
+            "cacheRead": 3968,
+            "cacheWrite": 0,
+            "output": 498,
+            "reasoning": 0,
+            "totalTokens": 18459
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.033362800000000005
+        },
+        {
+          "id": "51e27877-d271-4dfc-9586-d48350f81a23",
+          "responseId": "resp_006f1063ac5748f8016ac4fabb90c487d293fad0d179015018",
+          "status": 200,
+          "usage": {
+            "input": 13234,
+            "cacheRead": 3968,
+            "cacheWrite": 0,
+            "output": 84,
+            "reasoning": 11,
+            "totalTokens": 17286
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.027704799999999998
+        },
+        {
+          "id": "15fcfc0f-5bf1-4af1-827b-fc3e2be39db0",
+          "responseId": "resp_006f1063ac5748f8016ac4fac0736487d2aea40ac7deecee85",
+          "status": 200,
+          "usage": {
+            "input": 3251,
+            "cacheRead": 17024,
+            "cacheWrite": 0,
+            "output": 77,
+            "reasoning": 0,
+            "totalTokens": 20352
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0089744
+        },
+        {
+          "id": "aeb1b3a0-87d5-47db-940b-89693dbd8c25",
+          "responseId": "resp_006f1063ac5748f8016ac4fac5012887d292b0f8375f8d2dd8",
+          "status": 200,
+          "usage": {
+            "input": 1381,
+            "cacheRead": 20096,
+            "cacheWrite": 0,
+            "output": 77,
+            "reasoning": 0,
+            "totalTokens": 21554
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.005541600000000001
+        },
+        {
+          "id": "df7ad786-a7b3-4848-a868-d29ea27e0744",
+          "responseId": "resp_006f1063ac5748f8016ac4fadca2bc87d2a0457bfbe9dd6267",
+          "status": 200,
+          "usage": {
+            "input": 1779,
+            "cacheRead": 20096,
+            "cacheWrite": 0,
+            "output": 174,
+            "reasoning": 0,
+            "totalTokens": 22049
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0073076
+        },
+        {
+          "id": "d3b63446-d9fc-4468-b373-231a63199421",
+          "responseId": "resp_006f1063ac5748f8016ac4fae50e3087d293a7eeb444133da9",
+          "status": 200,
+          "usage": {
+            "input": 20638,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 212,
+            "reasoning": 0,
+            "totalTokens": 23410
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.043652
+        },
+        {
+          "id": "a009a392-a1e1-4efa-a627-0426a169c8d2",
+          "responseId": "resp_006f1063ac5748f8016ac4faed36ac87d2bdd62d44cc021e8b",
+          "status": 200,
+          "usage": {
+            "input": 3331,
+            "cacheRead": 20096,
+            "cacheWrite": 0,
+            "output": 287,
+            "reasoning": 0,
+            "totalTokens": 23714
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0115416
+        },
+        {
+          "id": "e3ab8206-8d00-40c6-b910-034a4ce21e03",
+          "responseId": "resp_006f1063ac5748f8016ac4faf5ea1887d29695eefbbb4c14d5",
+          "status": 200,
+          "usage": {
+            "input": 4187,
+            "cacheRead": 20096,
+            "cacheWrite": 0,
+            "output": 97,
+            "reasoning": 0,
+            "totalTokens": 24380
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0113536
+        },
+        {
+          "id": "b30bebb5-45df-4cec-a6c8-dda9380ee5a3",
+          "responseId": "resp_006f1063ac5748f8016ac4fafa1cb487d28d66972f1a1a85b5",
+          "status": 200,
+          "usage": {
+            "input": 3807,
+            "cacheRead": 20096,
+            "cacheWrite": 0,
+            "output": 57,
+            "reasoning": 0,
+            "totalTokens": 23960
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0101936
+        }
+      ],
+      "accountingConsistent": true
+    },
+    {
+      "runId": "suite-N-view",
+      "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/view",
+      "ledgerAttempts": 16,
+      "traceHttpAttempts": 16,
+      "requestCountMatches": true,
+      "settledCount": 16,
+      "unsettledCount": 0,
+      "unsettledReservedUsd": 0,
+      "sdkMessageCount": 17,
+      "sdkMessagesWithModelUsage": 16,
+      "sdkZeroUsageErrors": [
+        {
+          "time": "2026-10-06T13:42:52.174Z",
+          "stopReason": "error",
+          "totalTokens": 0
+        }
+      ],
+      "sdkEventsCaughtUp": true,
+      "sdkUsageMatches": true,
+      "normalizedTotals": {
+        "input": 191392,
+        "output": 5443,
+        "cacheRead": 36736,
+        "cacheWrite": 0,
+        "totalTokens": 233571
+      },
+      "sdkTotals": {
+        "input": 191392,
+        "output": 5443,
+        "cacheRead": 36736,
+        "cacheWrite": 0,
+        "totalTokens": 233571
+      },
+      "wrongModel": false,
+      "settled": [
+        {
+          "id": "4e55ff7c-2a84-4372-be67-4857f8677792",
+          "responseId": "resp_02a5c6c742b71322016ac4fa31730887d2ab3d9cf3d2b0c8f4",
+          "status": 200,
+          "usage": {
+            "input": 3343,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 130,
+            "reasoning": 0,
+            "totalTokens": 3473
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.007986
+        },
+        {
+          "id": "0b26abcb-9747-46d1-9106-c72a43130566",
+          "responseId": "resp_02a5c6c742b71322016ac4fa38ae7887d296d5d92f244e2ca8",
+          "status": 200,
+          "usage": {
+            "input": 894,
+            "cacheRead": 3200,
+            "cacheWrite": 0,
+            "output": 180,
+            "reasoning": 0,
+            "totalTokens": 4274
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.003908
+        },
+        {
+          "id": "dbf3cefc-0150-46ea-8e64-fe29d2afb4fc",
+          "responseId": "resp_02a5c6c742b71322016ac4fa3f879c87d2b451f4a19d416d36",
+          "status": 200,
+          "usage": {
+            "input": 1812,
+            "cacheRead": 3968,
+            "cacheWrite": 0,
+            "output": 133,
+            "reasoning": 48,
+            "totalTokens": 5913
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0053508
+        },
+        {
+          "id": "00a30537-595e-494f-a33c-512596835530",
+          "responseId": "resp_02a5c6c742b71322016ac4fa47490887d2b673006cd48dcc05",
+          "status": 200,
+          "usage": {
+            "input": 2956,
+            "cacheRead": 3968,
+            "cacheWrite": 0,
+            "output": 1872,
+            "reasoning": 0,
+            "totalTokens": 8796
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0250288
+        },
+        {
+          "id": "be79b6f5-a1a1-4b66-9283-d04f261452a3",
+          "responseId": "resp_02a5c6c742b71322016ac4fa72b58487d29eb1fa84ada50a6d",
+          "status": 200,
+          "usage": {
+            "input": 8156,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 162,
+            "reasoning": 0,
+            "totalTokens": 8318
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.017932
+        },
+        {
+          "id": "3e53a409-58ba-4d2a-b702-20cd8431c40d",
+          "responseId": "resp_02a5c6c742b71322016ac4fa789e8887d2aa7f350d2d8640df",
+          "status": 200,
+          "usage": {
+            "input": 7333,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 574,
+            "reasoning": 25,
+            "totalTokens": 10467
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.020662
+        },
+        {
+          "id": "52b96ce1-d1c7-4ffe-9b65-b7362e1ace8b",
+          "responseId": "resp_02a5c6c742b71322016ac4fa879c9087d2989e9e5caf58e0ac",
+          "status": 200,
+          "usage": {
+            "input": 9193,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 416,
+            "reasoning": 0,
+            "totalTokens": 12169
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.022802
+        },
+        {
+          "id": "58edf88a-01a3-4401-85e3-56bc619a20ce",
+          "responseId": "resp_02a5c6c742b71322016ac4fa939ca087d281b994a7fe6d6c3d",
+          "status": 200,
+          "usage": {
+            "input": 12508,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 201,
+            "reasoning": 51,
+            "totalTokens": 12709
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.027026
+        },
+        {
+          "id": "b166aeed-58e9-45c8-98c4-cdd28cec89d9",
+          "responseId": "resp_02a5c6c742b71322016ac4fa9bd60487d29528e1010ef6110c",
+          "status": 200,
+          "usage": {
+            "input": 15413,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 221,
+            "reasoning": 12,
+            "totalTokens": 18194
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.033292
+        },
+        {
+          "id": "30592a2b-523a-4829-9890-a2da5ec5adcb",
+          "responseId": "resp_02a5c6c742b71322016ac4faa2e39887d2acad688f68a4aada",
+          "status": 200,
+          "usage": {
+            "input": 16415,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 110,
+            "reasoning": 0,
+            "totalTokens": 19085
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.034186
+        },
+        {
+          "id": "bae825d0-22b0-4170-a7db-7e5aed5a6bba",
+          "responseId": "resp_02a5c6c742b71322016ac4faa859e487d29a676258778576f8",
+          "status": 200,
+          "usage": {
+            "input": 17236,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 267,
+            "reasoning": 31,
+            "totalTokens": 20063
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.037398
+        },
+        {
+          "id": "283920ec-5db6-438e-b51b-55632e279cfe",
+          "responseId": "resp_02a5c6c742b71322016ac4fab37c4087d298d2bcca5900f409",
+          "status": 200,
+          "usage": {
+            "input": 17818,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 35,
+            "reasoning": 0,
+            "totalTokens": 20413
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.036242
+        },
+        {
+          "id": "137022a2-f72e-48af-bfd4-818deb37199e",
+          "responseId": "resp_02a5c6c742b71322016ac4fab7672487d2a11125c9cd7dfd74",
+          "status": 200,
+          "usage": {
+            "input": 18142,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 67,
+            "reasoning": 0,
+            "totalTokens": 20769
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.03721
+        },
+        {
+          "id": "f8697a51-dd41-4fba-b793-7952f4f4dc92",
+          "responseId": "resp_02a5c6c742b71322016ac4fabb41f087d2a35b42b7e09939a4",
+          "status": 200,
+          "usage": {
+            "input": 19043,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 210,
+            "reasoning": 0,
+            "totalTokens": 21813
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.040442
+        },
+        {
+          "id": "39ab5e56-9659-4fdd-8aa0-952a5a0de907",
+          "responseId": "resp_02a5c6c742b71322016ac4fac35e0487d28e04596d0e5606a6",
+          "status": 200,
+          "usage": {
+            "input": 20253,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 305,
+            "reasoning": 0,
+            "totalTokens": 23118
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.043812
+        },
+        {
+          "id": "274fa9cc-3acf-40dc-aa16-9eeda049f8b2",
+          "responseId": "resp_02a5c6c742b71322016ac4face890087d2b074f1af3c004c33",
+          "status": 200,
+          "usage": {
+            "input": 20877,
+            "cacheRead": 2560,
+            "cacheWrite": 0,
+            "output": 560,
+            "reasoning": 0,
+            "totalTokens": 23997
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.04761
+        }
+      ],
+      "accountingConsistent": true
+    },
+    {
+      "runId": "suite-PA-ingest",
+      "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-PA/ingest",
+      "ledgerAttempts": 24,
+      "traceHttpAttempts": 24,
+      "requestCountMatches": true,
+      "settledCount": 24,
+      "unsettledCount": 0,
+      "unsettledReservedUsd": 0,
+      "sdkMessageCount": 24,
+      "sdkMessagesWithModelUsage": 24,
+      "sdkZeroUsageErrors": [],
+      "sdkEventsCaughtUp": true,
+      "sdkUsageMatches": true,
+      "normalizedTotals": {
+        "input": 49140,
+        "output": 5463,
+        "cacheRead": 300160,
+        "cacheWrite": 0,
+        "totalTokens": 354763
+      },
+      "sdkTotals": {
+        "input": 49140,
+        "output": 5463,
+        "cacheRead": 300160,
+        "cacheWrite": 0,
+        "totalTokens": 354763
+      },
+      "wrongModel": false,
+      "settled": [
+        {
+          "id": "9aa35de3-97ba-4ed9-8f66-4d561cae8172",
+          "responseId": "resp_0245351a69d9fb39016ac4f8f7e73087d2b5e9d88b006b0de1",
+          "status": 200,
+          "usage": {
+            "input": 2889,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 247,
+            "reasoning": 0,
+            "totalTokens": 3136
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.008248
+        },
+        {
+          "id": "5079446c-e46e-4f4e-aabd-7d5ef7f6049b",
+          "responseId": "resp_0245351a69d9fb39016ac4f9004d4c87d2a07163aa6d23a1ca",
+          "status": 200,
+          "usage": {
+            "input": 1268,
+            "cacheRead": 2688,
+            "cacheWrite": 0,
+            "output": 143,
+            "reasoning": 0,
+            "totalTokens": 4099
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0042348
+        },
+        {
+          "id": "b6534ed8-f838-4d24-8b3e-036febd43f37",
+          "responseId": "resp_0245351a69d9fb39016ac4f90644a487d2b08117a3110637f2",
+          "status": 200,
+          "usage": {
+            "input": 5581,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 282,
+            "reasoning": 197,
+            "totalTokens": 5863
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.013982
+        },
+        {
+          "id": "d32b636f-38e7-45f2-ac5a-f7990a1ba592",
+          "responseId": "resp_0245351a69d9fb39016ac4f9136fb887d29de2b70701224dad",
+          "status": 200,
+          "usage": {
+            "input": 951,
+            "cacheRead": 5376,
+            "cacheWrite": 0,
+            "output": 904,
+            "reasoning": 0,
+            "totalTokens": 7231
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0114796
+        },
+        {
+          "id": "77da3723-f95b-4433-8f86-2e2239bb425f",
+          "responseId": "resp_0245351a69d9fb39016ac4f925970c87d290f1012c9816fa16",
+          "status": 200,
+          "usage": {
+            "input": 1108,
+            "cacheRead": 6144,
+            "cacheWrite": 0,
+            "output": 1242,
+            "reasoning": 0,
+            "totalTokens": 8494
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.015250399999999999
+        },
+        {
+          "id": "02cbcb25-4497-431f-979a-2b4ad011eb3c",
+          "responseId": "resp_0245351a69d9fb39016ac4f942600887d289ede4ac98f23e01",
+          "status": 200,
+          "usage": {
+            "input": 1347,
+            "cacheRead": 7168,
+            "cacheWrite": 0,
+            "output": 105,
+            "reasoning": 0,
+            "totalTokens": 8620
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0044608
+        },
+        {
+          "id": "e73cabd9-e097-4336-bbd0-1c5450d85b0a",
+          "responseId": "resp_0245351a69d9fb39016ac4f9474b1487d2a1227005a9f16528",
+          "status": 200,
+          "usage": {
+            "input": 1670,
+            "cacheRead": 8320,
+            "cacheWrite": 0,
+            "output": 87,
+            "reasoning": 0,
+            "totalTokens": 10077
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.005042
+        },
+        {
+          "id": "14d70f3b-ce6b-4dc7-8c21-5d393c6c4efa",
+          "responseId": "resp_0245351a69d9fb39016ac4f94bec5c87d2b5acc45f11813021",
+          "status": 200,
+          "usage": {
+            "input": 475,
+            "cacheRead": 9856,
+            "cacheWrite": 0,
+            "output": 250,
+            "reasoning": 0,
+            "totalTokens": 10581
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0044356000000000005
+        },
+        {
+          "id": "4d8eef28-5114-455d-ad3b-c1f86fd3852a",
+          "responseId": "resp_0245351a69d9fb39016ac4f953425487d29df6ee80f62bdba3",
+          "status": 200,
+          "usage": {
+            "input": 1029,
+            "cacheRead": 10240,
+            "cacheWrite": 0,
+            "output": 280,
+            "reasoning": 0,
+            "totalTokens": 11549
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.005882
+        },
+        {
+          "id": "26c519cf-4e8a-4c52-a981-26d1ba90764a",
+          "responseId": "resp_0245351a69d9fb39016ac4f95c3ecc87d2b8529fd6afc91324",
+          "status": 200,
+          "usage": {
+            "input": 457,
+            "cacheRead": 11136,
+            "cacheWrite": 0,
+            "output": 287,
+            "reasoning": 0,
+            "totalTokens": 11880
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0048976
+        },
+        {
+          "id": "43dd2251-18a3-4c48-8f33-ac5d0873ef99",
+          "responseId": "resp_0245351a69d9fb39016ac4f968edc487d2a045627ff7e474dd",
+          "status": 200,
+          "usage": {
+            "input": 4354,
+            "cacheRead": 11392,
+            "cacheWrite": 0,
+            "output": 411,
+            "reasoning": 81,
+            "totalTokens": 16157
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.013957200000000001
+        },
+        {
+          "id": "9f9a4758-bb26-4fdc-bd4c-8c9f6a412759",
+          "responseId": "resp_0245351a69d9fb39016ac4f9764c0487d2a1146f51c05ac615",
+          "status": 200,
+          "usage": {
+            "input": 593,
+            "cacheRead": 15616,
+            "cacheWrite": 0,
+            "output": 105,
+            "reasoning": 0,
+            "totalTokens": 16314
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0037976000000000004
+        },
+        {
+          "id": "76b0eb90-eec7-4755-b9c0-bf1c1dd91df4",
+          "responseId": "resp_0245351a69d9fb39016ac4f97ad7b087d2b4b3f3ca60a2b95b",
+          "status": 200,
+          "usage": {
+            "input": 751,
+            "cacheRead": 16128,
+            "cacheWrite": 0,
+            "output": 113,
+            "reasoning": 12,
+            "totalTokens": 16992
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0042448
+        },
+        {
+          "id": "cef62564-c92c-4d41-a47c-c07c7c0798f2",
+          "responseId": "resp_0245351a69d9fb39016ac4f980dcf487d2ad725aabef277ed1",
+          "status": 200,
+          "usage": {
+            "input": 388,
+            "cacheRead": 16768,
+            "cacheWrite": 0,
+            "output": 93,
+            "reasoning": 0,
+            "totalTokens": 17249
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0033828
+        },
+        {
+          "id": "e6adf69c-684b-4b1e-b58d-30b3ab982c1f",
+          "responseId": "resp_0245351a69d9fb39016ac4f9861e7887d2942f75970f4e6f81",
+          "status": 200,
+          "usage": {
+            "input": 729,
+            "cacheRead": 17024,
+            "cacheWrite": 0,
+            "output": 59,
+            "reasoning": 0,
+            "totalTokens": 17812
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0037504
+        },
+        {
+          "id": "eead4100-e615-4876-aec2-df2040318e44",
+          "responseId": "resp_0245351a69d9fb39016ac4f989859487d2a71c3b2f9a6a3567",
+          "status": 200,
+          "usage": {
+            "input": 788,
+            "cacheRead": 17664,
+            "cacheWrite": 0,
+            "output": 49,
+            "reasoning": 24,
+            "totalTokens": 18501
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0038324
+        },
+        {
+          "id": "cdb23640-7b16-49cc-b061-582b6119702d",
+          "responseId": "resp_0245351a69d9fb39016ac4f98f400487d2bc08aec45fbc9b9b",
+          "status": 200,
+          "usage": {
+            "input": 19357,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 90,
+            "reasoning": 0,
+            "totalTokens": 19447
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.039614
+        },
+        {
+          "id": "e61ab593-df3b-405f-9e18-aa7afeceafb7",
+          "responseId": "resp_0245351a69d9fb39016ac4f997fd0c87d29532b443a941bb66",
+          "status": 200,
+          "usage": {
+            "input": 1298,
+            "cacheRead": 18304,
+            "cacheWrite": 0,
+            "output": 54,
+            "reasoning": 0,
+            "totalTokens": 19656
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.004966399999999999
+        },
+        {
+          "id": "235bd955-25f7-4ef6-bd0a-d26cd2c2d84b",
+          "responseId": "resp_0245351a69d9fb39016ac4f99e18e887d2a47a144a3f872a9b",
+          "status": 200,
+          "usage": {
+            "input": 795,
+            "cacheRead": 19456,
+            "cacheWrite": 0,
+            "output": 93,
+            "reasoning": 32,
+            "totalTokens": 20344
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0044656
+        },
+        {
+          "id": "d4faad41-1256-4d46-9d8b-eec1a4ef3199",
+          "responseId": "resp_0245351a69d9fb39016ac4f9a6790087d295bc2c411b65c9d5",
+          "status": 200,
+          "usage": {
+            "input": 609,
+            "cacheRead": 20096,
+            "cacheWrite": 0,
+            "output": 119,
+            "reasoning": 0,
+            "totalTokens": 20824
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.004417600000000001
+        },
+        {
+          "id": "9c6a481b-08f7-457e-9bb4-ead6cca101bc",
+          "responseId": "resp_0245351a69d9fb39016ac4f9ad5b9887d2b3937a8a40f25b76",
+          "status": 200,
+          "usage": {
+            "input": 1384,
+            "cacheRead": 20608,
+            "cacheWrite": 0,
+            "output": 200,
+            "reasoning": 0,
+            "totalTokens": 22192
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0068288
+        },
+        {
+          "id": "e6af0d53-1ace-476e-bff6-e0f7642497c8",
+          "responseId": "resp_0245351a69d9fb39016ac4f9b7aac887d2b0d6f5995ed7b47f",
+          "status": 200,
+          "usage": {
+            "input": 322,
+            "cacheRead": 21888,
+            "cacheWrite": 0,
+            "output": 94,
+            "reasoning": 0,
+            "totalTokens": 22304
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0037728
+        },
+        {
+          "id": "b639db97-264f-4d1f-890f-77c4a8d0c5a0",
+          "responseId": "resp_0245351a69d9fb39016ac4f9bebbc487d2b5da20cb230c818e",
+          "status": 200,
+          "usage": {
+            "input": 445,
+            "cacheRead": 22016,
+            "cacheWrite": 0,
+            "output": 89,
+            "reasoning": 0,
+            "totalTokens": 22550
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0039816
+        },
+        {
+          "id": "7851c513-5d69-41f7-b61d-f4625eb9002c",
+          "responseId": "resp_0245351a69d9fb39016ac4f9c4ec3087d283bbbb0321a8512d",
+          "status": 200,
+          "usage": {
+            "input": 552,
+            "cacheRead": 22272,
+            "cacheWrite": 0,
+            "output": 67,
+            "reasoning": 0,
+            "totalTokens": 22891
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0040012
+        }
+      ],
+      "accountingConsistent": true
+    },
+    {
+      "runId": "suite-PA-delivery",
+      "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-PA/delivery",
+      "ledgerAttempts": 31,
+      "traceHttpAttempts": 31,
+      "requestCountMatches": true,
+      "settledCount": 31,
+      "unsettledCount": 0,
+      "unsettledReservedUsd": 0,
+      "sdkMessageCount": 31,
+      "sdkMessagesWithModelUsage": 31,
+      "sdkZeroUsageErrors": [],
+      "sdkEventsCaughtUp": true,
+      "sdkUsageMatches": true,
+      "normalizedTotals": {
+        "input": 47303,
+        "output": 4918,
+        "cacheRead": 378752,
+        "cacheWrite": 0,
+        "totalTokens": 430973
+      },
+      "sdkTotals": {
+        "input": 47303,
+        "output": 4918,
+        "cacheRead": 378752,
+        "cacheWrite": 0,
+        "totalTokens": 430973
+      },
+      "wrongModel": false,
+      "settled": [
+        {
+          "id": "a5564ebf-aa7c-44ea-b835-74ed36ea841e",
+          "responseId": "resp_00359fe2a08381b4016ac4f8f7c19487d2b0dc738a52f86ce6",
+          "status": 200,
+          "usage": {
+            "input": 2884,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 77,
+            "reasoning": 0,
+            "totalTokens": 2961
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.006538
+        },
+        {
+          "id": "4027a1b6-2eea-40c4-9edb-a177ce510916",
+          "responseId": "resp_00359fe2a08381b4016ac4f8fc1a7087d28f0645cc28201a67",
+          "status": 200,
+          "usage": {
+            "input": 322,
+            "cacheRead": 2688,
+            "cacheWrite": 0,
+            "output": 108,
+            "reasoning": 0,
+            "totalTokens": 3118
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0019928
+        },
+        {
+          "id": "9d7e9497-8191-4cad-a49c-9ea4a85e1215",
+          "responseId": "resp_00359fe2a08381b4016ac4f9018c1c87d292807de6322bacc3",
+          "status": 200,
+          "usage": {
+            "input": 681,
+            "cacheRead": 2816,
+            "cacheWrite": 0,
+            "output": 109,
+            "reasoning": 0,
+            "totalTokens": 3606
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0027336
+        },
+        {
+          "id": "3e0e6377-2e3f-4465-8007-df7f5542e697",
+          "responseId": "resp_00359fe2a08381b4016ac4f906433887d2a5aab9ec0ffd5059",
+          "status": 200,
+          "usage": {
+            "input": 974,
+            "cacheRead": 3328,
+            "cacheWrite": 0,
+            "output": 18,
+            "reasoning": 0,
+            "totalTokens": 4320
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0024608
+        },
+        {
+          "id": "807658b2-3964-4a79-bded-b4a212b8f987",
+          "responseId": "resp_00359fe2a08381b4016ac4f909ad9887d2b9804f4ba3833305",
+          "status": 200,
+          "usage": {
+            "input": 255,
+            "cacheRead": 4096,
+            "cacheWrite": 0,
+            "output": 140,
+            "reasoning": 0,
+            "totalTokens": 4491
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0023196
+        },
+        {
+          "id": "2e871290-7151-463c-b44d-4dc133d49bd9",
+          "responseId": "resp_00359fe2a08381b4016ac4f9124b7087d2a89b9aaeb07d9999",
+          "status": 200,
+          "usage": {
+            "input": 1867,
+            "cacheRead": 4224,
+            "cacheWrite": 0,
+            "output": 270,
+            "reasoning": 194,
+            "totalTokens": 6361
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0068563999999999995
+        },
+        {
+          "id": "4fd48a82-b701-499f-86fb-dc4c1ac2a004",
+          "responseId": "resp_00359fe2a08381b4016ac4f91fc74487d2bbbdf29f3313b248",
+          "status": 200,
+          "usage": {
+            "input": 936,
+            "cacheRead": 5888,
+            "cacheWrite": 0,
+            "output": 1023,
+            "reasoning": 0,
+            "totalTokens": 7847
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.012690799999999999
+        },
+        {
+          "id": "41722440-9743-4094-bb6d-0376f0399416",
+          "responseId": "resp_00359fe2a08381b4016ac4f936552087d286b3e6fed436be6d",
+          "status": 200,
+          "usage": {
+            "input": 1211,
+            "cacheRead": 6656,
+            "cacheWrite": 0,
+            "output": 1162,
+            "reasoning": 0,
+            "totalTokens": 9029
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.014707600000000001
+        },
+        {
+          "id": "00b1b530-2765-4ad9-bc52-654dd1ad8ac4",
+          "responseId": "resp_00359fe2a08381b4016ac4f950972887d28ad72ef8ae0bd178",
+          "status": 200,
+          "usage": {
+            "input": 1369,
+            "cacheRead": 7680,
+            "cacheWrite": 0,
+            "output": 37,
+            "reasoning": 0,
+            "totalTokens": 9086
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.003876
+        },
+        {
+          "id": "2506ea0d-4a8e-43fd-83f3-40f6b956c77b",
+          "responseId": "resp_00359fe2a08381b4016ac4f955220887d2976ad742a0a22d08",
+          "status": 200,
+          "usage": {
+            "input": 391,
+            "cacheRead": 8960,
+            "cacheWrite": 0,
+            "output": 54,
+            "reasoning": 0,
+            "totalTokens": 9405
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.002218
+        },
+        {
+          "id": "7b0cccaa-0325-4494-bf34-f50800decac7",
+          "responseId": "resp_00359fe2a08381b4016ac4f958a5bc87d2b6897fee5c8ac3af",
+          "status": 200,
+          "usage": {
+            "input": 11659,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 88,
+            "reasoning": 0,
+            "totalTokens": 11747
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.024198
+        },
+        {
+          "id": "1da5b3b1-f40e-4501-9986-e429f97fb414",
+          "responseId": "resp_00359fe2a08381b4016ac4f95d91d887d2a2cfffad68276faf",
+          "status": 200,
+          "usage": {
+            "input": 381,
+            "cacheRead": 11520,
+            "cacheWrite": 0,
+            "output": 101,
+            "reasoning": 13,
+            "totalTokens": 12002
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.002924
+        },
+        {
+          "id": "e187394e-2556-4ff0-804d-d0cea97282ca",
+          "responseId": "resp_00359fe2a08381b4016ac4f96205ec87d29fc1ea74e2bd2779",
+          "status": 200,
+          "usage": {
+            "input": 533,
+            "cacheRead": 11776,
+            "cacheWrite": 0,
+            "output": 30,
+            "reasoning": 0,
+            "totalTokens": 12339
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0025436000000000005
+        },
+        {
+          "id": "f1a34e35-33a2-4cf9-bb0b-ffc6a5319615",
+          "responseId": "resp_00359fe2a08381b4016ac4f966171087d2a02883655ef887ef",
+          "status": 200,
+          "usage": {
+            "input": 1868,
+            "cacheRead": 12160,
+            "cacheWrite": 0,
+            "output": 54,
+            "reasoning": 0,
+            "totalTokens": 14082
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.005492
+        },
+        {
+          "id": "9a877a42-9f30-4636-bf43-68abfeb36c7c",
+          "responseId": "resp_00359fe2a08381b4016ac4f96b744887d2ae7e37109f6427c4",
+          "status": 200,
+          "usage": {
+            "input": 5732,
+            "cacheRead": 9216,
+            "cacheWrite": 0,
+            "output": 81,
+            "reasoning": 0,
+            "totalTokens": 15029
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0131956
+        },
+        {
+          "id": "585982d9-b710-47ec-ad41-2f77de556491",
+          "responseId": "resp_00359fe2a08381b4016ac4f970513c87d28dabe7b23bf472a2",
+          "status": 200,
+          "usage": {
+            "input": 1346,
+            "cacheRead": 13824,
+            "cacheWrite": 0,
+            "output": 103,
+            "reasoning": 11,
+            "totalTokens": 15273
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.005104399999999999
+        },
+        {
+          "id": "59d8878d-3f29-4e8d-b16d-d8a7ba3e59c2",
+          "responseId": "resp_00359fe2a08381b4016ac4f976a62087d2b38d4cf1b11140e7",
+          "status": 200,
+          "usage": {
+            "input": 919,
+            "cacheRead": 14848,
+            "cacheWrite": 0,
+            "output": 59,
+            "reasoning": 0,
+            "totalTokens": 15826
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0039128
+        },
+        {
+          "id": "b6508fc8-b643-405b-ba1f-66633f9360bd",
+          "responseId": "resp_00359fe2a08381b4016ac4f980dc6c87d292cf82e6abae418e",
+          "status": 200,
+          "usage": {
+            "input": 563,
+            "cacheRead": 15616,
+            "cacheWrite": 0,
+            "output": 82,
+            "reasoning": 12,
+            "totalTokens": 16261
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0035076000000000005
+        },
+        {
+          "id": "379eb619-1336-473c-ad3f-ddb57e5a8b9a",
+          "responseId": "resp_00359fe2a08381b4016ac4f9855ab887d29e8bbd1ef942824a",
+          "status": 200,
+          "usage": {
+            "input": 1683,
+            "cacheRead": 14976,
+            "cacheWrite": 0,
+            "output": 86,
+            "reasoning": 0,
+            "totalTokens": 16745
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0057236000000000006
+        },
+        {
+          "id": "b0d07b96-049a-4751-a858-6683d863e75d",
+          "responseId": "resp_00359fe2a08381b4016ac4f98962f887d2b8617b032dcf6a86",
+          "status": 200,
+          "usage": {
+            "input": 510,
+            "cacheRead": 16512,
+            "cacheWrite": 0,
+            "output": 95,
+            "reasoning": 0,
+            "totalTokens": 17117
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0036211999999999998
+        },
+        {
+          "id": "b144cda1-ecc4-47da-9d3d-600fc01ac596",
+          "responseId": "resp_00359fe2a08381b4016ac4f98db8fc87d2b17df9667b597126",
+          "status": 200,
+          "usage": {
+            "input": 732,
+            "cacheRead": 16896,
+            "cacheWrite": 0,
+            "output": 81,
+            "reasoning": 0,
+            "totalTokens": 17709
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0039636
+        },
+        {
+          "id": "7496ee20-bfcf-4294-9ea8-f28d63bdfc01",
+          "responseId": "resp_00359fe2a08381b4016ac4f9924f3087d2a5abcd9a3f294f5e",
+          "status": 200,
+          "usage": {
+            "input": 320,
+            "cacheRead": 17536,
+            "cacheWrite": 0,
+            "output": 68,
+            "reasoning": 0,
+            "totalTokens": 17924
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0030736000000000006
+        },
+        {
+          "id": "5745a71e-43f6-46b5-a8ef-ad229c561bed",
+          "responseId": "resp_00359fe2a08381b4016ac4f998249887d29c6bc69c35501fa3",
+          "status": 200,
+          "usage": {
+            "input": 658,
+            "cacheRead": 17664,
+            "cacheWrite": 0,
+            "output": 301,
+            "reasoning": 0,
+            "totalTokens": 18623
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0060923999999999996
+        },
+        {
+          "id": "57082b4c-a96f-4bf5-9fb4-803e83866f25",
+          "responseId": "resp_00359fe2a08381b4016ac4f9a1374887d2a8e6576d15716fa8",
+          "status": 200,
+          "usage": {
+            "input": 491,
+            "cacheRead": 18176,
+            "cacheWrite": 0,
+            "output": 83,
+            "reasoning": 0,
+            "totalTokens": 18750
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0036296
+        },
+        {
+          "id": "c7f1b458-3a8e-434c-832f-e6f1775d7398",
+          "responseId": "resp_00359fe2a08381b4016ac4f9a81b5c87d2bbca6a176e12df56",
+          "status": 200,
+          "usage": {
+            "input": 3243,
+            "cacheRead": 16000,
+            "cacheWrite": 0,
+            "output": 86,
+            "reasoning": 0,
+            "totalTokens": 19329
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.008946
+        },
+        {
+          "id": "d9301073-faf9-436a-b323-25e0fa89f015",
+          "responseId": "resp_00359fe2a08381b4016ac4f9ad068487d2a4694883669a5589",
+          "status": 200,
+          "usage": {
+            "input": 407,
+            "cacheRead": 19072,
+            "cacheWrite": 0,
+            "output": 40,
+            "reasoning": 0,
+            "totalTokens": 19519
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0031211999999999998
+        },
+        {
+          "id": "6d1facaa-3b3e-4808-9c04-51d6c4d158ae",
+          "responseId": "resp_00359fe2a08381b4016ac4f9b0542087d2a90c969076c4d90b",
+          "status": 200,
+          "usage": {
+            "input": 1888,
+            "cacheRead": 18560,
+            "cacheWrite": 0,
+            "output": 54,
+            "reasoning": 0,
+            "totalTokens": 20502
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.006172
+        },
+        {
+          "id": "ebf750b7-dcc7-495c-831c-5713f8eda5a9",
+          "responseId": "resp_00359fe2a08381b4016ac4f9b4d2a487d28e1af2334bf118e5",
+          "status": 200,
+          "usage": {
+            "input": 2164,
+            "cacheRead": 20352,
+            "cacheWrite": 0,
+            "output": 176,
+            "reasoning": 0,
+            "totalTokens": 22692
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0081232
+        },
+        {
+          "id": "59cba431-8429-4b6f-8d2b-b635f8598c70",
+          "responseId": "resp_00359fe2a08381b4016ac4f9bac55087d298d9c11f55239e03",
+          "status": 200,
+          "usage": {
+            "input": 309,
+            "cacheRead": 22400,
+            "cacheWrite": 0,
+            "output": 102,
+            "reasoning": 0,
+            "totalTokens": 22811
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.003878
+        },
+        {
+          "id": "5d17f95f-3574-4237-8533-d0b42351b042",
+          "responseId": "resp_00359fe2a08381b4016ac4f9bff4d487d28514407ed4242322",
+          "status": 200,
+          "usage": {
+            "input": 453,
+            "cacheRead": 22528,
+            "cacheWrite": 0,
+            "output": 88,
+            "reasoning": 0,
+            "totalTokens": 23069
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0040388
+        },
+        {
+          "id": "f077ea60-b866-4dfd-a2f0-fd11afef0385",
+          "responseId": "resp_00359fe2a08381b4016ac4f9c453e887d28f76ae005eb49fba",
+          "status": 200,
+          "usage": {
+            "input": 554,
+            "cacheRead": 22784,
+            "cacheWrite": 0,
+            "output": 62,
+            "reasoning": 0,
+            "totalTokens": 23400
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0040064
+        }
+      ],
+      "accountingConsistent": true
+    },
+    {
+      "runId": "suite-PA-view",
+      "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-PA/view",
+      "ledgerAttempts": 27,
+      "traceHttpAttempts": 27,
+      "requestCountMatches": true,
+      "settledCount": 27,
+      "unsettledCount": 0,
+      "unsettledReservedUsd": 0,
+      "sdkMessageCount": 27,
+      "sdkMessagesWithModelUsage": 27,
+      "sdkZeroUsageErrors": [],
+      "sdkEventsCaughtUp": true,
+      "sdkUsageMatches": true,
+      "normalizedTotals": {
+        "input": 26030,
+        "output": 5090,
+        "cacheRead": 351872,
+        "cacheWrite": 0,
+        "totalTokens": 382992
+      },
+      "sdkTotals": {
+        "input": 26030,
+        "output": 5090,
+        "cacheRead": 351872,
+        "cacheWrite": 0,
+        "totalTokens": 382992
+      },
+      "wrongModel": false,
+      "settled": [
+        {
+          "id": "570b032d-4a39-40aa-94ee-a07bb544fcb0",
+          "responseId": "resp_00c51853d8951db3016ac4f8f9204487d2aad288179f9515d5",
+          "status": 200,
+          "usage": {
+            "input": 2877,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 238,
+            "reasoning": 0,
+            "totalTokens": 3115
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.008134
+        },
+        {
+          "id": "09af77c6-ae45-45df-a5f4-0eb3d2c5db93",
+          "responseId": "resp_00c51853d8951db3016ac4f901b72c87d299bec09dde295e57",
+          "status": 200,
+          "usage": {
+            "input": 1731,
+            "cacheRead": 2688,
+            "cacheWrite": 0,
+            "output": 127,
+            "reasoning": 0,
+            "totalTokens": 4546
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0050008000000000006
+        },
+        {
+          "id": "de9046d8-2c3c-4d83-a807-3220811d741f",
+          "responseId": "resp_00c51853d8951db3016ac4f90ce75487d2ad21d03c992ac2c8",
+          "status": 200,
+          "usage": {
+            "input": 1761,
+            "cacheRead": 4224,
+            "cacheWrite": 0,
+            "output": 136,
+            "reasoning": 42,
+            "totalTokens": 6121
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0053044
+        },
+        {
+          "id": "54b2acca-b311-4724-8671-50f8cd4ba008",
+          "responseId": "resp_00c51853d8951db3016ac4f91aa10087d2b41ee820289342e0",
+          "status": 200,
+          "usage": {
+            "input": 691,
+            "cacheRead": 5888,
+            "cacheWrite": 0,
+            "output": 654,
+            "reasoning": 0,
+            "totalTokens": 7233
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.008510799999999999
+        },
+        {
+          "id": "fff2bbbc-dd10-423a-bab6-20fcfb1dc974",
+          "responseId": "resp_00c51853d8951db3016ac4f928668c87d2a931469209b082d1",
+          "status": 200,
+          "usage": {
+            "input": 852,
+            "cacheRead": 6400,
+            "cacheWrite": 0,
+            "output": 1040,
+            "reasoning": 0,
+            "totalTokens": 8292
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.012744
+        },
+        {
+          "id": "09d9256b-54d7-41a6-89ad-a4a9bdbdf70e",
+          "responseId": "resp_00c51853d8951db3016ac4f93e8a9087d2bd44e4aae5720207",
+          "status": 200,
+          "usage": {
+            "input": 1143,
+            "cacheRead": 7168,
+            "cacheWrite": 0,
+            "output": 122,
+            "reasoning": 0,
+            "totalTokens": 8433
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0042228000000000005
+        },
+        {
+          "id": "8ee43c61-34c8-4626-ba00-2bbd2b0b1134",
+          "responseId": "resp_00c51853d8951db3016ac4f944465487d2b3d2bcad3d443f07",
+          "status": 200,
+          "usage": {
+            "input": 1599,
+            "cacheRead": 8192,
+            "cacheWrite": 0,
+            "output": 57,
+            "reasoning": 0,
+            "totalTokens": 9848
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0045872
+        },
+        {
+          "id": "1706f5b3-8d2d-4daf-a7a0-d89a7c185b64",
+          "responseId": "resp_00c51853d8951db3016ac4f948ad4887d2b62f606a6a9072be",
+          "status": 200,
+          "usage": {
+            "input": 273,
+            "cacheRead": 9600,
+            "cacheWrite": 0,
+            "output": 204,
+            "reasoning": 0,
+            "totalTokens": 10077
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.003546
+        },
+        {
+          "id": "0a54674a-fe79-4e2e-a37b-cd5f6f0738f1",
+          "responseId": "resp_00c51853d8951db3016ac4f94ffc4c87d28838f3b85e6897c8",
+          "status": 200,
+          "usage": {
+            "input": 374,
+            "cacheRead": 9728,
+            "cacheWrite": 0,
+            "output": 254,
+            "reasoning": 0,
+            "totalTokens": 10356
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0042608
+        },
+        {
+          "id": "34585edb-0a45-4803-82a1-3565f825ef9c",
+          "responseId": "resp_00c51853d8951db3016ac4f9569e1c87d2b59f33c11e931638",
+          "status": 200,
+          "usage": {
+            "input": 1301,
+            "cacheRead": 9984,
+            "cacheWrite": 0,
+            "output": 182,
+            "reasoning": 0,
+            "totalTokens": 11467
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0054204
+        },
+        {
+          "id": "4f0e9263-7462-4b93-9de9-16335bb79a23",
+          "responseId": "resp_00c51853d8951db3016ac4f95dce0487d2a95782a13e548024",
+          "status": 200,
+          "usage": {
+            "input": 1910,
+            "cacheRead": 11136,
+            "cacheWrite": 0,
+            "output": 121,
+            "reasoning": 23,
+            "totalTokens": 13167
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.006143600000000001
+        },
+        {
+          "id": "6bf9c942-200b-4780-ab2c-5554e73780b4",
+          "responseId": "resp_00c51853d8951db3016ac4f96349ac87d29d82b2d88429e50c",
+          "status": 200,
+          "usage": {
+            "input": 394,
+            "cacheRead": 12928,
+            "cacheWrite": 0,
+            "output": 30,
+            "reasoning": 0,
+            "totalTokens": 13352
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0023808
+        },
+        {
+          "id": "bec5e2c1-00c8-414d-9e31-b51f0e33e1bc",
+          "responseId": "resp_00c51853d8951db3016ac4f96910a887d2a89718ca829fed70",
+          "status": 200,
+          "usage": {
+            "input": 734,
+            "cacheRead": 13184,
+            "cacheWrite": 0,
+            "output": 53,
+            "reasoning": 0,
+            "totalTokens": 13971
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0033164
+        },
+        {
+          "id": "2df1b14f-fbd9-4ed9-88d3-0fd92c135a6c",
+          "responseId": "resp_00c51853d8951db3016ac4f96ceeb887d2935934f295a888fa",
+          "status": 200,
+          "usage": {
+            "input": 747,
+            "cacheRead": 13824,
+            "cacheWrite": 0,
+            "output": 129,
+            "reasoning": 0,
+            "totalTokens": 14700
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0041664
+        },
+        {
+          "id": "e02394c5-938d-463e-82dc-1d671519c0ee",
+          "responseId": "resp_00c51853d8951db3016ac4f9727d9887d2a0bdc745659837cf",
+          "status": 200,
+          "usage": {
+            "input": 719,
+            "cacheRead": 14464,
+            "cacheWrite": 0,
+            "output": 294,
+            "reasoning": 0,
+            "totalTokens": 15477
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0058243999999999995
+        },
+        {
+          "id": "7ad9e7d3-5208-4d98-840a-b518adb50a62",
+          "responseId": "resp_00c51853d8951db3016ac4f97d0be487d2ab1551788476c8bd",
+          "status": 200,
+          "usage": {
+            "input": 416,
+            "cacheRead": 15104,
+            "cacheWrite": 0,
+            "output": 213,
+            "reasoning": 0,
+            "totalTokens": 15733
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0044724
+        },
+        {
+          "id": "35018443-f01e-4ebe-9940-4d7e8ceb813c",
+          "responseId": "resp_00c51853d8951db3016ac4f983a8d487d2b32c5d207cec8b95",
+          "status": 200,
+          "usage": {
+            "input": 1049,
+            "cacheRead": 15360,
+            "cacheWrite": 0,
+            "output": 138,
+            "reasoning": 18,
+            "totalTokens": 16547
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.005014
+        },
+        {
+          "id": "f4b88e95-db6f-4688-8556-53918a5be15d",
+          "responseId": "resp_00c51853d8951db3016ac4f989534087d298f977eab24de4d2",
+          "status": 200,
+          "usage": {
+            "input": 309,
+            "cacheRead": 16256,
+            "cacheWrite": 0,
+            "output": 53,
+            "reasoning": 0,
+            "totalTokens": 16618
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0027736
+        },
+        {
+          "id": "b6b56a00-967f-4523-ab4d-666a607d0790",
+          "responseId": "resp_00c51853d8951db3016ac4f98ecfec87d2aa951ad4a2a39640",
+          "status": 200,
+          "usage": {
+            "input": 1683,
+            "cacheRead": 16384,
+            "cacheWrite": 0,
+            "output": 130,
+            "reasoning": 23,
+            "totalTokens": 18197
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0063044
+        },
+        {
+          "id": "75ed6650-0169-4f81-baad-2665eaa007cf",
+          "responseId": "resp_00c51853d8951db3016ac4f99401ac87d2b7d6d09e37b3db3b",
+          "status": 200,
+          "usage": {
+            "input": 614,
+            "cacheRead": 17920,
+            "cacheWrite": 0,
+            "output": 39,
+            "reasoning": 14,
+            "totalTokens": 18573
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.00341
+        },
+        {
+          "id": "3a7281ae-d912-41bc-ae34-6d7689366fa0",
+          "responseId": "resp_00c51853d8951db3016ac4f99738f887d283414b505f99bb0e",
+          "status": 200,
+          "usage": {
+            "input": 998,
+            "cacheRead": 18432,
+            "cacheWrite": 0,
+            "output": 118,
+            "reasoning": 16,
+            "totalTokens": 19548
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0050192
+        },
+        {
+          "id": "7acd47ec-5996-4129-985e-40502a652604",
+          "responseId": "resp_00c51853d8951db3016ac4f99d664c87d2b2bc0fb2c8fb8006",
+          "status": 200,
+          "usage": {
+            "input": 381,
+            "cacheRead": 19328,
+            "cacheWrite": 0,
+            "output": 68,
+            "reasoning": 13,
+            "totalTokens": 19777
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0033748000000000003
+        },
+        {
+          "id": "6c36082f-7d1e-4020-bbd0-b5a870dcf3c2",
+          "responseId": "resp_00c51853d8951db3016ac4f9a29d7c87d2a1e76c93d33b7ac8",
+          "status": 200,
+          "usage": {
+            "input": 493,
+            "cacheRead": 19584,
+            "cacheWrite": 0,
+            "output": 114,
+            "reasoning": 15,
+            "totalTokens": 20191
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0040844
+        },
+        {
+          "id": "b6567355-4537-4667-b9c5-a444c3673757",
+          "responseId": "resp_00c51853d8951db3016ac4f9a8198c87d2a866d7796db5f1bf",
+          "status": 200,
+          "usage": {
+            "input": 719,
+            "cacheRead": 19968,
+            "cacheWrite": 0,
+            "output": 88,
+            "reasoning": 0,
+            "totalTokens": 20775
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.004314800000000001
+        },
+        {
+          "id": "567ec86f-461d-4555-a1ea-86f745b72725",
+          "responseId": "resp_00c51853d8951db3016ac4f9ac0a5087d2be7952e337c2ae78",
+          "status": 200,
+          "usage": {
+            "input": 1160,
+            "cacheRead": 20608,
+            "cacheWrite": 0,
+            "output": 224,
+            "reasoning": 19,
+            "totalTokens": 21992
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0066208000000000005
+        },
+        {
+          "id": "4cb3070d-eb1b-41be-a892-2b78e15c6bea",
+          "responseId": "resp_00c51853d8951db3016ac4f9b4986887d2981f20fd0fc62a32",
+          "status": 200,
+          "usage": {
+            "input": 376,
+            "cacheRead": 21632,
+            "cacheWrite": 0,
+            "output": 190,
+            "reasoning": 0,
+            "totalTokens": 22198
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0048152
+        },
+        {
+          "id": "8338a721-b76b-4516-9d06-255445e2e619",
+          "responseId": "resp_00c51853d8951db3016ac4f9bdda5487d2a1c3654fd0be86b8",
+          "status": 200,
+          "usage": {
+            "input": 726,
+            "cacheRead": 21888,
+            "cacheWrite": 0,
+            "output": 74,
+            "reasoning": 0,
+            "totalTokens": 22688
+          },
+          "normalizationMatches": true,
+          "estimateMatches": true,
+          "reserveMatches": true,
+          "costWithinReserve": true,
+          "outputWithinModelMaximum": true,
+          "estimatedApiEquivalentUsd": 0.0043808
+        }
+      ],
+      "accountingConsistent": true
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-10-06T13:26:43.095Z",
+  "verdict": "approve-first-explorer-calibration-only",
+  "explorerCalibrationApproved": true,
+  "suiteApproved": false,
+  "paidCallsByAuditor": 0,
+  "ledgerPath": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/budget.sqlite",
+  "adapterOrigin": {
+    "repository": "https://github.com/gabry848/agent-coordination",
+    "commit": "84fa1a0e53342aa6bf41648aa1a4c2ed2512d9f3",
+    "license": "MIT",
+    "originalFile": "plugins/agent-coordination/scripts/agent_coordination_server.py",
+    "sha256": "af74ad98a6cfabf5f282fd02f979b924765f128733c36bb30e994d6a93ac350a",
+    "archiveSha256": "357649f2300b3f3408e5327d7fc4a8ee7c50bb5dff338590710644cf0cd426c6"
+  },
+  "adapterHashes": {
+    "upstream_server.py": "af74ad98a6cfabf5f282fd02f979b924765f128733c36bb30e994d6a93ac350a",
+    "coordinator_server.py": "b7ba1eb8427c2b1c3dbd7a6aa549811226d0ab8f00a81269969e6181160f97b4",
+    "stdio_proxy.py": "e8c1d890a7676b6f789bdc96afc717dfca5f5ece23c2177d4e81528eeef72681",
+    "coordinator-extension.ts": "db1d066e8bd6593dc24af028f898892cdd3d46cb468173149da237ec6cd1c25b",
+    "board-runtime.mjs": "ca225684d56b429b2c68835307bfe7375560089d76c61ab5190ec6718909e22f",
+    "pi-runtime.mjs": "168923281687167e0f83e614ac37357dce0a17741375048ace7dfa9cc00f8eae",
+    "meter.mjs": "dbf58b5922b8d8d6933b384da577779d96322387503203a15d9f987ccc65f04e",
+    "meter-extension.ts": "93848234e98899a0429d0f5335a79a3956a7df6bc789bfc5a913e39004ec8b15",
+    "transport/store.mjs": "b275836b38b52b7522e607709200456ca8e044fc79cbf3b805aeb546a9c7cc18",
+    "transport/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+    "transport/pi-extension.ts": "2a460f6eaca63192223964373a6704c3b3106ee68e9113b4f76f9ef079648630",
+    "transport/prompt-v3.txt": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b"
+  },
+  "adapterHashMismatches": [],
+  "upstreamCopyEqual": true,
+  "explorerHashes": {
+    "run.mjs": "8b614d8fe032d46726f98a12521b0410cd2af91089a7c7d6ef192388a85a3d18",
+    "fixture.mjs": "b0d5402726b7dbb74bfcda401f0508e217c1e3e4133b33be97f1f9cd64a94c29",
+    "feed.mjs": "b716fc0c813afb93b3a1122d48f9618e79ee912eccbdb4225df8b81d1ebf146e",
+    "feed-extension.ts": "81aac28e72771cc297ccce641af62f8f10022d84bccd16c90869da9e110d2413",
+    "audit-worker.mjs": "764e5057c0a45c1b171976329d0822ddb833ff107f0dd6a990ff7b5555d321a9"
+  },
+  "checks": {
+    "actualDefaultZeroInferencePreflight": {
+      "phase": "zero-inference-preflight",
+      "passed": true,
+      "model": "gpt-6.1-sol",
+      "provider": "openai-codex",
+      "thinkingLevel": "medium",
+      "modelHttpAttempts": 0,
+      "assistantMessages": 0,
+      "feedReady": {
+        "time": "2026-10-06T13:25:22.580Z",
+        "monoMs": 422874201.7615,
+        "type": "feed_ready",
+        "mode": "N",
+        "activeTools": [
+          "read",
+          "bash",
+          "edit",
+          "write",
+          "notifications_dismiss",
+          "await_update"
+        ],
+        "allTools": [
+          "read",
+          "bash",
+          "edit",
+          "write",
+          "notifications_dismiss",
+          "await_update"
+        ]
+      },
+      "config": {
+        "settings": {
+          "defaultModel": "gpt-6.1-sol",
+          "defaultProvider": "openai-codex",
+          "defaultThinkingLevel": "medium",
+          "compaction": {
+            "enabled": true
+          },
+          "transport": "sse",
+          "retry": {
+            "enabled": false,
+            "maxRetries": 0
+          },
+          "packages": [],
+          "extensions": []
+        },
+        "accounting": {
+          "provider": "openai-codex",
+          "model": "gpt-6.1-sol",
+          "currency": "USD",
+          "actualBilling": null,
+          "estimateKind": "API-equivalent; subscription billing unavailable",
+          "tariffProvenance": "Existing verified campaign benchmark/meter.mjs and installed Pi 0.99.2 Codex catalog agree",
+          "perMillion": {
+            "input": 2,
+            "output": 10,
+            "cacheRead": 0.1,
+            "cacheWrite": 2.5
+          },
+          "longContextThreshold": 272000,
+          "longPerMillion": {
+            "input": 4,
+            "output": 15,
+            "cacheRead": 0.2,
+            "cacheWrite": 5
+          },
+          "maxOutputTokens": 128000,
+          "contextWindow": 272000,
+          "normalization": "Raw input_tokens includes cached tokens; subtract cacheRead and cacheWrite once. Reasoning tokens are an output subset.",
+          "reserves": "UTF-8 payload bytes + 8192 framing as input-token upper bound, all uncached at highest input/write tariff; maximum 128000 output tokens. Failed/unknown calls retain full reservation.",
+          "cachePolicy": "Provider-native Codex cache only; no API-specific cache schema injected",
+          "transport": "sse"
+        },
+        "authReused": true,
+        "deviations": [
+          "isolated config",
+          "transport=sse equally across modes",
+          "agent retries disabled; provider-internal retries still guarded",
+          "installed extensions/skills/context files disabled; explicit extensions and native file tools only"
+        ]
+      },
+      "cli": [
+        "--mode",
+        "rpc",
+        "--no-session",
+        "--offline",
+        "--no-extensions",
+        "--no-skills",
+        "--no-prompt-templates",
+        "--no-context-files",
+        "--no-themes",
+        "--no-approve",
+        "--tools",
+        "read,bash,edit,write,notifications_dismiss,await_update",
+        "-e",
+        "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/adapter/frozen/transport/pi-extension.ts",
+        "-e",
+        "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/adapter/frozen/meter-extension.ts",
+        "-e",
+        "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/explorer/feed-extension.ts"
+      ],
+      "messageCount": 0,
+      "gate": "root authorized RPC-only preflight; no prompt submitted"
+    },
+    "frozenAdapterTwelveFilesMatched": true,
+    "producerToolAbsentFromModel": true,
+    "producerHttpTokenNotInPiEnvironment": true,
+    "notificationContextDisabledInPAandW": true,
+    "explorerNativeFileToolsPreserved": true,
+    "competitiveAwaitReturnsQueuedReportImmediately": true,
+    "publicTestsCannotBeChangedForAcceptedTask": true,
+    "retriesReservedAtActualFetch": true,
+    "unknownUsageRetainsFullReserve": true,
+    "cacheTokensSubtractedOnce": true,
+    "reasoningNotDoubleCounted": true,
+    "conservativeConcurrentScopeReservationTestPassed": true
+  },
+  "pendingRealChecks": [
+    "First terminal provider usage must settle against Pi usage before another workload is authorized.",
+    "Actual duration, useful post-event work and complete task oracle.",
+    "Executable demo/CLI wiring: current automatic oracle checks static candidates only."
+  ],
+  "suiteConcerns": [
+    "Initial suite/run.mjs used adapter sources outside frozen/. A newer runtime manifest now uses frozen; confirm final hashes before suite GO.",
+    "suite/prompt.mjs exposes future policy value 192. Remove it and preserve pre-run amendment evidence before suite GO.",
+    "Check actor ownership of mutations and final shared-file edit attribution from runtime evidence; board activities are not locks."
+  ],
+  "interpretationLimits": [
+    "Calibration is not a ten-minute or long-session result until observed duration proves it.",
+    "Explorer corpus is public and available for independent analysis; this is not a proof that its derived facts are inaccessible by other tools.",
+    "Report computation starts after synthetic implementation-progress gate and is short; no real twenty-minute external computation latency is tested.",
+    "One first calibration has no comparative performance conclusion.",
+    "Code and logs outside workspace are not hidden by an OS sandbox; task instructions supply cooperative isolation.",
+    "API-equivalent estimates are not observed subscription billing."
+  ],
+  "references": [
+    "adapter/traces/preflight-final.tap",
+    "adapter/traces/coordinator-rmW58X/assertions.json",
+    "explorer/offline/checks.json",
+    "suite/offline-oracle-validation.json"
+  ]
+}

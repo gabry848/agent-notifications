@@ -1,0 +1,431 @@
+{
+  "runId": "main-S4-404-P10-v2-full",
+  "phase": "main",
+  "scenario": "S4",
+  "seed": 404,
+  "mode": "P10",
+  "variant": "v2",
+  "payload": "full",
+  "flow": "normal",
+  "created": {
+    "time": "2026-10-06T09:56:25.396Z",
+    "monoMs": 410337064.757916
+  },
+  "begun": {
+    "time": "2026-10-06T09:56:25.631Z",
+    "monoMs": 410337299.714333
+  },
+  "ended": {
+    "time": "2026-10-06T09:57:47.966Z",
+    "monoMs": 410419634.8865
+  },
+  "error": null,
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 11,
+    "status": "blocked",
+    "jobIds": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ]
+  },
+  "filesPassed": true,
+  "transcriptBlockPersisted": false,
+  "assessment": {
+    "passed": true,
+    "failures": [],
+    "injectionFailures": [],
+    "logicalModelResponses": 15,
+    "modeCompliance": true
+  },
+  "metrics": {
+    "wallMs": 82335.17216700315,
+    "taskMs": 78777.38579201698,
+    "providerAttempts": 15,
+    "logicalModelCalls": 15,
+    "tokens": {
+      "input": 1014,
+      "output": 982,
+      "cacheRead": 40135,
+      "cacheWrite": 5088,
+      "totalTokens": 47219,
+      "reasoning": 12
+    },
+    "estimatedUsd": 0.028581499999999996,
+    "unconfirmedReservedUsd": 0,
+    "toolCalls": 21,
+    "toolNames": {
+      "start_job": 1,
+      "get_job": 5,
+      "read_files": 1,
+      "write_file": 8,
+      "verify_files": 1,
+      "pause": 4,
+      "submit_plan": 1
+    },
+    "mcpCalls": 10,
+    "mcpProtocolMessages": 13,
+    "statusChecks": 5,
+    "notificationHttpAttempts": 0,
+    "dismissCalls": 0,
+    "historyCalls": 0,
+    "fallbackAwaits": 0,
+    "notificationBytes": 0,
+    "injectionMs": 0,
+    "reactions": [
+      {
+        "jobId": "b",
+        "producerMs": 10043.03170800209,
+        "deliveryMs": null,
+        "exposureMs": 18957.08220899105,
+        "reactionUpperBoundMs": 66585.50658398867,
+        "exposedAtNaturalBoundary": false,
+        "receivedWhileAwaiting": false
+      },
+      {
+        "jobId": "d",
+        "producerMs": 20042.960041999817,
+        "deliveryMs": null,
+        "exposureMs": 8955.540625035763,
+        "reactionUpperBoundMs": 56583.96500003338,
+        "exposedAtNaturalBoundary": false,
+        "receivedWhileAwaiting": false
+      },
+      {
+        "jobId": "f",
+        "producerMs": 30040.193459033966,
+        "deliveryMs": null,
+        "exposureMs": 15118.852750003338,
+        "reactionUpperBoundMs": 46585.03949999809,
+        "exposedAtNaturalBoundary": false,
+        "receivedWhileAwaiting": false
+      },
+      {
+        "jobId": "c",
+        "producerMs": 40039.94299995899,
+        "deliveryMs": null,
+        "exposureMs": 5121.498625040054,
+        "reactionUpperBoundMs": 36587.68537503481,
+        "exposedAtNaturalBoundary": false,
+        "receivedWhileAwaiting": false
+      },
+      {
+        "jobId": "e",
+        "producerMs": 50039.67512500286,
+        "deliveryMs": null,
+        "exposureMs": 9668.184375047684,
+        "reactionUpperBoundMs": 26586.361959040165,
+        "exposedAtNaturalBoundary": false,
+        "receivedWhileAwaiting": false
+      },
+      {
+        "jobId": "a",
+        "producerMs": 60042.89545804262,
+        "deliveryMs": null,
+        "exposureMs": 13692.870166957378,
+        "reactionUpperBoundMs": 16587.011166989803,
+        "exposedAtNaturalBoundary": false,
+        "receivedWhileAwaiting": false
+      }
+    ],
+    "startupMs": 234.9564170241356
+  },
+  "accounting": {
+    "requests": 15,
+    "estimatedUsd": 0.028581499999999996,
+    "unconfirmedReservedUsd": 0,
+    "tokens": {
+      "input": 1014,
+      "output": 982,
+      "cacheRead": 40135,
+      "cacheWrite": 5088,
+      "totalTokens": 47219,
+      "reasoning": 12
+    },
+    "rows": [
+      {
+        "id": "f105e0ad-8ddb-439d-9423-e49d94a9dc6e",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.140855,
+        "cost": 0.002234,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c5ca406487d29cdde09ab98f8a99",
+        "usage": {
+          "input": 972,
+          "cacheRead": 0,
+          "cacheWrite": 0,
+          "output": 29,
+          "reasoning": 0,
+          "totalTokens": 1001
+        },
+        "state": "settled"
+      },
+      {
+        "id": "d03f76b1-0078-4b35-867e-c3b8347f80d2",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.1495725,
+        "cost": 0.0034235,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c5cc126087d2854aefb5b8b331e8",
+        "usage": {
+          "input": 3,
+          "cacheRead": 0,
+          "cacheWrite": 1251,
+          "output": 29,
+          "reasoning": 0,
+          "totalTokens": 1283
+        },
+        "state": "settled"
+      },
+      {
+        "id": "cfdc3513-6e97-4b01-ba17-7054001b7f05",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.158323,
+        "cost": 0.0009761,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c5cfb88487d2a651fff3e775a76e",
+        "usage": {
+          "input": 3,
+          "cacheRead": 1251,
+          "cacheWrite": 282,
+          "output": 14,
+          "reasoning": 0,
+          "totalTokens": 1550
+        },
+        "state": "settled"
+      },
+      {
+        "id": "21649c5b-69eb-4abc-84d1-1eb9932080ca",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.17666,
+        "cost": 0.0055893,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c5d1fff087d282d08f609b116b32",
+        "usage": {
+          "input": 3,
+          "cacheRead": 1533,
+          "cacheWrite": 364,
+          "output": 452,
+          "reasoning": 0,
+          "totalTokens": 2352
+        },
+        "state": "settled"
+      },
+      {
+        "id": "7644b29d-57e1-49f1-8fc6-548995eb7428",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.205205,
+        "cost": 0.0018307,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c5d9baec87d2bc1c74ade1b03d3c",
+        "usage": {
+          "input": 3,
+          "cacheRead": 1897,
+          "cacheWrite": 598,
+          "output": 14,
+          "reasoning": 0,
+          "totalTokens": 2512
+        },
+        "state": "settled"
+      },
+      {
+        "id": "6a1dc219-0dd2-4b46-b821-1598ee0d1bde",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.214511,
+        "cost": 0.000918,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c5db99f887d29724bac1cd5db87e",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2495,
+          "cacheWrite": 197,
+          "output": 17,
+          "reasoning": 0,
+          "totalTokens": 2712
+        },
+        "state": "settled"
+      },
+      {
+        "id": "ea98006e-aaa0-4764-98d1-7098daed4157",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.21945,
+        "cost": 0.0006502000000000001,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c5e75c5887d282c8310e4e68ace9",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2692,
+          "cacheWrite": 34,
+          "output": 29,
+          "reasoning": 0,
+          "totalTokens": 2758
+        },
+        "state": "settled"
+      },
+      {
+        "id": "e39a000b-4118-42eb-b350-792f505ecd25",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.23026850000000001,
+        "cost": 0.0021360999999999997,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c5e9226c87d299af0b182bb8b03a",
+        "usage": {
+          "input": 3,
+          "cacheRead": 2726,
+          "cacheWrite": 395,
+          "output": 87,
+          "reasoning": 12,
+          "totalTokens": 3211
+        },
+        "state": "settled"
+      },
+      {
+        "id": "0577b19e-39c3-46ca-8643-c4a90fcc90ee",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.2450525,
+        "cost": 0.0008681,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c5f78f4087d2ba4469af238ba960",
+        "usage": {
+          "input": 3,
+          "cacheRead": 3121,
+          "cacheWrite": 104,
+          "output": 29,
+          "reasoning": 0,
+          "totalTokens": 3257
+        },
+        "state": "settled"
+      },
+      {
+        "id": "42c5c2d6-6fc7-484b-a117-0e990eff1932",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.25776299999999996,
+        "cost": 0.001771,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c5f9526887d2a72ffed347ac75f5",
+        "usage": {
+          "input": 3,
+          "cacheRead": 3225,
+          "cacheWrite": 509,
+          "output": 17,
+          "reasoning": 0,
+          "totalTokens": 3754
+        },
+        "state": "settled"
+      },
+      {
+        "id": "8a8a51b9-3edc-424e-a2d1-b27f6eaaea22",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.2626305,
+        "cost": 0.0007544000000000001,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c6058a3c87d2aefe3a846367b79b",
+        "usage": {
+          "input": 3,
+          "cacheRead": 3734,
+          "cacheWrite": 34,
+          "output": 29,
+          "reasoning": 0,
+          "totalTokens": 3800
+        },
+        "state": "settled"
+      },
+      {
+        "id": "3a98a1fd-ecca-4811-a7f2-7f1798fba4ed",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.27615500000000004,
+        "cost": 0.0019678,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c607ca3087d29dc03572d7818b27",
+        "usage": {
+          "input": 3,
+          "cacheRead": 3768,
+          "cacheWrite": 566,
+          "output": 17,
+          "reasoning": 0,
+          "totalTokens": 4354
+        },
+        "state": "settled"
+      },
+      {
+        "id": "eb9dd0f0-00ad-4d60-a8fe-26dd338df8ed",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.2810225,
+        "cost": 0.0008144000000000001,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c613c08887d28dd2d0b945964d47",
+        "usage": {
+          "input": 3,
+          "cacheRead": 4334,
+          "cacheWrite": 34,
+          "output": 29,
+          "reasoning": 0,
+          "totalTokens": 4400
+        },
+        "state": "settled"
+      },
+      {
+        "id": "a744f8fb-be49-4a4f-bd25-2775bfd29a12",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.2955645,
+        "cost": 0.0025303,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c615df5087d28328b955faec022f",
+        "usage": {
+          "input": 3,
+          "cacheRead": 4368,
+          "cacheWrite": 623,
+          "output": 53,
+          "reasoning": 0,
+          "totalTokens": 5047
+        },
+        "state": "settled"
+      },
+      {
+        "id": "41a098e0-412e-4466-8c04-80bb5b5c8546",
+        "run_id": "main-S4-404-P10-v2-full",
+        "phase": "main",
+        "reserved": 0.3018785,
+        "cost": 0.0021176,
+        "response_id": "resp_0c01ebf11ea02d4c016ac4c618d91887d2a1e017ec05b414ad",
+        "usage": {
+          "input": 3,
+          "cacheRead": 4991,
+          "cacheWrite": 97,
+          "output": 137,
+          "reasoning": 0,
+          "totalTokens": 5228
+        },
+        "state": "settled"
+      }
+    ]
+  },
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "thinking": "medium",
+    "pricing": {
+      "model": "gpt-6.1-sol",
+      "currency": "USD",
+      "tier": "default",
+      "checkedAt": "2026-10-06",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "perMillion": {
+        "input": 2,
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "output": 10
+      },
+      "longContextThreshold": 272000
+    },
+    "sourceHash": "83d1bfb3a239e9ec0f9aa42e2b46f8f29505890a0253a53a656eb7cde554caac",
+    "promptHash": "ace535bcfefbb4e7dddaf8313955f5c0e3e9c991f9c0c37f9edae266b7964efb",
+    "taskHash": "65fe951773d37808787ec23c48fd0b64e7f55448b73445a029917c818eb28e72",
+    "specHash": "6110868a4a9db4bef7fff3db83d7e47bcbd58d4c108c7fa6935da982ccb6e2f7"
+  },
+  "budgetConservativeTotalUsd": 1.6013005
+}

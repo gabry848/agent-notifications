@@ -1,0 +1,6 @@
+interface:
+  display_name: "Workflow Automation Designer"
+  short_description: "Design Codex workflows and automations"
+  default_prompt: "Use $workflow-automation-designer to design a practical Codex automation workflow."
+policy:
+  allow_implicit_invocation: true

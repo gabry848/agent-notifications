@@ -1,0 +1,660 @@
+{
+  "auditedAt": "2026-10-06T13:45:16.806Z",
+  "mode": "N",
+  "group": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N",
+  "newModelCalls": 0,
+  "taskCorrect": true,
+  "artifactOraclePassed": true,
+  "allTurnsCompleted": false,
+  "eligibleForEfficiencyComparison": false,
+  "interruptionKind": "local-reservation-guard",
+  "allUsageReconciled": true,
+  "supplemental": {
+    "auditedAt": "2026-10-06T13:45:16.740Z",
+    "directory": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work",
+    "readOnlyFixture": true,
+    "newModelCalls": 0,
+    "passed": true,
+    "checks": [
+      {
+        "name": "all-eighteen-public-functions-preserved",
+        "passed": true,
+        "detail": [
+          {
+            "role": "ingest",
+            "name": "parseEvent",
+            "present": true
+          },
+          {
+            "role": "ingest",
+            "name": "eventKey",
+            "present": true
+          },
+          {
+            "role": "ingest",
+            "name": "normalizeSubscriptions",
+            "present": true
+          },
+          {
+            "role": "ingest",
+            "name": "recipientsFor",
+            "present": true
+          },
+          {
+            "role": "ingest",
+            "name": "newestByEntity",
+            "present": true
+          },
+          {
+            "role": "ingest",
+            "name": "routeBatch",
+            "present": true
+          },
+          {
+            "role": "delivery",
+            "name": "retryDelay",
+            "present": true
+          },
+          {
+            "role": "delivery",
+            "name": "initialDelivery",
+            "present": true
+          },
+          {
+            "role": "delivery",
+            "name": "transitionDelivery",
+            "present": true
+          },
+          {
+            "role": "delivery",
+            "name": "dueDeliveries",
+            "present": true
+          },
+          {
+            "role": "delivery",
+            "name": "summarizeQueue",
+            "present": true
+          },
+          {
+            "role": "delivery",
+            "name": "mergeQueue",
+            "present": true
+          },
+          {
+            "role": "view",
+            "name": "turnAge",
+            "present": true
+          },
+          {
+            "role": "view",
+            "name": "compactMessage",
+            "present": true
+          },
+          {
+            "role": "view",
+            "name": "visibleEvents",
+            "present": true
+          },
+          {
+            "role": "view",
+            "name": "renderNotification",
+            "present": true
+          },
+          {
+            "role": "view",
+            "name": "renderContext",
+            "present": true
+          },
+          {
+            "role": "view",
+            "name": "groupBySource",
+            "present": true
+          }
+        ]
+      },
+      {
+        "name": "observed-policy-is-192",
+        "passed": true
+      },
+      {
+        "name": "compact-default-uses-current-policy",
+        "passed": true
+      },
+      {
+        "name": "render-notification-default-uses-current-policy",
+        "passed": true
+      },
+      {
+        "name": "render-context-default-uses-current-policy",
+        "passed": true
+      },
+      {
+        "name": "render-observes-policy-without-hardcoded-limit",
+        "passed": true
+      },
+      {
+        "name": "all-role-handoff-sections-preserved",
+        "passed": true
+      }
+    ],
+    "errors": [],
+    "limits": [
+      "Final runtime actor attribution and cleanup require run logs.",
+      "No performance or ten-minute duration conclusion from these functional probes."
+    ]
+  },
+  "extraTests": {
+    "passed": true,
+    "files": [
+      "test/delivery.additional.test.mjs",
+      "test/ingest.additional.test.mjs",
+      "test/view.additional.test.mjs"
+    ],
+    "stdout": "✔ retry handles extreme exponents and subnormal bases without premature overflow (0.369333ms)\n✔ initial state rejects invalid keys and times (0.134666ms)\n✔ transitions preserve unrelated data and allow equal timestamps (0.601375ms)\n✔ due items include exact boundary, order lexically, and are deep copies (0.135625ms)\n✔ summaries handle empty queues and reject prototype-like statuses (0.100292ms)\n✔ merge resolves duplicate IDs, respects newer existing records, and detaches arrays (0.090041ms)\n✔ object parsing deeply clones and discards unknown fields (0.715084ms)\n✔ subscription validation, defaults, inactive merges and exact topic matching (0.210458ms)\n✔ entity identity is collision-free, sorting is lexical, timestamp ties are numeric (0.597958ms)\n✔ batch deliveries are ordered and independently cloned (0.178708ms)\n✔ numeric validation applies to both ages, empty visibility, and zero caps (0.425709ms)\n✔ compaction counts UTF-16 units and rejects invalid inputs (0.58325ms)\n✔ visibility uses parsed timestamps, ID tie breaks, and clones frozen inputs (0.12ms)\n✔ default visibility limit keeps the most recent 50 in chronological order (0.092209ms)\n✔ diagnostic policy caps default rendering at 192 UTF-16 units (0.074583ms)\n✔ rendering reads current policy and context uses the chronological cap (0.0515ms)\n✔ grouping safely handles all prototype keys without changing frozen events (0.0675ms)\nℹ tests 17\nℹ suites 0\nℹ pass 17\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 32.869542\n"
+  },
+  "immutable": [
+    {
+      "path": "package.json",
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "matches": true
+    },
+    {
+      "path": "dataset.jsonl",
+      "matches": true
+    },
+    {
+      "path": "docs/ingest.md",
+      "matches": true
+    },
+    {
+      "path": "test/ingest.test.mjs",
+      "matches": true
+    },
+    {
+      "path": "docs/delivery.md",
+      "matches": true
+    },
+    {
+      "path": "test/delivery.test.mjs",
+      "matches": true
+    },
+    {
+      "path": "docs/view.md",
+      "matches": true
+    },
+    {
+      "path": "test/view.test.mjs",
+      "matches": true
+    },
+    {
+      "path": "test/integration.test.mjs",
+      "matches": true
+    }
+  ],
+  "actorResults": [
+    {
+      "role": "ingest",
+      "runId": "suite-N-ingest",
+      "resolvedDefault": "gpt-6.1-sol",
+      "provider": "openai-codex",
+      "turnMs": 202958,
+      "firstSubmissionMs": 188423,
+      "directEdits": [
+        {
+          "time": "2026-10-06T13:40:34.600Z",
+          "name": "write",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/src/pipeline/ingest.mjs",
+          "relative": "src/pipeline/ingest.mjs",
+          "toolCallId": "call_xv3FDgnwTiVPIbDuRvmVZ6AZ|fc_0da6efd2c3d3162e016ac4fa4448a887d298280ee56cf20c93"
+        },
+        {
+          "time": "2026-10-06T13:40:41.447Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/src/pipeline/ingest.mjs",
+          "relative": "src/pipeline/ingest.mjs",
+          "toolCallId": "call_eMsTY3YtwNC5bIFtaO7gxrGU|fc_0da6efd2c3d3162e016ac4fa59427087d2917c6747de1a5147"
+        },
+        {
+          "time": "2026-10-06T13:41:02.736Z",
+          "name": "write",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/test/ingest.additional.test.mjs",
+          "relative": "test/ingest.additional.test.mjs",
+          "toolCallId": "call_XxEdWaLVk7c0kD73lUEMCVct|fc_0da6efd2c3d3162e016ac4fa5c0b0c87d2a97260cb7efa56c7"
+        },
+        {
+          "time": "2026-10-06T13:41:31.790Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/src/index.mjs",
+          "relative": "src/index.mjs",
+          "toolCallId": "call_ILhhxwHvUs8lnBAKTsH972eY|fc_0da6efd2c3d3162e016ac4fa8bb20c87d2bf97bb430c659e43"
+        },
+        {
+          "time": "2026-10-06T13:41:31.790Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/docs/handoff.md",
+          "relative": "docs/handoff.md",
+          "toolCallId": "call_vS2skU1QZI5VYRcgh914DXBD|fc_0da6efd2c3d3162e016ac4fa8bb22887d2aad247cc043fc458"
+        },
+        {
+          "time": "2026-10-06T13:43:09.238Z",
+          "name": "write",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/results/ingest.json",
+          "relative": "results/ingest.json",
+          "toolCallId": "call_rPawoFwppNlXqcAnj1hkkrku|fc_0da6efd2c3d3162e016ac4faed1e5c87d29186b202f05595da"
+        }
+      ],
+      "foreignDirectEdits": [],
+      "outsideEdits": [],
+      "sharedEdits": [
+        {
+          "time": "2026-10-06T13:41:31.790Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/src/index.mjs",
+          "relative": "src/index.mjs",
+          "toolCallId": "call_ILhhxwHvUs8lnBAKTsH972eY|fc_0da6efd2c3d3162e016ac4fa8bb20c87d2bf97bb430c659e43",
+          "priorConflictCheck": "2026-10-06T13:41:08.007Z",
+          "priorRead": "2026-10-06T13:41:23.881Z",
+          "limit": "Presence of a previous check is observable; reservation freshness/overlap still requires trace review."
+        },
+        {
+          "time": "2026-10-06T13:41:31.790Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/docs/handoff.md",
+          "relative": "docs/handoff.md",
+          "toolCallId": "call_vS2skU1QZI5VYRcgh914DXBD|fc_0da6efd2c3d3162e016ac4fa8bb22887d2aad247cc043fc458",
+          "priorConflictCheck": "2026-10-06T13:41:08.007Z",
+          "priorRead": "2026-10-06T13:41:23.881Z",
+          "limit": "Presence of a previous check is observable; reservation freshness/overlap still requires trace review."
+        }
+      ],
+      "notificationContextPresent": true,
+      "notificationsReceived": 24,
+      "notificationExposures": 42,
+      "uniqueNotificationsExposed": 22,
+      "reinjections": 20,
+      "activeNotifications": 2,
+      "namespaceLeak": false,
+      "getUpdatesCalls": 0,
+      "listMessagesCalls": 0,
+      "awaitCalls": 2,
+      "checkConflictsCalls": 2,
+      "listActivitiesCalls": 0,
+      "allToolCalls": 45,
+      "mcpModelToolCalls": 15,
+      "pollingIntervals": [],
+      "pollingIntervalViolations": 0,
+      "accountingConsistent": true,
+      "unsettledCount": 0,
+      "estimatedApiEquivalentUsd": 0.379694,
+      "unknownReservedApiEquivalentUsd": 0,
+      "tokens": {
+        "input": 157082,
+        "output": 5753,
+        "cacheRead": 80000,
+        "cacheWrite": 0,
+        "totalTokens": 242835
+      },
+      "authLinkStillPresent": false,
+      "overlappingRoleVerificationCalls": [
+        {
+          "time": "2026-10-06T13:41:08.086Z",
+          "roleHash": "4fdfc12ae68938fd7cb6f7c2394dcc5db0b262e6fa9be45564f3e74f2b9e20f7",
+          "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+          "openPeerTurns": [
+            "delivery",
+            "view"
+          ]
+        }
+      ],
+      "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": [
+        {
+          "time": "2026-10-06T13:41:08.086Z",
+          "roleHash": "4fdfc12ae68938fd7cb6f7c2394dcc5db0b262e6fa9be45564f3e74f2b9e20f7",
+          "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+          "openPeerTurns": [
+            "delivery",
+            "view"
+          ]
+        }
+      ],
+      "limitations": [
+        "Bash modifications require manual command review; direct file tool scope is checked here.",
+        "A prior conflict check is not an atomic file lock.",
+        "Overlap deduplicates by role module source hash, conservatively ignoring distinct new tests on identical implementation. It proves useful verification while a peer turn is open, not continuous peer computation or external long-job overlap."
+      ]
+    },
+    {
+      "role": "delivery",
+      "runId": "suite-N-delivery",
+      "resolvedDefault": "gpt-6.1-sol",
+      "provider": "openai-codex",
+      "turnMs": 204672,
+      "firstSubmissionMs": 187420,
+      "directEdits": [
+        {
+          "time": "2026-10-06T13:40:46.196Z",
+          "name": "write",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/src/pipeline/delivery.mjs",
+          "relative": "src/pipeline/delivery.mjs",
+          "toolCallId": "call_IGf11piLUdoFl0PjGSv8u4d6|fc_006f1063ac5748f8016ac4fa4c3a8487d2b867196a4f702d7f"
+        },
+        {
+          "time": "2026-10-06T13:41:11.701Z",
+          "name": "write",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/test/delivery.additional.test.mjs",
+          "relative": "test/delivery.additional.test.mjs",
+          "toolCallId": "call_vVoUmpf2eHTgiRnrSyVHZm6e|fc_006f1063ac5748f8016ac4fa60806487d286c18a3cd317bf00"
+        },
+        {
+          "time": "2026-10-06T13:42:06.061Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/src/index.mjs",
+          "relative": "src/index.mjs",
+          "toolCallId": "call_qzmzxwCTnDwoXB9YtumYNISa|fc_006f1063ac5748f8016ac4faadf25c87d29148aad22ce11e74"
+        },
+        {
+          "time": "2026-10-06T13:42:06.061Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/docs/handoff.md",
+          "relative": "docs/handoff.md",
+          "toolCallId": "call_5DMuXeFUTWPP8s9tXlsNIk5J|fc_006f1063ac5748f8016ac4faadf27087d2b163062ea3c2354b"
+        },
+        {
+          "time": "2026-10-06T13:43:08.239Z",
+          "name": "write",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/results/delivery.json",
+          "relative": "results/delivery.json",
+          "toolCallId": "call_38zFtt9FXAP7hW6H69Ryap67|fc_006f1063ac5748f8016ac4fae6fb9c87d2831257523aff4be8"
+        }
+      ],
+      "foreignDirectEdits": [],
+      "outsideEdits": [],
+      "sharedEdits": [
+        {
+          "time": "2026-10-06T13:42:06.061Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/src/index.mjs",
+          "relative": "src/index.mjs",
+          "toolCallId": "call_qzmzxwCTnDwoXB9YtumYNISa|fc_006f1063ac5748f8016ac4faadf25c87d29148aad22ce11e74",
+          "priorConflictCheck": "2026-10-06T13:41:56.223Z",
+          "priorRead": "2026-10-06T13:41:56.224Z",
+          "limit": "Presence of a previous check is observable; reservation freshness/overlap still requires trace review."
+        },
+        {
+          "time": "2026-10-06T13:42:06.061Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/docs/handoff.md",
+          "relative": "docs/handoff.md",
+          "toolCallId": "call_5DMuXeFUTWPP8s9tXlsNIk5J|fc_006f1063ac5748f8016ac4faadf27087d2b163062ea3c2354b",
+          "priorConflictCheck": "2026-10-06T13:41:56.223Z",
+          "priorRead": "2026-10-06T13:41:56.224Z",
+          "limit": "Presence of a previous check is observable; reservation freshness/overlap still requires trace review."
+        }
+      ],
+      "notificationContextPresent": true,
+      "notificationsReceived": 23,
+      "notificationExposures": 50,
+      "uniqueNotificationsExposed": 23,
+      "reinjections": 27,
+      "activeNotifications": 0,
+      "namespaceLeak": false,
+      "getUpdatesCalls": 0,
+      "listMessagesCalls": 0,
+      "awaitCalls": 3,
+      "checkConflictsCalls": 4,
+      "listActivitiesCalls": 0,
+      "allToolCalls": 44,
+      "mcpModelToolCalls": 19,
+      "pollingIntervals": [],
+      "pollingIntervalViolations": 0,
+      "accountingConsistent": true,
+      "unsettledCount": 0,
+      "estimatedApiEquivalentUsd": 0.351978,
+      "unknownReservedApiEquivalentUsd": 0,
+      "tokens": {
+        "input": 138336,
+        "output": 5969,
+        "cacheRead": 156160,
+        "cacheWrite": 0,
+        "totalTokens": 300465
+      },
+      "authLinkStillPresent": false,
+      "overlappingRoleVerificationCalls": [
+        {
+          "time": "2026-10-06T13:41:17.691Z",
+          "roleHash": "c8997a459bc4b046c698aac86e17f7726df90ea645f35ac92470c626195d0102",
+          "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+          "openPeerTurns": [
+            "ingest",
+            "view"
+          ]
+        },
+        {
+          "time": "2026-10-06T13:43:00.423Z",
+          "roleHash": "c8997a459bc4b046c698aac86e17f7726df90ea645f35ac92470c626195d0102",
+          "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs && npm test",
+          "openPeerTurns": [
+            "ingest"
+          ]
+        }
+      ],
+      "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": [
+        {
+          "time": "2026-10-06T13:41:17.691Z",
+          "roleHash": "c8997a459bc4b046c698aac86e17f7726df90ea645f35ac92470c626195d0102",
+          "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+          "openPeerTurns": [
+            "ingest",
+            "view"
+          ]
+        }
+      ],
+      "limitations": [
+        "Bash modifications require manual command review; direct file tool scope is checked here.",
+        "A prior conflict check is not an atomic file lock.",
+        "Overlap deduplicates by role module source hash, conservatively ignoring distinct new tests on identical implementation. It proves useful verification while a peer turn is open, not continuous peer computation or external long-job overlap."
+      ]
+    },
+    {
+      "role": "view",
+      "runId": "suite-N-view",
+      "resolvedDefault": "gpt-6.1-sol",
+      "provider": "openai-codex",
+      "turnMs": 171359,
+      "firstSubmissionMs": null,
+      "directEdits": [
+        {
+          "time": "2026-10-06T13:41:06.065Z",
+          "name": "write",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/src/pipeline/view.mjs",
+          "relative": "src/pipeline/view.mjs",
+          "toolCallId": "call_IAcioIOa9ar8Iol6FcFaWHb6|fc_02a5c6c742b71322016ac4fa70c88887d2a05765c41172c959"
+        },
+        {
+          "time": "2026-10-06T13:41:06.066Z",
+          "name": "write",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/test/view.additional.test.mjs",
+          "relative": "test/view.additional.test.mjs",
+          "toolCallId": "call_vnPBdiTsIxdZtL0p5VlbhXYG|fc_02a5c6c742b71322016ac4fa70c8a887d280f58880b052c6b8"
+        },
+        {
+          "time": "2026-10-06T13:41:26.715Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/test/view.additional.test.mjs",
+          "relative": "test/view.additional.test.mjs",
+          "toolCallId": "call_BFmJXlCgQnxLNOmOabvXzyNo|fc_02a5c6c742b71322016ac4fa8657a487d28b7277edcedbd3a5"
+        },
+        {
+          "time": "2026-10-06T13:41:26.715Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/src/pipeline/view.mjs",
+          "relative": "src/pipeline/view.mjs",
+          "toolCallId": "call_f2Afv7OInJvtoKk2m48FoZXz|fc_02a5c6c742b71322016ac4fa8657bc87d285575a48dd0e97d7"
+        },
+        {
+          "time": "2026-10-06T13:42:10.732Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/test/view.additional.test.mjs",
+          "relative": "test/view.additional.test.mjs",
+          "toolCallId": "call_7iI1ZtLuZVplWTm7NHqeg8nP|fc_02a5c6c742b71322016ac4faadc0dc87d28c545f20c08126ef"
+        },
+        {
+          "time": "2026-10-06T13:42:37.908Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/src/index.mjs",
+          "relative": "src/index.mjs",
+          "toolCallId": "call_fGnYExjRhpQu778SYhgQjDsi|fc_02a5c6c742b71322016ac4facd996487d2b19dedd346a00c54"
+        },
+        {
+          "time": "2026-10-06T13:42:37.908Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/docs/handoff.md",
+          "relative": "docs/handoff.md",
+          "toolCallId": "call_FmWUWCMjTPibNSBGwtuqgMh0|fc_02a5c6c742b71322016ac4facd998487d28915cf118f0d074f"
+        }
+      ],
+      "foreignDirectEdits": [],
+      "outsideEdits": [],
+      "sharedEdits": [
+        {
+          "time": "2026-10-06T13:42:37.908Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/src/index.mjs",
+          "relative": "src/index.mjs",
+          "toolCallId": "call_fGnYExjRhpQu778SYhgQjDsi|fc_02a5c6c742b71322016ac4facd996487d2b19dedd346a00c54",
+          "priorConflictCheck": "2026-10-06T13:42:18.660Z",
+          "priorRead": "2026-10-06T13:42:26.603Z",
+          "limit": "Presence of a previous check is observable; reservation freshness/overlap still requires trace review."
+        },
+        {
+          "time": "2026-10-06T13:42:37.908Z",
+          "name": "edit",
+          "path": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/traces/group-N/work/docs/handoff.md",
+          "relative": "docs/handoff.md",
+          "toolCallId": "call_FmWUWCMjTPibNSBGwtuqgMh0|fc_02a5c6c742b71322016ac4facd998487d28915cf118f0d074f",
+          "priorConflictCheck": "2026-10-06T13:42:18.660Z",
+          "priorRead": "2026-10-06T13:42:26.603Z",
+          "limit": "Presence of a previous check is observable; reservation freshness/overlap still requires trace review."
+        }
+      ],
+      "notificationContextPresent": true,
+      "notificationsReceived": 25,
+      "notificationExposures": 63,
+      "uniqueNotificationsExposed": 21,
+      "reinjections": 42,
+      "activeNotifications": 4,
+      "namespaceLeak": false,
+      "getUpdatesCalls": 0,
+      "listMessagesCalls": 0,
+      "awaitCalls": 0,
+      "checkConflictsCalls": 3,
+      "listActivitiesCalls": 0,
+      "allToolCalls": 42,
+      "mcpModelToolCalls": 15,
+      "pollingIntervals": [],
+      "pollingIntervalViolations": 0,
+      "accountingConsistent": true,
+      "unsettledCount": 0,
+      "estimatedApiEquivalentUsd": 0.4408876,
+      "unknownReservedApiEquivalentUsd": 0,
+      "tokens": {
+        "input": 191392,
+        "output": 5443,
+        "cacheRead": 36736,
+        "cacheWrite": 0,
+        "totalTokens": 233571
+      },
+      "authLinkStillPresent": false,
+      "overlappingRoleVerificationCalls": [
+        {
+          "time": "2026-10-06T13:41:38.749Z",
+          "roleHash": "6a8f5afd8d6dfadf52a0addaee5f952e182adda837af9e2be4e51b92beefe1d6",
+          "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+          "openPeerTurns": [
+            "ingest",
+            "delivery"
+          ]
+        },
+        {
+          "time": "2026-10-06T13:42:14.817Z",
+          "roleHash": "6a8f5afd8d6dfadf52a0addaee5f952e182adda837af9e2be4e51b92beefe1d6",
+          "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+          "openPeerTurns": [
+            "ingest",
+            "delivery"
+          ]
+        }
+      ],
+      "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": [
+        {
+          "time": "2026-10-06T13:41:38.749Z",
+          "roleHash": "6a8f5afd8d6dfadf52a0addaee5f952e182adda837af9e2be4e51b92beefe1d6",
+          "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+          "openPeerTurns": [
+            "ingest",
+            "delivery"
+          ]
+        }
+      ],
+      "limitations": [
+        "Bash modifications require manual command review; direct file tool scope is checked here.",
+        "A prior conflict check is not an atomic file lock.",
+        "Overlap deduplicates by role module source hash, conservatively ignoring distinct new tests on identical implementation. It proves useful verification while a peer turn is open, not continuous peer computation or external long-job overlap."
+      ]
+    }
+  ],
+  "wrongOwners": [],
+  "wrongActors": [],
+  "board": {
+    "tables": [
+      "activities",
+      "messages",
+      "notification_meta",
+      "events",
+      "sqlite_sequence",
+      "subscriptions",
+      "deliveries"
+    ],
+    "eventCount": 38,
+    "activeSubscriptions": 0,
+    "deliveries": [
+      {
+        "state": "delivered",
+        "count": 72
+      },
+      {
+        "state": "irrelevant",
+        "count": 42
+      }
+    ],
+    "activeActivities": [
+      {
+        "id": "act_41ac90c85523",
+        "agent": "N-view",
+        "status": "testing"
+      }
+    ]
+  },
+  "originalCleanup": {
+    "serverExited": true,
+    "piExitCodes": {
+      "ingest": 0,
+      "delivery": 0,
+      "view": 0
+    },
+    "finishedAt": {
+      "time": "2026-10-06T13:43:25.826Z",
+      "monoMs": 423957469.240416
+    }
+  },
+  "regimeViolations": [],
+  "limitations": [
+    "One group per mode: exploratory, not statistical confirmation.",
+    "Runtime duration is observed, not padded to target ten minutes.",
+    "Await timing and shared-edit changes need manual causal review.",
+    "Actual subscription billing unknown; estimates include all measured attempts."
+  ]
+}

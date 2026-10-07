@@ -1,0 +1,1 @@
+{"time":"2026-10-06T14:49:21.964Z","monoMs":427913624.926583,"type":"rpc_event","event":{"type":"extension_error","extensionPath":"/Users/gabry848/Documents/Projects/pi-notifications/research/cache-fix-20261006/control/src/pi-extension.ts","event":"session_start","error":"listen EPERM: operation not permitted 127.0.0.1"}}

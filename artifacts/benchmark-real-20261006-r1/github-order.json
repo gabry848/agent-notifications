@@ -1,0 +1,62 @@
+[
+  {
+    "outcome": "success",
+    "seed": 3001,
+    "mode": "N"
+  },
+  {
+    "outcome": "success",
+    "seed": 3001,
+    "mode": "P10"
+  },
+  {
+    "outcome": "success",
+    "seed": 3002,
+    "mode": "P10"
+  },
+  {
+    "outcome": "success",
+    "seed": 3002,
+    "mode": "N"
+  },
+  {
+    "outcome": "failure",
+    "seed": 3101,
+    "mode": "N"
+  },
+  {
+    "outcome": "failure",
+    "seed": 3101,
+    "mode": "P10"
+  },
+  {
+    "outcome": "failure",
+    "seed": 3102,
+    "mode": "P10"
+  },
+  {
+    "outcome": "failure",
+    "seed": 3102,
+    "mode": "N"
+  },
+  {
+    "outcome": "cancelled",
+    "seed": 3201,
+    "mode": "N"
+  },
+  {
+    "outcome": "cancelled",
+    "seed": 3201,
+    "mode": "P10"
+  },
+  {
+    "outcome": "cancelled",
+    "seed": 3202,
+    "mode": "N"
+  },
+  {
+    "outcome": "cancelled",
+    "seed": 3202,
+    "mode": "P10"
+  }
+]

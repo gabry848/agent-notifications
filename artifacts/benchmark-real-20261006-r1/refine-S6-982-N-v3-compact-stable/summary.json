@@ -1,0 +1,320 @@
+{
+  "runId": "refine-S6-982-N-v3-compact-stable",
+  "phase": "refine",
+  "scenario": "S6",
+  "seed": 982,
+  "mode": "N",
+  "variant": "v3",
+  "payload": "compact",
+  "position": "tail",
+  "cache": "stable",
+  "dismiss": "single",
+  "contextEnabled": true,
+  "flow": "normal",
+  "created": {
+    "time": "2026-10-06T10:45:54.738Z",
+    "monoMs": 413306404.022666
+  },
+  "begun": {
+    "time": "2026-10-06T10:45:54.997Z",
+    "monoMs": 413306663.516541
+  },
+  "ended": {
+    "time": "2026-10-06T10:46:16.506Z",
+    "monoMs": 413328172.494166
+  },
+  "error": null,
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 31,
+    "status": "ready",
+    "jobIds": [
+      "validation"
+    ]
+  },
+  "filesPassed": true,
+  "transcriptBlockPersisted": false,
+  "assessment": {
+    "passed": true,
+    "failures": [],
+    "deliveryFailures": [],
+    "injectionFailures": [],
+    "logicalModelResponses": 7,
+    "modeCompliance": true
+  },
+  "metrics": {
+    "wallMs": 21508.977625012398,
+    "taskMs": 15575.459541976452,
+    "providerAttempts": 7,
+    "logicalModelCalls": 7,
+    "tokens": {
+      "input": 5674,
+      "output": 680,
+      "cacheRead": 11760,
+      "cacheWrite": 3456,
+      "totalTokens": 21570,
+      "reasoning": 21
+    },
+    "estimatedUsd": 0.027963999999999996,
+    "unconfirmedReservedUsd": 0,
+    "cacheHitRate": 0.5629487793202489,
+    "toolCalls": 13,
+    "toolNames": {
+      "start_job": 1,
+      "read_files": 1,
+      "write_file": 8,
+      "verify_files": 1,
+      "submit_plan": 1,
+      "notifications_dismiss": 1
+    },
+    "mcpCalls": 1,
+    "mcpProtocolMessages": 4,
+    "statusChecks": 0,
+    "notificationHttpAttempts": 20,
+    "dismissCalls": 1,
+    "historyCalls": 0,
+    "fallbackAwaits": 0,
+    "notificationBytes": 15413,
+    "injectionMs": 2.563624918460846,
+    "postSubmissionWorkCalls": 0,
+    "postSubmissionWork": [],
+    "reactions": [
+      {
+        "jobId": "validation",
+        "timeSource": "local_worker_finished",
+        "producerMs": 10035.869583010674,
+        "deliveryMs": 80.03683298826218,
+        "exposureMs": 1255.5046250224113,
+        "reactionUpperBoundMs": 3572.82837498188,
+        "exposedAtNaturalBoundary": true,
+        "receivedWhileAwaiting": false
+      }
+    ],
+    "providerLatencies": [
+      {
+        "requestId": "457b1fbc-052f-4181-a8c4-a9a8d997e950",
+        "durationMs": 1902.5694580078125,
+        "firstTokenMs": 1718.7098329663277
+      },
+      {
+        "requestId": "6e4d6813-847d-4d04-86e1-dca622e64c26",
+        "durationMs": 2214.3474999666214,
+        "firstTokenMs": 2113.8274160027504
+      },
+      {
+        "requestId": "7917681c-e638-4c08-a6fb-ed0af46b5106",
+        "durationMs": 7119.011334002018,
+        "firstTokenMs": 7035.596834003925
+      },
+      {
+        "requestId": "f041b227-2335-4525-b332-982389395059",
+        "durationMs": 1785.3064170479774,
+        "firstTokenMs": 1649.8449580073357
+      },
+      {
+        "requestId": "c1814ce0-ffc4-4d2e-ab19-eec8c926ceb4",
+        "durationMs": 2307.3056670427322,
+        "firstTokenMs": 1880.832417011261
+      },
+      {
+        "requestId": "3a2ce39a-f9be-4287-84b6-e13454d702da",
+        "durationMs": 3220.959249973297,
+        "firstTokenMs": 2939.6486659646034
+      },
+      {
+        "requestId": "7a820f6d-776f-4b88-b58e-b5442e6f9baf",
+        "durationMs": 2439.873000025749,
+        "firstTokenMs": 1465.7066250443459
+      }
+    ],
+    "providerTotalMs": 20989.372626066208,
+    "pollingIntervalsMs": [],
+    "requestedPausesSeconds": [],
+    "startupMs": 259.4938750267029,
+    "totalWallMs": 21768.4715000391,
+    "notificationState": {
+      "total": 20,
+      "active": 19,
+      "dismissed": 1
+    }
+  },
+  "accounting": {
+    "requests": 7,
+    "estimatedUsd": 0.027963999999999996,
+    "unconfirmedReservedUsd": 0,
+    "tokens": {
+      "input": 5674,
+      "output": 680,
+      "cacheRead": 11760,
+      "cacheWrite": 3456,
+      "totalTokens": 21570,
+      "reasoning": 21
+    },
+    "rows": [
+      {
+        "id": "457b1fbc-052f-4181-a8c4-a9a8d997e950",
+        "run_id": "refine-S6-982-N-v3-compact-stable",
+        "phase": "refine",
+        "reserved": 0.14455099999999999,
+        "cost": 0.0037285,
+        "response_id": "resp_0a1bc39672300142016ac4d16360f087d287f23b874aafc22a",
+        "usage": {
+          "input": 38,
+          "cacheRead": 0,
+          "cacheWrite": 1385,
+          "output": 19,
+          "reasoning": 0,
+          "totalTokens": 1442
+        },
+        "state": "settled"
+      },
+      {
+        "id": "6e4d6813-847d-4d04-86e1-dca622e64c26",
+        "run_id": "refine-S6-982-N-v3-compact-stable",
+        "phase": "refine",
+        "reserved": 0.15006750000000002,
+        "cost": 0.0005345,
+        "response_id": "resp_0a1bc39672300142016ac4d165410487d2b9c83eec80eb3747",
+        "usage": {
+          "input": 38,
+          "cacheRead": 1385,
+          "cacheWrite": 72,
+          "output": 14,
+          "reasoning": 0,
+          "totalTokens": 1509
+        },
+        "state": "settled"
+      },
+      {
+        "id": "7917681c-e638-4c08-a6fb-ed0af46b5106",
+        "run_id": "refine-S6-982-N-v3-compact-stable",
+        "phase": "refine",
+        "reserved": 0.16847600000000001,
+        "cost": 0.0056517,
+        "response_id": "resp_0a1bc39672300142016ac4d167b1f087d290285e18c85bb009",
+        "usage": {
+          "input": 38,
+          "cacheRead": 1457,
+          "cacheWrite": 364,
+          "output": 452,
+          "reasoning": 0,
+          "totalTokens": 2311
+        },
+        "state": "settled"
+      },
+      {
+        "id": "f041b227-2335-4525-b332-982389395059",
+        "run_id": "refine-S6-982-N-v3-compact-stable",
+        "phase": "refine",
+        "reserved": 0.19717500000000002,
+        "cost": 0.0034315,
+        "response_id": "resp_0a1bc39672300142016ac4d16ec99487d2ac1331ca71ca0dc7",
+        "usage": {
+          "input": 38,
+          "cacheRead": 1180,
+          "cacheWrite": 1239,
+          "output": 14,
+          "reasoning": 0,
+          "totalTokens": 2471
+        },
+        "state": "settled"
+      },
+      {
+        "id": "c1814ce0-ffc4-4d2e-ab19-eec8c926ceb4",
+        "run_id": "refine-S6-982-N-v3-compact-stable",
+        "phase": "refine",
+        "reserved": 0.2384525,
+        "cost": 0.0049324,
+        "response_id": "resp_0a1bc39672300142016ac4d170c67087d2905d873b66f14500",
+        "usage": {
+          "input": 1884,
+          "cacheRead": 2419,
+          "cacheWrite": 197,
+          "output": 43,
+          "reasoning": 0,
+          "totalTokens": 4543
+        },
+        "state": "settled"
+      },
+      {
+        "id": "3a2ce39a-f9be-4287-84b6-e13454d702da",
+        "run_id": "refine-S6-982-N-v3-compact-stable",
+        "phase": "refine",
+        "reserved": 0.24486,
+        "cost": 0.0048871,
+        "response_id": "resp_0a1bc39672300142016ac4d17309dc87d2bc1b8cb2899cd931",
+        "usage": {
+          "input": 1884,
+          "cacheRead": 2616,
+          "cacheWrite": 87,
+          "output": 64,
+          "reasoning": 21,
+          "totalTokens": 4651
+        },
+        "state": "settled"
+      },
+      {
+        "id": "7a820f6d-776f-4b88-b58e-b5442e6f9baf",
+        "run_id": "refine-S6-982-N-v3-compact-stable",
+        "phase": "refine",
+        "reserved": 0.257114,
+        "cost": 0.0047983,
+        "response_id": "resp_0a1bc39672300142016ac4d176458887d28a3552a3189dd876",
+        "usage": {
+          "input": 1754,
+          "cacheRead": 2703,
+          "cacheWrite": 112,
+          "output": 74,
+          "reasoning": 0,
+          "totalTokens": 4643
+        },
+        "state": "settled"
+      }
+    ]
+  },
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "thinking": "medium",
+    "pricing": {
+      "model": "gpt-6.1-sol",
+      "currency": "USD",
+      "tier": "default",
+      "checkedAt": "2026-10-06",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "perMillion": {
+        "input": 2,
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "output": 10
+      },
+      "longContextThreshold": 272000
+    },
+    "sourceHash": "1b1daeaa6fa877cab3a231f68379a9a6a474b9c34f02d82d3f6287a333dbd84a",
+    "sourceHashes": {
+      "src/pi-extension.ts": "4ba39fa3f47c6dfdc5c186a9f1adee6f4a370b79ee4381f62de6faad0f6c25c8",
+      "src/store.mjs": "d905b654f31ee20643a7ec4e0889c3a0de6c3f94e3219dfb924c08cef3c4252d",
+      "src/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+      "benchmark/extension.ts": "df5500805027246e8d70d20f9d1ef4726bac71ded4a46e998a3dd29ba2b917a9",
+      "benchmark/run.mjs": "747529cd089416877d2b6aeeb6a0b02ef195ebf6a7546d6890a33d765d7276b4",
+      "benchmark/pi-client.mjs": "24f86e44ef36bff4a461620db7f7ea644e5756aaf37a2d77d5994ae1d12a617b",
+      "benchmark/jobs-server.mjs": "22f88ea60f6e51f209934ef8ea0d7e16d988bae7f1e402ed9bc4d18acc0c586b",
+      "benchmark/worker.mjs": "7d4696d4f189f1a55d1b9e45c9c39f6ffe7c94cc70c98ee4bbeacb8ee92a4743",
+      "benchmark/scenarios.mjs": "85d2e12cd77fb20469b571186753891d6fbe26bb865d9dc547b0189ba5b3ee58",
+      "benchmark/cache.mjs": "ed2a2abb0323462501bf0c70eb03746df632338baa431b603a89ab7c61454f64",
+      "benchmark/meter.mjs": "83dc728485f7afce7b7284e18f9d58b855676a06f5ff98f0693b9e0f6ef02fb4",
+      "benchmark/common.mjs": "3759ad5a84f6739ae3df5b86e3278deeb70d68109962b64f6b3deb3154f4c56b",
+      "benchmark/metrics.mjs": "88da81fbdc3f4312d2e3467a11f6f42bcfb941e7a7e7313bd76bd62af118b72f",
+      "benchmark/conclusions.mjs": "5c0610c9d8ec53057ffc38d1187e3bae26e7e122a4be89f635f6c36c7b702118",
+      "benchmark/sources.mjs": "c2dbb7aa641a69d65929b5243f71bd1d69c1b47d781b0359cd8f571579f7128f",
+      "prompts/v2.txt": "ace535bcfefbb4e7dddaf8313955f5c0e3e9c991f9c0c37f9edae266b7964efb",
+      "prompts/v3.txt": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+      "package.json": "df3dae03dcf528b5f6c7d77b352c1a5499bdea67ea730afd9acbc40362b75ea7",
+      "package-lock.json": "99488b53f03906b6b7fc0b71ae928aa15eafe072a65c951af3e1a0a18c90bf3d"
+    },
+    "promptHash": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+    "taskHash": "b71121ed208abc35130698afabc94530723b0f2060223001728cef1ddef95b47",
+    "specHash": "50ce5c892c7b18f0bc960a6e6edba28183ab7c76f8ce2e42bfed190172c01937"
+  },
+  "budgetConservativeTotalUsd": 4.2589987
+}

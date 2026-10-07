@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "tools": [
+    "list_activities",
+    "upsert_activity",
+    "finish_activity",
+    "post_message",
+    "list_messages",
+    "check_conflicts",
+    "start_activity",
+    "update_activity",
+    "subscribe_notifications",
+    "unsubscribe_notifications",
+    "get_updates",
+    "await_next",
+    "cancel_wait",
+    "publish_update"
+  ],
+  "directedB": 5,
+  "notifyFeedEqual": true,
+  "noInference": true,
+  "cancellation": true,
+  "subscriptionCleanup": true
+}

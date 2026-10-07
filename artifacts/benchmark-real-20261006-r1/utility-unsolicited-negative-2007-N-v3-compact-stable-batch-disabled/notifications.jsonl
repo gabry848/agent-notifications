@@ -1,0 +1,11 @@
+{"time":"2026-10-06T12:04:57.080Z","monoMs":418048706.262416,"type":"session_selected","url":"http://127.0.0.1:52132","sessionId":"02f74284-1481-44fe-ba4b-d65433744d8f","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/utility-unsolicited-negative-2007-N-v3-compact-stable-batch-disabled/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-06T12:04:57.080Z","monoMs":418048706.360125,"type":"server_ready","url":"http://127.0.0.1:52132","sessionId":"02f74284-1481-44fe-ba4b-d65433744d8f","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/utility-unsolicited-negative-2007-N-v3-compact-stable-batch-disabled/notifications.sqlite"}
+{"time":"2026-10-06T12:04:57.162Z","monoMs":418048787.867125,"type":"provider_request","attempt":1}
+{"time":"2026-10-06T12:04:57.940Z","monoMs":418049565.955416,"type":"provider_response","status":200}
+{"time":"2026-10-06T12:04:59.095Z","monoMs":418050720.85925,"type":"provider_request","attempt":2}
+{"time":"2026-10-06T12:04:59.704Z","monoMs":418051329.946916,"type":"provider_response","status":200}
+{"time":"2026-10-06T12:05:00.195Z","monoMs":418051821.241583,"type":"notification_received","notification":{"id":"notif_fca0b35f-a275-4268-8d82-db7e0a8fdcbe","sessionId":"02f74284-1481-44fe-ba4b-d65433744d8f","source":"Validation","message":"{\"jobId\":\"validation\",\"revision\":1,\"status\":\"succeeded\",\"result\":{\"maxBatch\":772392740,\"release\":\"v1.4\",\"region\":\"eu-west-1\"},\"finished\":{\"time\":\"2026-10-06T12:05:00.163Z\",\"monoMs\":418051790.974916}}","createdAt":"2026-10-06T12:05:00.195Z","firstVisibleCall":null,"dismissedAt":null},"lastContextCall":0}
+{"time":"2026-10-06T12:05:06.433Z","monoMs":418058058.642333,"type":"provider_request","attempt":3}
+{"time":"2026-10-06T12:05:07.355Z","monoMs":418058980.72375,"type":"provider_response","status":200}
+{"time":"2026-10-06T12:05:08.911Z","monoMs":418060537.363958,"type":"provider_request","attempt":4}
+{"time":"2026-10-06T12:05:09.605Z","monoMs":418061230.860083,"type":"provider_response","status":200}

@@ -1,0 +1,15 @@
+{
+  "paidInference": false,
+  "completeReference": {
+    "passed": true,
+    "testsStatus": 0,
+    "policy": 192,
+    "receiptCorrect": true,
+    "handoffComplete": true
+  },
+  "lostExportMutation": {
+    "passed": false,
+    "testsStatus": 1,
+    "expectedFailure": true
+  }
+}

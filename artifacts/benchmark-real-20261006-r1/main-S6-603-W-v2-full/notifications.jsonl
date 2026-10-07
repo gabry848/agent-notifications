@@ -1,0 +1,16 @@
+{"time":"2026-10-06T10:19:07.653Z","monoMs":411699276.23475,"type":"session_selected","url":"http://127.0.0.1:61343","sessionId":"e81da9e9-b13d-4bd8-a9b7-a07ea575d35e","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/main-S6-603-W-v2-full/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-06T10:19:07.653Z","monoMs":411699276.329541,"type":"server_ready","url":"http://127.0.0.1:61343","sessionId":"e81da9e9-b13d-4bd8-a9b7-a07ea575d35e","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/main-S6-603-W-v2-full/notifications.sqlite"}
+{"time":"2026-10-06T10:19:07.743Z","monoMs":411699365.986041,"type":"provider_request","attempt":1}
+{"time":"2026-10-06T10:19:08.449Z","monoMs":411700071.839041,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:19:09.354Z","monoMs":411700977.079416,"type":"provider_request","attempt":2}
+{"time":"2026-10-06T10:19:09.865Z","monoMs":411701488.49325,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:19:11.374Z","monoMs":411702996.5935,"type":"provider_request","attempt":3}
+{"time":"2026-10-06T10:19:12.352Z","monoMs":411703974.659291,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:19:18.847Z","monoMs":411710470.023041,"type":"provider_request","attempt":4}
+{"time":"2026-10-06T10:19:19.486Z","monoMs":411711109.006666,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:19:20.675Z","monoMs":411712297.949958,"type":"provider_request","attempt":5}
+{"time":"2026-10-06T10:19:21.194Z","monoMs":411712817.184125,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:19:22.152Z","monoMs":411713774.793041,"type":"provider_request","attempt":6}
+{"time":"2026-10-06T10:19:22.811Z","monoMs":411714433.603916,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:19:24.540Z","monoMs":411716162.470916,"type":"provider_request","attempt":7}
+{"time":"2026-10-06T10:19:25.144Z","monoMs":411716766.491041,"type":"provider_response","status":200}

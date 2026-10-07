@@ -1,0 +1,6 @@
+{
+  "paidInference": false,
+  "promptCases": 9,
+  "futurePolicyLiteralAbsent": true,
+  "actualFrozenAdapterImports": true
+}

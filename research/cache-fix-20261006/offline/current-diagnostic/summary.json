@@ -1,0 +1,9 @@
+{
+  "variant": "current",
+  "label": "diagnostic",
+  "offline": true,
+  "durationMs": 20040,
+  "failure": "Error: Timeout: notify ready",
+  "authLinkRemoved": true,
+  "result": null
+}

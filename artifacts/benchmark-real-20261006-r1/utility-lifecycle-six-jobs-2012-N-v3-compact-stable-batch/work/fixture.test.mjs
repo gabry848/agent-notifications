@@ -1,0 +1,9 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+test("module-0.mjs", async()=>{const m=await import('./fixture/module-0.mjs');assert.equal(m.FACTOR,5);assert.equal(m.OFFSET,10);for(const n of [-3,0,7])assert.equal(m.transform(n),n*5+10);});
+test("module-1.mjs", async()=>{const m=await import('./fixture/module-1.mjs');assert.equal(m.FACTOR,6);assert.equal(m.OFFSET,0);for(const n of [-3,0,7])assert.equal(m.transform(n),n*6+0);});
+test("module-2.mjs", async()=>{const m=await import('./fixture/module-2.mjs');assert.equal(m.FACTOR,7);assert.equal(m.OFFSET,1);for(const n of [-3,0,7])assert.equal(m.transform(n),n*7+1);});
+test("module-3.mjs", async()=>{const m=await import('./fixture/module-3.mjs');assert.equal(m.FACTOR,8);assert.equal(m.OFFSET,2);for(const n of [-3,0,7])assert.equal(m.transform(n),n*8+2);});
+test("module-4.mjs", async()=>{const m=await import('./fixture/module-4.mjs');assert.equal(m.FACTOR,2);assert.equal(m.OFFSET,3);for(const n of [-3,0,7])assert.equal(m.transform(n),n*2+3);});
+test("module-5.mjs", async()=>{const m=await import('./fixture/module-5.mjs');assert.equal(m.FACTOR,3);assert.equal(m.OFFSET,4);for(const n of [-3,0,7])assert.equal(m.transform(n),n*3+4);});
+test("module-6.mjs", async()=>{const m=await import('./fixture/module-6.mjs');assert.equal(m.FACTOR,4);assert.equal(m.OFFSET,5);for(const n of [-3,0,7])assert.equal(m.transform(n),n*4+5);});
+test("module-7.mjs", async()=>{const m=await import('./fixture/module-7.mjs');assert.equal(m.FACTOR,5);assert.equal(m.OFFSET,6);for(const n of [-3,0,7])assert.equal(m.transform(n),n*5+6);});

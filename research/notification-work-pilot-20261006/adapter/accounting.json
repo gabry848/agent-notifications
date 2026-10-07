@@ -1,0 +1,40 @@
+{
+  "provider": "openai-codex",
+  "model": "gpt-6.1-sol",
+  "currency": "USD",
+  "actualBilling": null,
+  "estimateKind": "API-equivalent; subscription billing unavailable",
+  "tariffProvenance": "Existing verified campaign benchmark/meter.mjs and installed Pi 0.99.2 Codex catalog agree",
+  "perMillion": {
+    "input": 2,
+    "output": 10,
+    "cacheRead": 0.1,
+    "cacheWrite": 2.5
+  },
+  "longContextThreshold": 272000,
+  "longPerMillion": {
+    "input": 4,
+    "output": 15,
+    "cacheRead": 0.2,
+    "cacheWrite": 5
+  },
+  "maxOutputTokens": 128000,
+  "contextWindow": 272000,
+  "normalization": "Raw input_tokens includes cached tokens; subtract cacheRead and cacheWrite once. Reasoning tokens are an output subset.",
+  "reserves": "UTF-8 payload bytes + 8192 framing as input-token upper bound, all uncached at highest input/write tariff; maximum 128000 output tokens. Failed/unknown calls retain full reservation.",
+  "cachePolicy": "Provider-native Codex cache only; no API-specific cache schema injected",
+  "transport": "sse",
+  "scopeCaps": {
+    "adapter": 2,
+    "explorer": 2,
+    "suite": 6
+  },
+  "globalCap": 10,
+  "simultaneousExample": {
+    "payloadBytes": 80000,
+    "perRequestReserveUsd": 1.50048,
+    "threePiReserveUsd": 4.5014400000000006
+  },
+  "realFetchBodyMetered": "Actual uncompressed UTF-8 body, including zstd decode; no headers or credentials are logged",
+  "failures": "Unknown/retried requests retain reserve; guard failures mean incomplete infrastructure cases"
+}

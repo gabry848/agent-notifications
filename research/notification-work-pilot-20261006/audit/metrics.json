@@ -1,0 +1,633 @@
+{
+  "auditedAt": "2026-10-06T13:57:48.815Z",
+  "status": "partial-pilot-reservation-interruption",
+  "newModelCallsByAuditor": 0,
+  "defaultPi": {
+    "provider": "openai-codex",
+    "model": "gpt-6.1-sol",
+    "thinking": "medium",
+    "version": "0.99.2"
+  },
+  "measuredPiSessions": 7,
+  "modelHttpAttempts": 148,
+  "tokens": {
+    "input": 635603,
+    "output": 40564,
+    "cacheRead": 1390080,
+    "cacheWrite": 0,
+    "totalTokens": 2066247
+  },
+  "estimatedApiEquivalentUsd": 1.8158540000000003,
+  "unknownOrPendingReservedUsd": 0,
+  "tokenAccounting": {
+    "input": "Uncached input tokens; cacheRead and cacheWrite are separate input categories.",
+    "output": "Includes reasoning tokens; reasoning is not added again.",
+    "totalTokens": "Sum of uncached input, output, cacheRead and cacheWrite across all actual HTTP responses; repeated context is counted per request."
+  },
+  "postRunSourceIntegrity": {
+    "passed": true,
+    "sets": [
+      {
+        "kind": "adapter",
+        "fileCount": 12
+      },
+      {
+        "kind": "suite-v3",
+        "fileCount": 23
+      },
+      {
+        "kind": "explorer-first-calibration",
+        "fileCount": 5
+      }
+    ],
+    "mismatchCount": 0,
+    "reference": "audit/post-run-source-integrity.json"
+  },
+  "actualSubscriptionBillingUsd": null,
+  "allMeteredModelUsageConsistent": true,
+  "validEfficiencyComparisons": 0,
+  "awaitGroupExecuted": false,
+  "thirtyOrSixtyMinuteTrialsExecuted": false,
+  "explorer": {
+    "id": "explorer-compatibility-N-4101-847cae3a",
+    "originalAutomaticPassed": false,
+    "independentTaskPassed": true,
+    "turnMs": 212329,
+    "estimatedApiEquivalentUsd": 0.14056,
+    "modelHttpAttempts": 12,
+    "getUpdatesCalls": 0,
+    "awaitCalls": 0,
+    "exposureMs": 11190.703916966915,
+    "artifactActionMs": 111649.7765839696,
+    "limitation": "All fourteen public milestones preceded publication; later CLI/docs/integration work was real but this is not a ten-minute workload.",
+    "evidence": "audit/explorer-calibration-check.json"
+  },
+  "groups": [
+    {
+      "mode": "PA",
+      "actorCount": 3,
+      "artifactOraclePassed": true,
+      "allTurnsCompleted": true,
+      "eligibleForEfficiencyComparison": true,
+      "groupObservedTurnMs": 209432.34266602993,
+      "tenMinuteSession": false,
+      "modelHttpAttempts": 82,
+      "tokens": {
+        "input": 122473,
+        "output": 15471,
+        "cacheRead": 1030784,
+        "cacheWrite": 0,
+        "totalTokens": 1168728
+      },
+      "estimatedApiEquivalentUsd": 0.5027344,
+      "actualSubscriptionBillingUsd": null,
+      "cacheReadFraction": 0.8938025088943748,
+      "getUpdatesCalls": 16,
+      "awaitCalls": 4,
+      "totalToolCalls": 124,
+      "mcpModelToolCalls": 63,
+      "checkConflictsCalls": 8,
+      "notificationsReceived": 0,
+      "uniqueNotificationsExposed": 0,
+      "notificationAppearances": 0,
+      "reinjections": 0,
+      "overlap": {
+        "mode": "PA",
+        "verificationCallsDuringPeerTurn": 6,
+        "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 5,
+        "participants": [
+          {
+            "role": "ingest",
+            "verificationCallsDuringPeerTurn": 2,
+            "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 2,
+            "calls": [
+              {
+                "time": "2026-10-06T13:36:06.226Z",
+                "roleSourceHash": "467eca01f461bbb818b3914d5a451d02a86cdef51d81ccd7be3e7827738ebdae",
+                "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+                "openPeerTurns": [
+                  "delivery",
+                  "view"
+                ]
+              },
+              {
+                "time": "2026-10-06T13:36:58.077Z",
+                "roleSourceHash": "d93bc28e7291b40b5d18251e1007ffcc877acc32058d00948d6d76d935b23cc5",
+                "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+                "openPeerTurns": [
+                  "delivery",
+                  "view"
+                ]
+              }
+            ],
+            "versions": [
+              {
+                "time": "2026-10-06T13:36:06.226Z",
+                "roleSourceHash": "467eca01f461bbb818b3914d5a451d02a86cdef51d81ccd7be3e7827738ebdae",
+                "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+                "openPeerTurns": [
+                  "delivery",
+                  "view"
+                ]
+              },
+              {
+                "time": "2026-10-06T13:36:58.077Z",
+                "roleSourceHash": "d93bc28e7291b40b5d18251e1007ffcc877acc32058d00948d6d76d935b23cc5",
+                "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+                "openPeerTurns": [
+                  "delivery",
+                  "view"
+                ]
+              }
+            ]
+          },
+          {
+            "role": "delivery",
+            "verificationCallsDuringPeerTurn": 2,
+            "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 1,
+            "calls": [
+              {
+                "time": "2026-10-06T13:36:20.446Z",
+                "roleSourceHash": "ef4fd9d8fc5d75ba8a7f90e6fb7fb9ce9df676ff775e6e8a6257733bd071afaf",
+                "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+                "openPeerTurns": [
+                  "ingest",
+                  "view"
+                ]
+              },
+              {
+                "time": "2026-10-06T13:37:51.809Z",
+                "roleSourceHash": "ef4fd9d8fc5d75ba8a7f90e6fb7fb9ce9df676ff775e6e8a6257733bd071afaf",
+                "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs && npm test",
+                "openPeerTurns": [
+                  "ingest",
+                  "view"
+                ]
+              }
+            ],
+            "versions": [
+              {
+                "time": "2026-10-06T13:36:20.446Z",
+                "roleSourceHash": "ef4fd9d8fc5d75ba8a7f90e6fb7fb9ce9df676ff775e6e8a6257733bd071afaf",
+                "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+                "openPeerTurns": [
+                  "ingest",
+                  "view"
+                ]
+              }
+            ]
+          },
+          {
+            "role": "view",
+            "verificationCallsDuringPeerTurn": 2,
+            "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 2,
+            "calls": [
+              {
+                "time": "2026-10-06T13:36:03.392Z",
+                "roleSourceHash": "ab26376660808fee177d1ee9037039b0be6ad16357073d2f2aa46914681dc0cc",
+                "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+                "openPeerTurns": [
+                  "ingest",
+                  "delivery"
+                ]
+              },
+              {
+                "time": "2026-10-06T13:36:29.096Z",
+                "roleSourceHash": "defdc9447ced67be300a832744705eb03eee9b1752a816beb42d23b1a6f47d15",
+                "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+                "openPeerTurns": [
+                  "ingest",
+                  "delivery"
+                ]
+              }
+            ],
+            "versions": [
+              {
+                "time": "2026-10-06T13:36:03.392Z",
+                "roleSourceHash": "ab26376660808fee177d1ee9037039b0be6ad16357073d2f2aa46914681dc0cc",
+                "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+                "openPeerTurns": [
+                  "ingest",
+                  "delivery"
+                ]
+              },
+              {
+                "time": "2026-10-06T13:36:29.096Z",
+                "roleSourceHash": "defdc9447ced67be300a832744705eb03eee9b1752a816beb42d23b1a6f47d15",
+                "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+                "openPeerTurns": [
+                  "ingest",
+                  "delivery"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "contractAction": {
+        "mode": "PA",
+        "eventId": "coord:82efead1-3f8d-448e-8307-969930ac2ef3:7",
+        "producerAcknowledgedAt": "2026-10-06T13:35:35.762Z",
+        "firstExposedAt": "2026-10-06T13:36:03.308Z",
+        "firstCorrectCodeActionAt": "2026-10-06T13:36:08.021Z",
+        "exposureAfterAckMs": 27545.61154204607,
+        "codeActionAfterAckMs": 32258.97441703081,
+        "openPeerTurnsAtAction": [
+          "ingest",
+          "delivery"
+        ],
+        "channel": "get_updates",
+        "completedAllTurns": true,
+        "interpretation": "Complete adaptive baseline"
+      },
+      "allUsageReconciled": true,
+      "actorScopeViolations": 0,
+      "namespaceLeaks": false,
+      "activeActivities": [],
+      "errors": [],
+      "cleanup": {
+        "time": "2026-10-06T13:39:28.335Z",
+        "receivers": [
+          {
+            "url": "http://127.0.0.1:60692",
+            "closed": true,
+            "code": "ECONNREFUSED"
+          },
+          {
+            "url": "http://127.0.0.1:60697",
+            "closed": true,
+            "code": "ECONNREFUSED"
+          },
+          {
+            "url": "http://127.0.0.1:60702",
+            "closed": true,
+            "code": "ECONNREFUSED"
+          },
+          {
+            "url": "http://127.0.0.1:60707",
+            "closed": true,
+            "code": "ECONNREFUSED"
+          }
+        ],
+        "ownedAuthLinks": [
+          {
+            "role": "ingest",
+            "removedOwnedLink": true,
+            "remaining": false
+          },
+          {
+            "role": "delivery",
+            "removedOwnedLink": true,
+            "remaining": false
+          },
+          {
+            "role": "view",
+            "removedOwnedLink": true,
+            "remaining": false
+          }
+        ],
+        "matchingOwnedProcesses": [],
+        "originalAuthFileDeleted": false
+      },
+      "references": [
+        "suite/traces/group-PA/summary.json",
+        "audit/group-PA-audit.json",
+        "audit/group-PA-supplemental.json"
+      ]
+    },
+    {
+      "mode": "N",
+      "actorCount": 3,
+      "artifactOraclePassed": true,
+      "allTurnsCompleted": false,
+      "eligibleForEfficiencyComparison": false,
+      "groupObservedTurnMs": 204671.7504580021,
+      "tenMinuteSession": false,
+      "modelHttpAttempts": 54,
+      "tokens": {
+        "input": 486810,
+        "output": 17165,
+        "cacheRead": 272896,
+        "cacheWrite": 0,
+        "totalTokens": 776871
+      },
+      "estimatedApiEquivalentUsd": 1.1725596,
+      "actualSubscriptionBillingUsd": null,
+      "cacheReadFraction": 0.3592126427854986,
+      "getUpdatesCalls": 0,
+      "awaitCalls": 5,
+      "totalToolCalls": 131,
+      "mcpModelToolCalls": 49,
+      "checkConflictsCalls": 9,
+      "notificationsReceived": 72,
+      "uniqueNotificationsExposed": 66,
+      "notificationAppearances": 155,
+      "reinjections": 89,
+      "overlap": {
+        "mode": "N",
+        "verificationCallsDuringPeerTurn": 5,
+        "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 3,
+        "participants": [
+          {
+            "role": "ingest",
+            "verificationCallsDuringPeerTurn": 1,
+            "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 1,
+            "calls": [
+              {
+                "time": "2026-10-06T13:41:08.086Z",
+                "roleSourceHash": "4fdfc12ae68938fd7cb6f7c2394dcc5db0b262e6fa9be45564f3e74f2b9e20f7",
+                "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+                "openPeerTurns": [
+                  "delivery",
+                  "view"
+                ]
+              }
+            ],
+            "versions": [
+              {
+                "time": "2026-10-06T13:41:08.086Z",
+                "roleSourceHash": "4fdfc12ae68938fd7cb6f7c2394dcc5db0b262e6fa9be45564f3e74f2b9e20f7",
+                "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+                "openPeerTurns": [
+                  "delivery",
+                  "view"
+                ]
+              }
+            ]
+          },
+          {
+            "role": "delivery",
+            "verificationCallsDuringPeerTurn": 2,
+            "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 1,
+            "calls": [
+              {
+                "time": "2026-10-06T13:41:17.691Z",
+                "roleSourceHash": "c8997a459bc4b046c698aac86e17f7726df90ea645f35ac92470c626195d0102",
+                "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+                "openPeerTurns": [
+                  "ingest",
+                  "view"
+                ]
+              },
+              {
+                "time": "2026-10-06T13:43:00.423Z",
+                "roleSourceHash": "c8997a459bc4b046c698aac86e17f7726df90ea645f35ac92470c626195d0102",
+                "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs && npm test",
+                "openPeerTurns": [
+                  "ingest"
+                ]
+              }
+            ],
+            "versions": [
+              {
+                "time": "2026-10-06T13:41:17.691Z",
+                "roleSourceHash": "c8997a459bc4b046c698aac86e17f7726df90ea645f35ac92470c626195d0102",
+                "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+                "openPeerTurns": [
+                  "ingest",
+                  "view"
+                ]
+              }
+            ]
+          },
+          {
+            "role": "view",
+            "verificationCallsDuringPeerTurn": 2,
+            "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 1,
+            "calls": [
+              {
+                "time": "2026-10-06T13:41:38.749Z",
+                "roleSourceHash": "6a8f5afd8d6dfadf52a0addaee5f952e182adda837af9e2be4e51b92beefe1d6",
+                "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+                "openPeerTurns": [
+                  "ingest",
+                  "delivery"
+                ]
+              },
+              {
+                "time": "2026-10-06T13:42:14.817Z",
+                "roleSourceHash": "6a8f5afd8d6dfadf52a0addaee5f952e182adda837af9e2be4e51b92beefe1d6",
+                "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+                "openPeerTurns": [
+                  "ingest",
+                  "delivery"
+                ]
+              }
+            ],
+            "versions": [
+              {
+                "time": "2026-10-06T13:41:38.749Z",
+                "roleSourceHash": "6a8f5afd8d6dfadf52a0addaee5f952e182adda837af9e2be4e51b92beefe1d6",
+                "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+                "openPeerTurns": [
+                  "ingest",
+                  "delivery"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "contractAction": {
+        "mode": "N",
+        "eventId": "coord:cbc4bba8-a88e-4b86-9036-527c4e69dfbe:6",
+        "producerAcknowledgedAt": "2026-10-06T13:41:06.194Z",
+        "firstExposedAt": "2026-10-06T13:41:11.474Z",
+        "firstCorrectCodeActionAt": "2026-10-06T13:41:26.722Z",
+        "exposureAfterAckMs": 5280.649875044823,
+        "codeActionAfterAckMs": 20527.99845904112,
+        "openPeerTurnsAtAction": [
+          "ingest",
+          "delivery"
+        ],
+        "channel": "context injection",
+        "completedAllTurns": false,
+        "interpretation": "Functional policy action observed before local guard; incomplete final turn prevents efficiency comparison"
+      },
+      "allUsageReconciled": true,
+      "actorScopeViolations": 0,
+      "namespaceLeaks": false,
+      "activeActivities": [
+        {
+          "id": "act_41ac90c85523",
+          "agent": "N-view",
+          "status": "testing"
+        }
+      ],
+      "errors": [
+        {
+          "stage": "pi",
+          "role": "view",
+          "error": "pilot usage limit: conservative reservation exceeds budget",
+          "time": "2026-10-06T13:42:52.180Z",
+          "monoMs": 423923823.750166
+        }
+      ],
+      "cleanup": {
+        "time": "2026-10-06T13:44:35.063Z",
+        "receivers": [
+          {
+            "url": "http://127.0.0.1:61360",
+            "closed": true,
+            "code": "ECONNREFUSED"
+          },
+          {
+            "url": "http://127.0.0.1:61365",
+            "closed": true,
+            "code": "ECONNREFUSED"
+          },
+          {
+            "url": "http://127.0.0.1:61371",
+            "closed": true,
+            "code": "ECONNREFUSED"
+          },
+          {
+            "url": "http://127.0.0.1:61376",
+            "closed": true,
+            "code": "ECONNREFUSED"
+          }
+        ],
+        "ownedAuthLinks": [
+          {
+            "role": "ingest",
+            "removedOwnedLink": true,
+            "remaining": false
+          },
+          {
+            "role": "delivery",
+            "removedOwnedLink": true,
+            "remaining": false
+          },
+          {
+            "role": "view",
+            "removedOwnedLink": true,
+            "remaining": false
+          }
+        ],
+        "matchingOwnedProcesses": [],
+        "originalAuthFileDeleted": false,
+        "guardFailurePreserved": true
+      },
+      "references": [
+        "suite/traces/group-N/summary.json",
+        "audit/group-N-audit.json",
+        "audit/group-N-supplemental.json"
+      ]
+    }
+  ],
+  "residualEvents": {
+    "auditedAt": "2026-10-06T13:48:21.363Z",
+    "actors": [
+      {
+        "role": "ingest",
+        "received": 24,
+        "active": [
+          {
+            "id": "notif_569598f6cb2d53dc3528fb29914f62fdca309999873c0271a95a56f2787f121a",
+            "createdAt": "2026-10-06T13:43:17.285Z",
+            "firstVisibleCall": null,
+            "kind": "message",
+            "actor": "N-delivery"
+          },
+          {
+            "id": "notif_f0ea6c9e7c7a7e2ee254a3fe20c23bd03b554557719f41b54c8cf9bd1f0652e3",
+            "createdAt": "2026-10-06T13:43:17.290Z",
+            "firstVisibleCall": null,
+            "kind": "activity",
+            "actor": "N-delivery"
+          }
+        ],
+        "neverExposedActive": 2,
+        "previouslyExposedActive": 0
+      },
+      {
+        "role": "delivery",
+        "received": 23,
+        "active": [],
+        "neverExposedActive": 0,
+        "previouslyExposedActive": 0
+      },
+      {
+        "role": "view",
+        "received": 25,
+        "active": [
+          {
+            "id": "notif_f298b0887875e7f780bb278be28ea6b583ea949e0bf39bb53620106c1054c27a",
+            "createdAt": "2026-10-06T13:43:09.243Z",
+            "firstVisibleCall": null,
+            "kind": "message",
+            "actor": "N-ingest"
+          },
+          {
+            "id": "notif_7b75c268090165e044277caa22ae9bbc3577016318a461ce058d8aafab86f06f",
+            "createdAt": "2026-10-06T13:43:14.486Z",
+            "firstVisibleCall": null,
+            "kind": "activity",
+            "actor": "N-ingest"
+          },
+          {
+            "id": "notif_4f8fd92ff39cf1743cc8d8d954490d726201ff55758473704f8f869f6600f8bc",
+            "createdAt": "2026-10-06T13:43:17.287Z",
+            "firstVisibleCall": null,
+            "kind": "message",
+            "actor": "N-delivery"
+          },
+          {
+            "id": "notif_5b50cf480d5a31dbf4599adda6bf61de53f9ae03d9d008b4a51fb6bf5f549ac8",
+            "createdAt": "2026-10-06T13:43:17.292Z",
+            "firstVisibleCall": null,
+            "kind": "activity",
+            "actor": "N-delivery"
+          }
+        ],
+        "neverExposedActive": 4,
+        "previouslyExposedActive": 0
+      }
+    ],
+    "interpretation": "All six active events were received after the actor's last context snapshot and have never been exposed. They are persisted backlog, not lost notifications. View had already stopped its turn on the local guard; ingest was producing its final response. Arrival does not wake inference."
+  },
+  "reservationGuard": {
+    "auditedAt": "2026-10-06T13:47:10.125Z",
+    "event": {
+      "time": "2026-10-06T13:42:52.173Z",
+      "monoMs": 423923815.985,
+      "type": "logical_provider_request",
+      "payloadBytes": 107162
+    },
+    "scopeCapUsd": 6,
+    "estimatedAndPendingAtGuardUsd": 4.5444172,
+    "newRequestReserveUsd": 1.568385,
+    "projectedScopeTotalUsd": 6.1128022,
+    "pending": [
+      {
+        "id": "6e9bf562-6b23-4b8c-8999-ce98410150b7",
+        "runId": "suite-N-ingest",
+        "stateAtGuard": "pending",
+        "amountAtGuard": 1.5317625,
+        "reserved": 1.5317625,
+        "finalEstimated": 0.034586
+      },
+      {
+        "id": "df7ad786-a7b3-4848-a868-d29ea27e0744",
+        "runId": "suite-N-delivery",
+        "stateAtGuard": "pending",
+        "amountAtGuard": 1.5484475,
+        "reserved": 1.5484475,
+        "finalEstimated": 0.0073076
+      }
+    ],
+    "settledEstimatedAtGuardUsd": 1.4642072,
+    "guardBeforeHttp": true,
+    "actualProviderRateLimit": false,
+    "actualSubscriptionBillingKnown": false,
+    "interpretation": "Concurrent worst-case output reservations exceeded suite6 even though actual settled estimate was much lower; this is harness capacity, not a model failure or demonstrated notification loss.",
+    "limit": "State reconstructed from millisecond ledger/trace timestamps; exact cross-process commit ordering is not traced."
+  },
+  "interpretation": {
+    "channelAndOperationalReactionDemonstrated": true,
+    "performanceBenefitDemonstrated": false,
+    "observedLongSessions": false,
+    "cacheCauseEstablished": false,
+    "note": "N source files and action are correct, but its local reservation interruption and missing final view report prevent a valid efficiency comparison. W was suspended, not failed."
+  }
+}

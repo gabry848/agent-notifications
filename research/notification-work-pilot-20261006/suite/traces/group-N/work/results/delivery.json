@@ -1,0 +1,7 @@
+{
+  "role": "delivery",
+  "testsCommand": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs && npm test",
+  "receiptDigest": "ab49b5911fc554546970a97ab9f76d9d827a606a347ef947ac89a53416ffb3d9",
+  "policyRevisionHandled": null,
+  "summary": "Implemented all six delivery functions, integrated exports and delivery handoff without replacing peer content, and added six boundary tests. Delivery tests passed 12/12; final integrated suite passed 36/36. Observed maxMessageChars=192 policy applies only to view, requiring no delivery changes. Used three await_next fallback calls after owned work and shared integration were complete to obtain peer export readiness; earlier calls returned queued coordination facts. Original tests and dataset unchanged."
+}

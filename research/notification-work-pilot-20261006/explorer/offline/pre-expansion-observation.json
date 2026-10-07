@@ -1,0 +1,9 @@
+{
+  "phase": "offline-preparation",
+  "designVersion": "delivery-hub-v1",
+  "piRequests": 0,
+  "observedCommand": "node explorer/offline-check.mjs",
+  "observedResult": {"passed": true, "checks": 5, "referenceTests": 11, "piRequests": 0},
+  "provenance": "Recorded from successful tool output before the oracle was expanded to 14 checks. The original full successful TAP/source snapshot was not retained; do not treat this metadata as a raw benchmark trace.",
+  "nextVersion": "delivery-hub-v2 adds runtime policy reload and HTTP sender retry behavior before any measured Pi run or freeze"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "local-webhook-delivery-hub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-timeout=15000 public.test.mjs integration.test.mjs",
+    "start": "node src/cli.mjs",
+    "demo": "node src/cli.mjs --demo"
+  }
+}

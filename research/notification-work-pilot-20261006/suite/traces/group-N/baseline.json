@@ -1,0 +1,96 @@
+{
+  "project": "notification-suite-N-b7683489-2194-48cd-9067-75a661000719",
+  "actors": {
+    "ingest": "N-ingest",
+    "delivery": "N-delivery",
+    "view": "N-view"
+  },
+  "mode": "N",
+  "baselineHashes": {
+    "package.json": "946ab2774531ee1b8e801bc28caa1d27e8fc50dc38e58d4d637f2dbc652ec7c9",
+    "README.md": "ad1297d8080a1da708597c9c3f13c7ba7f7fe444c72fbb866827a0e5f9d80053",
+    "dataset.jsonl": "ab49b5911fc554546970a97ab9f76d9d827a606a347ef947ac89a53416ffb3d9",
+    "docs/ingest.md": "7e1e310a832ede2e6618fc81dde4304de514ec63789a2b4984672360d15ed896",
+    "test/ingest.test.mjs": "23d25245c0a199178739912ffc00e2e44cb77000ce3e61cb122ea18b6b24692e",
+    "docs/delivery.md": "bce1de847c4868718009d07487c3d22268b541a9fe608ea672bc21074ce86fb8",
+    "test/delivery.test.mjs": "c0b5add00a3f7f1c0bccc4bc7a46c840d4d41405a205b8c188d31f33407c2c85",
+    "docs/view.md": "129efbcba8cd1790d7eb4187ed54de8dc47bc7f5299790b008a18502c291f9cd",
+    "test/view.test.mjs": "d1363ed0eb3283a054ea5d95d77ba685abdc8c5854655767c9afd697dd0bdc2a",
+    "test/integration.test.mjs": "46b3bc48288c74dc70d637bca9a53a9186621010889e256068aac3ce8529d005"
+  },
+  "gate": {
+    "authorized": true,
+    "scope": "suite",
+    "maxGroups": 3,
+    "maxPiSessions": 9,
+    "scopeCapUsd": 6,
+    "model": "gpt-6.1-sol",
+    "provider": "openai-codex",
+    "ledgerPath": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/budget.sqlite",
+    "sourceHashes": {
+      "research/notification-work-pilot-20261006/suite/design.md": "a5079e054c75b3341a6686725d183f54acf5d8b60306a29f57aed519614a50db",
+      "research/notification-work-pilot-20261006/suite/generate.mjs": "87c2e8051750f6581fa858f57087d4713263fdd474294c8f27d8de8bcf60eccc",
+      "research/notification-work-pilot-20261006/suite/oracle.mjs": "a76557fb9f01495b5c5830b07c7c9a3953bb6797fc6e4470dc851179cfbc50d8",
+      "research/notification-work-pilot-20261006/suite/diagnostic.mjs": "dd1c724a4520c6fb2dd63e849cb5f5d2c9457cb29da2f315bb8dcdf2f2bc1406",
+      "research/notification-work-pilot-20261006/suite/prompt.mjs": "f39e56186b6a9db3e09d9168a1ec61f866b4923f60e91827916ba407e5314176",
+      "research/notification-work-pilot-20261006/suite/telemetry.ts": "10b1fdc810423878621d43ca733ad6a869ad47ad8178934cd578f8dbcf259ebd",
+      "research/notification-work-pilot-20261006/suite/run.mjs": "8270223098bb43df81b11b0c44066de2571e49fe772b0361c593f2df2e50ef6f",
+      "research/notification-work-pilot-20261006/suite/report.mjs": "6116b89a36281f2335ec9cdb840a34178036b31ee6b12bd8aff0a2ec15ac0b35",
+      "research/notification-work-pilot-20261006/suite/suite-frozen.json": "0b9de7dc8e8f351b22b4b5caa74bc2c18a10e370e40d8a4b8205449c7cab3d61",
+      "research/notification-work-pilot-20261006/suite/runtime-budget-amendment.json": "08db8af9a95b0582c0d029cb1524fd93bd3df2b52293a8290408062235bbf965",
+      "research/notification-work-pilot-20261006/adapter/frozen/upstream_server.py": "af74ad98a6cfabf5f282fd02f979b924765f128733c36bb30e994d6a93ac350a",
+      "research/notification-work-pilot-20261006/adapter/frozen/coordinator_server.py": "b7ba1eb8427c2b1c3dbd7a6aa549811226d0ab8f00a81269969e6181160f97b4",
+      "research/notification-work-pilot-20261006/adapter/frozen/stdio_proxy.py": "e8c1d890a7676b6f789bdc96afc717dfca5f5ece23c2177d4e81528eeef72681",
+      "research/notification-work-pilot-20261006/adapter/frozen/coordinator-extension.ts": "db1d066e8bd6593dc24af028f898892cdd3d46cb468173149da237ec6cd1c25b",
+      "research/notification-work-pilot-20261006/adapter/frozen/board-runtime.mjs": "ca225684d56b429b2c68835307bfe7375560089d76c61ab5190ec6718909e22f",
+      "research/notification-work-pilot-20261006/adapter/frozen/pi-runtime.mjs": "168923281687167e0f83e614ac37357dce0a17741375048ace7dfa9cc00f8eae",
+      "research/notification-work-pilot-20261006/adapter/frozen/meter.mjs": "dbf58b5922b8d8d6933b384da577779d96322387503203a15d9f987ccc65f04e",
+      "research/notification-work-pilot-20261006/adapter/frozen/meter-extension.ts": "93848234e98899a0429d0f5335a79a3956a7df6bc789bfc5a913e39004ec8b15",
+      "research/notification-work-pilot-20261006/adapter/frozen/transport/store.mjs": "b275836b38b52b7522e607709200456ca8e044fc79cbf3b805aeb546a9c7cc18",
+      "research/notification-work-pilot-20261006/adapter/frozen/transport/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+      "research/notification-work-pilot-20261006/adapter/frozen/transport/pi-extension.ts": "2a460f6eaca63192223964373a6704c3b3106ee68e9113b4f76f9ef079648630",
+      "research/notification-work-pilot-20261006/adapter/frozen/transport/prompt-v3.txt": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+      "research/notification-work-pilot-20261006/suite/installed-runtime.mjs": "4ab579bc1382ce4733ff7f80591d4db6d8da1662c5c1377e8edf1e5754926af5"
+    },
+    "issuedAt": "2026-10-06T13:31:18.430Z",
+    "issuedBy": "/root",
+    "runtimeVersion": 3,
+    "auditReferences": [
+      "audit/suite-preflight-v3.json",
+      "audit/first-response-gate.json"
+    ],
+    "schedule": {
+      "modeOrder": [
+        "PA",
+        "N",
+        "W"
+      ],
+      "differentWorkloadOverlapAllowed": false,
+      "releaseRequires": [
+        "first explorer calibration ended and all measured processes stopped",
+        "independent full usage reconciliation",
+        "supplemental offline oracle checks passed"
+      ],
+      "releaseAuthority": "/root/notification_auditor"
+    },
+    "longRunsAuthorized": false,
+    "estimatedApiEquivalentOnly": true
+  },
+  "workload": "concurrent-pipeline-3pi-v1",
+  "installedRuntime": {
+    "binary": "/Users/gabry848/.nvm/versions/node/v24.18.0/bin/pi",
+    "cli": "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/cli.js",
+    "piVersion": "0.99.2",
+    "providerLoader": "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-3YAHQSW6.js",
+    "providerImplementation": "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/openai-codex-responses-3GKGNXC4.js",
+    "fileHashes": {
+      "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/cli.js": "e79626f2dd6f94aa45d30f3fa63cd84319a6eefcd150b353cfaf274366926774",
+      "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/package.json": "066850c1badb43cf107c26e5b95262dbde84e3514c75348f363009d5ba9ce42d",
+      "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-3YAHQSW6.js": "12483435ca5a250213e8860009cd6e258afcfc13003d7dcb6a2b2f63cda71e00",
+      "/Users/gabry848/.nvm/versions/node/v24.18.0/lib/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/openai-codex-responses-3GKGNXC4.js": "0eb713fc6fcb5fe7bae865c422cd7f534929a1ee01fe16d2eafa97e53370c15c"
+    },
+    "note": "Loader paths and hashes observed from the actual installed CLI bundle; runtime model/API is separately captured from RPC get_state."
+  },
+  "time": "2026-10-06T13:40:00.044Z",
+  "monoMs": 423751688.0585
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "concurrent-pipeline-3pi-v1",
+  "frozenAt": "2026-10-06T13:15:24.438Z",
+  "status": "awaiting_transport_and_GO",
+  "paidInferenceBeforeFreeze": 0,
+  "explorerOutcomesUsed": false,
+  "hypothesis": "Runtime facts may improve awareness/actions while three Pi agents implement useful independent work; end-only receipt is a control.",
+  "instanceSeed": 20261006,
+  "modes": [
+    "PA",
+    "N",
+    "W"
+  ],
+  "modeOrder": [
+    "PA",
+    "N",
+    "W"
+  ],
+  "groups": 3,
+  "agentsPerGroup": 3,
+  "roles": [
+    "ingest",
+    "delivery",
+    "view"
+  ],
+  "maxPiSessions": 9,
+  "maxEstimatedApiEquivalentUsd": 4,
+  "targetUsefulMinutesApprox": 10,
+  "durationForced": false,
+  "defaultPiModelRequired": true,
+  "providerOverrideForbidden": true,
+  "recordActualProviderModel": true,
+  "actualSubscriptionCostKnown": false,
+  "apiEquivalentEstimateMustBeLabeled": true,
+  "notificationProfile": {
+    "prompt": "v3",
+    "position": "tail",
+    "dismiss": "batch",
+    "providerCacheOverride": false
+  },
+  "eventTriggers": [
+    {
+      "id": "contract",
+      "trigger": "first effective view module write",
+      "targets": [
+        "view"
+      ],
+      "datum": {
+        "maxMessageChars": 192
+      },
+      "actionExpected": "update view POLICY and validate rendering while other work may remain"
+    },
+    {
+      "id": "receipt",
+      "trigger": "first successful role test verification",
+      "targets": [
+        "ingest",
+        "delivery",
+        "view"
+      ],
+      "datum": "actual dataset SHA256",
+      "actionExpected": "report at end, no code dependency"
+    },
+    {
+      "id": "noise",
+      "trigger": "contract publication",
+      "targets": [
+        "ingest",
+        "delivery",
+        "view"
+      ],
+      "datum": "unrelated cafeteria availability",
+      "actionExpected": "ignore without edits or blocking"
+    },
+    {
+      "id": "coordination",
+      "trigger": "actual board message/activity mutation",
+      "targets": "recipient or subscribed project actors",
+      "datum": "persisted real Coordinator revision",
+      "actionExpected": "appropriate collaboration, not automatic authority"
+    }
+  ],
+  "paBackoffSeconds": [
+    2,
+    4,
+    8,
+    16,
+    30
+  ],
+  "wCompetitive": true,
+  "nNoStatusOrAwaitWhileUsefulWork": true,
+  "boardChecksBeforeSharedEditsAllModes": true,
+  "concurrency": "3 Pi per group; groups isolated from other measured Pi workloads",
+  "oracle": {
+    "contractTests": 19,
+    "preserveTests": true,
+    "preserveSharedExports": true,
+    "policy": 192,
+    "finalReceipt": true,
+    "handoffAllRoles": true,
+    "actorScopeAndCleanupTraceChecks": true
+  },
+  "requiredMetricFamilies": [
+    "task_correctness",
+    "verified_overlap",
+    "producer_to_exposure",
+    "producer_to_first_useful_action",
+    "whole_turn_and_submission",
+    "model_http_attempts",
+    "tokens_with_cache",
+    "native_and_mcp_tool_calls",
+    "board_and_queue_checks",
+    "api_equivalent_dollars",
+    "fallback_await",
+    "lost_edits_or_conflicts",
+    "cleanup"
+  ],
+  "sourceHashes": {
+    "design.md": "a5079e054c75b3341a6686725d183f54acf5d8b60306a29f57aed519614a50db",
+    "generate.mjs": "87c2e8051750f6581fa858f57087d4713263fdd474294c8f27d8de8bcf60eccc",
+    "oracle.mjs": "a76557fb9f01495b5c5830b07c7c9a3953bb6797fc6e4470dc851179cfbc50d8",
+    "diagnostic.mjs": "dd1c724a4520c6fb2dd63e849cb5f5d2c9457cb29da2f315bb8dcdf2f2bc1406"
+  },
+  "transportMapping": "Must be appended as a separate runtime manifest before GO; workload/oracle hashes cannot silently change.",
+  "interpretation": "One instance per mode. Include incomplete/failed attempts; no 30–60 minute extension without user review."
+}

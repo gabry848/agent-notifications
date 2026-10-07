@@ -1,0 +1,58 @@
+{
+  "reviewer": "root-coordinator",
+  "reviewDate": "2026-10-06",
+  "scope": "Completed cache-fix subagent delivery; no additional inference",
+  "independentReview": {
+    "implementationAndTestsRead": true,
+    "sqliteLedgerReconciled": true,
+    "sourceManifestFilesChecked": 20,
+    "sourceManifestMismatches": [],
+    "measuredEpisodes": 6,
+    "settledHttpAttempts": 42,
+    "estimatedApiEquivalentUsd": 0.5190272,
+    "actualSubscriptionBillingUsd": null
+  },
+  "finding": "Request-local snapshots disappeared from later model inputs even though they were placed at the tail. Retaining immutable historical snapshots at their original conversation-prefix anchors restored cache growth in the measured native Codex runs.",
+  "appliedConfirmationPair": {
+    "oldNotifications": {
+      "cachedInputFraction": 0.6007954610956941,
+      "estimatedApiEquivalentUsd": 0.106054
+    },
+    "fixedNotifications": {
+      "cachedInputFraction": 0.707245528930925,
+      "estimatedApiEquivalentUsd": 0.082562
+    },
+    "withoutNotifications": {
+      "cachedInputFraction": 0.7710012842288413,
+      "estimatedApiEquivalentUsd": 0.0663836
+    },
+    "secondaryWarmSubsetLastFourRequests": {
+      "fixedCachedInputPercent": 84.47,
+      "withoutNotificationsCachedInputPercent": 84.88
+    }
+  },
+  "verificationReportedBySubagent": {
+    "npmTestPassed": 44,
+    "npmTestFailed": 0,
+    "offlinePiTestPassed": 1,
+    "durableSessionRestartVerifiedOffline": true
+  },
+  "limits": [
+    "Warm subset does not replace complete-run totals; initial native cache misses remain included.",
+    "Archived snapshots remain in model context and add tokens; this is one active queue plus historical observations.",
+    "Long sessions and high notification volumes were not measured.",
+    "The controlled cache fixtures do not measure notification productivity benefits.",
+    "Default journal behavior is scoped to native openai-codex-responses; other providers remain unverified.",
+    "Existing single-section benchmark validators need adaptation before a full journal benchmark campaign.",
+    "This review does not retroactively establish the cause of every earlier pilot cache miss."
+  ],
+  "evidence": [
+    "report.md",
+    "metrics.json",
+    "budget.sqlite",
+    "verification.json",
+    "tests-verification.json",
+    "source-hashes.json",
+    "offline/durable-resume/assertions.json"
+  ]
+}

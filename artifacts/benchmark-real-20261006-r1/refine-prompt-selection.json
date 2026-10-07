@@ -1,0 +1,16 @@
+{
+  "rule": "Maximize correctness, then minimize median cost; 10 cases per prompt, development only. S4 added after main-S4-403-N repeated a submission. Both prompts use compact S6 payloads because main-S6-601-N exceeded the 8000-character ingress contract.",
+  "scores": [
+    {
+      "variant": "v3",
+      "correct": 10,
+      "cost": 0.0336144
+    },
+    {
+      "variant": "v2",
+      "correct": 9,
+      "cost": 0.033507150000000006
+    }
+  ],
+  "selected": "v3"
+}

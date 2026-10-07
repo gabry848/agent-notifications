@@ -1,0 +1,34 @@
+[
+  {
+    "seed": 981,
+    "dismiss": "single"
+  },
+  {
+    "seed": 981,
+    "dismiss": "batch"
+  },
+  {
+    "seed": 982,
+    "dismiss": "batch"
+  },
+  {
+    "seed": 982,
+    "dismiss": "single"
+  },
+  {
+    "seed": 983,
+    "dismiss": "single"
+  },
+  {
+    "seed": 983,
+    "dismiss": "batch"
+  },
+  {
+    "seed": 984,
+    "dismiss": "batch"
+  },
+  {
+    "seed": 984,
+    "dismiss": "single"
+  }
+]

@@ -1,0 +1,12 @@
+✔ raw usage normalization, API-equivalent tiers, concurrent reserve guard and retained unknowns (3.686875ms)
+✔ idempotent ingress preserves identity across dismissal/restart and separates UUID destinations (2.82725ms)
+✔ actual Coordinator MCP: directed events, durable revisions, queue parity, wait cancellation and lifecycle (391.288666ms)
+✔ actual default Pi resolves without model override, loads transport/MCP/meter and no provider request (468.778125ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1169.440166

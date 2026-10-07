@@ -1,0 +1,7 @@
+{
+  "role": "view",
+  "testsCommand": "node --test test/view.test.mjs test/view.additional.test.mjs && npm test",
+  "receiptDigest": "ab49b5911fc554546970a97ab9f76d9d827a606a347ef947ac89a53416ffb3d9",
+  "policyRevisionHandled": 192,
+  "summary": "Implemented all six immutable view functions, safe source grouping, public exports and view handoff. Added six boundary tests including verified 192 UTF-16-unit policy. Role tests: 12/12 pass. Final integrated suite after delivery export release: 35/35 pass. Initial integrated attempt had only the then-pending delivery export failure. Original tests unchanged; shared peer content preserved. Briefly awaited peer integration readiness."
+}

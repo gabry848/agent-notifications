@@ -1,0 +1,1 @@
+import{normalizeEvent}from'./envelope.mjs';export function routeEvent(input,registry,tracker,now){const e=normalizeEvent(input);if(!tracker.accept('webhook',e.id,e.revision))return[];return registry.matching(e.topic,now).map(x=>({subscriptionId:x.id,url:x.url,event:structuredClone(e)}));}

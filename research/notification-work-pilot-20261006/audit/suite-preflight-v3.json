@@ -1,0 +1,134 @@
+{
+  "auditedAt": "2026-10-06T13:29:08.571Z",
+  "suiteRuntimeVersion": 3,
+  "hashesChecked": 23,
+  "mismatches": [],
+  "futureValueLiteralAbsent": true,
+  "runtimeImportsFrozen": true,
+  "offlineApproval": true,
+  "paidAuthorization": false,
+  "pending": "Root GO after explorer calibration completion",
+  "supplementalOracleRequired": [
+    "all18 shared exports preserved",
+    "long default rendering observes current POLICY",
+    "actor writes and current board checks",
+    "N residual notifications and subscription cleanup"
+  ],
+  "checks": [
+    {
+      "path": "research/notification-work-pilot-20261006/suite/design.md",
+      "expected": "a5079e054c75b3341a6686725d183f54acf5d8b60306a29f57aed519614a50db",
+      "actual": "a5079e054c75b3341a6686725d183f54acf5d8b60306a29f57aed519614a50db"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/generate.mjs",
+      "expected": "87c2e8051750f6581fa858f57087d4713263fdd474294c8f27d8de8bcf60eccc",
+      "actual": "87c2e8051750f6581fa858f57087d4713263fdd474294c8f27d8de8bcf60eccc"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/oracle.mjs",
+      "expected": "a76557fb9f01495b5c5830b07c7c9a3953bb6797fc6e4470dc851179cfbc50d8",
+      "actual": "a76557fb9f01495b5c5830b07c7c9a3953bb6797fc6e4470dc851179cfbc50d8"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/diagnostic.mjs",
+      "expected": "dd1c724a4520c6fb2dd63e849cb5f5d2c9457cb29da2f315bb8dcdf2f2bc1406",
+      "actual": "dd1c724a4520c6fb2dd63e849cb5f5d2c9457cb29da2f315bb8dcdf2f2bc1406"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/prompt.mjs",
+      "expected": "f39e56186b6a9db3e09d9168a1ec61f866b4923f60e91827916ba407e5314176",
+      "actual": "f39e56186b6a9db3e09d9168a1ec61f866b4923f60e91827916ba407e5314176"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/telemetry.ts",
+      "expected": "10b1fdc810423878621d43ca733ad6a869ad47ad8178934cd578f8dbcf259ebd",
+      "actual": "10b1fdc810423878621d43ca733ad6a869ad47ad8178934cd578f8dbcf259ebd"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/run.mjs",
+      "expected": "8270223098bb43df81b11b0c44066de2571e49fe772b0361c593f2df2e50ef6f",
+      "actual": "8270223098bb43df81b11b0c44066de2571e49fe772b0361c593f2df2e50ef6f"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/report.mjs",
+      "expected": "6116b89a36281f2335ec9cdb840a34178036b31ee6b12bd8aff0a2ec15ac0b35",
+      "actual": "6116b89a36281f2335ec9cdb840a34178036b31ee6b12bd8aff0a2ec15ac0b35"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/suite-frozen.json",
+      "expected": "0b9de7dc8e8f351b22b4b5caa74bc2c18a10e370e40d8a4b8205449c7cab3d61",
+      "actual": "0b9de7dc8e8f351b22b4b5caa74bc2c18a10e370e40d8a4b8205449c7cab3d61"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/runtime-budget-amendment.json",
+      "expected": "08db8af9a95b0582c0d029cb1524fd93bd3df2b52293a8290408062235bbf965",
+      "actual": "08db8af9a95b0582c0d029cb1524fd93bd3df2b52293a8290408062235bbf965"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/upstream_server.py",
+      "expected": "af74ad98a6cfabf5f282fd02f979b924765f128733c36bb30e994d6a93ac350a",
+      "actual": "af74ad98a6cfabf5f282fd02f979b924765f128733c36bb30e994d6a93ac350a"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/coordinator_server.py",
+      "expected": "b7ba1eb8427c2b1c3dbd7a6aa549811226d0ab8f00a81269969e6181160f97b4",
+      "actual": "b7ba1eb8427c2b1c3dbd7a6aa549811226d0ab8f00a81269969e6181160f97b4"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/stdio_proxy.py",
+      "expected": "e8c1d890a7676b6f789bdc96afc717dfca5f5ece23c2177d4e81528eeef72681",
+      "actual": "e8c1d890a7676b6f789bdc96afc717dfca5f5ece23c2177d4e81528eeef72681"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/coordinator-extension.ts",
+      "expected": "db1d066e8bd6593dc24af028f898892cdd3d46cb468173149da237ec6cd1c25b",
+      "actual": "db1d066e8bd6593dc24af028f898892cdd3d46cb468173149da237ec6cd1c25b"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/board-runtime.mjs",
+      "expected": "ca225684d56b429b2c68835307bfe7375560089d76c61ab5190ec6718909e22f",
+      "actual": "ca225684d56b429b2c68835307bfe7375560089d76c61ab5190ec6718909e22f"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/pi-runtime.mjs",
+      "expected": "168923281687167e0f83e614ac37357dce0a17741375048ace7dfa9cc00f8eae",
+      "actual": "168923281687167e0f83e614ac37357dce0a17741375048ace7dfa9cc00f8eae"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/meter.mjs",
+      "expected": "dbf58b5922b8d8d6933b384da577779d96322387503203a15d9f987ccc65f04e",
+      "actual": "dbf58b5922b8d8d6933b384da577779d96322387503203a15d9f987ccc65f04e"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/meter-extension.ts",
+      "expected": "93848234e98899a0429d0f5335a79a3956a7df6bc789bfc5a913e39004ec8b15",
+      "actual": "93848234e98899a0429d0f5335a79a3956a7df6bc789bfc5a913e39004ec8b15"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/transport/store.mjs",
+      "expected": "b275836b38b52b7522e607709200456ca8e044fc79cbf3b805aeb546a9c7cc18",
+      "actual": "b275836b38b52b7522e607709200456ca8e044fc79cbf3b805aeb546a9c7cc18"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/transport/http.mjs",
+      "expected": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+      "actual": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/transport/pi-extension.ts",
+      "expected": "2a460f6eaca63192223964373a6704c3b3106ee68e9113b4f76f9ef079648630",
+      "actual": "2a460f6eaca63192223964373a6704c3b3106ee68e9113b4f76f9ef079648630"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/transport/prompt-v3.txt",
+      "expected": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b",
+      "actual": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b"
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/installed-runtime.mjs",
+      "expected": "4ab579bc1382ce4733ff7f80591d4db6d8da1662c5c1377e8edf1e5754926af5",
+      "actual": "4ab579bc1382ce4733ff7f80591d4db6d8da1662c5c1377e8edf1e5754926af5"
+    }
+  ]
+}

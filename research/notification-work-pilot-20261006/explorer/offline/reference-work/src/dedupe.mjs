@@ -1,0 +1,1 @@
+export class RevisionTracker{constructor(){this.map=new Map();}accept(p,id,r){if(typeof p!=='string'||!p||typeof id!=='string'||!id||!Number.isInteger(r)||r<0)throw new TypeError('revision');const key=JSON.stringify([p,id]);if(this.map.has(key)&&this.map.get(key)>=r)return false;this.map.set(key,r);return true;}}

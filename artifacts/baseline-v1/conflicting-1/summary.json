@@ -1,0 +1,159 @@
+{
+  "name": "conflicting",
+  "repetition": 1,
+  "prompt": "v1",
+  "provider": "openai",
+  "model": "gpt-6.1-sol",
+  "thinking": "medium",
+  "started": "2026-10-05T20:38:28.798Z",
+  "finished": "2026-10-05T20:48:52.772Z",
+  "notifications": [
+    {
+      "id": "notif_85285bf4-99f4-4448-b395-5ea3aeb14a82",
+      "source": "Validation",
+      "message": "Invoice-service workload validation finished. Validated maxBatch is 20 for release v1.4 in eu-west-1.",
+      "createdAt": "2026-10-05T20:38:30.723Z",
+      "firstVisibleCall": null,
+      "dismissedAt": null
+    },
+    {
+      "id": "notif_f475121c-48e4-4424-9c60-40d94efddfff",
+      "source": "Validation",
+      "message": "Invoice-service workload validation finished. Validated maxBatch is 20 for release v1.4 in eu-west-1.",
+      "createdAt": "2026-10-05T20:38:30.725Z",
+      "firstVisibleCall": null,
+      "dismissedAt": null
+    },
+    {
+      "id": "notif_17455778-1511-43ae-80e3-0a0f65396c38",
+      "source": "Validation",
+      "message": "A different validation run for the same release and workload reports validated maxBatch 35. Its result conflicts with the earlier run; neither run has been superseded.",
+      "createdAt": "2026-10-05T20:38:30.726Z",
+      "firstVisibleCall": null,
+      "dismissedAt": null
+    }
+  ],
+  "idleVerified": null,
+  "historyText": "",
+  "assistantText": "",
+  "error": "Timeout waiting for agent settled",
+  "assessment": {
+    "injectionPass": false,
+    "injectionFailures": [
+      "Timeout waiting for agent settled"
+    ],
+    "providerChecks": [
+      {
+        "call": 1,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 2,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 3
+      },
+      {
+        "call": 3,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 3
+      },
+      {
+        "call": 4,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 3
+      },
+      {
+        "call": 5,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 3
+      }
+    ],
+    "behaviorPass": false,
+    "behaviorMismatches": [
+      "region: expected eu-west-1, got undefined",
+      "release: expected v1.4, got undefined",
+      "status: expected blocked, got undefined"
+    ],
+    "historyPass": null,
+    "exposure": [
+      {
+        "id": "notif_85285bf4-99f4-4448-b395-5ea3aeb14a82",
+        "ages": [
+          {
+            "call": 2,
+            "age": 0
+          },
+          {
+            "call": 3,
+            "age": 1
+          },
+          {
+            "call": 4,
+            "age": 2
+          },
+          {
+            "call": 5,
+            "age": 3
+          }
+        ],
+        "dismissed": false
+      },
+      {
+        "id": "notif_f475121c-48e4-4424-9c60-40d94efddfff",
+        "ages": [
+          {
+            "call": 2,
+            "age": 0
+          },
+          {
+            "call": 3,
+            "age": 1
+          },
+          {
+            "call": 4,
+            "age": 2
+          },
+          {
+            "call": 5,
+            "age": 3
+          }
+        ],
+        "dismissed": false
+      },
+      {
+        "id": "notif_17455778-1511-43ae-80e3-0a0f65396c38",
+        "ages": [
+          {
+            "call": 2,
+            "age": 0
+          },
+          {
+            "call": 3,
+            "age": 1
+          },
+          {
+            "call": 4,
+            "age": 2
+          },
+          {
+            "call": 5,
+            "age": 3
+          }
+        ],
+        "dismissed": false
+      }
+    ],
+    "lifecycleExplicitlyRequested": false
+  }
+}

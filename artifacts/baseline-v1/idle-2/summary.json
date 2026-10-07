@@ -1,0 +1,113 @@
+{
+  "name": "idle",
+  "repetition": 2,
+  "prompt": "v1",
+  "provider": "openai",
+  "model": "gpt-6.1-sol",
+  "thinking": "medium",
+  "started": "2026-10-05T20:38:06.587Z",
+  "finished": "2026-10-05T20:38:28.796Z",
+  "notifications": [
+    {
+      "id": "notif_6280db2e-4509-4216-880a-fbd55ad7f5f9",
+      "source": "Validation",
+      "message": "Invoice-service workload validation finished. Validated maxBatch is 25 for release v1.4 in eu-west-1.",
+      "createdAt": "2026-10-05T20:38:18.725Z",
+      "firstVisibleCall": null,
+      "dismissedAt": null
+    }
+  ],
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 25,
+    "status": "ready",
+    "notes": "Updated invoice-service local plan using completed workload validation: validated maxBatch is 25 for v1.4 in eu-west-1, replacing the default 50. The three snapshots were already read; code review, unit tests, and configuration review passed, and dependencies are available. No release revocation or unresolved validation conflict is present. Required region remains eu-west-1. No deployment or external service contact."
+  },
+  "initialResult": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 50,
+    "status": "ready",
+    "notes": "invoice-service: All three source snapshots read sequentially. Code review, unit tests, and configuration review passed; dependencies available. No release revocation or conflicting validation facts received. Region remains eu-west-1 as required. Local plan only; no deployment or external service contact."
+  },
+  "idleVerified": true,
+  "historyText": "",
+  "assistantText": "Saved the local deployment plan to `result.json`:\n\n- **Region:** `eu-west-1`\n- **Release:** `v1.4`\n- **maxBatch:** `50`\n- **Status:** `ready`\n\nAll reviews and unit tests passed, and dependencies are available. No revocation or conflicting validation facts were received. Nothing was deployed, and no external service was contacted.\nUpdated `result.json`:\n\n- **Region:** `eu-west-1` (unchanged)\n- **Release:** `v1.4`\n- **maxBatch:** `25`, per completed workload validation\n- **Status:** `ready`\n\nThe existing checks passed, with no revocation or unresolved validation conflict. No deployment occurred.",
+  "error": null,
+  "assessment": {
+    "injectionPass": true,
+    "injectionFailures": [],
+    "providerChecks": [
+      {
+        "call": 1,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 2,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 3,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 4,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 5,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 6,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      },
+      {
+        "call": 7,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      }
+    ],
+    "behaviorPass": true,
+    "behaviorMismatches": [],
+    "historyPass": null,
+    "exposure": [
+      {
+        "id": "notif_6280db2e-4509-4216-880a-fbd55ad7f5f9",
+        "ages": [
+          {
+            "call": 6,
+            "age": 0
+          },
+          {
+            "call": 7,
+            "age": 1
+          }
+        ],
+        "dismissed": false
+      }
+    ],
+    "lifecycleExplicitlyRequested": false
+  }
+}

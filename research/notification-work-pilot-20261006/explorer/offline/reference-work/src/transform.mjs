@@ -1,0 +1,1 @@
+export function sanitize(v,keys){if(v===null||typeof v!=='object')return v;if(Array.isArray(v))return v.map(x=>sanitize(x,keys));return Object.fromEntries(Object.entries(v).map(([k,x])=>[k,keys.includes(k)?'[redacted]':sanitize(x,keys)]));}

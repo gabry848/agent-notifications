@@ -1,0 +1,16 @@
+{"time":"2026-10-06T11:42:03.764Z","monoMs":416675441.826583,"type":"session_selected","url":"http://127.0.0.1:50567","sessionId":"9c9ffc0e-1ed9-41ee-90ec-a6988f461f80","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/confirm-S6-1101-W-v3-compact-stable/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-06T11:42:03.764Z","monoMs":416675441.926833,"type":"server_ready","url":"http://127.0.0.1:50567","sessionId":"9c9ffc0e-1ed9-41ee-90ec-a6988f461f80","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/confirm-S6-1101-W-v3-compact-stable/notifications.sqlite"}
+{"time":"2026-10-06T11:42:03.867Z","monoMs":416675544.921625,"type":"provider_request","attempt":1}
+{"time":"2026-10-06T11:42:04.421Z","monoMs":416676098.472083,"type":"provider_response","status":200}
+{"time":"2026-10-06T11:42:05.660Z","monoMs":416677337.947041,"type":"provider_request","attempt":2}
+{"time":"2026-10-06T11:42:06.119Z","monoMs":416677796.239958,"type":"provider_response","status":200}
+{"time":"2026-10-06T11:42:07.907Z","monoMs":416679585.039416,"type":"provider_request","attempt":3}
+{"time":"2026-10-06T11:42:08.480Z","monoMs":416680157.782708,"type":"provider_response","status":200}
+{"time":"2026-10-06T11:42:15.173Z","monoMs":416686850.413833,"type":"provider_request","attempt":4}
+{"time":"2026-10-06T11:42:15.917Z","monoMs":416687594.713458,"type":"provider_response","status":200}
+{"time":"2026-10-06T11:42:17.587Z","monoMs":416689264.922416,"type":"provider_request","attempt":5}
+{"time":"2026-10-06T11:42:18.380Z","monoMs":416690057.883375,"type":"provider_response","status":200}
+{"time":"2026-10-06T11:42:19.548Z","monoMs":416691225.815083,"type":"provider_request","attempt":6}
+{"time":"2026-10-06T11:42:20.015Z","monoMs":416691692.895666,"type":"provider_response","status":200}
+{"time":"2026-10-06T11:42:21.168Z","monoMs":416692845.907625,"type":"provider_request","attempt":7}
+{"time":"2026-10-06T11:42:21.984Z","monoMs":416693661.627541,"type":"provider_response","status":200}

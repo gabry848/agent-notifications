@@ -1,0 +1,92 @@
+{
+  "runId": "pilot-S1-0-N-v2-full",
+  "phase": "pilot",
+  "scenario": "S1",
+  "seed": 0,
+  "mode": "N",
+  "variant": "v2",
+  "payload": "full",
+  "created": {
+    "time": "2026-10-06T08:34:52.242Z",
+    "monoMs": 405443856.693166
+  },
+  "begun": {
+    "time": "2026-10-06T08:34:52.557Z",
+    "monoMs": 405444171.805041
+  },
+  "ended": {
+    "time": "2026-10-06T08:34:52.583Z",
+    "monoMs": 405444197.624791
+  },
+  "error": "Pi exited 73 waiting for agent settled",
+  "result": null,
+  "filesPassed": true,
+  "transcriptBlockPersisted": null,
+  "assessment": {
+    "passed": false,
+    "failures": [
+      "Pi exited 73 waiting for agent settled",
+      "region: expected eu-west-1, got undefined",
+      "release: expected v1.4, got undefined",
+      "maxBatch: expected 10, got undefined",
+      "status: expected ready, got undefined",
+      "Final job IDs differ",
+      "Expected one submission, observed 0",
+      "Not all jobs finished"
+    ],
+    "injectionFailures": [],
+    "logicalModelResponses": 0,
+    "modeCompliance": true
+  },
+  "metrics": {
+    "wallMs": 25.819750010967255,
+    "taskMs": null,
+    "providerAttempts": 0,
+    "logicalModelCalls": 1,
+    "tokens": {},
+    "estimatedUsd": 0,
+    "unconfirmedReservedUsd": 0,
+    "toolCalls": 0,
+    "toolNames": {},
+    "mcpCalls": 0,
+    "mcpProtocolMessages": 3,
+    "statusChecks": 0,
+    "notificationHttpAttempts": 0,
+    "dismissCalls": 0,
+    "historyCalls": 0,
+    "fallbackAwaits": 0,
+    "notificationBytes": 107,
+    "injectionMs": 0.23879098892211914,
+    "reactions": [],
+    "startupMs": 315.1118749976158
+  },
+  "accounting": {
+    "requests": 0,
+    "estimatedUsd": 0,
+    "unconfirmedReservedUsd": 0,
+    "tokens": {},
+    "rows": []
+  },
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "thinking": "medium",
+    "pricing": {
+      "model": "gpt-6.1-sol",
+      "currency": "USD",
+      "tier": "default",
+      "checkedAt": "2026-10-06",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "perMillion": {
+        "input": 2,
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "output": 10
+      },
+      "longContextThreshold": 272000
+    },
+    "promptHash": "ace535bcfefbb4e7dddaf8313955f5c0e3e9c991f9c0c37f9edae266b7964efb",
+    "taskHash": "531014e770c429b52251e85fb678133a7c732fe1635ec2a042c9721196b3f215",
+    "specHash": "2baf6036310aaf9779f16957abb149d982315ee9f1479ab4f0c70ce9a5ebdd58"
+  },
+  "budgetConservativeTotalUsd": 0
+}

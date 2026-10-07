@@ -1,0 +1,13 @@
+{"time":"2026-10-06T10:05:41.771Z","monoMs":410893400.709833,"type":"protocol_message","method":"initialize"}
+{"time":"2026-10-06T10:05:41.776Z","monoMs":410893404.868291,"type":"protocol_message","method":"notifications/initialized"}
+{"time":"2026-10-06T10:05:41.776Z","monoMs":410893405.165958,"type":"protocol_message","method":"tools/list"}
+{"time":"2026-10-06T10:05:41.776Z","monoMs":410893405.294958,"type":"tools_list"}
+{"time":"2026-10-06T10:05:46.056Z","monoMs":410897685.163416,"type":"protocol_message","method":"tools/call"}
+{"time":"2026-10-06T10:05:46.058Z","monoMs":410897686.682333,"type":"tools_call","name":"start_job","args":{"ids":["validation"]}}
+{"time":"2026-10-06T10:05:46.061Z","monoMs":410897689.636666,"type":"job_started","jobId":"validation"}
+{"time":"2026-10-06T10:05:46.061Z","monoMs":410897689.995333,"type":"tools_result","name":"start_job"}
+{"time":"2026-10-06T10:05:56.101Z","monoMs":410907729.741333,"type":"job_finished","jobId":"validation","revision":1,"status":"failed","result":{"maxBatch":16,"release":"v1.4","region":"eu-west-1","revoked":true},"finished":{"time":"2026-10-06T10:05:56.094Z","monoMs":410907724.005666}}
+{"time":"2026-10-06T10:06:03.304Z","monoMs":410914932.7625,"type":"protocol_message","method":"tools/call"}
+{"time":"2026-10-06T10:06:03.304Z","monoMs":410914933.18025,"type":"tools_call","name":"await_jobs","args":{"ids":["validation"]}}
+{"time":"2026-10-06T10:06:03.305Z","monoMs":410914933.303041,"type":"await_completed","ids":["validation"]}
+{"time":"2026-10-06T10:06:03.305Z","monoMs":410914933.362125,"type":"tools_result","name":"await_jobs"}

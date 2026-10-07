@@ -1,0 +1,239 @@
+{
+  "generatedAt": "2026-10-06T15:23:31.102Z",
+  "evidenceFiles": {
+    "artifacts/benchmark-real-20261006-r1/results.json": "65fdb9bd072562a18024eb004c08f3f9ae0b8a9234b133788933f25b02453a8a",
+    "research/notification-work-pilot-20261006/audit/metrics.json": "90ffc5954032bc5a73987ad733d019770c11fc63c1514a7e9e36fb71eb7d32ac",
+    "research/notification-work-pilot-20261006/report-data.json": "3444560088803b9008dd102ea5b6da08d5c32f06334aaa805c33d9b03e84ca55",
+    "research/notification-work-pilot-20261006/coordinator-analysis.json": "90f02cd029e3e0fdb9ecb07e4db90ebae2979eb04851683fbecfeab3623d34e1",
+    "research/cache-fix-20261006/metrics.json": "542ce8b8e0212d59f7076a4c4116afc8484600c2c2c94182f39acba28ec515d8",
+    "research/cache-fix-20261006/coordinator-review.json": "52c45d8fae519ca6ca2bb7f379448bf7a3019ffa604e7a40d00c5bb64f29663e",
+    "research/cache-fix-20261006/tests-verification.json": "4624324c2c5a1f07673455a9ec2693bd1a6be94bbffbcde7f64f58bb9df6f732",
+    "research/cache-fix-20261006/verification.json": "469a5e49525c4ed28e469f093655895c44ed9a247ce91e6099b35bd284558f36",
+    "research/cache-fix-20261006/offline/durable-resume/assertions.json": "d1b44264e55e519e94fda084903226ad668151dc3c634ce3d1e29dcfd8f24861",
+    "research/notification-work-pilot-20261006/audit/contract-action-evidence.json": "b4981c4af420e0fbbbf8ac8b3896f8f9631d48f0147717a5bb99cc6f0ca797ea",
+    "research/notification-work-pilot-20261006/audit/reservation-guard-diagnostic.json": "f01f7424524ead2b27b963d7c3e3b9dd9d1020a205527323ce5e417512e89c37",
+    "artifacts/benchmark-real-20261006-r1/utility-negative-control.json": "e9d11dec3cf066a044fe3c8b3e4f53ab447e59d11c6d999e763d8bb25ec64567",
+    "research/cache-fix-20261006/source-hashes.json": "dc017e0fb6db8c5ca258ca126b40025836cc3448c0aee88a1842aceaa386d569",
+    "src/pi-extension.ts": "f63002aacc2814eb7643ba29cdccd340d4db26d71ca9d4502a4ec061c833eaeb",
+    "src/store.mjs": "050bb0f524589a3064fc0e7625c86ab2e4d3359db6fe64302411f0d6b577c06a",
+    "src/notification-context.mjs": "4192d234844aca40ee49c0bd6883c18884242e25ab1dd9c211fb0c9052b88f9c",
+    "prompts/v1.txt": "cf0a3634c31bf20f7bdf7316d20c490962a79ff9ca832ff660ca50c321bf52e8",
+    "prompts/v2.txt": "867fdd05c1f8c791436d26de3996bbe858adea3512ef9a2ec049db0f9d361a40",
+    "prompts/v3.txt": "2231ba242982554204b763d485fb83797d4eb0f070da253e452f19180a3d16be",
+    "tests/notification-cache.test.mjs": "572db3759e3c8acde22f37bc2cf744d7a0ae1b39dae862097722d75081924b35",
+    "research/cache-fix-20261006/run.mjs": "183cecf14cb74fa2f67a9810916735bcde949a267aaefe710c314c110b56a651",
+    "research/cache-fix-20261006/pi-runtime.mjs": "5b3fb383036db07c06b7dfbd2b0a9fb056f3b32246bc12e553a565a6879277bc",
+    "research/cache-fix-20261006/probe-extension.ts": "069d6daf34532fc2140e63f3de433182d9e85db0bd7eec040a2e7db0f330826c",
+    "research/cache-fix-20261006/journal-prototype.ts": "970862e3cffbe2a84b729d9ab6c3f2dfe71016a6610aac98029787fe9af4d4c1",
+    "research/cache-fix-20261006/meter.mjs": "0d840106093b9daec941a0da115a8b51f11d31e69cfa7b77e90e65d7c33ff3ba",
+    "research/cache-fix-20261006/meter-extension.ts": "93848234e98899a0429d0f5335a79a3956a7df6bc789bfc5a913e39004ec8b15",
+    "research/cache-fix-20261006/offline-resume.mjs": "7e902efe41048b3e8120fc71e652f18d5af222a8ad49a56b33b969910d9919e9",
+    "research/cache-fix-20261006/verification-prompt.txt": "867fdd05c1f8c791436d26de3996bbe858adea3512ef9a2ec049db0f9d361a40",
+    "research/cache-fix-20261006/report.mjs": "8f88c82e16df67e3c663f262897714bf25f951736b99cc491a2b5ae38a318d5c",
+    "research/cache-fix-20261006/report.md": "9ff5eb6b819a82063214331efcbd4fcc9eb502a55ee3c04b582d2eddd5a56b72",
+    "research/cache-fix-20261006/experiments.md": "efcdad74e33de8a927c6b15cf1147a9ae720397802a5a00136b8a20559e18b9e",
+    "research/cache-fix-20261006/task.json": "6ba26ef83db280fc61f76c97bd65d343e8f2278356aea2fb4a28afda871485a5",
+    "artifacts/benchmark-real-20261006-r1/findings.md": "1ed353f0936a4a2bbbfa4d5f0a34716731a3bbb7b3cb4a1dbe451ada7e5c2a65",
+    "research/notification-work-pilot-20261006/adapter/report.md": "f3d494513ec9bf740455efe81ed563b9b34327251e33beebb75b894a4a67b73a",
+    "research/notification-work-pilot-20261006/explorer/report.md": "0daffcb51f091538269bb3c64e53567b9cacddbf34e8066441c752d34acf4843",
+    "research/notification-work-pilot-20261006/suite/report.md": "31073df7e50d6d0183b8d2a2d34cb038edd3454d60f78e39cf9268fbcdc163b4",
+    "research/notification-work-pilot-20261006/audit/report.md": "80a7e827731c0f8812ecba92a780cff87e9336f75986d51b3185ef70a4e5ca74",
+    "README.md": "7a3232d8797825eb631242f8a8978138adf0f3b42dc6985135f27daf3c223777",
+    "notification_research_plan_v2.md": "4855ff15095d8a5d06738b9d10056457f6ece5d20a00bc76237e3a2bb7623f59",
+    "research/notification-work-pilot-20261006/suite/traces/group-PA/summary.json": "2808b25d4621272b3c1e4e0896a4130316db027d01f3bad42670e9dc0c668193",
+    "research/notification-work-pilot-20261006/suite/traces/group-PA/ingest/rpc.jsonl": "33fbcf45b08c432068c48aceb2a2ebdc85e01e3af5b3114bc48601a29a9b7741",
+    "research/notification-work-pilot-20261006/suite/traces/group-PA/delivery/rpc.jsonl": "2e1509b6bfb3b7338c6acb00671f5557d8a63a8f45fed1b0c3d1a0ae488eddd3",
+    "research/notification-work-pilot-20261006/suite/traces/group-PA/view/rpc.jsonl": "05ccbf737ecc99cf81861776e3736408746ee61aded3d817a16b390921b71be4",
+    "research/notification-work-pilot-20261006/suite/traces/group-N/summary.json": "8f2420c6ff616bc1388ac36179683f17cc38b8c0a2d07abb49d8eb3bb44dd43a",
+    "research/notification-work-pilot-20261006/suite/traces/group-N/ingest/rpc.jsonl": "45f63d4eed31200b9df5a1c666dc46692e96ae1207bd3dfb9c525ec12829baeb",
+    "research/notification-work-pilot-20261006/suite/traces/group-N/delivery/rpc.jsonl": "e487a6a6b07601d5be69b9422df9c4188774b40077c237a7e08233643cf08be5",
+    "research/notification-work-pilot-20261006/suite/traces/group-N/view/rpc.jsonl": "3283d1600f03b018677d7b29b3a9332057f876ec3c383f5630bebc5d80b4866c",
+    "research/notification-work-pilot-20261006/explorer/runs/explorer-compatibility-N-4101-847cae3a/summary.json": "8d4ef0f55f117e7d9b3dfaf371b026af4b17303c2b0a854b75d723733db53428",
+    "artifacts/smoke-v1/summary.json": "e371e4bd529d2f4fe71d227b25132b0bcf94d49a7d87025de2160624cda2d1f5",
+    "artifacts/smoke-fixed-v1/summary.json": "26d2f02a1a53d2915b6b073f3b821a835d6b26dbf6869bc8616661d0ba50c4c3",
+    "artifacts/baseline-v1/summary.json": "5020220738aba7c643251061dce6107d541a01650805f57af60da2eec9b7d44a",
+    "artifacts/retry-v1/summary.json": "e4ebd9d3ef3cd2fb65e94e7e09fb8cabb633ca65ab2e5cd2a3f9cd99d6e44e7e",
+    "artifacts/refined-v2/summary.json": "c5b9d4f67fbd0d44e423850bbaf3b659a7f8adaa8e62be380eae99a493c55659",
+    "artifacts/baseline-final-v1/summary.json": "eec09c42cf57ced14a77039de420a9e867519d7c0349284941c0a6ccececd48f"
+  },
+  "ledgerTotals": [
+    {
+      "campaign": "historical",
+      "path": "artifacts/benchmark-real-20261006-r1/budget.sqlite",
+      "httpAttempts": 2169,
+      "tokens": {
+        "input": 406311,
+        "cacheRead": 2848281,
+        "cacheWrite": 1280533,
+        "output": 166421,
+        "reasoning": 1858,
+        "totalTokens": 4701546
+      },
+      "estimatedApiEquivalentUsd": 5.962992599999988,
+      "unsettled": 0,
+      "externalRunnerRows": [
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-success-3001-N",
+          "reserved": 0.1,
+          "cost": 0,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-success-3001-P10",
+          "reserved": 0.1,
+          "cost": 0.006,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-success-3002-P10",
+          "reserved": 0.1,
+          "cost": 0.006,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-success-3002-N",
+          "reserved": 0.1,
+          "cost": 0.006,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-failure-3101-N",
+          "reserved": 0.1,
+          "cost": 0.006,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-failure-3101-P10",
+          "reserved": 0.1,
+          "cost": 0.006,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-failure-3102-P10",
+          "reserved": 0.1,
+          "cost": 0.006,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-failure-3102-N",
+          "reserved": 0.1,
+          "cost": 0.006,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-cancelled-3201-N",
+          "reserved": 0.1,
+          "cost": 0.006,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-cancelled-3201-P10",
+          "reserved": 0.1,
+          "cost": 0.012,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-cancelled-3202-N",
+          "reserved": 0.1,
+          "cost": 0.012,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-cancelled-3202-P10",
+          "reserved": 0.1,
+          "cost": 0.012,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-success-3003-N",
+          "reserved": 0.1,
+          "cost": 0.006,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        },
+        {
+          "id": "runner-benchmark-real-20261006-r1-GH-success-3003-P10",
+          "reserved": 0.1,
+          "cost": 0.006,
+          "description": "GitHub Ubuntu runner reservation: bounded five-minute job plus setup/cleanup margin"
+        }
+      ],
+      "externalRunnerEstimatedUsd": 0.096
+    },
+    {
+      "campaign": "work-pilot",
+      "path": "research/notification-work-pilot-20261006/budget.sqlite",
+      "httpAttempts": 148,
+      "tokens": {
+        "input": 635603,
+        "cacheRead": 1390080,
+        "cacheWrite": 0,
+        "output": 40564,
+        "reasoning": 1897,
+        "totalTokens": 2066247
+      },
+      "estimatedApiEquivalentUsd": 1.8158540000000003,
+      "unsettled": 0,
+      "externalRunnerRows": [],
+      "externalRunnerEstimatedUsd": 0
+    },
+    {
+      "campaign": "cache-fix",
+      "path": "research/cache-fix-20261006/budget.sqlite",
+      "httpAttempts": 42,
+      "tokens": {
+        "input": 228886,
+        "cacheRead": 500352,
+        "cacheWrite": 0,
+        "output": 1122,
+        "reasoning": 40,
+        "totalTokens": 730360
+      },
+      "estimatedApiEquivalentUsd": 0.5190272,
+      "unsettled": 0,
+      "externalRunnerRows": [],
+      "externalRunnerEstimatedUsd": 0
+    },
+    {
+      "campaign": "infrastructure",
+      "path": "artifacts/benchmark-real-20261006/budget.sqlite",
+      "httpAttempts": 0,
+      "tokens": {},
+      "estimatedApiEquivalentUsd": 0,
+      "unsettled": 0,
+      "externalRunnerRows": [],
+      "externalRunnerEstimatedUsd": 0
+    },
+    {
+      "campaign": "infrastructure",
+      "path": "artifacts/benchmark-preflight-20261006/budget.sqlite",
+      "httpAttempts": 0,
+      "tokens": {},
+      "estimatedApiEquivalentUsd": 0,
+      "unsettled": 0,
+      "externalRunnerRows": [],
+      "externalRunnerEstimatedUsd": 0
+    },
+    {
+      "campaign": "infrastructure",
+      "path": "artifacts/benchmark-budget-guard-20261006/budget.sqlite",
+      "httpAttempts": 0,
+      "tokens": {},
+      "estimatedApiEquivalentUsd": 0,
+      "unsettled": 0,
+      "externalRunnerRows": [],
+      "externalRunnerEstimatedUsd": 0
+    },
+    {
+      "campaign": "infrastructure",
+      "path": "artifacts/benchmark-budget-guard-verified-20261006/budget.sqlite",
+      "httpAttempts": 0,
+      "tokens": {},
+      "estimatedApiEquivalentUsd": 0,
+      "unsettled": 0,
+      "externalRunnerRows": [],
+      "externalRunnerEstimatedUsd": 0
+    }
+  ],
+  "historicalArtifactsOverwritten": false,
+  "privatePayloadsIncluded": false
+}

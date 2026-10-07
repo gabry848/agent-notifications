@@ -1,0 +1,47 @@
+{
+  "auditedAt": "2026-10-06T13:32:57.190Z",
+  "id": "explorer-compatibility-N-4101-847cae3a",
+  "newModelCalls": 0,
+  "originalSummaryUnchanged": true,
+  "originalTaskPassed": false,
+  "originalPassed": false,
+  "independentTaskPassed": false,
+  "checksPassed": false,
+  "parserIssue": "Static supplemental checker excluded src/ CLI candidates although task permits free organization; CLI behavioral check is separate evidence, not a rewritten original result.",
+  "demo": {
+    "passed": false,
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": "node:net:1987\n      const error = new UVExceptionWithHostPort(rval, 'listen', address, port);\n                    ^\n\nError: listen EPERM: operation not permitted 127.0.0.1\n    at Server.setupListenHandle [as _listen2] (node:net:1987:21)\n    at listenInCluster (node:net:2066:12)\n    at node:net:2275:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  code: 'EPERM',\n  errno: -1,\n  syscall: 'listen',\n  address: '127.0.0.1'\n}\n\nNode.js v24.18.0\n",
+    "error": "Command failed: /Users/gabry848/.nvm/versions/node/v24.18.0/bin/node src/cli.mjs --demo\nnode:net:1987\n      const error = new UVExceptionWithHostPort(rval, 'listen', address, port);\n                    ^\n\nError: listen EPERM: operation not permitted 127.0.0.1\n    at Server.setupListenHandle [as _listen2] (node:net:1987:21)\n    at listenInCluster (node:net:2066:12)\n    at node:net:2275:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {\n  code: 'EPERM',\n  errno: -1,\n  syscall: 'listen',\n  address: '127.0.0.1'\n}\n\nNode.js v24.18.0\n"
+  },
+  "cleanup": {
+    "pidAlive": null,
+    "groupAlive": null,
+    "endpointClosed": false,
+    "activeNotifications": 0,
+    "authLinkRemoved": true
+  },
+  "accounting": {
+    "consistent": true,
+    "attempts": 12,
+    "unknownReservedUsd": 0,
+    "estimatedApiEquivalentUsd": 0.14056,
+    "actualSubscriptionBillingUsd": null
+  },
+  "observed": {
+    "turnMs": 212329,
+    "tenMinuteSession": false,
+    "publicMilestonesBeforeEvent": 14,
+    "publicMilestonesAfterEvent": 0,
+    "exposureLatencyMs": 11190.703916966915,
+    "artifactConsequenceLatencyMs": 111649.7765839696,
+    "awaitCalls": 0,
+    "getUpdates": 0
+  },
+  "limits": [
+    "No paired efficiency conclusion from this single calibration.",
+    "All14 public milestones passed before publication; documentation/additional tests and CLI were subsequent real work.",
+    "Artifact consequence is a configuration/result write, not proof of earlier production request handling."
+  ]
+}

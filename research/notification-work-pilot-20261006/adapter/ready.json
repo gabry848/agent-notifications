@@ -1,0 +1,88 @@
+{
+  "ready": true,
+  "version": "notification-work-pilot-adapter-v1",
+  "preparedAt": "2026-10-06T13:22:38.037Z",
+  "realCoordinator": true,
+  "origin": {
+    "repository": "https://github.com/gabry848/agent-coordination",
+    "commit": "84fa1a0e53342aa6bf41648aa1a4c2ed2512d9f3",
+    "license": "MIT",
+    "originalFile": "plugins/agent-coordination/scripts/agent_coordination_server.py",
+    "sha256": "af74ad98a6cfabf5f282fd02f979b924765f128733c36bb30e994d6a93ac350a",
+    "archiveSha256": "357649f2300b3f3408e5327d7fc4a8ee7c50bb5dff338590710644cf0cd426c6"
+  },
+  "root": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/adapter/frozen",
+  "entrypoints": {
+    "startDefaultPi": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/adapter/frozen/pi-runtime.mjs",
+    "startBoard": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/adapter/frozen/board-runtime.mjs",
+    "coordinatorExtension": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/adapter/frozen/coordinator-extension.ts",
+    "notificationExtension": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/adapter/frozen/transport/pi-extension.ts",
+    "meterExtension": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/adapter/frozen/meter-extension.ts",
+    "meter": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/adapter/frozen/meter.mjs"
+  },
+  "sha256": {
+    "upstream_server.py": "af74ad98a6cfabf5f282fd02f979b924765f128733c36bb30e994d6a93ac350a",
+    "coordinator_server.py": "b7ba1eb8427c2b1c3dbd7a6aa549811226d0ab8f00a81269969e6181160f97b4",
+    "stdio_proxy.py": "e8c1d890a7676b6f789bdc96afc717dfca5f5ece23c2177d4e81528eeef72681",
+    "coordinator-extension.ts": "db1d066e8bd6593dc24af028f898892cdd3d46cb468173149da237ec6cd1c25b",
+    "board-runtime.mjs": "ca225684d56b429b2c68835307bfe7375560089d76c61ab5190ec6718909e22f",
+    "pi-runtime.mjs": "168923281687167e0f83e614ac37357dce0a17741375048ace7dfa9cc00f8eae",
+    "meter.mjs": "dbf58b5922b8d8d6933b384da577779d96322387503203a15d9f987ccc65f04e",
+    "meter-extension.ts": "93848234e98899a0429d0f5335a79a3956a7df6bc789bfc5a913e39004ec8b15",
+    "transport/store.mjs": "b275836b38b52b7522e607709200456ca8e044fc79cbf3b805aeb546a9c7cc18",
+    "transport/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+    "transport/pi-extension.ts": "2a460f6eaca63192223964373a6704c3b3106ee68e9113b4f76f9ef079648630",
+    "transport/prompt-v3.txt": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b"
+  },
+  "defaultPi": {
+    "provider": "openai-codex",
+    "model": "gpt-6.1-sol",
+    "thinking": "medium",
+    "version": "0.99.2"
+  },
+  "preflight": {
+    "passed": 4,
+    "total": 4,
+    "command": "node --test research/notification-work-pilot-20261006/adapter/preflight.test.mjs",
+    "artifact": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/adapter/traces/preflight-final.tap",
+    "inferences": 0,
+    "modelFacingPublishUpdate": false
+  },
+  "scopes": {
+    "adapter": 2,
+    "explorer": 2,
+    "suite": 6,
+    "global": 10
+  },
+  "capabilities": [
+    "real upstream board store",
+    "activity/message events atomic SQLite triggers",
+    "explicit project+actor+Pi UUID+loopback URL subscriptions",
+    "revision identity",
+    "durable outbox retry",
+    "idempotent copied native ingress",
+    "shared get_updates/await_next facts",
+    "immediate backlog read",
+    "bounded/cancellable condition await",
+    "externally authorized publish_update excluded from Pi tools",
+    "provider-native cache",
+    "default Pi native file tools",
+    "all HTTP SSE attempts budget guarded",
+    "raw usage and nominal cost distinct from subscription billing"
+  ],
+  "limits": [
+    "no production board/global configuration changed",
+    "no orchestration or hard file locks",
+    "events do not wake inference or interrupt a tool",
+    "receiver must run; retry exhaustion after eight attempts stays failed in outbox",
+    "subscription TTL at most7200s; unsubscribe cannot undo an already-in-flight successful POST",
+    "upstream activity/message size is not truncated; payloads over ingress8000chars fail rather than fabricate success",
+    "external published payload max6000chars and references recommended",
+    "no isolation against a malicious agent reading files outside its workspace",
+    "single centraldaemon handles board mutations; external direct writes are unsupported during measurement",
+    "transport=sse is explicit common deviation from Pi auto",
+    "actual subscription billing unavailable",
+    "no paid smoke/performance claim in this preparation"
+  ],
+  "use": "See report.md for env, namespace, ledger, producer and cleanup contracts"
+}

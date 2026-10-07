@@ -1,0 +1,11 @@
+{
+  "region": "eu-west-1",
+  "release": "v1.4",
+  "maxBatch": 28,
+  "status": "ready",
+  "jobIds": [
+    "validation-0",
+    "validation-1",
+    "validation-2"
+  ]
+}

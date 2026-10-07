@@ -1,0 +1,7 @@
+{
+  "role": "ingest",
+  "testsCommand": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs && npm test",
+  "receiptDigest": "ab49b5911fc554546970a97ab9f76d9d827a606a347ef947ac89a53416ffb3d9",
+  "policyRevisionHandled": null,
+  "summary": "Implemented all six ingest functions, added four boundary tests, integrated ingest exports and own handoff section. Role tests: 10/10 passing. Final integrated suite: 35/35 passing after delivery exports were integrated. Briefly waited for peer integration; earlier full-suite run had only the then-missing delivery export failure. Original tests unchanged. No ingest policy revision received."
+}

@@ -1,0 +1,16 @@
+{"time":"2026-10-06T09:33:02.736Z","monoMs":408934448.186666,"type":"session_selected","url":"http://127.0.0.1:58315","sessionId":"6e27c3b2-ee39-48d9-ac55-93c288e058e6","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/main-S3-304-W-v2-full/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-06T09:33:02.736Z","monoMs":408934448.292458,"type":"server_ready","url":"http://127.0.0.1:58315","sessionId":"6e27c3b2-ee39-48d9-ac55-93c288e058e6","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/main-S3-304-W-v2-full/notifications.sqlite"}
+{"time":"2026-10-06T09:33:02.815Z","monoMs":408934527.128833,"type":"provider_request","attempt":1}
+{"time":"2026-10-06T09:33:03.470Z","monoMs":408935182.321583,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:33:05.715Z","monoMs":408937427.441416,"type":"provider_request","attempt":2}
+{"time":"2026-10-06T09:33:06.224Z","monoMs":408937936.005625,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:33:07.431Z","monoMs":408939143.719708,"type":"provider_request","attempt":3}
+{"time":"2026-10-06T09:33:08.241Z","monoMs":408939952.778208,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:33:15.397Z","monoMs":408947108.911958,"type":"provider_request","attempt":4}
+{"time":"2026-10-06T09:33:16.352Z","monoMs":408948064.538875,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:33:17.639Z","monoMs":408949351.100833,"type":"provider_request","attempt":5}
+{"time":"2026-10-06T09:33:18.254Z","monoMs":408949966.814958,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:33:25.758Z","monoMs":408957470.41325,"type":"provider_request","attempt":6}
+{"time":"2026-10-06T09:33:26.470Z","monoMs":408958182.315916,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:33:27.866Z","monoMs":408959578.332958,"type":"provider_request","attempt":7}
+{"time":"2026-10-06T09:33:28.617Z","monoMs":408960329.405958,"type":"provider_response","status":200}

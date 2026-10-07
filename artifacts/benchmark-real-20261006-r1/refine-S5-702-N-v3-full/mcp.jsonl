@@ -1,0 +1,11 @@
+{"time":"2026-10-06T10:27:09.428Z","monoMs":412181039.825291,"type":"protocol_message","method":"initialize"}
+{"time":"2026-10-06T10:27:09.433Z","monoMs":412181044.221583,"type":"protocol_message","method":"notifications/initialized"}
+{"time":"2026-10-06T10:27:09.433Z","monoMs":412181044.5155,"type":"protocol_message","method":"tools/list"}
+{"time":"2026-10-06T10:27:09.433Z","monoMs":412181044.643083,"type":"tools_list"}
+{"time":"2026-10-06T10:27:12.011Z","monoMs":412183621.983083,"type":"protocol_message","method":"tools/call"}
+{"time":"2026-10-06T10:27:12.012Z","monoMs":412183623.504666,"type":"tools_call","name":"start_job","args":{"ids":["validation"]}}
+{"time":"2026-10-06T10:27:12.015Z","monoMs":412183626.055916,"type":"job_started","jobId":"validation"}
+{"time":"2026-10-06T10:27:12.015Z","monoMs":412183626.463625,"type":"tools_result","name":"start_job"}
+{"time":"2026-10-06T10:27:22.064Z","monoMs":412193675.317875,"type":"job_finished","jobId":"validation","revision":1,"status":"failed","result":{"maxBatch":30,"release":"v1.4","region":"eu-west-1","revoked":true},"finished":{"time":"2026-10-06T10:27:22.056Z","monoMs":412193669.034666}}
+{"time":"2026-10-06T10:27:22.065Z","monoMs":412193675.726875,"type":"notify_attempt","jobId":"validation","attempt":1,"bytes":204}
+{"time":"2026-10-06T10:27:22.099Z","monoMs":412193710.325291,"type":"notify_accepted","jobId":"validation","notification":{"id":"notif_9dcd75ca-db8f-463b-bca1-2d1f44a25f6d","sessionId":"f8636344-934d-4b8e-ab21-92ab42d1d097","source":"Validation","message":"{\"jobId\":\"validation\",\"revision\":1,\"status\":\"failed\",\"result\":{\"maxBatch\":30,\"release\":\"v1.4\",\"region\":\"eu-west-1\",\"revoked\":true},\"finished\":{\"time\":\"2026-10-06T10:27:22.056Z\",\"monoMs\":412193669.034666}}","createdAt":"2026-10-06T10:27:22.094Z","firstVisibleCall":null,"dismissedAt":null}}

@@ -1,0 +1,1 @@
+export function retryDelay(n,{baseMs,capMs,retryAfterMs=0}){if(!Number.isInteger(n)||n<0||!Number.isFinite(baseMs)||baseMs<=0||!Number.isFinite(capMs)||capMs<baseMs||!Number.isFinite(retryAfterMs)||retryAfterMs<0)throw new TypeError('retry');return Math.min(capMs,Math.max(baseMs*2**n,retryAfterMs));}

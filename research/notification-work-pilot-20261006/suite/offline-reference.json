@@ -1,0 +1,14 @@
+{
+  "time": "2026-10-06T13:14:48.464Z",
+  "directory": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite/offline-reference",
+  "datasetSha256": "ab49b5911fc554546970a97ab9f76d9d827a606a347ef947ac89a53416ffb3d9",
+  "roleFunctionCount": {
+    "ingest": 6,
+    "delivery": 6,
+    "view": 6
+  },
+  "status": 0,
+  "stdout": "✔ retry doubles with cap and validates (0.62975ms)\n✔ new delivery deterministic and collision-free (0.089459ms)\n✔ failure retries and acknowledgements are immutable (0.112083ms)\n✔ invalid transitions and backwards timestamps fail (0.398542ms)\n✔ due ordering and summaries (0.113875ms)\n✔ merge uses timestamp then incoming, clones nested values (0.079333ms)\n✔ parser validates boundary values and clones body (0.696ms)\n✔ idempotency keys are collision-free (0.095917ms)\n✔ subscriptions merge and routing respects exact topics (0.598084ms)\n✔ latest revision beats arrival order (0.099417ms)\n✔ ties use event timestamp, then first event (0.063125ms)\n✔ routing reduces stale revisions and handles zero recipients (0.159875ms)\n✔ public exports implement route -> delivery -> render integration (0.578542ms)\n✔ turn age validates and clamps (0.488333ms)\n✔ compact keeps exact boundary and reports truncation (0.354834ms)\n✔ visibility targets session and drops dismissed/future (0.1385ms)\n✔ newest cap is chronological and stable on equal times (0.451958ms)\n✔ render format and empty context (0.107958ms)\n✔ source grouping handles prototype-looking source (0.060458ms)\nℹ tests 19\nℹ suites 0\nℹ pass 19\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 37.837208\n",
+  "stderr": "",
+  "paidInference": false
+}

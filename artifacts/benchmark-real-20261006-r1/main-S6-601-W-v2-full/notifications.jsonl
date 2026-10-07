@@ -1,0 +1,16 @@
+{"time":"2026-10-06T10:15:18.756Z","monoMs":411470380.886416,"type":"session_selected","url":"http://127.0.0.1:61089","sessionId":"4f780519-264e-49ad-97fd-c94286263e4f","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/main-S6-601-W-v2-full/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-06T10:15:18.756Z","monoMs":411470380.984208,"type":"server_ready","url":"http://127.0.0.1:61089","sessionId":"4f780519-264e-49ad-97fd-c94286263e4f","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/main-S6-601-W-v2-full/notifications.sqlite"}
+{"time":"2026-10-06T10:15:18.846Z","monoMs":411470470.40525,"type":"provider_request","attempt":1}
+{"time":"2026-10-06T10:15:19.895Z","monoMs":411471520.14775,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:15:21.009Z","monoMs":411472633.748583,"type":"provider_request","attempt":2}
+{"time":"2026-10-06T10:15:21.532Z","monoMs":411473156.530208,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:15:22.526Z","monoMs":411474151.016875,"type":"provider_request","attempt":3}
+{"time":"2026-10-06T10:15:23.168Z","monoMs":411474792.654666,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:15:29.880Z","monoMs":411481504.287791,"type":"provider_request","attempt":4}
+{"time":"2026-10-06T10:15:30.730Z","monoMs":411482354.509166,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:15:31.776Z","monoMs":411483400.736916,"type":"provider_request","attempt":5}
+{"time":"2026-10-06T10:15:32.268Z","monoMs":411483892.477458,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:15:33.947Z","monoMs":411485571.876041,"type":"provider_request","attempt":6}
+{"time":"2026-10-06T10:15:34.672Z","monoMs":411486296.828958,"type":"provider_response","status":200}
+{"time":"2026-10-06T10:15:35.992Z","monoMs":411487616.956125,"type":"provider_request","attempt":7}
+{"time":"2026-10-06T10:15:36.790Z","monoMs":411488414.237458,"type":"provider_response","status":200}

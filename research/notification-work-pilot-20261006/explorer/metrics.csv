@@ -1,0 +1,2 @@
+run_id,condition,mode,task_correct,channel_valid,actual_provider,actual_model,turn_ms,http_attempts,total_tokens,api_equivalent_usd,unknown_reserved_usd,tool_calls,source_checks,await_calls,first_exposure_ms,first_consequence_ms,tests_passed_before_report,tests_passed_after_report
+"explorer-compatibility-N-4101-847cae3a","compatibility","N",false,true,"openai-codex","gpt-6.1-sol",212329,12,120648,0.14056,0,33,0,0,11190.703916966915,111649.7765839696,14,0

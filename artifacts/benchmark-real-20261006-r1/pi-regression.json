@@ -1,0 +1,4 @@
+{
+  "passed": true,
+  "output": "✔ Pi RPC retains SQLite data on restart and routes late events to their original session (581.2725ms)\nℹ tests 1\nℹ suites 0\nℹ pass 1\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 616.412709\n"
+}

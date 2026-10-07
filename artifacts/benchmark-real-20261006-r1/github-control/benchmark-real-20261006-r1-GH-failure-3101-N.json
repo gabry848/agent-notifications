@@ -1,0 +1,14 @@
+{
+  "runId": 37461483024,
+  "url": "https://github.com/gabry848/pi-notifications-bench-20261006/actions/runs/37461483024",
+  "status": "completed",
+  "conclusion": "failure",
+  "createdAt": "2026-10-06T12:11:20Z",
+  "startedAt": "2026-10-06T12:11:20Z",
+  "updatedAt": "2026-10-06T12:11:47Z",
+  "received": {
+    "time": "2026-10-06T12:11:48.612Z",
+    "monoMs": 418460254.29725
+  },
+  "notificationDelivered": true
+}

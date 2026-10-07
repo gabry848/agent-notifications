@@ -1,0 +1,24 @@
+{
+  "observedAt": "2026-10-06T12:09:46.002Z",
+  "issue": "gh flat dotted keys caused HTTP 422; nested bracket syntax fixes dispatch.",
+  "failedRunId": "github-GH-success-3001-N-v3-compact-stable-batch",
+  "firstCorrectedRunId": "github-GH-success-3001-P10-v3-compact-stable",
+  "originalSources": "frozen-github",
+  "correctedSources": "frozen-github-dispatch-fixed",
+  "sourceHash": "90dbf12b7b9b0d049e9643fbc20eb4d2187afab96837f54ea56c8b8fb288ddbd",
+  "sourceHashes": {
+    "server.mjs": "e4c2cf05661d235efeccd8b0a7475a875ea0e5767453184df82e347571b4740d",
+    "webhook.mjs": "d51febd35a70445becd8e3734d1d06ec0b134212144818fbf2f34e3197ff7083",
+    "bench.yml": "e70b504e06cbb984a6c712d52fc3767da08ecbf64d570802f1ffea49e2f1d680",
+    "run.mjs": "b074c0420e2c57b1e836fe795023191f74ae6c13b00a84d0de8e00aa9190534e"
+  },
+  "releaseRunnerReservation": {
+    "estimatedUsd": 0,
+    "reason": "Dispatch rejected with HTTP 422; no workflow was created."
+  },
+  "supplementaryPair": {
+    "outcome": "success",
+    "seed": 3003,
+    "reason": "Replace no measurements: preserve the failed attempt and add a second valid independent success pair."
+  }
+}

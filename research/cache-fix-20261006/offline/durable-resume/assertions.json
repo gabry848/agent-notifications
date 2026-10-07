@@ -1,0 +1,12 @@
+{
+  "paidInference": false,
+  "externalHttpAttempts": 0,
+  "fixtureModelResponses": 14,
+  "sessionRestarted": true,
+  "sameSessionId": true,
+  "previousSnapshotsOnFirstResumedRequest": 7,
+  "journalEntries": 14,
+  "customMetadataPersisted": true,
+  "snapshotsAbsentFromNativeTranscript": true,
+  "authLinksRemoved": true
+}

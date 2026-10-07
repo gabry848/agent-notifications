@@ -1,0 +1,16 @@
+{"time":"2026-10-06T09:29:19.740Z","monoMs":408711448.810333,"type":"session_selected","url":"http://127.0.0.1:58022","sessionId":"013444b7-16af-40cb-a4f4-af907dca43b1","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/main-S3-302-W-v2-full/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-06T09:29:19.740Z","monoMs":408711448.901333,"type":"server_ready","url":"http://127.0.0.1:58022","sessionId":"013444b7-16af-40cb-a4f4-af907dca43b1","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/artifacts/benchmark-real-20261006-r1/main-S3-302-W-v2-full/notifications.sqlite"}
+{"time":"2026-10-06T09:29:19.821Z","monoMs":408711530.029708,"type":"provider_request","attempt":1}
+{"time":"2026-10-06T09:29:20.635Z","monoMs":408712344.03,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:29:22.894Z","monoMs":408714603.27075,"type":"provider_request","attempt":2}
+{"time":"2026-10-06T09:29:23.478Z","monoMs":408715187.063791,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:29:25.475Z","monoMs":408717184.525875,"type":"provider_request","attempt":3}
+{"time":"2026-10-06T09:29:26.445Z","monoMs":408718154.037125,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:29:33.768Z","monoMs":408725477.713541,"type":"provider_request","attempt":4}
+{"time":"2026-10-06T09:29:34.662Z","monoMs":408726371.787041,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:29:35.742Z","monoMs":408727451.402333,"type":"provider_request","attempt":5}
+{"time":"2026-10-06T09:29:36.215Z","monoMs":408727924.718875,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:29:42.935Z","monoMs":408734644.0525,"type":"provider_request","attempt":6}
+{"time":"2026-10-06T09:29:44.265Z","monoMs":408735974.390958,"type":"provider_response","status":200}
+{"time":"2026-10-06T09:29:45.768Z","monoMs":408737477.647291,"type":"provider_request","attempt":7}
+{"time":"2026-10-06T09:29:46.413Z","monoMs":408738122.224708,"type":"provider_response","status":200}

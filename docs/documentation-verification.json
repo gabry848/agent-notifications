@@ -1,0 +1,1312 @@
+{
+  "checkedAt": "2026-10-06",
+  "kind": "Documentation-only offline validation; no new model inference",
+  "files": [
+    "README.md",
+    "docs/benchmarks.md",
+    "docs/notification-spec.md",
+    "docs/pi-adapter.md",
+    "docs/research-story.md",
+    "docs/roadmap.md",
+    "docs/use-cases.md"
+  ],
+  "links": [
+    {
+      "from": "README.md",
+      "to": "docs/research-story.md",
+      "passed": true
+    },
+    {
+      "from": "README.md",
+      "to": "docs/notification-spec.md",
+      "passed": true
+    },
+    {
+      "from": "README.md",
+      "to": "docs/benchmarks.md",
+      "passed": true
+    },
+    {
+      "from": "README.md",
+      "to": "research/final-20261006/research.html",
+      "passed": true
+    },
+    {
+      "from": "README.md",
+      "to": "docs/notification-spec.md#context-layout",
+      "passed": true
+    },
+    {
+      "from": "README.md",
+      "to": "docs/pi-adapter.md",
+      "passed": true
+    },
+    {
+      "from": "README.md",
+      "to": "docs/benchmarks.md",
+      "passed": true
+    },
+    {
+      "from": "README.md",
+      "to": "docs/benchmarks.md#concurrent-work-and-agent-coordinator",
+      "passed": true
+    },
+    {
+      "from": "README.md",
+      "to": "docs/benchmarks.md#unfavorable-results",
+      "passed": true
+    },
+    {
+      "from": "README.md",
+      "to": "docs/use-cases.md",
+      "passed": true
+    },
+    {
+      "from": "README.md",
+      "to": "docs/roadmap.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../README.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "research-story.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/final-20261006/research.html",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/final-20261006/data.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/final-20261006/runs.csv",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/final-20261006/requests.csv",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/final-20261006/comparisons.csv",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/final-20261006/initial-observations.csv",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/final-20261006/source-manifest.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/final-20261006/data-verification.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/final-20261006/verification.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/final-20261006/build.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/smoke-v1/summary.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/smoke-v1/relevant-1/",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/smoke-fixed-v1/summary.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/baseline-v1/summary.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/baseline-v1/",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/retry-v1/summary.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/baseline-final-v1/summary.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/refined-v2/summary.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/verification.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../experiments/scenarios.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../experiments/run.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../experiments/consolidate.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../experiments/verify-artifacts.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/results.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/results.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/results.csv",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/findings.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/overview.html",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/manifest.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/budget.sqlite",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/meter.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/README.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/scenarios.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/jobs-server.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/worker.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/pi-client.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/pilot-v2-full-order.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/main-v2-full-order.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/refine-prompt-order.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/refine-layout-order.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/refine-payload-order.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/refine-dismiss-order.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/selected.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/confirmation-frozen.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/frozen-runtime/",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/confirmation-order.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/utility.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/utility-negative-control.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/regression.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006/",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-budget-guard-20261006/",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-budget-guard-verified-20261006/",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-preflight-20261006/",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/confirm-S2-1001-N-v3-compact-stable-batch/",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/github/run.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/github/server.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/github/webhook.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/github/bench.yml",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/github-adapter-repair.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/github-preflight-supplemental.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/github-preflight-supplemental-r2.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/github-GH-success-3003-N-v3-compact-stable-batch/github-evidence.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../artifacts/benchmark-real-20261006-r1/cleanup-verified.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../notification_research_plan_v2.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/campaign.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/report-data.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/research.html",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/adapter/report.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/adapter/coordinator_server.py",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/adapter/upstream_server.py",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/adapter/ready.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/adapter/source-hashes.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/adapter/preflight.test.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/explorer/report.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/explorer/experiments.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/explorer/metrics.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/explorer/metrics.csv",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/explorer/run.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/suite/report.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/suite/metrics.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/suite/metrics.csv",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/suite/runtime-frozen.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/suite/run.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/suite/oracle.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/audit/report.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/audit/contract-action-evidence.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/audit/reservation-guard-diagnostic.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/audit/usage-reconciliation.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/audit/overlap-versions.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/audit/notification-residuals.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/budget.sqlite",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/notification-work-pilot-20261006/coordinator-analysis.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/report.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/metrics.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/metrics.csv",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/experiments.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/control-freeze.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/source-hashes.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/run.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/budget.sqlite",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/verification.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/tests-verification.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/offline/durable-resume/assertions.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../research/cache-fix-20261006/coordinator-review.json",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "../benchmark/README.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "pi-adapter.md",
+      "passed": true
+    },
+    {
+      "from": "docs/benchmarks.md",
+      "to": "roadmap.md",
+      "passed": true
+    },
+    {
+      "from": "docs/notification-spec.md",
+      "to": "../README.md",
+      "passed": true
+    },
+    {
+      "from": "docs/notification-spec.md",
+      "to": "pi-adapter.md",
+      "passed": true
+    },
+    {
+      "from": "docs/notification-spec.md",
+      "to": "research-story.md",
+      "passed": true
+    },
+    {
+      "from": "docs/notification-spec.md",
+      "to": "../src/http.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/notification-spec.md",
+      "to": "../src/store.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/notification-spec.md",
+      "to": "../src/notification-context.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/notification-spec.md",
+      "to": "../research/cache-fix-20261006/report.md",
+      "passed": true
+    },
+    {
+      "from": "docs/notification-spec.md",
+      "to": "../prompts/v2.txt",
+      "passed": true
+    },
+    {
+      "from": "docs/notification-spec.md",
+      "to": "../prompts/v3.txt",
+      "passed": true
+    },
+    {
+      "from": "docs/notification-spec.md",
+      "to": "../src/pi-extension.ts",
+      "passed": true
+    },
+    {
+      "from": "docs/notification-spec.md",
+      "to": "use-cases.md",
+      "passed": true
+    },
+    {
+      "from": "docs/pi-adapter.md",
+      "to": "../src/pi-extension.ts",
+      "passed": true
+    },
+    {
+      "from": "docs/pi-adapter.md",
+      "to": "../README.md",
+      "passed": true
+    },
+    {
+      "from": "docs/pi-adapter.md",
+      "to": "notification-spec.md",
+      "passed": true
+    },
+    {
+      "from": "docs/pi-adapter.md",
+      "to": "notification-spec.md#context-layout",
+      "passed": true
+    },
+    {
+      "from": "docs/pi-adapter.md",
+      "to": "benchmarks.md",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "../README.md",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "notification-spec.md",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "benchmarks.md",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "../research/final-20261006/research.html",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "../dynamic_notification_memory_pi_mvp.md",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "benchmarks.md#initial-behavior-experiments",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "../src/store.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "../tests/pi-sqlite.integration.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "benchmarks.md#efficiency-campaign",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "benchmarks.md#github-actions-demonstration",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "../notification_research_plan_v2.md",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "benchmarks.md#concurrent-work-and-agent-coordinator",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "../research/cache-fix-20261006/report.md",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "benchmarks.md#consolidated-data",
+      "passed": true
+    },
+    {
+      "from": "docs/research-story.md",
+      "to": "roadmap.md",
+      "passed": true
+    },
+    {
+      "from": "docs/roadmap.md",
+      "to": "../README.md",
+      "passed": true
+    },
+    {
+      "from": "docs/roadmap.md",
+      "to": "research-story.md",
+      "passed": true
+    },
+    {
+      "from": "docs/roadmap.md",
+      "to": "use-cases.md",
+      "passed": true
+    },
+    {
+      "from": "docs/use-cases.md",
+      "to": "../README.md",
+      "passed": true
+    },
+    {
+      "from": "docs/use-cases.md",
+      "to": "notification-spec.md",
+      "passed": true
+    },
+    {
+      "from": "docs/use-cases.md",
+      "to": "benchmarks.md",
+      "passed": true
+    },
+    {
+      "from": "docs/use-cases.md",
+      "to": "../research/notification-work-pilot-20261006/adapter/report.md",
+      "passed": true
+    },
+    {
+      "from": "docs/use-cases.md",
+      "to": "../research/notification-work-pilot-20261006/audit/contract-action-evidence.json",
+      "passed": true
+    },
+    {
+      "from": "docs/use-cases.md",
+      "to": "../benchmark/github/run.mjs",
+      "passed": true
+    },
+    {
+      "from": "docs/use-cases.md",
+      "to": "../benchmark/github/bench.yml",
+      "passed": true
+    },
+    {
+      "from": "docs/use-cases.md",
+      "to": "benchmarks.md#github-actions-demonstration",
+      "passed": true
+    },
+    {
+      "from": "docs/use-cases.md",
+      "to": "roadmap.md",
+      "passed": true
+    }
+  ],
+  "snippets": [
+    {
+      "file": "README.md",
+      "index": 0,
+      "type": "text",
+      "passed": true
+    },
+    {
+      "file": "README.md",
+      "index": 1,
+      "type": "sh",
+      "passed": true
+    },
+    {
+      "file": "README.md",
+      "index": 2,
+      "type": "sh",
+      "passed": true
+    },
+    {
+      "file": "docs/notification-spec.md",
+      "index": 0,
+      "type": "mermaid",
+      "passed": true
+    },
+    {
+      "file": "docs/notification-spec.md",
+      "index": 1,
+      "type": "json",
+      "passed": true
+    },
+    {
+      "file": "docs/notification-spec.md",
+      "index": 2,
+      "type": "text",
+      "passed": true
+    },
+    {
+      "file": "docs/notification-spec.md",
+      "index": 3,
+      "type": "text",
+      "passed": true
+    },
+    {
+      "file": "docs/notification-spec.md",
+      "index": 4,
+      "type": "text",
+      "passed": true
+    },
+    {
+      "file": "docs/pi-adapter.md",
+      "index": 0,
+      "type": "sh",
+      "passed": true
+    },
+    {
+      "file": "docs/pi-adapter.md",
+      "index": 1,
+      "type": "sh",
+      "passed": true
+    },
+    {
+      "file": "docs/pi-adapter.md",
+      "index": 2,
+      "type": "sh",
+      "passed": true
+    },
+    {
+      "file": "docs/pi-adapter.md",
+      "index": 3,
+      "type": "js",
+      "passed": true
+    },
+    {
+      "file": "docs/pi-adapter.md",
+      "index": 4,
+      "type": "sh",
+      "passed": true
+    },
+    {
+      "file": "docs/pi-adapter.md",
+      "index": 5,
+      "type": "json",
+      "passed": true
+    },
+    {
+      "file": "docs/pi-adapter.md",
+      "index": 6,
+      "type": "sh",
+      "passed": true
+    },
+    {
+      "file": "docs/pi-adapter.md",
+      "index": 7,
+      "type": "sh",
+      "passed": true
+    },
+    {
+      "file": "docs/pi-adapter.md",
+      "index": 8,
+      "type": "sh",
+      "passed": true
+    },
+    {
+      "file": "docs/roadmap.md",
+      "index": 0,
+      "type": "text",
+      "passed": true
+    },
+    {
+      "file": "docs/use-cases.md",
+      "index": 0,
+      "type": "text",
+      "passed": true
+    },
+    {
+      "file": "docs/use-cases.md",
+      "index": 1,
+      "type": "mermaid",
+      "passed": true
+    },
+    {
+      "file": "docs/use-cases.md",
+      "index": 2,
+      "type": "text",
+      "passed": true
+    },
+    {
+      "file": "docs/use-cases.md",
+      "index": 3,
+      "type": "text",
+      "passed": true
+    }
+  ],
+  "variablesVerified": [
+    "PI_NOTIFY_CACHE",
+    "PI_NOTIFY_CONTEXT",
+    "PI_NOTIFY_DB",
+    "PI_NOTIFY_DISMISS",
+    "PI_NOTIFY_LAB",
+    "PI_NOTIFY_PORT",
+    "PI_NOTIFY_POSITION",
+    "PI_NOTIFY_PROMPT",
+    "PI_NOTIFY_PROVIDER_TRACE",
+    "PI_NOTIFY_READY",
+    "PI_NOTIFY_TRACE"
+  ],
+  "aggregateMetricsVerified": true,
+  "errors": [],
+  "passed": true,
+  "pairedValuesVerified": [
+    {
+      "phase": "main",
+      "scenario": "S1",
+      "control": "PA",
+      "metric": "providerAttempts",
+      "medianSaving": 1.0,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S1",
+      "control": "PA",
+      "metric": "tokens.totalTokens",
+      "medianSaving": -1252.0,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S1",
+      "control": "PA",
+      "metric": "estimatedUsd",
+      "medianSaving": -0.0012747000000000019,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S2",
+      "control": "PA",
+      "metric": "providerAttempts",
+      "medianSaving": 11.0,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S2",
+      "control": "PA",
+      "metric": "tokens.totalTokens",
+      "medianSaving": 14188.0,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S2",
+      "control": "PA",
+      "metric": "estimatedUsd",
+      "medianSaving": 0.0033194999999999995,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S3",
+      "control": "PA",
+      "metric": "providerAttempts",
+      "medianSaving": 3.0,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S3",
+      "control": "PA",
+      "metric": "tokens.totalTokens",
+      "medianSaving": 2740.0,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S3",
+      "control": "PA",
+      "metric": "estimatedUsd",
+      "medianSaving": -0.0162561,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S4",
+      "control": "PA",
+      "metric": "providerAttempts",
+      "medianSaving": 6.5,
+      "pairs": 4,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S4",
+      "control": "PA",
+      "metric": "tokens.totalTokens",
+      "medianSaving": 20680.5,
+      "pairs": 4,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S4",
+      "control": "PA",
+      "metric": "estimatedUsd",
+      "medianSaving": -0.0219337,
+      "pairs": 4,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S5",
+      "control": "PA",
+      "metric": "providerAttempts",
+      "medianSaving": 2.0,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S5",
+      "control": "PA",
+      "metric": "tokens.totalTokens",
+      "medianSaving": -616.0,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S5",
+      "control": "PA",
+      "metric": "estimatedUsd",
+      "medianSaving": -0.01665,
+      "pairs": 5,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S2",
+      "control": "PA",
+      "metric": "providerAttempts",
+      "medianSaving": 11.0,
+      "pairs": 10,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S2",
+      "control": "PA",
+      "metric": "tokens.totalTokens",
+      "medianSaving": 14058.5,
+      "pairs": 10,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S2",
+      "control": "PA",
+      "metric": "estimatedUsd",
+      "medianSaving": 0.006390750000000001,
+      "pairs": 10,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S2",
+      "control": "W",
+      "metric": "providerAttempts",
+      "medianSaving": -1.0,
+      "pairs": 10,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S2",
+      "control": "W",
+      "metric": "tokens.totalTokens",
+      "medianSaving": -4050.0,
+      "pairs": 10,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S2",
+      "control": "W",
+      "metric": "estimatedUsd",
+      "medianSaving": 0.0005986000000000012,
+      "pairs": 10,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S6",
+      "control": "P10",
+      "metric": "providerAttempts",
+      "medianSaving": 2.0,
+      "pairs": 10,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S6",
+      "control": "P10",
+      "metric": "tokens.totalTokens",
+      "medianSaving": -4517.0,
+      "pairs": 10,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S6",
+      "control": "P10",
+      "metric": "estimatedUsd",
+      "medianSaving": -0.012648000000000001,
+      "pairs": 10,
+      "passed": true
+    },
+    {
+      "phase": "github",
+      "scenario": "GH-success",
+      "control": "P10",
+      "metric": "providerAttempts",
+      "medianSaving": 1.0,
+      "pairs": 2,
+      "passed": true
+    },
+    {
+      "phase": "github",
+      "scenario": "GH-success",
+      "control": "P10",
+      "metric": "tokens.totalTokens",
+      "medianSaving": -2544.0,
+      "pairs": 2,
+      "passed": true
+    },
+    {
+      "phase": "github",
+      "scenario": "GH-success",
+      "control": "P10",
+      "metric": "estimatedUsd",
+      "medianSaving": 0.003273499999999997,
+      "pairs": 2,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S1",
+      "control": "PA",
+      "metric": "roundedFullTurnSecondsSaved",
+      "value": 2.51,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S2",
+      "control": "PA",
+      "metric": "roundedFullTurnSecondsSaved",
+      "value": 21.98,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S3",
+      "control": "PA",
+      "metric": "roundedFullTurnSecondsSaved",
+      "value": 3.07,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S4",
+      "control": "PA",
+      "metric": "roundedFullTurnSecondsSaved",
+      "value": 16.49,
+      "passed": true
+    },
+    {
+      "phase": "main",
+      "scenario": "S5",
+      "control": "PA",
+      "metric": "roundedFullTurnSecondsSaved",
+      "value": -5.71,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S2",
+      "control": "PA",
+      "metric": "roundedFullTurnSecondsSaved",
+      "value": 20.19,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S2",
+      "control": "W",
+      "metric": "roundedFullTurnSecondsSaved",
+      "value": -3.65,
+      "passed": true
+    },
+    {
+      "phase": "confirm",
+      "scenario": "S6",
+      "control": "P10",
+      "metric": "roundedFullTurnSecondsSaved",
+      "value": 6.07,
+      "passed": true
+    },
+    {
+      "phase": "github",
+      "scenario": "GH-success",
+      "control": "P10",
+      "metric": "roundedFullTurnSecondsSaved",
+      "value": 3.79,
+      "passed": true
+    }
+  ],
+  "documentHashes": {
+    "README.md": "30bbad00382c6be9f5aa0b40254e2eb36f3b77d870b44e32502bef5ad313f1c9",
+    "docs/benchmarks.md": "c4f8ec7b9d21188aadfc32b9b4cea29c1dfbe04cc5d8a45885cfbd7755399d28",
+    "docs/notification-spec.md": "eef20a8df0fe495e31a91602ea11e39d518c5a75dbdefc610fe5a35a8d256390",
+    "docs/pi-adapter.md": "5330008e6ee4b986364d8d5b452fcf4a99c583523d989249ef8edb49874ad236",
+    "docs/research-story.md": "5f1fde621d8f0007c6f9c68a5b06cc4d634e758f29c42db112d1e9b35a07e63d",
+    "docs/roadmap.md": "57879f561aac4d5b1cac34e09e4a68244cfd3bfe01a1918609af8dd037b9f637",
+    "docs/use-cases.md": "53fee2893566f01a30fedbc3b8607c90ea476ec42ef1b3c62016dfff8d633b12"
+  },
+  "measuredArtifactsModified": false,
+  "frozenSourceHashChecks": {
+    "manifest": "research/cache-fix-20261006/source-hashes.json",
+    "checked": 20,
+    "mismatches": []
+  }
+}

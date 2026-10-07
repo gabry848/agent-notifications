@@ -1,0 +1,13 @@
+{
+  "kind": "preparation-preflight-only",
+  "finalTests": 4,
+  "finalPass": 4,
+  "inferenceCalls": 0,
+  "piDefault": {"model": "gpt-6.1-sol", "provider": "openai-codex", "thinking": "medium", "version": "0.99.2"},
+  "actualBillingUsd": null,
+  "apiEquivalentInferenceEstimateUsd": 0,
+  "performanceComparison": null,
+  "source": "traces/preflight-final.tap",
+  "failuresPreserved": ["traces/preflight-first-attempt.json"],
+  "comment": "Zero estimated inference cost reflects zero inference calls; subscription billing is unobserved. This preparation makes no benchmark efficiency claim."
+}

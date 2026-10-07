@@ -1,0 +1,116 @@
+{
+  "releasedAt": "2026-10-06T13:34:00.325Z",
+  "scope": "suite",
+  "released": true,
+  "rootAuthorization": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/suite-GO.json",
+  "runtimeVersion": 3,
+  "hashesChecked": 23,
+  "hashes": [
+    {
+      "path": "research/notification-work-pilot-20261006/suite/design.md",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/generate.mjs",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/oracle.mjs",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/diagnostic.mjs",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/prompt.mjs",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/telemetry.ts",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/run.mjs",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/report.mjs",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/suite-frozen.json",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/runtime-budget-amendment.json",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/upstream_server.py",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/coordinator_server.py",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/stdio_proxy.py",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/coordinator-extension.ts",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/board-runtime.mjs",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/pi-runtime.mjs",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/meter.mjs",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/meter-extension.ts",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/transport/store.mjs",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/transport/http.mjs",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/transport/pi-extension.ts",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/adapter/frozen/transport/prompt-v3.txt",
+      "matches": true
+    },
+    {
+      "path": "research/notification-work-pilot-20261006/suite/installed-runtime.mjs",
+      "matches": true
+    }
+  ],
+  "calibrationEvidence": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/audit/explorer-calibration-check.json",
+  "offlineSupplemental": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/audit/suite-offline-supplemental.json",
+  "conditions": {
+    "calibrationClosed": true,
+    "ownedMeasuredProcessesStopped": true,
+    "usageAllSettledAndReconciled": true,
+    "supplementalOfflinePassed": true
+  },
+  "schedule": "PA,N,W sequential groups,3Pi pergroup; no overlap with explorer measuredcases",
+  "maxGroups": 3,
+  "maxPiSessions": 9,
+  "scopeCapUsd": 6,
+  "globalCapUsd": 10,
+  "longTrialsAuthorized": false
+}

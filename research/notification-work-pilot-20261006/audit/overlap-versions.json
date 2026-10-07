@@ -1,0 +1,251 @@
+{
+  "auditedAt": "2026-10-06T13:52:00.122Z",
+  "newModelCalls": 0,
+  "testsRepeated": false,
+  "cases": [
+    {
+      "mode": "PA",
+      "verificationCallsDuringPeerTurn": 6,
+      "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 5,
+      "participants": [
+        {
+          "role": "ingest",
+          "verificationCallsDuringPeerTurn": 2,
+          "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 2,
+          "calls": [
+            {
+              "time": "2026-10-06T13:36:06.226Z",
+              "roleSourceHash": "467eca01f461bbb818b3914d5a451d02a86cdef51d81ccd7be3e7827738ebdae",
+              "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+              "openPeerTurns": [
+                "delivery",
+                "view"
+              ]
+            },
+            {
+              "time": "2026-10-06T13:36:58.077Z",
+              "roleSourceHash": "d93bc28e7291b40b5d18251e1007ffcc877acc32058d00948d6d76d935b23cc5",
+              "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+              "openPeerTurns": [
+                "delivery",
+                "view"
+              ]
+            }
+          ],
+          "versions": [
+            {
+              "time": "2026-10-06T13:36:06.226Z",
+              "roleSourceHash": "467eca01f461bbb818b3914d5a451d02a86cdef51d81ccd7be3e7827738ebdae",
+              "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+              "openPeerTurns": [
+                "delivery",
+                "view"
+              ]
+            },
+            {
+              "time": "2026-10-06T13:36:58.077Z",
+              "roleSourceHash": "d93bc28e7291b40b5d18251e1007ffcc877acc32058d00948d6d76d935b23cc5",
+              "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+              "openPeerTurns": [
+                "delivery",
+                "view"
+              ]
+            }
+          ]
+        },
+        {
+          "role": "delivery",
+          "verificationCallsDuringPeerTurn": 2,
+          "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 1,
+          "calls": [
+            {
+              "time": "2026-10-06T13:36:20.446Z",
+              "roleSourceHash": "ef4fd9d8fc5d75ba8a7f90e6fb7fb9ce9df676ff775e6e8a6257733bd071afaf",
+              "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+              "openPeerTurns": [
+                "ingest",
+                "view"
+              ]
+            },
+            {
+              "time": "2026-10-06T13:37:51.809Z",
+              "roleSourceHash": "ef4fd9d8fc5d75ba8a7f90e6fb7fb9ce9df676ff775e6e8a6257733bd071afaf",
+              "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs && npm test",
+              "openPeerTurns": [
+                "ingest",
+                "view"
+              ]
+            }
+          ],
+          "versions": [
+            {
+              "time": "2026-10-06T13:36:20.446Z",
+              "roleSourceHash": "ef4fd9d8fc5d75ba8a7f90e6fb7fb9ce9df676ff775e6e8a6257733bd071afaf",
+              "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+              "openPeerTurns": [
+                "ingest",
+                "view"
+              ]
+            }
+          ]
+        },
+        {
+          "role": "view",
+          "verificationCallsDuringPeerTurn": 2,
+          "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 2,
+          "calls": [
+            {
+              "time": "2026-10-06T13:36:03.392Z",
+              "roleSourceHash": "ab26376660808fee177d1ee9037039b0be6ad16357073d2f2aa46914681dc0cc",
+              "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+              "openPeerTurns": [
+                "ingest",
+                "delivery"
+              ]
+            },
+            {
+              "time": "2026-10-06T13:36:29.096Z",
+              "roleSourceHash": "defdc9447ced67be300a832744705eb03eee9b1752a816beb42d23b1a6f47d15",
+              "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+              "openPeerTurns": [
+                "ingest",
+                "delivery"
+              ]
+            }
+          ],
+          "versions": [
+            {
+              "time": "2026-10-06T13:36:03.392Z",
+              "roleSourceHash": "ab26376660808fee177d1ee9037039b0be6ad16357073d2f2aa46914681dc0cc",
+              "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+              "openPeerTurns": [
+                "ingest",
+                "delivery"
+              ]
+            },
+            {
+              "time": "2026-10-06T13:36:29.096Z",
+              "roleSourceHash": "defdc9447ced67be300a832744705eb03eee9b1752a816beb42d23b1a6f47d15",
+              "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+              "openPeerTurns": [
+                "ingest",
+                "delivery"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "N",
+      "verificationCallsDuringPeerTurn": 5,
+      "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 3,
+      "participants": [
+        {
+          "role": "ingest",
+          "verificationCallsDuringPeerTurn": 1,
+          "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 1,
+          "calls": [
+            {
+              "time": "2026-10-06T13:41:08.086Z",
+              "roleSourceHash": "4fdfc12ae68938fd7cb6f7c2394dcc5db0b262e6fa9be45564f3e74f2b9e20f7",
+              "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+              "openPeerTurns": [
+                "delivery",
+                "view"
+              ]
+            }
+          ],
+          "versions": [
+            {
+              "time": "2026-10-06T13:41:08.086Z",
+              "roleSourceHash": "4fdfc12ae68938fd7cb6f7c2394dcc5db0b262e6fa9be45564f3e74f2b9e20f7",
+              "command": "node --test test/ingest.test.mjs test/ingest.additional.test.mjs",
+              "openPeerTurns": [
+                "delivery",
+                "view"
+              ]
+            }
+          ]
+        },
+        {
+          "role": "delivery",
+          "verificationCallsDuringPeerTurn": 2,
+          "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 1,
+          "calls": [
+            {
+              "time": "2026-10-06T13:41:17.691Z",
+              "roleSourceHash": "c8997a459bc4b046c698aac86e17f7726df90ea645f35ac92470c626195d0102",
+              "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+              "openPeerTurns": [
+                "ingest",
+                "view"
+              ]
+            },
+            {
+              "time": "2026-10-06T13:43:00.423Z",
+              "roleSourceHash": "c8997a459bc4b046c698aac86e17f7726df90ea645f35ac92470c626195d0102",
+              "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs && npm test",
+              "openPeerTurns": [
+                "ingest"
+              ]
+            }
+          ],
+          "versions": [
+            {
+              "time": "2026-10-06T13:41:17.691Z",
+              "roleSourceHash": "c8997a459bc4b046c698aac86e17f7726df90ea645f35ac92470c626195d0102",
+              "command": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs",
+              "openPeerTurns": [
+                "ingest",
+                "view"
+              ]
+            }
+          ]
+        },
+        {
+          "role": "view",
+          "verificationCallsDuringPeerTurn": 2,
+          "uniqueRoleSourceVersionsVerifiedDuringPeerTurn": 1,
+          "calls": [
+            {
+              "time": "2026-10-06T13:41:38.749Z",
+              "roleSourceHash": "6a8f5afd8d6dfadf52a0addaee5f952e182adda837af9e2be4e51b92beefe1d6",
+              "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+              "openPeerTurns": [
+                "ingest",
+                "delivery"
+              ]
+            },
+            {
+              "time": "2026-10-06T13:42:14.817Z",
+              "roleSourceHash": "6a8f5afd8d6dfadf52a0addaee5f952e182adda837af9e2be4e51b92beefe1d6",
+              "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+              "openPeerTurns": [
+                "ingest",
+                "delivery"
+              ]
+            }
+          ],
+          "versions": [
+            {
+              "time": "2026-10-06T13:41:38.749Z",
+              "roleSourceHash": "6a8f5afd8d6dfadf52a0addaee5f952e182adda837af9e2be4e51b92beefe1d6",
+              "command": "node --test test/view.test.mjs test/view.additional.test.mjs",
+              "openPeerTurns": [
+                "ingest",
+                "delivery"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "definition": "A successful role-specific test command while any other real Pi turn is open; each role/source SHA counts once.",
+  "limits": [
+    "Conservative: new tests on unchanged implementation do not add another source version.",
+    "An open peer turn does not prove continuous peer computation or external long-job overlap.",
+    "A source snapshot after a combined bash command must be checked for post-test writes. Inspected commands contain tests only, apart from sequential npm test."
+  ]
+}

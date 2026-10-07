@@ -1,0 +1,100 @@
+{
+  "name": "plan-change",
+  "repetition": 3,
+  "prompt": "v1",
+  "provider": "openai",
+  "model": "gpt-6.1-sol",
+  "thinking": "medium",
+  "started": "2026-10-05T20:36:18.518Z",
+  "finished": "2026-10-05T20:36:34.856Z",
+  "notifications": [
+    {
+      "id": "notif_28bf3b1c-6791-4ab1-a749-7ee7485ae437",
+      "source": "Validation",
+      "message": "Release v1.4 for invoice-service has been revoked. Deployment validation is blocked.",
+      "createdAt": "2026-10-05T20:36:19.672Z",
+      "firstVisibleCall": null,
+      "dismissedAt": null
+    }
+  ],
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 50,
+    "status": "blocked",
+    "notes": "All three source snapshots read sequentially. Code review, unit tests, and configuration review passed; dependencies are available. Validation reports that invoice-service release v1.4 has been revoked, so the deployment plan is blocked. Retained the user-required region eu-west-1 and default maxBatch 50. No deployment performed or external service contacted."
+  },
+  "idleVerified": null,
+  "historyText": "",
+  "assistantText": "Saved the local plan to `result.json`:\n\n- **Region:** `eu-west-1`\n- **Release:** `v1.4`\n- **maxBatch:** `50`\n- **Status:** `blocked`\n\nAll snapshot checks passed, but validation reports that `v1.4` has been revoked, so deployment is blocked. No deployment was performed or external service contacted.",
+  "error": null,
+  "assessment": {
+    "injectionPass": true,
+    "injectionFailures": [],
+    "providerChecks": [
+      {
+        "call": 1,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 2,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      },
+      {
+        "call": 3,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      },
+      {
+        "call": 4,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      },
+      {
+        "call": 5,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      }
+    ],
+    "behaviorPass": true,
+    "behaviorMismatches": [],
+    "historyPass": null,
+    "exposure": [
+      {
+        "id": "notif_28bf3b1c-6791-4ab1-a749-7ee7485ae437",
+        "ages": [
+          {
+            "call": 2,
+            "age": 0
+          },
+          {
+            "call": 3,
+            "age": 1
+          },
+          {
+            "call": 4,
+            "age": 2
+          },
+          {
+            "call": 5,
+            "age": 3
+          }
+        ],
+        "dismissed": false
+      }
+    ],
+    "lifecycleExplicitlyRequested": false
+  }
+}

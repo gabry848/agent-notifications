@@ -1,0 +1,18 @@
+{
+  "completedAt": "2026-10-06T12:27:22.599Z",
+  "order": [
+    {
+      "outcome": "success",
+      "seed": 3003,
+      "mode": "N"
+    },
+    {
+      "outcome": "success",
+      "seed": 3003,
+      "mode": "P10"
+    }
+  ],
+  "preservedFailure": "github-GH-success-3001-N-v3-compact-stable-batch",
+  "githubCases": 14,
+  "githubCorrect": 13
+}

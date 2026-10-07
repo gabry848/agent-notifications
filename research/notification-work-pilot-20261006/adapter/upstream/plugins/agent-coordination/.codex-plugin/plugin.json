@@ -1,0 +1,41 @@
+{
+  "name": "agent-coordination",
+  "version": "0.1.0",
+  "description": "Local MCP coordination board for concurrent Codex agents.",
+  "author": {
+    "name": "Gabriele Cipriani",
+    "url": "https://github.com/Gabry848"
+  },
+  "homepage": "https://github.com/Gabry848/agent-coordination",
+  "repository": "https://github.com/Gabry848/agent-coordination",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "mcp",
+    "coordination",
+    "agents",
+    "workflow"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Agent Coordination",
+    "shortDescription": "Coordinate concurrent agents before they edit.",
+    "longDescription": "Agent Coordination provides a local MCP server and workflow skills for Codex agents to declare compact activity state, check file or area conflicts, exchange Markdown messages, and close work cleanly.",
+    "developerName": "Gabriele Cipriani",
+    "category": "Productivity",
+    "capabilities": [
+      "MCP",
+      "Workflow",
+      "Coordination"
+    ],
+    "brandColor": "#2563EB",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Coordinate my coding agents before editing.",
+      "Check whether another agent is touching this area.",
+      "Start a coordinated multi-agent coding workflow."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}

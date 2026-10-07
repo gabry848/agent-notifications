@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "frozenAt": "2026-10-06T13:26:16.584Z",
+  "workload": "concurrent-pipeline-3pi-v1",
+  "preRun": true,
+  "measuredGroups": 0,
+  "scopeCapUsd": 6,
+  "globalCapUsd": 10,
+  "defaultPi": {
+    "provider": "openai-codex",
+    "model": "gpt-6.1-sol",
+    "thinking": "medium",
+    "version": "0.99.2"
+  },
+  "sourceHashes": {
+    "research/notification-work-pilot-20261006/suite/design.md": "a5079e054c75b3341a6686725d183f54acf5d8b60306a29f57aed519614a50db",
+    "research/notification-work-pilot-20261006/suite/generate.mjs": "87c2e8051750f6581fa858f57087d4713263fdd474294c8f27d8de8bcf60eccc",
+    "research/notification-work-pilot-20261006/suite/oracle.mjs": "a76557fb9f01495b5c5830b07c7c9a3953bb6797fc6e4470dc851179cfbc50d8",
+    "research/notification-work-pilot-20261006/suite/diagnostic.mjs": "dd1c724a4520c6fb2dd63e849cb5f5d2c9457cb29da2f315bb8dcdf2f2bc1406",
+    "research/notification-work-pilot-20261006/suite/prompt.mjs": "f39e56186b6a9db3e09d9168a1ec61f866b4923f60e91827916ba407e5314176",
+    "research/notification-work-pilot-20261006/suite/telemetry.ts": "10b1fdc810423878621d43ca733ad6a869ad47ad8178934cd578f8dbcf259ebd",
+    "research/notification-work-pilot-20261006/suite/run.mjs": "222da4879e4ee149b300ce50ebff7dbce2850fc990a53b6bf51cf5c587f33611",
+    "research/notification-work-pilot-20261006/suite/report.mjs": "9eb6534e10cb984f8dc65e1caaf1bd6eb271b9f9b57247bd9c912780ec887ef2",
+    "research/notification-work-pilot-20261006/suite/suite-frozen.json": "0b9de7dc8e8f351b22b4b5caa74bc2c18a10e370e40d8a4b8205449c7cab3d61",
+    "research/notification-work-pilot-20261006/suite/runtime-budget-amendment.json": "08db8af9a95b0582c0d029cb1524fd93bd3df2b52293a8290408062235bbf965",
+    "research/notification-work-pilot-20261006/adapter/frozen/upstream_server.py": "af74ad98a6cfabf5f282fd02f979b924765f128733c36bb30e994d6a93ac350a",
+    "research/notification-work-pilot-20261006/adapter/frozen/coordinator_server.py": "b7ba1eb8427c2b1c3dbd7a6aa549811226d0ab8f00a81269969e6181160f97b4",
+    "research/notification-work-pilot-20261006/adapter/frozen/stdio_proxy.py": "e8c1d890a7676b6f789bdc96afc717dfca5f5ece23c2177d4e81528eeef72681",
+    "research/notification-work-pilot-20261006/adapter/frozen/coordinator-extension.ts": "db1d066e8bd6593dc24af028f898892cdd3d46cb468173149da237ec6cd1c25b",
+    "research/notification-work-pilot-20261006/adapter/frozen/board-runtime.mjs": "ca225684d56b429b2c68835307bfe7375560089d76c61ab5190ec6718909e22f",
+    "research/notification-work-pilot-20261006/adapter/frozen/pi-runtime.mjs": "168923281687167e0f83e614ac37357dce0a17741375048ace7dfa9cc00f8eae",
+    "research/notification-work-pilot-20261006/adapter/frozen/meter.mjs": "dbf58b5922b8d8d6933b384da577779d96322387503203a15d9f987ccc65f04e",
+    "research/notification-work-pilot-20261006/adapter/frozen/meter-extension.ts": "93848234e98899a0429d0f5335a79a3956a7df6bc789bfc5a913e39004ec8b15",
+    "research/notification-work-pilot-20261006/adapter/frozen/transport/store.mjs": "b275836b38b52b7522e607709200456ca8e044fc79cbf3b805aeb546a9c7cc18",
+    "research/notification-work-pilot-20261006/adapter/frozen/transport/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+    "research/notification-work-pilot-20261006/adapter/frozen/transport/pi-extension.ts": "2a460f6eaca63192223964373a6704c3b3106ee68e9113b4f76f9ef079648630",
+    "research/notification-work-pilot-20261006/adapter/frozen/transport/prompt-v3.txt": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b"
+  },
+  "goShape": {
+    "authorized": true,
+    "scope": "suite",
+    "maxGroups": 3,
+    "maxPiSessions": 9,
+    "scopeCapUsd": 6,
+    "model": "gpt-6.1-sol",
+    "provider": "openai-codex",
+    "ledgerPath": "/Users/gabry848/Documents/Projects/pi-notifications/research/notification-work-pilot-20261006/budget.sqlite",
+    "sourceHashes": {
+      "research/notification-work-pilot-20261006/suite/design.md": "a5079e054c75b3341a6686725d183f54acf5d8b60306a29f57aed519614a50db",
+      "research/notification-work-pilot-20261006/suite/generate.mjs": "87c2e8051750f6581fa858f57087d4713263fdd474294c8f27d8de8bcf60eccc",
+      "research/notification-work-pilot-20261006/suite/oracle.mjs": "a76557fb9f01495b5c5830b07c7c9a3953bb6797fc6e4470dc851179cfbc50d8",
+      "research/notification-work-pilot-20261006/suite/diagnostic.mjs": "dd1c724a4520c6fb2dd63e849cb5f5d2c9457cb29da2f315bb8dcdf2f2bc1406",
+      "research/notification-work-pilot-20261006/suite/prompt.mjs": "f39e56186b6a9db3e09d9168a1ec61f866b4923f60e91827916ba407e5314176",
+      "research/notification-work-pilot-20261006/suite/telemetry.ts": "10b1fdc810423878621d43ca733ad6a869ad47ad8178934cd578f8dbcf259ebd",
+      "research/notification-work-pilot-20261006/suite/run.mjs": "222da4879e4ee149b300ce50ebff7dbce2850fc990a53b6bf51cf5c587f33611",
+      "research/notification-work-pilot-20261006/suite/report.mjs": "9eb6534e10cb984f8dc65e1caaf1bd6eb271b9f9b57247bd9c912780ec887ef2",
+      "research/notification-work-pilot-20261006/suite/suite-frozen.json": "0b9de7dc8e8f351b22b4b5caa74bc2c18a10e370e40d8a4b8205449c7cab3d61",
+      "research/notification-work-pilot-20261006/suite/runtime-budget-amendment.json": "08db8af9a95b0582c0d029cb1524fd93bd3df2b52293a8290408062235bbf965",
+      "research/notification-work-pilot-20261006/adapter/frozen/upstream_server.py": "af74ad98a6cfabf5f282fd02f979b924765f128733c36bb30e994d6a93ac350a",
+      "research/notification-work-pilot-20261006/adapter/frozen/coordinator_server.py": "b7ba1eb8427c2b1c3dbd7a6aa549811226d0ab8f00a81269969e6181160f97b4",
+      "research/notification-work-pilot-20261006/adapter/frozen/stdio_proxy.py": "e8c1d890a7676b6f789bdc96afc717dfca5f5ece23c2177d4e81528eeef72681",
+      "research/notification-work-pilot-20261006/adapter/frozen/coordinator-extension.ts": "db1d066e8bd6593dc24af028f898892cdd3d46cb468173149da237ec6cd1c25b",
+      "research/notification-work-pilot-20261006/adapter/frozen/board-runtime.mjs": "ca225684d56b429b2c68835307bfe7375560089d76c61ab5190ec6718909e22f",
+      "research/notification-work-pilot-20261006/adapter/frozen/pi-runtime.mjs": "168923281687167e0f83e614ac37357dce0a17741375048ace7dfa9cc00f8eae",
+      "research/notification-work-pilot-20261006/adapter/frozen/meter.mjs": "dbf58b5922b8d8d6933b384da577779d96322387503203a15d9f987ccc65f04e",
+      "research/notification-work-pilot-20261006/adapter/frozen/meter-extension.ts": "93848234e98899a0429d0f5335a79a3956a7df6bc789bfc5a913e39004ec8b15",
+      "research/notification-work-pilot-20261006/adapter/frozen/transport/store.mjs": "b275836b38b52b7522e607709200456ca8e044fc79cbf3b805aeb546a9c7cc18",
+      "research/notification-work-pilot-20261006/adapter/frozen/transport/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+      "research/notification-work-pilot-20261006/adapter/frozen/transport/pi-extension.ts": "2a460f6eaca63192223964373a6704c3b3106ee68e9113b4f76f9ef079648630",
+      "research/notification-work-pilot-20261006/adapter/frozen/transport/prompt-v3.txt": "048e233f25eb32d7043767270c4945fbd733fa08e70684eaea2359c0b90d4b0b"
+    }
+  },
+  "preRunAmendments": [
+    {
+      "id": "audit-prompt-leak-v2",
+      "reason": "Independent auditor found future policy literal in initial report-shape instruction",
+      "changedFile": "prompt.mjs",
+      "workloadOracleChanged": false,
+      "measuredRunsBeforePatch": 0
+    }
+  ]
+}

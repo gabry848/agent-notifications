@@ -1,0 +1,44 @@
+{
+  "time": "2026-10-06T13:39:28.335Z",
+  "receivers": [
+    {
+      "url": "http://127.0.0.1:60692",
+      "closed": true,
+      "code": "ECONNREFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:60697",
+      "closed": true,
+      "code": "ECONNREFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:60702",
+      "closed": true,
+      "code": "ECONNREFUSED"
+    },
+    {
+      "url": "http://127.0.0.1:60707",
+      "closed": true,
+      "code": "ECONNREFUSED"
+    }
+  ],
+  "ownedAuthLinks": [
+    {
+      "role": "ingest",
+      "removedOwnedLink": true,
+      "remaining": false
+    },
+    {
+      "role": "delivery",
+      "removedOwnedLink": true,
+      "remaining": false
+    },
+    {
+      "role": "view",
+      "removedOwnedLink": true,
+      "remaining": false
+    }
+  ],
+  "matchingOwnedProcesses": [],
+  "originalAuthFileDeleted": false
+}

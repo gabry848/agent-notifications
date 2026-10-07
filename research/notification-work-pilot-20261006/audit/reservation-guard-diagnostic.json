@@ -1,0 +1,37 @@
+{
+  "auditedAt": "2026-10-06T13:47:10.125Z",
+  "event": {
+    "time": "2026-10-06T13:42:52.173Z",
+    "monoMs": 423923815.985,
+    "type": "logical_provider_request",
+    "payloadBytes": 107162
+  },
+  "scopeCapUsd": 6,
+  "estimatedAndPendingAtGuardUsd": 4.5444172,
+  "newRequestReserveUsd": 1.568385,
+  "projectedScopeTotalUsd": 6.1128022,
+  "pending": [
+    {
+      "id": "6e9bf562-6b23-4b8c-8999-ce98410150b7",
+      "runId": "suite-N-ingest",
+      "stateAtGuard": "pending",
+      "amountAtGuard": 1.5317625,
+      "reserved": 1.5317625,
+      "finalEstimated": 0.034586
+    },
+    {
+      "id": "df7ad786-a7b3-4848-a868-d29ea27e0744",
+      "runId": "suite-N-delivery",
+      "stateAtGuard": "pending",
+      "amountAtGuard": 1.5484475,
+      "reserved": 1.5484475,
+      "finalEstimated": 0.0073076
+    }
+  ],
+  "settledEstimatedAtGuardUsd": 1.4642072,
+  "guardBeforeHttp": true,
+  "actualProviderRateLimit": false,
+  "actualSubscriptionBillingKnown": false,
+  "interpretation": "Concurrent worst-case output reservations exceeded suite6 even though actual settled estimate was much lower; this is harness capacity, not a model failure or demonstrated notification loss.",
+  "limit": "State reconstructed from millisecond ledger/trace timestamps; exact cross-process commit ordering is not traced."
+}

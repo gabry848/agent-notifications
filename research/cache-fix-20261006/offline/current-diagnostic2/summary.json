@@ -1,0 +1,14 @@
+{
+  "variant": "current",
+  "label": "diagnostic2",
+  "offline": true,
+  "durationMs": 208,
+  "failure": null,
+  "authLinkRemoved": true,
+  "result": {
+    "offline": true,
+    "step": 6,
+    "calls": 7,
+    "finished": true
+  }
+}

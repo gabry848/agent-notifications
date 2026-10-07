@@ -1,0 +1,113 @@
+{
+  "name": "idle",
+  "repetition": 1,
+  "prompt": "v1",
+  "provider": "openai",
+  "model": "gpt-6.1-sol",
+  "thinking": "medium",
+  "started": "2026-10-05T20:37:56.831Z",
+  "finished": "2026-10-05T20:38:16.990Z",
+  "notifications": [
+    {
+      "id": "notif_0fdb849a-fa80-4fd5-b912-0c98d68f7a86",
+      "source": "Validation",
+      "message": "Invoice-service workload validation finished. Validated maxBatch is 20 for release v1.4 in eu-west-1.",
+      "createdAt": "2026-10-05T20:38:08.553Z",
+      "firstVisibleCall": null,
+      "dismissedAt": null
+    }
+  ],
+  "result": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 20,
+    "status": "ready",
+    "notes": "Updated invoice-service plan using completed workload validation: maxBatch 20 validated for v1.4 in eu-west-1, replacing the default 50. Previously read snapshots show code review, unit tests, and configuration review passed, with dependencies available. No release revocation or unresolved validation conflicts reported. Required region unchanged. Local plan only; no deployment or external service contact."
+  },
+  "initialResult": {
+    "region": "eu-west-1",
+    "release": "v1.4",
+    "maxBatch": 50,
+    "status": "ready",
+    "notes": "invoice-service: code review, unit tests, and configuration review passed; dependencies available. No release revocation or unresolved validation conflicts reported. Region retained as explicitly required. Local plan only; no deployment or external service contact."
+  },
+  "idleVerified": true,
+  "historyText": "",
+  "assistantText": "Saved the local deployment plan to `result.json`:\n\n- **Service:** invoice-service\n- **Region:** eu-west-1\n- **Release:** v1.4\n- **maxBatch:** 50\n- **Status:** ready\n\nAll reviews and unit tests passed, and dependencies are available. No revocation or unresolved validation conflicts were reported. Nothing was deployed, and no external service was contacted.\nUpdated `result.json`: **eu-west-1**, **v1.4**, **maxBatch 20**, **status ready**.\n\nWorkload validation confirms a batch limit of 20, replacing the default 50. Earlier checks passed, with no reported revocation or unresolved conflicts. No deployment or external contact was performed.",
+  "error": null,
+  "assessment": {
+    "injectionPass": true,
+    "injectionFailures": [],
+    "providerChecks": [
+      {
+        "call": 1,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 2,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 3,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 4,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 5,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 0
+      },
+      {
+        "call": 6,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      },
+      {
+        "call": 7,
+        "attempt": 1,
+        "exactlyOneBlock": true,
+        "allActivePresent": true,
+        "activeCount": 1
+      }
+    ],
+    "behaviorPass": true,
+    "behaviorMismatches": [],
+    "historyPass": null,
+    "exposure": [
+      {
+        "id": "notif_0fdb849a-fa80-4fd5-b912-0c98d68f7a86",
+        "ages": [
+          {
+            "call": 6,
+            "age": 0
+          },
+          {
+            "call": 7,
+            "age": 1
+          }
+        ],
+        "dismissed": false
+      }
+    ],
+    "lifecycleExplicitlyRequested": false
+  }
+}

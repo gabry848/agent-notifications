@@ -1,0 +1,7 @@
+{
+  "role": "delivery",
+  "testsCommand": "node --test test/delivery.test.mjs test/delivery.additional.test.mjs && npm test",
+  "receiptDigest": "ab49b5911fc554546970a97ab9f76d9d827a606a347ef947ac89a53416ffb3d9",
+  "policyRevisionHandled": null,
+  "summary": "Implemented all six delivery functions and public exports; added six boundary tests without changing originals. Verified 12/12 delivery tests and 35/35 integrated tests. Completed delivery-only handoff section preserving peers. Briefly waited for shared-file release; no delivery policy revision applied."
+}

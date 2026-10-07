@@ -1,0 +1,82 @@
+{
+  "adapter": {
+    "parent": {
+      "sessionId": "s_f9b16439-cdad-4a27-895e-e25df82ba62e",
+      "agentId": "a_295b4b93-5d76-4e37-b2c0-ed2f04157f1d",
+      "handle": "w_nLKV-644a29syylX_9-sH1Xuf1kra81x",
+      "revision": 2,
+      "detailLevel": "medium"
+    },
+    "registration": {
+      "agentId": "a_295b4b93-5d76-4e37-b2c0-ed2f04157f1d",
+      "revision": 2,
+      "child": {
+        "agentId": "a_d5433f2b-4336-4e17-a523-3b8bb7956cc4",
+        "sessionId": "s_f9b16439-cdad-4a27-895e-e25df82ba62e",
+        "handle": "w_sW4yfp5fRTGqwD6Bas7e6g7Ijqm0hbpo",
+        "revision": 0,
+        "detailLevel": "medium"
+      }
+    }
+  },
+  "explorer": {
+    "parent": {
+      "sessionId": "s_5ab9e3ab-ca44-49ba-a57c-f87e2f7d28b3",
+      "agentId": "a_92f66052-4f09-431b-94b7-76fb5814cfa7",
+      "handle": "w_1mlY6XvLxOvPZE-SazBz1OKJ5Wx36EKu",
+      "revision": 2,
+      "detailLevel": "medium"
+    },
+    "registration": {
+      "agentId": "a_92f66052-4f09-431b-94b7-76fb5814cfa7",
+      "revision": 2,
+      "child": {
+        "agentId": "a_8cc13f3f-48f3-490b-b7a2-c8539fe36415",
+        "sessionId": "s_5ab9e3ab-ca44-49ba-a57c-f87e2f7d28b3",
+        "handle": "w_hXbxFFMOneka6-q0YL86bvLx6H_M0jsn",
+        "revision": 0,
+        "detailLevel": "medium"
+      }
+    }
+  },
+  "suite": {
+    "parent": {
+      "sessionId": "s_3a1835c8-3295-4396-86bb-1b5e7001b57c",
+      "agentId": "a_63e123cc-ad7e-4c03-b829-6236c5b0c03f",
+      "handle": "w_Gfsl7Shqo-X9FboZmE5m43N31FU1UT07",
+      "revision": 2,
+      "detailLevel": "medium"
+    },
+    "registration": {
+      "agentId": "a_63e123cc-ad7e-4c03-b829-6236c5b0c03f",
+      "revision": 2,
+      "child": {
+        "agentId": "a_77741567-43a2-493e-accf-ff7fc0ecd137",
+        "sessionId": "s_3a1835c8-3295-4396-86bb-1b5e7001b57c",
+        "handle": "w_Vq6eoJMXqCQFGYWOqUYW5130CVTK3-PH",
+        "revision": 0,
+        "detailLevel": "medium"
+      }
+    }
+  },
+  "audit": {
+    "parent": {
+      "sessionId": "s_2758dcde-9493-4b7b-bc61-11249a79315e",
+      "agentId": "a_af35cc3c-017c-4a7b-8dcc-3a7d9f3f2c7c",
+      "handle": "w_U3IP_RxCz8TrOG03yIrE-WqA6BD07IsU",
+      "revision": 2,
+      "detailLevel": "medium"
+    },
+    "registration": {
+      "agentId": "a_af35cc3c-017c-4a7b-8dcc-3a7d9f3f2c7c",
+      "revision": 2,
+      "child": {
+        "agentId": "a_3784394f-ad21-4b1d-a256-b488ee3d7cad",
+        "sessionId": "s_2758dcde-9493-4b7b-bc61-11249a79315e",
+        "handle": "w_5wWMQx5l3OEDinFeWe71Tp9ONbWx36M6",
+        "revision": 0,
+        "detailLevel": "medium"
+      }
+    }
+  }
+}

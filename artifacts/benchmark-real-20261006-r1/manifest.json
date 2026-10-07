@@ -1,0 +1,25 @@
+{
+  "campaign": "benchmark-real-20261006-r1",
+  "created": {
+    "time": "2026-10-06T08:35:13.377Z",
+    "monoMs": 405464991.638416
+  },
+  "node": "v24.18.0",
+  "model": "gpt-6.1-sol",
+  "thinking": "medium",
+  "budgetUsd": 100,
+  "pricing": {
+    "model": "gpt-6.1-sol",
+    "currency": "USD",
+    "tier": "default",
+    "checkedAt": "2026-10-06",
+    "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+    "perMillion": {
+      "input": 2,
+      "cacheRead": 0.1,
+      "cacheWrite": 2.5,
+      "output": 10
+    },
+    "longContextThreshold": 272000
+  }
+}
