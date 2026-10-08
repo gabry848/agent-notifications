@@ -1,0 +1,370 @@
+{
+  "runId": "calibration-p0-N-a1",
+  "phase": "calibration",
+  "pair": 0,
+  "mode": "N",
+  "seed": 7100,
+  "protocolRevision": "v3",
+  "inputManifestSha256": "a331a5c1bfe8a7142a8faca1d92e1447176653884a0f458b320c0a517fbf687a",
+  "queue": {
+    "legacy_smoke": 20000,
+    "legacy_integrity": 60000,
+    "storage": 30000,
+    "mcp": 60000,
+    "web": 45000
+  },
+  "settings": {
+    "defaultModel": "gpt-6.1-sol",
+    "defaultProvider": "openai-codex",
+    "defaultThinkingLevel": "medium",
+    "compaction": {
+      "enabled": true
+    },
+    "transport": "sse",
+    "retry": {
+      "enabled": false,
+      "maxRetries": 0
+    },
+    "packages": [],
+    "extensions": []
+  },
+  "startedAt": "2026-10-07T08:43:00.073Z",
+  "runtimeDeviations": [
+    "isolated config and fresh work directory",
+    "transport SSE in both modes",
+    "agent retries disabled in both modes",
+    "auto-loaded extensions/skills/context disabled",
+    "same notification instructions and tools in both modes; PA context projection disabled"
+  ],
+  "completed": false,
+  "jobsAtSettlement": [
+    {
+      "jobId": "job-1",
+      "suite": "legacy_smoke",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "componentHash": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-07T08:43:00.232Z",
+      "startedAt": "2026-10-07T08:43:20.233Z",
+      "completedAt": "2026-10-07T08:43:20.365Z",
+      "eventSeq": 1,
+      "passed": true
+    },
+    {
+      "jobId": "job-2",
+      "suite": "legacy_integrity",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "componentHash": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-07T08:43:00.233Z",
+      "startedAt": "2026-10-07T08:44:00.140Z",
+      "completedAt": "2026-10-07T08:44:00.256Z",
+      "eventSeq": 2,
+      "passed": false
+    },
+    {
+      "jobId": "job-3",
+      "suite": "storage",
+      "revision": "04b34e1fbe01b882574ffa0e6a5283a7192012d60b061a1aa95bae45b9ddb593",
+      "componentHash": "04b34e1fbe01b882574ffa0e6a5283a7192012d60b061a1aa95bae45b9ddb593",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-07T08:43:52.076Z",
+      "startedAt": "2026-10-07T08:44:22.077Z",
+      "completedAt": "2026-10-07T08:44:22.308Z",
+      "eventSeq": 3,
+      "passed": true
+    },
+    {
+      "jobId": "job-4",
+      "suite": "mcp",
+      "revision": "c100a613746c383aa19e2b01c479701bccd388248190aba5d4e8a4155b266692",
+      "componentHash": "c100a613746c383aa19e2b01c479701bccd388248190aba5d4e8a4155b266692",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-07T08:44:19.620Z",
+      "startedAt": "2026-10-07T08:45:19.620Z",
+      "completedAt": "2026-10-07T08:45:19.975Z",
+      "eventSeq": 4,
+      "passed": true
+    },
+    {
+      "jobId": "job-5",
+      "suite": "web",
+      "revision": "0711702b2b9d7f308e836bc564a4deabf397ea24f0ffd14a465e11e3505079bc",
+      "componentHash": "8a2e1e363b43f1b730967f477b26449d3e7ad99ef45417a0bf9428a4c7bb2c73",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-07T08:45:24.152Z",
+      "startedAt": "2026-10-07T08:46:09.153Z",
+      "completedAt": "2026-10-07T08:46:09.476Z",
+      "eventSeq": 5,
+      "passed": true
+    },
+    {
+      "jobId": "job-6",
+      "suite": "storage",
+      "revision": "0644a6ca3abc650eb356594df04bbe3633a1fb68a7ceda1ca829f1ed39f239f4",
+      "componentHash": "bed6489f9155ff0f0ff0290155e036524e643f61f7cf548bf509c80c0ce1a8e8",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-07T08:47:13.239Z",
+      "startedAt": "2026-10-07T08:47:43.238Z",
+      "completedAt": "2026-10-07T08:47:43.492Z",
+      "eventSeq": 6,
+      "passed": true
+    },
+    {
+      "jobId": "job-7",
+      "suite": "mcp",
+      "revision": "0644a6ca3abc650eb356594df04bbe3633a1fb68a7ceda1ca829f1ed39f239f4",
+      "componentHash": "eed28cefd200d1a63b9dfcfb940d0669874411bd9e041676c0ba9f388209aaeb",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-07T08:47:13.243Z",
+      "startedAt": "2026-10-07T08:48:13.243Z",
+      "completedAt": "2026-10-07T08:48:13.638Z",
+      "eventSeq": 8,
+      "passed": true
+    },
+    {
+      "jobId": "job-8",
+      "suite": "web",
+      "revision": "0644a6ca3abc650eb356594df04bbe3633a1fb68a7ceda1ca829f1ed39f239f4",
+      "componentHash": "e5dfb9b1dd96f63ea79f1f0772a8b0df233aca84c1af55e25f6b6dbfa7be0ccd",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-07T08:47:13.248Z",
+      "startedAt": "2026-10-07T08:47:58.248Z",
+      "completedAt": "2026-10-07T08:47:58.581Z",
+      "eventSeq": 7,
+      "passed": true
+    }
+  ],
+  "oracle": {
+    "passed": false,
+    "checks": [
+      {
+        "name": "SDK client writes persistent tagged notes",
+        "passed": false,
+        "error": "McpError: MCP error -32000: Connection closed\n    at McpError.fromError (file:///Users/gabry848/Documents/Projects/pi-notifications/node_modules/@modelcontextprotocol/sdk/dist/esm/types.js:2048:16)\n    at Client._onclose (file:///Users/gabry848/Documents/Projects/pi-notifications/node_modules/@modelcontextprotocol/sdk/dist/esm/shared/protocol.js:267:32)\n    at _transport.onclose (file:///Users/gabry848/Documents/Projects/pi-notifications/node_modules/@modelcontextprotocol/sdk/dist/esm/shared/protocol.js:227:18)\n    at ChildProcess.<anonymous> (file:///Users/gabry848/Documents/Projects/pi-notifications/node_modules/@modelcontextprotocol/sdk/dist/esm/client/stdio.js:85:31)\n    at ChildProcess.emit (node:events:509:28)\n    at maybeClose (node:internal/child_process:1124:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:306:5)"
+      },
+      {
+        "name": "dashboard displays MCP-created note with safe HTML",
+        "passed": false,
+        "error": "Error: Web exited 1: file:///private/var/folders/y2/rkp14b492hs87rn3fyydt9r80000gn/T/notes-mcp-ci-oracle-Gi2Agc/app/src/web.mjs:4\nimport { importNotes, exportNotes } from './import.mjs';\n                      ^^^^^^^^^^^\nSyntaxError: The requested module './import.mjs' does not provide an export named 'exportNotes'\n    at #asyncInstantiate (node:internal/modules/esm/module_job:327:21)\n    at async ModuleJob.run (node:internal/modules/esm/module_job:431:5)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.18.0\n\n    at ChildProcess.<anonymous> (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/clients.mjs:28:32)\n    at Object.onceWrapper (node:events:631:26)\n    at ChildProcess.emit (node:events:509:28)\n    at ChildProcess._handle.onexit (node:internal/child_process:295:12)"
+      },
+      {
+        "name": "web form edit and filters share persisted state",
+        "passed": false,
+        "error": "TypeError: Cannot read properties of undefined (reading 'form')\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:21:97\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:15:40)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:21:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      },
+      {
+        "name": "invalid import across web is atomic",
+        "passed": false,
+        "error": "TypeError: Cannot read properties of undefined (reading 'request')\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:22:85\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:15:40)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:22:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      },
+      {
+        "name": "pagination retains all notes without duplication",
+        "passed": false,
+        "error": "TypeError: Cannot read properties of undefined (reading 'json')\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:23:114\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:15:40)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:23:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      },
+      {
+        "name": "MCP restart sees web edits and accepts independent export/import",
+        "passed": false,
+        "error": "McpError: MCP error -32000: Connection closed\n    at McpError.fromError (file:///Users/gabry848/Documents/Projects/pi-notifications/node_modules/@modelcontextprotocol/sdk/dist/esm/types.js:2048:16)\n    at Client._onclose (file:///Users/gabry848/Documents/Projects/pi-notifications/node_modules/@modelcontextprotocol/sdk/dist/esm/shared/protocol.js:267:32)\n    at _transport.onclose (file:///Users/gabry848/Documents/Projects/pi-notifications/node_modules/@modelcontextprotocol/sdk/dist/esm/shared/protocol.js:227:18)\n    at ChildProcess.<anonymous> (file:///Users/gabry848/Documents/Projects/pi-notifications/node_modules/@modelcontextprotocol/sdk/dist/esm/client/stdio.js:85:31)\n    at ChildProcess.emit (node:events:509:28)\n    at maybeClose (node:internal/child_process:1124:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:306:5)"
+      },
+      {
+        "name": "SQLite integrity and cascade constraints",
+        "passed": false,
+        "error": "Error: no such table: note_tags\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:25:260\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:15:40)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:25:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      },
+      {
+        "name": "web restart retains imported note and deleted state",
+        "passed": false,
+        "error": "Error: Web exited 1: file:///private/var/folders/y2/rkp14b492hs87rn3fyydt9r80000gn/T/notes-mcp-ci-oracle-Gi2Agc/app/src/web.mjs:4\nimport { importNotes, exportNotes } from './import.mjs';\n                      ^^^^^^^^^^^\nSyntaxError: The requested module './import.mjs' does not provide an export named 'exportNotes'\n    at #asyncInstantiate (node:internal/modules/esm/module_job:327:21)\n    at async ModuleJob.run (node:internal/modules/esm/module_job:431:5)\n    at async node:internal/modules/esm/loader:643:26\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)\n\nNode.js v24.18.0\n\n    at ChildProcess.<anonymous> (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/clients.mjs:28:32)\n    at Object.onceWrapper (node:events:631:26)\n    at ChildProcess.emit (node:events:509:28)\n    at ChildProcess._handle.onexit (node:internal/child_process:295:12)"
+      },
+      {
+        "name": "MCP and web both execute the shared import helper",
+        "passed": false,
+        "error": "AssertionError [ERR_ASSERTION]: No shared helper invocation\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:27:77\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:15:40)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:27:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      }
+    ],
+    "coverage": "Official MCP SDK, cross-process SQLite persistence, HTML forms and HTTP APIs. No browser JavaScript or visual-layout automation."
+  },
+  "requiredCI": [
+    {
+      "jobId": "job-6",
+      "suite": "storage",
+      "revision": "0644a6ca3abc650eb356594df04bbe3633a1fb68a7ceda1ca829f1ed39f239f4",
+      "componentHash": "bed6489f9155ff0f0ff0290155e036524e643f61f7cf548bf509c80c0ce1a8e8",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-07T08:47:13.239Z",
+      "startedAt": "2026-10-07T08:47:43.238Z",
+      "completedAt": "2026-10-07T08:47:43.492Z",
+      "eventSeq": 6,
+      "passed": true
+    },
+    {
+      "jobId": "job-7",
+      "suite": "mcp",
+      "revision": "0644a6ca3abc650eb356594df04bbe3633a1fb68a7ceda1ca829f1ed39f239f4",
+      "componentHash": "eed28cefd200d1a63b9dfcfb940d0669874411bd9e041676c0ba9f388209aaeb",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-07T08:47:13.243Z",
+      "startedAt": "2026-10-07T08:48:13.243Z",
+      "completedAt": "2026-10-07T08:48:13.638Z",
+      "eventSeq": 8,
+      "passed": true
+    },
+    {
+      "jobId": "job-8",
+      "suite": "web",
+      "revision": "0644a6ca3abc650eb356594df04bbe3633a1fb68a7ceda1ca829f1ed39f239f4",
+      "componentHash": "e5dfb9b1dd96f63ea79f1f0772a8b0df233aca84c1af55e25f6b6dbfa7be0ccd",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-07T08:47:13.248Z",
+      "startedAt": "2026-10-07T08:47:58.248Z",
+      "completedAt": "2026-10-07T08:47:58.581Z",
+      "eventSeq": 7,
+      "passed": true
+    }
+  ],
+  "lockedInputChecks": [
+    {
+      "file": "CONTRACT.md",
+      "passed": true
+    },
+    {
+      "file": "package.json",
+      "passed": true
+    },
+    {
+      "file": "test/smoke.test.mjs",
+      "passed": true
+    }
+  ],
+  "oracleFinishedAt": {
+    "time": "2026-10-07T08:48:26.169Z",
+    "monoMs": 492658050.768875,
+    "type": "oracle_finished",
+    "passed": false,
+    "requiredCIPassed": false
+  },
+  "agentWallMs": 325709.08925002813,
+  "totalWallMs": 326034.98383402824,
+  "postSettlementMs": 325.8945840001106,
+  "oracleMs": 324.15750002861023,
+  "finishedAt": "2026-10-07T08:48:26.385Z",
+  "jobs": [
+    {
+      "jobId": "job-1",
+      "suite": "legacy_smoke",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "componentHash": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-07T08:43:00.232Z",
+      "startedAt": "2026-10-07T08:43:20.233Z",
+      "completedAt": "2026-10-07T08:43:20.365Z",
+      "eventSeq": 1,
+      "passed": true
+    },
+    {
+      "jobId": "job-2",
+      "suite": "legacy_integrity",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "componentHash": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-07T08:43:00.233Z",
+      "startedAt": "2026-10-07T08:44:00.140Z",
+      "completedAt": "2026-10-07T08:44:00.256Z",
+      "eventSeq": 2,
+      "passed": false
+    },
+    {
+      "jobId": "job-3",
+      "suite": "storage",
+      "revision": "04b34e1fbe01b882574ffa0e6a5283a7192012d60b061a1aa95bae45b9ddb593",
+      "componentHash": "04b34e1fbe01b882574ffa0e6a5283a7192012d60b061a1aa95bae45b9ddb593",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-07T08:43:52.076Z",
+      "startedAt": "2026-10-07T08:44:22.077Z",
+      "completedAt": "2026-10-07T08:44:22.308Z",
+      "eventSeq": 3,
+      "passed": true
+    },
+    {
+      "jobId": "job-4",
+      "suite": "mcp",
+      "revision": "c100a613746c383aa19e2b01c479701bccd388248190aba5d4e8a4155b266692",
+      "componentHash": "c100a613746c383aa19e2b01c479701bccd388248190aba5d4e8a4155b266692",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-07T08:44:19.620Z",
+      "startedAt": "2026-10-07T08:45:19.620Z",
+      "completedAt": "2026-10-07T08:45:19.975Z",
+      "eventSeq": 4,
+      "passed": true
+    },
+    {
+      "jobId": "job-5",
+      "suite": "web",
+      "revision": "0711702b2b9d7f308e836bc564a4deabf397ea24f0ffd14a465e11e3505079bc",
+      "componentHash": "8a2e1e363b43f1b730967f477b26449d3e7ad99ef45417a0bf9428a4c7bb2c73",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-07T08:45:24.152Z",
+      "startedAt": "2026-10-07T08:46:09.153Z",
+      "completedAt": "2026-10-07T08:46:09.476Z",
+      "eventSeq": 5,
+      "passed": true
+    },
+    {
+      "jobId": "job-6",
+      "suite": "storage",
+      "revision": "0644a6ca3abc650eb356594df04bbe3633a1fb68a7ceda1ca829f1ed39f239f4",
+      "componentHash": "bed6489f9155ff0f0ff0290155e036524e643f61f7cf548bf509c80c0ce1a8e8",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-07T08:47:13.239Z",
+      "startedAt": "2026-10-07T08:47:43.238Z",
+      "completedAt": "2026-10-07T08:47:43.492Z",
+      "eventSeq": 6,
+      "passed": true
+    },
+    {
+      "jobId": "job-7",
+      "suite": "mcp",
+      "revision": "0644a6ca3abc650eb356594df04bbe3633a1fb68a7ceda1ca829f1ed39f239f4",
+      "componentHash": "eed28cefd200d1a63b9dfcfb940d0669874411bd9e041676c0ba9f388209aaeb",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-07T08:47:13.243Z",
+      "startedAt": "2026-10-07T08:48:13.243Z",
+      "completedAt": "2026-10-07T08:48:13.638Z",
+      "eventSeq": 8,
+      "passed": true
+    },
+    {
+      "jobId": "job-8",
+      "suite": "web",
+      "revision": "0644a6ca3abc650eb356594df04bbe3633a1fb68a7ceda1ca829f1ed39f239f4",
+      "componentHash": "e5dfb9b1dd96f63ea79f1f0772a8b0df233aca84c1af55e25f6b6dbfa7be0ccd",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-07T08:47:13.248Z",
+      "startedAt": "2026-10-07T08:47:58.248Z",
+      "completedAt": "2026-10-07T08:47:58.581Z",
+      "eventSeq": 7,
+      "passed": true
+    }
+  ]
+}

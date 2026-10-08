@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "inferenceRequests": 0,
+  "results": [
+    {
+      "name": "reference-all",
+      "passed": true,
+      "groups": [
+        "integrity",
+        "csv",
+        "version",
+        "catalog",
+        "search",
+        "graph",
+        "transfer",
+        "http",
+        "cli"
+      ],
+      "assertions": 7230,
+      "durationMs": 354
+    },
+    {
+      "name": "negative-csv",
+      "passed": false,
+      "group": "csv",
+      "assertions": 1,
+      "durationMs": 1,
+      "error": "quoted CSV commas, escaped quote, newline: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    [\n+     '\"a',\n+     'b\"',\n+     '\"c\"\"d\"'\n-     'a,b',\n-     'c\"d'\n    ],\n    [\n+     '\"line'\n+   ],\n+   [\n+     'break\"',\n-     'line\\nbreak',\n      'tail'\n    ]\n  ]\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    [\n+     '\"a',\n+     'b\"',\n+     '\"c\"\"d\"'\n-     'a,b',\n-     'c\"d'\n    ],\n    [\n+     '\"line'\n+   ],\n+   [\n+     'break\"',\n-     'line\\nbreak',\n      'tail'\n    ]\n  ]\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:16:19\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:10:47)\n    at suite (file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:16:2)\n    at async file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:65:64"
+    },
+    {
+      "name": "negative-version",
+      "passed": false,
+      "group": "version",
+      "assertions": 8,
+      "durationMs": 1,
+      "error": "semantic order 1.0.0-alpha vs 1.0.0: Expected values to be strictly equal:\n\n1 !== -1\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n1 !== -1\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:24:85\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:10:47)\n    at suite (file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:24:68)\n    at async file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:65:64"
+    },
+    {
+      "name": "negative-catalog",
+      "passed": false,
+      "group": "catalog",
+      "assertions": 0,
+      "durationMs": 1,
+      "error": "normalize unique tags: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   ' TOOLS ',\n    'tools',\n+   '',\n+   ' Web '\n-   'web'\n  ]\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   ' TOOLS ',\n    'tools',\n+   '',\n+   ' Web '\n-   'web'\n  ]\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:30:19\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:10:47)\n    at suite (file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:30:2)\n    at async file:///Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/oracle.mjs:65:64"
+    },
+    {
+      "name": "green-integrity",
+      "passed": true,
+      "groups": [
+        "integrity"
+      ],
+      "assertions": 3,
+      "durationMs": 58
+    },
+    {
+      "name": "status-wait-real-ci",
+      "jobs": 9,
+      "allCurrentPassed": true,
+      "emptyCursorVerified": true,
+      "delivered": 9
+    },
+    {
+      "name": "changed-revision-current-status",
+      "oldRevision": "8c91a5a7b96ce5727ced354e749a58b5eb4285920e3d5bcdeda5ebb74df1d1f4",
+      "newRevision": "e5c9f62ff3a09161754a700a07742d076b3c4bdbe0a794e83f7326b8909e3ff4",
+      "passed": true
+    },
+    {
+      "name": "pi-offline-start-PA",
+      "model": "gpt-6.1-sol",
+      "provider": "openai-codex",
+      "thinking": "medium",
+      "notifyTransportStatus": 201,
+      "inferenceRequests": 0
+    },
+    {
+      "name": "pi-offline-start-N",
+      "model": "gpt-6.1-sol",
+      "provider": "openai-codex",
+      "thinking": "medium",
+      "notifyTransportStatus": 201,
+      "inferenceRequests": 0
+    },
+    {
+      "name": "current-journal-cache-tests",
+      "passed": true
+    }
+  ]
+}

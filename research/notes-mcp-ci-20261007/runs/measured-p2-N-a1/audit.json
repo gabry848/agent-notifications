@@ -1,0 +1,300 @@
+{
+  "runId": "measured-p2-N-a1",
+  "generatedAt": "2026-10-08T14:23:33.088Z",
+  "frozenManifestSha256": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+  "checks": {
+    "frozenManifest": true,
+    "snapshots": true,
+    "requiredCI": true,
+    "lockedInputs": true,
+    "oracle": true,
+    "rawAccounting": true,
+    "exposureIntervals": true,
+    "noPackagedAuth": true
+  },
+  "passed": true,
+  "snapshots": [
+    {
+      "jobId": "job-1",
+      "suite": "legacy_smoke",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 20000,
+      "actualQueueMs": 20001.330333948135,
+      "ordered": true
+    },
+    {
+      "jobId": "job-2",
+      "suite": "legacy_integrity",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 60000,
+      "actualQueueMs": 60001.01129102707,
+      "ordered": true
+    },
+    {
+      "jobId": "job-3",
+      "suite": "storage",
+      "revision": "7850170f47189f7c5e270a1f67c3180f40d4c1c620d84c6be997a50e31d6fef4",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 30000,
+      "actualQueueMs": 30002.019832968712,
+      "ordered": true
+    },
+    {
+      "jobId": "job-4",
+      "suite": "mcp",
+      "revision": "26739cbab059cfc5dc08ec108373965a67757d79718078a6010c3c2c6e44ee4d",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 60000,
+      "actualQueueMs": 60001.6963340044,
+      "ordered": true
+    },
+    {
+      "jobId": "job-5",
+      "suite": "web",
+      "revision": "79e083853067e9653bee3387a12e557070913427baa4a289f9d5ffb2cfeed7e1",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 45000,
+      "actualQueueMs": 45001.842208981514,
+      "ordered": true
+    },
+    {
+      "jobId": "job-6",
+      "suite": "storage",
+      "revision": "79e083853067e9653bee3387a12e557070913427baa4a289f9d5ffb2cfeed7e1",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 30000,
+      "actualQueueMs": 30000.485208034515,
+      "ordered": true
+    }
+  ],
+  "required": [
+    {
+      "suite": "storage",
+      "passed": true
+    },
+    {
+      "suite": "mcp",
+      "passed": true
+    },
+    {
+      "suite": "web",
+      "passed": true
+    }
+  ],
+  "locked": [
+    {
+      "file": "CONTRACT.md",
+      "passed": true
+    },
+    {
+      "file": "package.json",
+      "passed": true
+    },
+    {
+      "file": "test/smoke.test.mjs",
+      "passed": true
+    }
+  ],
+  "accounting": {
+    "httpAttempts": 20,
+    "numericResponses": 20,
+    "piResponses": 20,
+    "input": 334989,
+    "output": 10204,
+    "cached": 291456,
+    "responses": [
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79c85b2d4819182154241c953d481",
+        "input": 2197,
+        "output": 37,
+        "cached": 0,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79c8ba26c81918356dd81898fb052",
+        "input": 2493,
+        "output": 140,
+        "cached": 0,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79c906e448191ab81f74bb5a550ab",
+        "input": 4788,
+        "output": 391,
+        "cached": 2048,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79c9fc490819191219b65eef32532",
+        "input": 5514,
+        "output": 1115,
+        "cached": 4608,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79cb8f744819195b8eefbc2afafb8",
+        "input": 6963,
+        "output": 175,
+        "cached": 2304,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79cc030508191a1cbb23c63e676d5",
+        "input": 7472,
+        "output": 75,
+        "cached": 6784,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79cc4a1f88191b00ff33fc4185dd8",
+        "input": 9211,
+        "output": 769,
+        "cached": 7296,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79cd7d0488191b498570d2df3508b",
+        "input": 11459,
+        "output": 804,
+        "cached": 9088,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79cf052088191a1c01ed92c98f6a6",
+        "input": 14073,
+        "output": 98,
+        "cached": 11264,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79cff619481919baf69ddc056c692",
+        "input": 14428,
+        "output": 2236,
+        "cached": 13952,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79d32c4bc8191aa6c9cec218131a4",
+        "input": 16716,
+        "output": 19,
+        "cached": 14336,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79d371f148191af992e339de0bab3",
+        "input": 16905,
+        "output": 1052,
+        "cached": 16512,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79d524bf481919fc06061ee761184",
+        "input": 18408,
+        "output": 1743,
+        "cached": 16768,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79d7d8604819185c8aea8bb4a5879",
+        "input": 21043,
+        "output": 27,
+        "cached": 18304,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79d813fa48191a418fb3db6390f26",
+        "input": 22131,
+        "output": 1097,
+        "cached": 20864,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79da42f3881919cf47303d1ad25c7",
+        "input": 24117,
+        "output": 108,
+        "cached": 22016,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79da973d081919bc7efdaf43d0abb",
+        "input": 32983,
+        "output": 144,
+        "cached": 23936,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79db0fd688191b4672f9466547774",
+        "input": 33377,
+        "output": 32,
+        "cached": 32896,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79dcf58988191a9cff7abef401178",
+        "input": 35286,
+        "output": 47,
+        "cached": 33280,
+        "passed": true
+      },
+      {
+        "responseId": "resp_09bfc1ba43c78f2a016ac79dd3d5fc8191bf5663f6481f9c1b",
+        "input": 35425,
+        "output": 95,
+        "cached": 35200,
+        "passed": true
+      }
+    ]
+  },
+  "exposures": [
+    {
+      "eventId": "ci-event-1",
+      "firstExposureMs": 5653.449041008949,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-2",
+      "firstExposureMs": 3406.945874929428,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-3",
+      "firstExposureMs": 8836.055250048637,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-4",
+      "firstExposureMs": 23676.693750023842,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-5",
+      "firstExposureMs": 24927.926749944687,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-6",
+      "firstExposureMs": 6.167291045188904,
+      "exposed": true,
+      "nonnegative": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{"time":"2026-10-07T08:37:31.024Z","monoMs":492002811.767666,"type":"session_selected","url":"http://127.0.0.1:50769","sessionId":"01a11582-b8f6-7770-8d9a-161851e0435e","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/offline/v3-final/pi-PA/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-07T08:37:31.025Z","monoMs":492002811.876083,"type":"server_ready","url":"http://127.0.0.1:50769","sessionId":"01a11582-b8f6-7770-8d9a-161851e0435e","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/offline/v3-final/pi-PA/notifications.sqlite"}
+{"time":"2026-10-07T08:37:31.040Z","monoMs":492002826.834416,"type":"notification_received","notification":{"id":"notif_f2309fc1-f7cb-468a-abfd-8bb9a207387a","sessionId":"01a11582-b8f6-7770-8d9a-161851e0435e","source":"CI","message":"{\"eventId\":\"ci-event-1\",\"sequence\":1,\"jobId\":\"offline-job\",\"suite\":\"storage\",\"revision\":\"offline-revision\",\"status\":\"failed\",\"summary\":\"offline transport check\",\"failures\":[{\"name\":\"external fixture\",\"error\":\"fixture\"}]}","createdAt":"2026-10-07T08:37:31.039Z","firstVisibleCall":null,"dismissedAt":null},"lastContextCall":0}
+{"time":"2026-10-07T08:37:31.073Z","monoMs":492002860.16275,"type":"provider_request","attempt":1}
+{"time":"2026-10-07T08:37:31.075Z","monoMs":492002862.023958,"type":"provider_response","status":200}
+{"time":"2026-10-07T08:37:31.085Z","monoMs":492002872.47125,"type":"provider_request","attempt":2}
+{"time":"2026-10-07T08:37:31.086Z","monoMs":492002873.025791,"type":"provider_response","status":200}
+{"time":"2026-10-07T08:37:31.088Z","monoMs":492002875.682916,"type":"provider_request","attempt":3}
+{"time":"2026-10-07T08:37:31.089Z","monoMs":492002876.127541,"type":"provider_response","status":200}
+{"time":"2026-10-07T08:37:31.091Z","monoMs":492002878.532166,"type":"provider_request","attempt":4}
+{"time":"2026-10-07T08:37:31.092Z","monoMs":492002879.011958,"type":"provider_response","status":200}
+{"time":"2026-10-07T08:37:31.094Z","monoMs":492002880.910708,"type":"provider_request","attempt":5}
+{"time":"2026-10-07T08:37:31.094Z","monoMs":492002881.363,"type":"provider_response","status":200}

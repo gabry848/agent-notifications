@@ -1,0 +1,56 @@
+{
+  "createdAt": "2026-10-07T08:26:14.444Z",
+  "hashes": {
+    "contract.md": "c742aede2997b0a33222e62a75f0c7e351fbe7ee736f97950a98dbfe7eb4f59f",
+    "bench-extension.ts": "f696cbdad4bfda1b5082de6e1c87aa9faa226c7d3eae2f59a2f7225b18c72e9f",
+    "runtime.mjs": "eccee4ba7aa64fbf9461a401656739ebf3be7be047a88b685153121c3830bfbb",
+    "run.mjs": "4648116324999000d38b95fc14b3f241abe8a4ec3b3472009ce8b1d31c1cbf9b",
+    "ci-worker.mjs": "6f28c77c94f70f0f4158a3180148ebae62654cac90033c44d302245b595d0c6d",
+    "clients.mjs": "8d37ebccfa46724a62486ef139d58413d59a5b9d527b47cae0795408bfbe68a5",
+    "oracle.mjs": "8a29e51f35004042f6c96f63973d924108786530163e609e7b7a187815087cf1",
+    "scaffold/package.json": "b2af5f484a94937a395c3d85e0005b73ce3d2978310b2c8f520ca72a0afd8de9",
+    "scaffold/src/store.mjs": "ab8952a9540c8f36f22a8deb8c90c922b649c3a030c96f216d0431ff7c59348a",
+    "scaffold/test/smoke.test.mjs": "1124a0b357a89cdf8ec6bc218e4068abd351c3ecebf0dd05cdf98474543a33dc",
+    "../../src/pi-extension.ts": "f63002aacc2814eb7643ba29cdccd340d4db26d71ca9d4502a4ec061c833eaeb",
+    "../../src/store.mjs": "050bb0f524589a3064fc0e7625c86ab2e4d3359db6fe64302411f0d6b577c06a",
+    "../../src/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+    "../../src/notification-context.mjs": "4192d234844aca40ee49c0bd6883c18884242e25ab1dd9c211fb0c9052b88f9c",
+    "../../prompts/v2.txt": "867fdd05c1f8c791436d26de3996bbe858adea3512ef9a2ec049db0f9d361a40"
+  },
+  "queueMs": {
+    "legacy_smoke": 20000,
+    "legacy_integrity": 60000,
+    "storage": 30000,
+    "mcp": 60000,
+    "web": 45000
+  },
+  "seeds": [
+    7101,
+    7102,
+    7103,
+    7104,
+    7105
+  ],
+  "measuredOrder": [
+    [
+      "PA",
+      "N"
+    ],
+    [
+      "N",
+      "PA"
+    ],
+    [
+      "PA",
+      "N"
+    ],
+    [
+      "N",
+      "PA"
+    ],
+    [
+      "PA",
+      "N"
+    ]
+  ]
+}

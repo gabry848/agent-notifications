@@ -1,0 +1,18 @@
+{
+  "suite": "legacy_smoke",
+  "seed": 7101,
+  "passed": true,
+  "checks": [
+    {
+      "name": "create and retrieve simple note",
+      "passed": true
+    },
+    {
+      "name": "database survives close/reopen",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "exitCode": 0,
+  "stderr": ""
+}

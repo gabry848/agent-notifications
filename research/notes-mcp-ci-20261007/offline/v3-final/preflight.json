@@ -1,0 +1,68 @@
+{
+  "paidInference": false,
+  "externalProviderRequests": 0,
+  "checks": [
+    {
+      "check": "reference legacy_smoke",
+      "passed": true,
+      "wallMs": 65
+    },
+    {
+      "check": "reference legacy_integrity",
+      "passed": true,
+      "wallMs": 69
+    },
+    {
+      "check": "reference storage",
+      "passed": true,
+      "wallMs": 205
+    },
+    {
+      "check": "reference mcp",
+      "passed": true,
+      "wallMs": 336
+    },
+    {
+      "check": "reference web",
+      "passed": true,
+      "wallMs": 309
+    },
+    {
+      "check": "independent reference oracle",
+      "passed": true,
+      "wallMs": 318
+    },
+    {
+      "check": "scaffold legacy_smoke",
+      "passed": true,
+      "observedCI": "green",
+      "failedChecks": 0
+    },
+    {
+      "check": "scaffold legacy_integrity",
+      "passed": true,
+      "observedCI": "red",
+      "failedChecks": 10
+    },
+    {
+      "check": "independent oracle rejects removed FK enforcement",
+      "passed": true
+    },
+    {
+      "check": "provided late-tag-validation helper has actual MCP/web atomicity regression",
+      "passed": true
+    },
+    {
+      "check": "Pi PA mocked provider, tools, exposure and usage",
+      "passed": true,
+      "paidInference": false,
+      "modelResponses": 5
+    },
+    {
+      "check": "Pi N mocked provider, tools, exposure and usage",
+      "passed": true,
+      "paidInference": false,
+      "modelResponses": 5
+    }
+  ]
+}

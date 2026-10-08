@@ -1,0 +1,18 @@
+{
+  "id": "ci-0008",
+  "group": "version",
+  "revision": "97623a234f36836e8ab5af633ce7b86645a2f2f57a0f5df7ebc26944e61365eb",
+  "status": "queued",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/version.mjs": "d7187104ec28037f1942275e776338baf4d1b6c689d33a78541bb422ec4a1d67"
+  },
+  "queued": {
+    "time": "2026-10-07T12:33:13.955Z",
+    "monoMs": 506145777.35125
+  },
+  "sourceFiles": [
+    "src/version.mjs"
+  ]
+}

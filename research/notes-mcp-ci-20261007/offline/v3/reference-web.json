@@ -1,0 +1,38 @@
+{
+  "suite": "web",
+  "seed": 7100,
+  "passed": true,
+  "checks": [
+    {
+      "name": "dashboard has note creation and filter controls",
+      "passed": true
+    },
+    {
+      "name": "HTML create/edit/delete flow",
+      "passed": true
+    },
+    {
+      "name": "HTML escape and normalized filters",
+      "passed": true
+    },
+    {
+      "name": "API CRUD and errors",
+      "passed": true
+    },
+    {
+      "name": "pagination and tag counts",
+      "passed": true
+    },
+    {
+      "name": "JSON import/export validation",
+      "passed": true
+    },
+    {
+      "name": "web state survives process restart",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "exitCode": 0,
+  "wallMs": 268
+}

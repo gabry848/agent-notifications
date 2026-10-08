@@ -1,0 +1,20 @@
+{
+  "id": "ci-0007",
+  "group": "catalog",
+  "revision": "2b17506b5c37a22f1f51860320581bfa7078662a540bab467d27f4a6374a204a",
+  "status": "queued",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+    "src/version.mjs": "a2e707add48cda2b5276425873969ebf2a41333225da6e2c798e76b8e5bc3c1e"
+  },
+  "queued": {
+    "time": "2026-10-07T08:38:55.361Z",
+    "monoMs": 492087148.049333
+  },
+  "sourceFiles": [
+    "src/catalog.mjs",
+    "src/version.mjs"
+  ]
+}

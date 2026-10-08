@@ -1,0 +1,123 @@
+{
+  "suite": "legacy_integrity",
+  "seed": 7100,
+  "passed": false,
+  "checks": [
+    {
+      "name": "create and retrieve simple note",
+      "passed": true
+    },
+    {
+      "name": "database survives close/reopen",
+      "passed": true
+    },
+    {
+      "name": "normalize text and duplicate tags",
+      "passed": false,
+      "failureKind": "assertion",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '  trimmed  '\n- 'trimmed'\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:21:132\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:21:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "atomic invalid create",
+      "passed": false,
+      "failureKind": "assertion",
+      "error": "AssertionError [ERR_ASSERTION]: Missing expected exception.\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:22:104\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:22:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "empty text rejected",
+      "passed": false,
+      "failureKind": "assertion",
+      "error": "AssertionError [ERR_ASSERTION]: Missing expected exception.\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:23:52\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:23:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "oversized text rejected",
+      "passed": false,
+      "failureKind": "assertion",
+      "error": "AssertionError [ERR_ASSERTION]: Missing expected exception.\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:24:56\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:24:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "literal percent and underscore filters",
+      "passed": false,
+      "failureKind": "assertion",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n7 !== 1\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:25:162\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:25:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "exact normalized tag and newest-first pagination",
+      "passed": false,
+      "failureKind": "assertion",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    10,\n    9,\n+   8,\n+   7,\n+   6,\n+   5,\n+   4,\n+   3,\n+   2,\n+   1\n  ]\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:26:200\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:26:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "update replaces tag set",
+      "passed": false,
+      "failureKind": "application_or_protocol",
+      "error": "Error: Not implemented\n    at Object.updateNote (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/runs/calibration-p0-PA-a2/snapshots/job-2/src/store.mjs:25:24)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:27:110\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:27:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "atomic invalid update",
+      "passed": true
+    },
+    {
+      "name": "missing identifiers",
+      "passed": false,
+      "failureKind": "application_or_protocol",
+      "error": "Error: Not implemented\n    at Object.updateNote (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/runs/calibration-p0-PA-a2/snapshots/job-2/src/store.mjs:25:24)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:29:106\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:29:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "delete cascades relations and excludes unused tags",
+      "passed": false,
+      "failureKind": "assertion",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(!store.listTags().some(t=>t.name==='unique-delete-tag'))\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:30:222\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:30:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "invalid pagination rejected",
+      "passed": false,
+      "failureKind": "assertion",
+      "error": "AssertionError [ERR_ASSERTION]: Missing expected exception.\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:31:61\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:31:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    }
+  ],
+  "failures": [
+    {
+      "name": "normalize text and duplicate tags",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ '  trimmed  '\n- 'trimmed'\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:21:132\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:21:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "atomic invalid create",
+      "error": "AssertionError [ERR_ASSERTION]: Missing expected exception.\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:22:104\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:22:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "empty text rejected",
+      "error": "AssertionError [ERR_ASSERTION]: Missing expected exception.\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:23:52\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:23:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "oversized text rejected",
+      "error": "AssertionError [ERR_ASSERTION]: Missing expected exception.\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:24:56\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:24:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "literal percent and underscore filters",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n7 !== 1\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:25:162\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:25:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "exact normalized tag and newest-first pagination",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    10,\n    9,\n+   8,\n+   7,\n+   6,\n+   5,\n+   4,\n+   3,\n+   2,\n+   1\n  ]\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:26:200\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:26:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "update replaces tag set",
+      "error": "Error: Not implemented\n    at Object.updateNote (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/runs/calibration-p0-PA-a2/snapshots/job-2/src/store.mjs:25:24)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:27:110\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:27:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "missing identifiers",
+      "error": "Error: Not implemented\n    at Object.updateNote (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/runs/calibration-p0-PA-a2/snapshots/job-2/src/store.mjs:25:24)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:29:106\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:29:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "delete cascades relations and excludes unused tags",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(!store.listTags().some(t=>t.name==='unique-delete-tag'))\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:30:222\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:30:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "invalid pagination rejected",
+      "error": "AssertionError [ERR_ASSERTION]: Missing expected exception.\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:31:61\n    at check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:41)\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:31:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    }
+  ],
+  "exitCode": 1,
+  "stderr": ""
+}

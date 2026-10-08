@@ -1,0 +1,43 @@
+{
+  "id": "ci-0011",
+  "group": "catalog",
+  "revision": "d455f118d352cd24d27105faa25707579e6dc9d547f248031ca36602ffb3f010",
+  "status": "passed",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/catalog.mjs": "3f7aafb9a854c1f67f880642f4be4ff3d1068353b3736fb8801305d14faeeb48",
+    "src/version.mjs": "8c2970c534604e6d0b961ecb0596335368c956da23d359ce94e8887798367999"
+  },
+  "queued": {
+    "time": "2026-10-07T09:24:41.445Z",
+    "monoMs": 494833334.591875
+  },
+  "sourceFiles": [
+    "src/catalog.mjs",
+    "src/version.mjs"
+  ],
+  "started": {
+    "time": "2026-10-07T09:24:51.447Z",
+    "monoMs": 494843336.683083
+  },
+  "completed": {
+    "time": "2026-10-07T09:24:51.492Z",
+    "monoMs": 494843381.896541
+  },
+  "classification": "passed",
+  "result": {
+    "passed": true,
+    "groups": [
+      "catalog"
+    ],
+    "assertions": 513,
+    "durationMs": 4
+  },
+  "exitCode": 0,
+  "staleAtCompletion": false,
+  "published": {
+    "time": "2026-10-07T09:24:51.493Z",
+    "monoMs": 494843382.497875
+  }
+}

@@ -1,0 +1,103 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,readFile,writeFile,readdir,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {once} from 'node:events';
+import {parseCSV,stringifyCSV} from '../src/csv.mjs';
+import {parseVersion,compareVersions} from '../src/version.mjs';
+import {createCatalog} from '../src/catalog.mjs';
+import {searchRecords} from '../src/search.mjs';
+import {planDependencies,reverseDependencies} from '../src/graph.mjs';
+import {importCSV,exportCSV,importNDJSON,exportNDJSON} from '../src/transfer.mjs';
+import {createServer} from '../src/server.mjs';
+const record=(id,extra={})=>({id,name:id,version:'1.0.0',tags:[],dependencies:[],...extra});
+
+test('CSV preserves whitespace, empty records, escapes and embedded separators',()=> {
+  for(const rows of [[['']], [['','']], [[' a ','a,b','say "hi"','x\r\ny'],['','z']]]) assert.deepEqual(parseCSV(stringifyCSV(rows)),rows);
+  assert.deepEqual(parseCSV('a,b\r\n'),[['a','b']]);assert.deepEqual(parseCSV(''),[]);
+  for(const text of ['"unclosed','ab"c','"a"b']) assert.throws(()=>parseCSV(text));
+});
+test('strict semantic versions and large integer comparisons',()=> {
+  for(const v of ['1.2','01.2.3','1.2.3-01','1.2.3+build','1.2.3-','1.2.3-ä']) assert.throws(()=>parseVersion(v));
+  const ordered=['1.0.0-alpha','1.0.0-alpha.2','1.0.0-alpha.10','1.0.0-beta','1.0.0','2.0.0'];
+  for(let i=1;i<ordered.length;i++) assert.equal(compareVersions(ordered[i-1],ordered[i]),-1);
+  assert.equal(compareVersions('9007199254740992.0.0','9007199254740993.0.0'),-1);
+  assert.deepEqual(parseVersion('1.2.3-a-b.4'),{major:1,minor:2,patch:3,prerelease:['a-b','4']});
+});
+test('catalog normalization, copy isolation and atomic batches',()=> {
+  const seed=record(' a ',{name:' A ',tags:[' WEB ','web','', 'Tools'],dependencies:['x','x','y']});
+  const c=createCatalog([seed]);seed.tags.push('mutated');
+  assert.deepEqual(c.get('a'),record('a',{name:'A',tags:['tools','web'],dependencies:['x','y']}));
+  c.get('a').tags.push('mutated');c.list()[0].dependencies.length=0;
+  const before=c.list();
+  assert.throws(()=>c.applyBatch([{type:'remove',id:'a'},{type:'add',record:record('b')},{type:'update',id:'missing',patch:{}}]));
+  assert.deepEqual(c.list(),before);
+  assert.throws(()=>c.update('a',{id:'b'}));assert.throws(()=>c.add(record('a')));
+  assert.deepEqual(c.list(),before);
+});
+test('search filters semantically, pages and uses ascending id ties even descending',()=> {
+  const records=[record('z',{name:'Same',version:'2.0.0',tags:['web']}),record('a',{name:'Same',version:'1.0.0',tags:['web','tools']}),record('b',{version:'1.0.0-beta'})];
+  const before=structuredClone(records);
+  assert.deepEqual(searchRecords(records,{sortBy:'name',order:'desc',text:' SAME '}).items.map(r=>r.id),['a','z']);
+  assert.equal(searchRecords(records,{tags:[' WEB ','tools'],versionMin:'1.0.0'}).total,1);
+  assert.deepEqual(searchRecords(records,{sortBy:'version',offset:1,limit:1}).items.map(r=>r.id),['a']);
+  for(const query of [{limit:0},{limit:101},{offset:0.5},{sortBy:'bad'},{order:'up'},{versionMax:'bad'}]) assert.throws(()=>searchRecords(records,query));
+  assert.deepEqual(records,before);
+});
+test('graph honors DFS order, reverse reachability and descriptive errors',()=> {
+  const rows=[record('a',{dependencies:['c','b']}),record('b',{dependencies:['c']}),record('c')];
+  assert.deepEqual(planDependencies(rows,['a','b']),['c','b','a']);
+  assert.deepEqual(reverseDependencies(rows,'c'),['a','b']);
+  assert.throws(()=>planDependencies([record('a',{dependencies:['missing']})],['a']),/missing/);
+  assert.throws(()=>planDependencies([record('a',{dependencies:['b']}),record('b',{dependencies:['a']})],['a']),/cycle.*a.*b/);
+});
+test('CSV and NDJSON import validate the entire transaction and split UTF-8 safely',async()=> {
+  const rows=[record('a',{name:'雪, "café"\nnext',tags:['web'],dependencies:['b']}),record('b')];
+  const csv=exportCSV(rows), c=createCatalog();assert.deepEqual(importCSV(csv,c),rows);
+  const before=c.list();assert.throws(()=>importCSV(csv,c));assert.deepEqual(c.list(),before);
+  assert.throws(()=>importCSV('id,name,version,tags,dependencies\nc,C,1.0.0,,\nd,D,bad,,',c));assert.deepEqual(c.list(),before);
+  let text='\n';for await(const line of exportNDJSON(rows)) text+=line;
+  const bytes=Buffer.from(text.trimEnd()), chunks=(async function*(){for(const byte of bytes) yield Buffer.from([byte]);})();
+  const target=createCatalog();assert.deepEqual(await importNDJSON(chunks,target),rows);
+  await assert.rejects(importNDJSON([JSON.stringify(record('c'))+'\n{bad'],target));assert.deepEqual(target.list(),rows);
+});
+test('HTTP CRUD, decoded ids, transfer, validation and oversized body remain usable',async t=> {
+  const c=createCatalog(),server=createServer(c);server.listen(0,'127.0.0.1');await once(server,'listening');
+  t.after(()=>new Promise(resolve=>server.close(resolve)));
+  const base=`http://127.0.0.1:${server.address().port}`;
+  const request=(path,method='GET',body)=>fetch(base+path,{method,body});
+  assert.deepEqual(await (await request('/health')).json(),{ok:true});
+  assert.equal((await request('/records','POST',JSON.stringify(record('a/b')))).status,201);
+  assert.equal((await request('/records','POST',JSON.stringify(record('a/b')))).status,409);
+  assert.equal((await request('/records/a%2Fb')).status,200);
+  assert.equal((await request('/records/a%2Fb','PATCH','{"name":"Updated"}')).status,200);
+  assert.equal((await request('/records?limit=no')).status,400);
+  assert.equal((await request('/records/%ZZ')).status,400);
+  assert.equal((await request('/missing')).status,404);
+  assert.equal((await request('/records','POST','x'.repeat(1024*1024+1))).status,413);
+  assert.equal((await request('/records','POST','{')).status,400);
+  assert.equal((await request('/health')).status,200);
+  const csv=await (await request('/export.csv')).text();assert.match(csv,/Updated/);
+  assert.equal((await request('/records/a%2Fb','DELETE')).status,204);
+  assert.equal((await request('/import.csv','POST',csv)).status,201);
+  const ndjson=await (await request('/export.ndjson')).text();assert.equal(JSON.parse(ndjson).id,'a/b');
+});
+test('CLI creates an absent file atomically and errors preserve bytes',async t=> {
+  const dir=await mkdtemp(join(tmpdir(),'catalog-'));t.after(()=>rm(dir,{recursive:true,force:true}));
+  const file=join(dir,'catalog.json');
+  const run=(...args)=>spawnSync(process.execPath,['src/cli.mjs',...args,'--file',file],{encoding:'utf8'});
+  assert.equal(JSON.parse(run('list').stdout).total,0);
+  assert.equal(run('add','--record',JSON.stringify(record('a'))).status,0);
+  const before=await readFile(file,'utf8');
+  assert.notEqual(run('add','--record',JSON.stringify(record('a'))).status,0);
+  assert.notEqual(run('add','--record','{').status,0);
+  assert.equal(await readFile(file,'utf8'),before);
+  const input=join(dir,'bad.csv');await writeFile(input,'id,name,version,tags,dependencies\nb,B,1.0.0,,\nc,C,bad,,');
+  assert.notEqual(run('import-csv','--input',input).status,0);assert.equal(await readFile(file,'utf8'),before);
+  assert.deepEqual(JSON.parse(run('plan','--ids','a').stdout),{ids:['a']});
+  assert.match(run('export-csv').stdout,/id,name,version,tags,dependencies/);
+  assert.equal(run('remove','--id','a').status,0);assert.deepEqual(JSON.parse(await readFile(file,'utf8')),[]);
+  assert.deepEqual((await readdir(dir)).sort(),['bad.csv','catalog.json']);
+});

@@ -1,0 +1,13 @@
+{
+  "protocolRevision":"v3",
+  "measurementEligible":false,
+  "technicalOracleFailure":true,
+  "originalTrialPreserved":true,
+  "reason":"Original disposable helper wrapper dropped the legal exportNotes export, causing acceptance-only startup failure. The directly tested application and all current CI suites were green.",
+  "correctedOfflineAcceptance":true,
+  "correctedOracleEvidence":"../../offline/v3.1/n-corrected-offline.json",
+  "correctedChecksPassed":9,
+  "fullTimeResultRetroactivelyChanged":false,
+  "operatorSteering":false,
+  "behavior":"Shared importer repaired proactively; no current actionable failure was observed. Green/stale-only calibration."
+}

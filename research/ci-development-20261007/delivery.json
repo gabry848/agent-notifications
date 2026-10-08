@@ -1,0 +1,1324 @@
+{
+  "created": "2026-10-07T12:38:04.492Z",
+  "secondaryAnalysisRequested": "2026-10-07; requested after p03 to compare identical initial events, not preregistered as a primary endpoint",
+  "definition": "Delivery-only publication to first provider payload containing unique terminal eventId, initial ci-0001..ci-0004. Per-trial median of four event latencies; no actionable-failure or completion attribution. Stale results remain included.",
+  "initialGroups": [
+    [
+      "ci-0001",
+      "integrity",
+      0
+    ],
+    [
+      "ci-0002",
+      "csv",
+      30000
+    ],
+    [
+      "ci-0003",
+      "version",
+      60000
+    ],
+    [
+      "ci-0004",
+      "catalog",
+      90000
+    ]
+  ],
+  "denominator": "100*(N per-trial median - PA per-trial median)/PA per-trial median for each complete correct pair; summarize paired changes",
+  "quantileMethod": "linear interpolation at (n-1)*p",
+  "provenance": {
+    "metricsSha256": "dcbf9ea7c5eab5c9c6a132a34e3d4a38ea0f8749f86676fc50ea5d110d5f77cb",
+    "scriptSha256": "eaa16a1832618d04f6c32b4030ab828ee0c043ed6494397a06df3e6f58172be4"
+  },
+  "pairs": [
+    {
+      "pair": "p01",
+      "eligible": true,
+      "immutableSourceMatch": true,
+      "N": {
+        "stage": "measured",
+        "pair": "p01",
+        "mode": "N",
+        "correct": true,
+        "events": [
+          {
+            "eventId": "ci-result-ci-0001-1",
+            "jobId": "ci-0001",
+            "group": "integrity",
+            "status": "passed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": false,
+            "alreadyGreenAtExposure": true,
+            "classification": "passed",
+            "publishedMs": 491779245.093916,
+            "firstProviderExposureMs": 491781591.841416,
+            "retrievalMs": 492002641.902375,
+            "exposureLatencyMs": 2346.747500002384,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 0,
+            "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0002-2",
+            "jobId": "ci-0002",
+            "group": "csv",
+            "status": "failed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": false,
+            "alreadyGreenAtExposure": false,
+            "classification": "source_failure",
+            "publishedMs": 491809200.319791,
+            "firstProviderExposureMs": 491813708.504416,
+            "retrievalMs": 492002641.902375,
+            "exposureLatencyMs": 4508.184624969959,
+            "postExposureVerifiedSourceActionMs": 491824572.260416,
+            "sourceActionLatencyMs": 15371.940624952316,
+            "verifiedGreenMs": 491834731.513416,
+            "verificationLatencyMs": 25531.193624973297,
+            "exposed": true,
+            "queueMs": 30000,
+            "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+            "sourceHashes": {
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0003-8",
+            "jobId": "ci-0003",
+            "group": "version",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 491839207.955791,
+            "firstProviderExposureMs": 491840353.701375,
+            "retrievalMs": 492002641.902375,
+            "exposureLatencyMs": 1145.7455840110779,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 60000,
+            "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+            "sourceHashes": {
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0004-11",
+            "jobId": "ci-0004",
+            "group": "catalog",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 491869210.937333,
+            "firstProviderExposureMs": 491870909.1985,
+            "retrievalMs": 492002641.902375,
+            "exposureLatencyMs": 1698.2611669898033,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 90000,
+            "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          }
+        ],
+        "unexposedCount": 0,
+        "staleAtPublicationCount": 2,
+        "staleAtFirstExposureCount": 2,
+        "medianExposureLatencyMs": 2022.5043334960938
+      },
+      "PA": {
+        "stage": "measured",
+        "pair": "p01",
+        "mode": "PA",
+        "correct": true,
+        "events": [
+          {
+            "eventId": "ci-result-ci-0001-1",
+            "jobId": "ci-0001",
+            "group": "integrity",
+            "status": "passed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "passed",
+            "publishedMs": 492058599.761291,
+            "firstProviderExposureMs": 492198986.009458,
+            "retrievalMs": 492198982.716916,
+            "exposureLatencyMs": 140386.24816697836,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 0,
+            "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0002-2",
+            "jobId": "ci-0002",
+            "group": "csv",
+            "status": "failed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 492088551.212875,
+            "firstProviderExposureMs": 492198986.009458,
+            "retrievalMs": 492198982.716916,
+            "exposureLatencyMs": 110434.79658299685,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 30000,
+            "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+            "sourceHashes": {
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0003-8",
+            "jobId": "ci-0003",
+            "group": "version",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 492118561.335791,
+            "firstProviderExposureMs": 492198986.009458,
+            "retrievalMs": 492198982.716916,
+            "exposureLatencyMs": 80424.67366701365,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 60000,
+            "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+            "sourceHashes": {
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0004-15",
+            "jobId": "ci-0004",
+            "group": "catalog",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 492148555.270541,
+            "firstProviderExposureMs": 492198986.009458,
+            "retrievalMs": 492198982.716916,
+            "exposureLatencyMs": 50430.73891699314,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 90000,
+            "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          }
+        ],
+        "unexposedCount": 0,
+        "staleAtPublicationCount": 2,
+        "staleAtFirstExposureCount": 4,
+        "medianExposureLatencyMs": 95429.73512500525
+      },
+      "changePercent": -97.88063507580024
+    },
+    {
+      "pair": "p02",
+      "eligible": true,
+      "immutableSourceMatch": true,
+      "N": {
+        "stage": "measured",
+        "pair": "p02",
+        "mode": "N",
+        "correct": true,
+        "events": [
+          {
+            "eventId": "ci-result-ci-0001-1",
+            "jobId": "ci-0001",
+            "group": "integrity",
+            "status": "passed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": false,
+            "alreadyGreenAtExposure": true,
+            "classification": "passed",
+            "publishedMs": 493029890.740875,
+            "firstProviderExposureMs": 493033189.134458,
+            "retrievalMs": 493275275.33425,
+            "exposureLatencyMs": 3298.3935829997063,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 0,
+            "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0002-2",
+            "jobId": "ci-0002",
+            "group": "csv",
+            "status": "failed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": false,
+            "alreadyGreenAtExposure": false,
+            "classification": "source_failure",
+            "publishedMs": 493059842.703958,
+            "firstProviderExposureMs": 493061228.636041,
+            "retrievalMs": 493275275.33425,
+            "exposureLatencyMs": 1385.9320830106735,
+            "postExposureVerifiedSourceActionMs": 493073283.119,
+            "sourceActionLatencyMs": 13440.415042042732,
+            "verifiedGreenMs": 493083361.958166,
+            "verificationLatencyMs": 23519.254208028316,
+            "exposed": true,
+            "queueMs": 30000,
+            "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+            "sourceHashes": {
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0003-8",
+            "jobId": "ci-0003",
+            "group": "version",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 493089836.963708,
+            "firstProviderExposureMs": 493093708.275708,
+            "retrievalMs": 493275275.33425,
+            "exposureLatencyMs": 3871.3120000362396,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 60000,
+            "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+            "sourceHashes": {
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0004-11",
+            "jobId": "ci-0004",
+            "group": "catalog",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 493119841.130625,
+            "firstProviderExposureMs": 493125408.041625,
+            "retrievalMs": 493275275.33425,
+            "exposureLatencyMs": 5566.911000013351,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 90000,
+            "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          }
+        ],
+        "unexposedCount": 0,
+        "staleAtPublicationCount": 2,
+        "staleAtFirstExposureCount": 2,
+        "medianExposureLatencyMs": 3584.852791517973
+      },
+      "PA": {
+        "stage": "measured",
+        "pair": "p02",
+        "mode": "PA",
+        "correct": true,
+        "events": [
+          {
+            "eventId": "ci-result-ci-0001-1",
+            "jobId": "ci-0001",
+            "group": "integrity",
+            "status": "passed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "passed",
+            "publishedMs": 492757271.218,
+            "firstProviderExposureMs": 492851869.832375,
+            "retrievalMs": 492851866.314916,
+            "exposureLatencyMs": 94598.61437499523,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 0,
+            "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0002-2",
+            "jobId": "ci-0002",
+            "group": "csv",
+            "status": "failed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 492787235.442333,
+            "firstProviderExposureMs": 492851869.832375,
+            "retrievalMs": 492851866.314916,
+            "exposureLatencyMs": 64634.39004200697,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 30000,
+            "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+            "sourceHashes": {
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0003-8",
+            "jobId": "ci-0003",
+            "group": "version",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 492817235.192291,
+            "firstProviderExposureMs": 492851869.832375,
+            "retrievalMs": 492851866.314916,
+            "exposureLatencyMs": 34634.64008396864,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 60000,
+            "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+            "sourceHashes": {
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0004-15",
+            "jobId": "ci-0004",
+            "group": "catalog",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 492847236.619166,
+            "firstProviderExposureMs": 492851869.832375,
+            "retrievalMs": 492851866.314916,
+            "exposureLatencyMs": 4633.213208973408,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 90000,
+            "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          }
+        ],
+        "unexposedCount": 0,
+        "staleAtPublicationCount": 2,
+        "staleAtFirstExposureCount": 4,
+        "medianExposureLatencyMs": 49634.515062987804
+      },
+      "changePercent": -92.77750011868015
+    },
+    {
+      "pair": "p03",
+      "eligible": true,
+      "immutableSourceMatch": true,
+      "N": {
+        "stage": "measured",
+        "pair": "p03",
+        "mode": "N",
+        "correct": true,
+        "events": [
+          {
+            "eventId": "ci-result-ci-0001-1",
+            "jobId": "ci-0001",
+            "group": "integrity",
+            "status": "passed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": false,
+            "alreadyGreenAtExposure": true,
+            "classification": "passed",
+            "publishedMs": 494461240.736125,
+            "firstProviderExposureMs": 494466816.655291,
+            "retrievalMs": 494629666.454041,
+            "exposureLatencyMs": 5575.9191660285,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 0,
+            "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0002-2",
+            "jobId": "ci-0002",
+            "group": "csv",
+            "status": "failed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": false,
+            "classification": "source_failure",
+            "publishedMs": 494491195.805375,
+            "firstProviderExposureMs": 494497264.871541,
+            "retrievalMs": 494629666.454041,
+            "exposureLatencyMs": 6069.066166043282,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 30000,
+            "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+            "sourceHashes": {
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0003-5",
+            "jobId": "ci-0003",
+            "group": "version",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 494521201.323208,
+            "firstProviderExposureMs": 494527003.628583,
+            "retrievalMs": 494629666.454041,
+            "exposureLatencyMs": 5802.3053750395775,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 60000,
+            "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+            "sourceHashes": {
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0004-11",
+            "jobId": "ci-0004",
+            "group": "catalog",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 494551208.293916,
+            "firstProviderExposureMs": 494552515.253083,
+            "retrievalMs": 494629666.454041,
+            "exposureLatencyMs": 1306.9591670036316,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 90000,
+            "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          }
+        ],
+        "unexposedCount": 0,
+        "staleAtPublicationCount": 2,
+        "staleAtFirstExposureCount": 3,
+        "medianExposureLatencyMs": 5689.1122705340385
+      },
+      "PA": {
+        "stage": "measured",
+        "pair": "p03",
+        "mode": "PA",
+        "correct": true,
+        "events": [
+          {
+            "eventId": "ci-result-ci-0001-1",
+            "jobId": "ci-0001",
+            "group": "integrity",
+            "status": "passed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "passed",
+            "publishedMs": 494775594.629791,
+            "firstProviderExposureMs": 494881198.648916,
+            "retrievalMs": 494881195.140791,
+            "exposureLatencyMs": 105604.01912498474,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 0,
+            "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0002-2",
+            "jobId": "ci-0002",
+            "group": "csv",
+            "status": "failed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 494805558.908041,
+            "firstProviderExposureMs": 494881198.648916,
+            "retrievalMs": 494881195.140791,
+            "exposureLatencyMs": 75639.74087500572,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 30000,
+            "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+            "sourceHashes": {
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0003-8",
+            "jobId": "ci-0003",
+            "group": "version",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 494835563.206916,
+            "firstProviderExposureMs": 494881198.648916,
+            "retrievalMs": 494881195.140791,
+            "exposureLatencyMs": 45635.44200003147,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 60000,
+            "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+            "sourceHashes": {
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0004-13",
+            "jobId": "ci-0004",
+            "group": "catalog",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 494865563.763958,
+            "firstProviderExposureMs": 494881198.648916,
+            "retrievalMs": 494881195.140791,
+            "exposureLatencyMs": 15634.884958028793,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 90000,
+            "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          }
+        ],
+        "unexposedCount": 0,
+        "staleAtPublicationCount": 2,
+        "staleAtFirstExposureCount": 4,
+        "medianExposureLatencyMs": 60637.5914375186
+      },
+      "changePercent": -90.61784590109232
+    },
+    {
+      "pair": "p04",
+      "eligible": true,
+      "immutableSourceMatch": true,
+      "N": {
+        "stage": "measured",
+        "pair": "p04",
+        "mode": "N",
+        "correct": true,
+        "events": [
+          {
+            "eventId": "ci-result-ci-0001-1",
+            "jobId": "ci-0001",
+            "group": "integrity",
+            "status": "passed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": false,
+            "alreadyGreenAtExposure": true,
+            "classification": "passed",
+            "publishedMs": 495349489.175583,
+            "firstProviderExposureMs": 495354555.539708,
+            "retrievalMs": 495581754.786958,
+            "exposureLatencyMs": 5066.364125013351,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 0,
+            "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0002-2",
+            "jobId": "ci-0002",
+            "group": "csv",
+            "status": "failed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": false,
+            "alreadyGreenAtExposure": false,
+            "classification": "source_failure",
+            "publishedMs": 495379422.785291,
+            "firstProviderExposureMs": 495381387.935875,
+            "retrievalMs": 495581754.786958,
+            "exposureLatencyMs": 1965.1505839824677,
+            "postExposureVerifiedSourceActionMs": 495404761.339166,
+            "sourceActionLatencyMs": 25338.553874969482,
+            "verifiedGreenMs": 495414920.661083,
+            "verificationLatencyMs": 35497.875791966915,
+            "exposed": true,
+            "queueMs": 30000,
+            "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+            "sourceHashes": {
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0003-6",
+            "jobId": "ci-0003",
+            "group": "version",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 495409427.94275,
+            "firstProviderExposureMs": 495420577.970083,
+            "retrievalMs": 495581754.786958,
+            "exposureLatencyMs": 11150.027333021164,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 60000,
+            "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+            "sourceHashes": {
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0004-11",
+            "jobId": "ci-0004",
+            "group": "catalog",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 495439441.228125,
+            "firstProviderExposureMs": 495447428.269541,
+            "retrievalMs": 495581754.786958,
+            "exposureLatencyMs": 7987.041416049004,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 90000,
+            "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          }
+        ],
+        "unexposedCount": 0,
+        "staleAtPublicationCount": 2,
+        "staleAtFirstExposureCount": 2,
+        "medianExposureLatencyMs": 6526.7027705311775
+      },
+      "PA": {
+        "stage": "measured",
+        "pair": "p04",
+        "mode": "PA",
+        "correct": true,
+        "events": [
+          {
+            "eventId": "ci-result-ci-0001-1",
+            "jobId": "ci-0001",
+            "group": "integrity",
+            "status": "passed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "passed",
+            "publishedMs": 495053670.701375,
+            "firstProviderExposureMs": 495220306.237416,
+            "retrievalMs": 495220302.353291,
+            "exposureLatencyMs": 166635.53604102135,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 0,
+            "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0002-2",
+            "jobId": "ci-0002",
+            "group": "csv",
+            "status": "failed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 495083631.347666,
+            "firstProviderExposureMs": 495220306.237416,
+            "retrievalMs": 495220302.353291,
+            "exposureLatencyMs": 136674.88975000381,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 30000,
+            "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+            "sourceHashes": {
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0003-8",
+            "jobId": "ci-0003",
+            "group": "version",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 495113630.340375,
+            "firstProviderExposureMs": 495220306.237416,
+            "retrievalMs": 495220302.353291,
+            "exposureLatencyMs": 106675.89704102278,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 60000,
+            "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+            "sourceHashes": {
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0004-9",
+            "jobId": "ci-0004",
+            "group": "catalog",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 495143624.309541,
+            "firstProviderExposureMs": 495220306.237416,
+            "retrievalMs": 495220302.353291,
+            "exposureLatencyMs": 76681.92787504196,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 90000,
+            "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          }
+        ],
+        "unexposedCount": 0,
+        "staleAtPublicationCount": 2,
+        "staleAtFirstExposureCount": 4,
+        "medianExposureLatencyMs": 121675.3933955133
+      },
+      "changePercent": -94.635971507143
+    },
+    {
+      "pair": "p05",
+      "eligible": true,
+      "immutableSourceMatch": true,
+      "N": {
+        "stage": "measured",
+        "pair": "p05",
+        "mode": "N",
+        "correct": true,
+        "events": [
+          {
+            "eventId": "ci-result-ci-0001-1",
+            "jobId": "ci-0001",
+            "group": "integrity",
+            "status": "passed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": false,
+            "alreadyGreenAtExposure": true,
+            "classification": "passed",
+            "publishedMs": 495619782.372625,
+            "firstProviderExposureMs": 495622884.49125,
+            "retrievalMs": 495878580.597666,
+            "exposureLatencyMs": 3102.118624985218,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 0,
+            "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0002-2",
+            "jobId": "ci-0002",
+            "group": "csv",
+            "status": "failed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": false,
+            "classification": "source_failure",
+            "publishedMs": 495649745.663208,
+            "firstProviderExposureMs": 495654726.084208,
+            "retrievalMs": 495878580.597666,
+            "exposureLatencyMs": 4980.421000003815,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 30000,
+            "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+            "sourceHashes": {
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0003-8",
+            "jobId": "ci-0003",
+            "group": "version",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 495679745.5135,
+            "firstProviderExposureMs": 495685048.324916,
+            "retrievalMs": 495878580.597666,
+            "exposureLatencyMs": 5302.81141602993,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 60000,
+            "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+            "sourceHashes": {
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0004-13",
+            "jobId": "ci-0004",
+            "group": "catalog",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 495709748.2445,
+            "firstProviderExposureMs": 495710375.697375,
+            "retrievalMs": 495878580.597666,
+            "exposureLatencyMs": 627.4528750181198,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 90000,
+            "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          }
+        ],
+        "unexposedCount": 0,
+        "staleAtPublicationCount": 2,
+        "staleAtFirstExposureCount": 3,
+        "medianExposureLatencyMs": 4041.2698124945164
+      },
+      "PA": {
+        "stage": "measured",
+        "pair": "p05",
+        "mode": "PA",
+        "correct": true,
+        "events": [
+          {
+            "eventId": "ci-result-ci-0001-1",
+            "jobId": "ci-0001",
+            "group": "integrity",
+            "status": "passed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "passed",
+            "publishedMs": 506101133.778208,
+            "firstProviderExposureMs": 506262000.227958,
+            "retrievalMs": 506261996.394833,
+            "exposureLatencyMs": 160866.4497500062,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 0,
+            "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0002-2",
+            "jobId": "ci-0002",
+            "group": "csv",
+            "status": "failed",
+            "staleAtPublication": false,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 506131095.611083,
+            "firstProviderExposureMs": 506262000.227958,
+            "retrievalMs": 506261996.394833,
+            "exposureLatencyMs": 130904.61687505245,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 30000,
+            "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+            "sourceHashes": {
+              "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0003-8",
+            "jobId": "ci-0003",
+            "group": "version",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 506161096.236833,
+            "firstProviderExposureMs": 506262000.227958,
+            "retrievalMs": 506261996.394833,
+            "exposureLatencyMs": 100903.9911250472,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 60000,
+            "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+            "sourceHashes": {
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          },
+          {
+            "eventId": "ci-result-ci-0004-11",
+            "jobId": "ci-0004",
+            "group": "catalog",
+            "status": "failed",
+            "staleAtPublication": true,
+            "staleAtFirstExposure": true,
+            "alreadyGreenAtExposure": true,
+            "classification": "source_failure",
+            "publishedMs": 506191090.197625,
+            "firstProviderExposureMs": 506262000.227958,
+            "retrievalMs": 506261996.394833,
+            "exposureLatencyMs": 70910.03033304214,
+            "sourceActionLatencyMs": null,
+            "verificationLatencyMs": null,
+            "exposed": true,
+            "queueMs": 90000,
+            "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+            "sourceHashes": {
+              "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+              "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+            }
+          }
+        ],
+        "unexposedCount": 0,
+        "staleAtPublicationCount": 2,
+        "staleAtFirstExposureCount": 4,
+        "medianExposureLatencyMs": 115904.30400004983
+      },
+      "changePercent": -96.51327028158266
+    }
+  ],
+  "pairedChangesPercent": {
+    "n": 5,
+    "median": -94.635971507143,
+    "min": -97.88063507580024,
+    "max": -90.61784590109232,
+    "q1": -96.51327028158266,
+    "q3": -92.77750011868015,
+    "iqr": 3.7357701629025115
+  },
+  "medianTrialLatencyMs": {
+    "N": 4041.2698124945164,
+    "PA": 95429.73512500525
+  },
+  "calibration": [
+    {
+      "stage": "calibration",
+      "pair": "p01",
+      "mode": "N",
+      "correct": true,
+      "events": [
+        {
+          "eventId": "ci-result-ci-0001-1",
+          "jobId": "ci-0001",
+          "group": "integrity",
+          "status": "passed",
+          "staleAtPublication": false,
+          "staleAtFirstExposure": false,
+          "alreadyGreenAtExposure": true,
+          "classification": "passed",
+          "publishedMs": 490403040.862708,
+          "firstProviderExposureMs": 490405860.306125,
+          "retrievalMs": 490547044.298583,
+          "exposureLatencyMs": 2819.4434170126915,
+          "sourceActionLatencyMs": null,
+          "verificationLatencyMs": null,
+          "exposed": true,
+          "queueMs": 0,
+          "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+          "sourceHashes": {
+            "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+            "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+            "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+          }
+        },
+        {
+          "eventId": "ci-result-ci-0002-2",
+          "jobId": "ci-0002",
+          "group": "csv",
+          "status": "failed",
+          "staleAtPublication": false,
+          "staleAtFirstExposure": false,
+          "alreadyGreenAtExposure": false,
+          "classification": "source_failure",
+          "publishedMs": 490432994.480875,
+          "firstProviderExposureMs": 490434124.231791,
+          "retrievalMs": 490547044.298583,
+          "exposureLatencyMs": 1129.750916004181,
+          "postExposureVerifiedSourceActionMs": 490445304.209625,
+          "sourceActionLatencyMs": 12309.728749990463,
+          "verifiedGreenMs": 490455384.665041,
+          "verificationLatencyMs": 22390.184166014194,
+          "exposed": true,
+          "queueMs": 30000,
+          "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+          "sourceHashes": {
+            "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+          }
+        },
+        {
+          "eventId": "ci-result-ci-0003-8",
+          "jobId": "ci-0003",
+          "group": "version",
+          "status": "failed",
+          "staleAtPublication": true,
+          "staleAtFirstExposure": true,
+          "alreadyGreenAtExposure": true,
+          "classification": "source_failure",
+          "publishedMs": 490462996.192083,
+          "firstProviderExposureMs": 490476334.152833,
+          "retrievalMs": 490547044.298583,
+          "exposureLatencyMs": 13337.960749983788,
+          "sourceActionLatencyMs": null,
+          "verificationLatencyMs": null,
+          "exposed": true,
+          "queueMs": 60000,
+          "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+          "sourceHashes": {
+            "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+          }
+        },
+        {
+          "eventId": "ci-result-ci-0004-13",
+          "jobId": "ci-0004",
+          "group": "catalog",
+          "status": "failed",
+          "staleAtPublication": true,
+          "staleAtFirstExposure": true,
+          "alreadyGreenAtExposure": true,
+          "classification": "source_failure",
+          "publishedMs": 490492982.502208,
+          "firstProviderExposureMs": 490500002.021208,
+          "retrievalMs": 490547044.298583,
+          "exposureLatencyMs": 7019.518999993801,
+          "sourceActionLatencyMs": null,
+          "verificationLatencyMs": null,
+          "exposed": true,
+          "queueMs": 90000,
+          "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+          "sourceHashes": {
+            "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+            "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+          }
+        }
+      ],
+      "unexposedCount": 0,
+      "staleAtPublicationCount": 2,
+      "staleAtFirstExposureCount": 2,
+      "medianExposureLatencyMs": 4919.481208503246
+    },
+    {
+      "stage": "calibration",
+      "pair": "p01",
+      "mode": "PA",
+      "correct": true,
+      "events": [
+        {
+          "eventId": "ci-result-ci-0001-1",
+          "jobId": "ci-0001",
+          "group": "integrity",
+          "status": "passed",
+          "staleAtPublication": false,
+          "staleAtFirstExposure": true,
+          "alreadyGreenAtExposure": true,
+          "classification": "passed",
+          "publishedMs": 491204046.594166,
+          "firstProviderExposureMs": 491351266.96125,
+          "retrievalMs": 491351263.92125,
+          "exposureLatencyMs": 147220.36708402634,
+          "sourceActionLatencyMs": null,
+          "verificationLatencyMs": null,
+          "exposed": true,
+          "queueMs": 0,
+          "revision": "54dac1aa8c80e4723482c45380e9764d64d654216e4a10c8eeeab2ee1dfdc621",
+          "sourceHashes": {
+            "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+            "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+            "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+          }
+        },
+        {
+          "eventId": "ci-result-ci-0002-2",
+          "jobId": "ci-0002",
+          "group": "csv",
+          "status": "failed",
+          "staleAtPublication": false,
+          "staleAtFirstExposure": true,
+          "alreadyGreenAtExposure": true,
+          "classification": "source_failure",
+          "publishedMs": 491234012.178,
+          "firstProviderExposureMs": 491351266.96125,
+          "retrievalMs": 491351263.92125,
+          "exposureLatencyMs": 117254.78325003386,
+          "sourceActionLatencyMs": null,
+          "verificationLatencyMs": null,
+          "exposed": true,
+          "queueMs": 30000,
+          "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+          "sourceHashes": {
+            "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+          }
+        },
+        {
+          "eventId": "ci-result-ci-0003-8",
+          "jobId": "ci-0003",
+          "group": "version",
+          "status": "failed",
+          "staleAtPublication": true,
+          "staleAtFirstExposure": true,
+          "alreadyGreenAtExposure": true,
+          "classification": "source_failure",
+          "publishedMs": 491264010.172333,
+          "firstProviderExposureMs": 491351266.96125,
+          "retrievalMs": 491351263.92125,
+          "exposureLatencyMs": 87256.78891700506,
+          "sourceActionLatencyMs": null,
+          "verificationLatencyMs": null,
+          "exposed": true,
+          "queueMs": 60000,
+          "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+          "sourceHashes": {
+            "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+          }
+        },
+        {
+          "eventId": "ci-result-ci-0004-13",
+          "jobId": "ci-0004",
+          "group": "catalog",
+          "status": "failed",
+          "staleAtPublication": true,
+          "staleAtFirstExposure": true,
+          "alreadyGreenAtExposure": true,
+          "classification": "source_failure",
+          "publishedMs": 491294011.624375,
+          "firstProviderExposureMs": 491351266.96125,
+          "retrievalMs": 491351263.92125,
+          "exposureLatencyMs": 57255.33687502146,
+          "sourceActionLatencyMs": null,
+          "verificationLatencyMs": null,
+          "exposed": true,
+          "queueMs": 90000,
+          "revision": "3f1c2f40098a7fee46dd9f646aa4776b25b4076308bc2f22562d9b7603181299",
+          "sourceHashes": {
+            "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+            "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+          }
+        }
+      ],
+      "unexposedCount": 0,
+      "staleAtPublicationCount": 2,
+      "staleAtFirstExposureCount": 4,
+      "medianExposureLatencyMs": 102255.78608351946
+    }
+  ]
+}

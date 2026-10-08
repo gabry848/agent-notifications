@@ -1,0 +1,49 @@
+{
+  "suite": "mcp",
+  "seed": 7100,
+  "passed": false,
+  "checks": [
+    {
+      "name": "official MCP SDK compatibility",
+      "passed": true
+    },
+    {
+      "name": "standard initialize and notifications",
+      "passed": true
+    },
+    {
+      "name": "all tool descriptors",
+      "passed": true
+    },
+    {
+      "name": "external CRUD/tag client",
+      "passed": true
+    },
+    {
+      "name": "read resource",
+      "passed": false,
+      "failureKind": "assertion",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(Array.isArray(JSON.parse(r.result.contents[0].text)))\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:40:288\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:35)\n    at async file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:40:5"
+    },
+    {
+      "name": "invalid calls and unknown methods",
+      "passed": true
+    },
+    {
+      "name": "atomic import and portable export",
+      "passed": true
+    },
+    {
+      "name": "seeded client calls across restarts",
+      "passed": true
+    }
+  ],
+  "failures": [
+    {
+      "name": "read resource",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(Array.isArray(JSON.parse(r.result.contents[0].text)))\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:40:288\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:35)\n    at async file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:40:5"
+    }
+  ],
+  "exitCode": 1,
+  "stderr": ""
+}

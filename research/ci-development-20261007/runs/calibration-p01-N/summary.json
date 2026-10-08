@@ -1,0 +1,181 @@
+{
+  "stage": "calibration",
+  "pair": "p01",
+  "mode": "N",
+  "start": {
+    "time": "2026-10-07T08:10:51.159Z",
+    "monoMs": 490402940.547083
+  },
+  "end": {
+    "time": "2026-10-07T08:16:19.211Z",
+    "monoMs": 490730988.224958
+  },
+  "agentWallMs": 328047.67787498236,
+  "fullVerifiedWallMs": 328487.00558298826,
+  "wallMs": 328487.00558298826,
+  "verifiedEnd": {
+    "time": "2026-10-07T08:16:19.650Z",
+    "monoMs": 490731427.552666
+  },
+  "oracle": {
+    "passed": true,
+    "groups": [
+      "integrity",
+      "csv",
+      "version",
+      "catalog",
+      "search",
+      "graph",
+      "transfer",
+      "http",
+      "cli"
+    ],
+    "assertions": 7230,
+    "durationMs": 391
+  },
+  "immutable": {
+    "README.md": true,
+    "package.json": true,
+    "test/smoke.test.mjs": true
+  },
+  "latestAtSettle": {
+    "integrity": {
+      "revision": "2efa0c79ce9c2a0282d6ecc6165e25afdd998174a61e7d6a081b0353664be756",
+      "status": "passed",
+      "jobId": "ci-0022",
+      "entryExists": true
+    },
+    "csv": {
+      "revision": "f74e8cd1b205e39dfb533ba177658733384f78af9f725383481dc6603d3977b5",
+      "status": "passed",
+      "jobId": "ci-0009",
+      "entryExists": true
+    },
+    "version": {
+      "revision": "de1b05be36b10d0f81b5ab61e09cd377eb3aa9cfe9a8f9823fe0aaec5bca0f9c",
+      "status": "passed",
+      "jobId": "ci-0006",
+      "entryExists": true
+    },
+    "catalog": {
+      "revision": "7da3f47776ee321a621efb26115fe703c555f70df038d58e24208b79be0dfe6b",
+      "status": "passed",
+      "jobId": "ci-0011",
+      "entryExists": true
+    },
+    "search": {
+      "revision": "c5e45cde73c9a657058d18c96d248571ee61d81b9350e05ca76765cc4bd78fe7",
+      "status": "passed",
+      "jobId": "ci-0013",
+      "entryExists": true
+    },
+    "graph": {
+      "revision": "bb8c04ec2ef92f9835fb1a96d16a9176ffafb7b4a1d46255a45b259f1205e6a7",
+      "status": "passed",
+      "jobId": "ci-0015",
+      "entryExists": true
+    },
+    "transfer": {
+      "revision": "86829d322795609367de86c5d5342c5a094f36224a454fe865c4867a188712d4",
+      "status": "passed",
+      "jobId": "ci-0017",
+      "entryExists": true
+    },
+    "http": {
+      "revision": "6d7ef54ae0f859642f5094ccdc42afbae89500b51cd5fa1ba4810759aa9191e5",
+      "status": "passed",
+      "jobId": "ci-0023",
+      "entryExists": true
+    },
+    "cli": {
+      "revision": "f9f474c9bf23db965254b34d69df8af0d138078acbbbeeca0cfe81b2b7feeede",
+      "status": "passed",
+      "jobId": "ci-0021",
+      "entryExists": true
+    }
+  },
+  "latestAfterDrain": {
+    "integrity": {
+      "revision": "2efa0c79ce9c2a0282d6ecc6165e25afdd998174a61e7d6a081b0353664be756",
+      "status": "passed",
+      "jobId": "ci-0022",
+      "entryExists": true
+    },
+    "csv": {
+      "revision": "f74e8cd1b205e39dfb533ba177658733384f78af9f725383481dc6603d3977b5",
+      "status": "passed",
+      "jobId": "ci-0009",
+      "entryExists": true
+    },
+    "version": {
+      "revision": "de1b05be36b10d0f81b5ab61e09cd377eb3aa9cfe9a8f9823fe0aaec5bca0f9c",
+      "status": "passed",
+      "jobId": "ci-0006",
+      "entryExists": true
+    },
+    "catalog": {
+      "revision": "7da3f47776ee321a621efb26115fe703c555f70df038d58e24208b79be0dfe6b",
+      "status": "passed",
+      "jobId": "ci-0011",
+      "entryExists": true
+    },
+    "search": {
+      "revision": "c5e45cde73c9a657058d18c96d248571ee61d81b9350e05ca76765cc4bd78fe7",
+      "status": "passed",
+      "jobId": "ci-0013",
+      "entryExists": true
+    },
+    "graph": {
+      "revision": "bb8c04ec2ef92f9835fb1a96d16a9176ffafb7b4a1d46255a45b259f1205e6a7",
+      "status": "passed",
+      "jobId": "ci-0015",
+      "entryExists": true
+    },
+    "transfer": {
+      "revision": "86829d322795609367de86c5d5342c5a094f36224a454fe865c4867a188712d4",
+      "status": "passed",
+      "jobId": "ci-0017",
+      "entryExists": true
+    },
+    "http": {
+      "revision": "6d7ef54ae0f859642f5094ccdc42afbae89500b51cd5fa1ba4810759aa9191e5",
+      "status": "passed",
+      "jobId": "ci-0023",
+      "entryExists": true
+    },
+    "cli": {
+      "revision": "f9f474c9bf23db965254b34d69df8af0d138078acbbbeeca0cfe81b2b7feeede",
+      "status": "passed",
+      "jobId": "ci-0021",
+      "entryExists": true
+    }
+  },
+  "correct": true,
+  "piExitCode": 0,
+  "stats": {
+    "sessionId": "51dd3d39-d94d-487e-addd-fe83cd42f8af",
+    "userMessages": 1,
+    "assistantMessages": 21,
+    "toolCalls": 29,
+    "toolResults": 29,
+    "totalMessages": 52,
+    "tokens": {
+      "input": 56899,
+      "output": 10131,
+      "cacheRead": 294528,
+      "cacheWrite": 0,
+      "total": 361558
+    },
+    "cost": 0.24456080000000002,
+    "contextUsage": {
+      "tokens": 36551,
+      "contextWindow": 272000,
+      "percent": 13.437867647058823
+    }
+  },
+  "frozenManifestHash": "4f334b91883e0d89cc58b36d96f96d46e26f7338a5a329fe62dc55c69cd84de4",
+  "cleanup": {
+    "time": "2026-10-07T08:16:19.673Z",
+    "monoMs": 490731450.3285
+  }
+}

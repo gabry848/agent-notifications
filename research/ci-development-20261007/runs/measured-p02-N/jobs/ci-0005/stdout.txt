@@ -1,0 +1,1 @@
+{"passed":true,"groups":["integrity"],"assertions":3,"durationMs":73}

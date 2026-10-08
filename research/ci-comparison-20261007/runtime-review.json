@@ -1,0 +1,34 @@
+{
+  "piVersion": "0.99.2",
+  "provider": "openai-codex",
+  "model": "gpt-6.1-sol",
+  "thinking": "medium",
+  "compactionEnabled": true,
+  "verifiedAt": "2026-10-07",
+  "files": [
+    {
+      "path": "src/http.mjs",
+      "sha256": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760"
+    },
+    {
+      "path": "src/notification-context.mjs",
+      "sha256": "4192d234844aca40ee49c0bd6883c18884242e25ab1dd9c211fb0c9052b88f9c"
+    },
+    {
+      "path": "src/pi-extension.ts",
+      "sha256": "f63002aacc2814eb7643ba29cdccd340d4db26d71ca9d4502a4ec061c833eaeb"
+    },
+    {
+      "path": "src/store.mjs",
+      "sha256": "050bb0f524589a3064fc0e7625c86ab2e4d3359db6fe64302411f0d6b577c06a"
+    },
+    {
+      "path": "prompts/v2.txt",
+      "sha256": "867fdd05c1f8c791436d26de3996bbe858adea3512ef9a2ec049db0f9d361a40"
+    },
+    {
+      "path": "research/ci-comparison-20261007/protocol.md",
+      "sha256": "e3f1486cf3c385e621e315c0158bf55fb256b31f7a4197c046b4c5f49d8984a4"
+    }
+  ]
+}

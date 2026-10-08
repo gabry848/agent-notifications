@@ -1,0 +1,40 @@
+{
+  "id": "ci-0002",
+  "group": "csv",
+  "revision": "703b07c09393fdc17c6027e508a6b6a3b704bce9254113849cd9c64d5cda1a2f",
+  "status": "failed",
+  "queueMs": 30000,
+  "trigger": "initial",
+  "sourceHashes": {
+    "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d"
+  },
+  "queued": {
+    "time": "2026-10-07T09:18:29.272Z",
+    "monoMs": 494461149.795208
+  },
+  "sourceFiles": [
+    "src/csv.mjs"
+  ],
+  "started": {
+    "time": "2026-10-07T09:18:59.273Z",
+    "monoMs": 494491151.860958
+  },
+  "completed": {
+    "time": "2026-10-07T09:18:59.317Z",
+    "monoMs": 494491195.370458
+  },
+  "classification": "source_failure",
+  "result": {
+    "passed": false,
+    "group": "csv",
+    "assertions": 1,
+    "durationMs": 1,
+    "error": "quoted CSV commas, escaped quote, newline: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    [\n+     '\"a',\n+     'b\"',\n+     '\"c\"\"d\"'\n-     'a,b',\n-     'c\"d'\n    ],\n    [\n+     '\"line'\n+   ],\n+   [\n+     'break\"',\n-     'line\\nbreak',\n      'tail'\n    ]\n  ]\n"
+  },
+  "exitCode": 1,
+  "staleAtCompletion": false,
+  "published": {
+    "time": "2026-10-07T09:18:59.317Z",
+    "monoMs": 494491195.802208
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "runId": "measured-p1-N-a1",
+  "generatedAt": "2026-10-08T14:23:33.079Z",
+  "frozenManifestSha256": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+  "checks": {
+    "frozenManifest": true,
+    "snapshots": true,
+    "requiredCI": true,
+    "lockedInputs": true,
+    "oracle": true,
+    "rawAccounting": true,
+    "exposureIntervals": true,
+    "noPackagedAuth": true
+  },
+  "passed": true,
+  "snapshots": [
+    {
+      "jobId": "job-1",
+      "suite": "legacy_smoke",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 20000,
+      "actualQueueMs": 20001.616500020027,
+      "ordered": true
+    },
+    {
+      "jobId": "job-2",
+      "suite": "legacy_integrity",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 60000,
+      "actualQueueMs": 60001.063040971756,
+      "ordered": true
+    },
+    {
+      "jobId": "job-3",
+      "suite": "storage",
+      "revision": "5ef21cd159f19b8ccd951deb51360234ecc08f46dba6dd4e451be001d8caef50",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 30000,
+      "actualQueueMs": 30001.54641699791,
+      "ordered": true
+    },
+    {
+      "jobId": "job-4",
+      "suite": "mcp",
+      "revision": "57003877b85a6d3ca185c36fdf81dab96c7e035a38737303c6312cf37f27bc5c",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 60000,
+      "actualQueueMs": 60002.675292015076,
+      "ordered": true
+    },
+    {
+      "jobId": "job-5",
+      "suite": "web",
+      "revision": "d4961c952b689ce3bcdf3574b1af413850dfd85b5db0701b46bc3103d9269c02",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 45000,
+      "actualQueueMs": 45000.10799998045,
+      "ordered": true
+    },
+    {
+      "jobId": "job-6",
+      "suite": "storage",
+      "revision": "d4961c952b689ce3bcdf3574b1af413850dfd85b5db0701b46bc3103d9269c02",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 30000,
+      "actualQueueMs": 30001.493291020393,
+      "ordered": true
+    }
+  ],
+  "required": [
+    {
+      "suite": "storage",
+      "passed": true
+    },
+    {
+      "suite": "mcp",
+      "passed": true
+    },
+    {
+      "suite": "web",
+      "passed": true
+    }
+  ],
+  "locked": [
+    {
+      "file": "CONTRACT.md",
+      "passed": true
+    },
+    {
+      "file": "package.json",
+      "passed": true
+    },
+    {
+      "file": "test/smoke.test.mjs",
+      "passed": true
+    }
+  ],
+  "accounting": {
+    "httpAttempts": 22,
+    "numericResponses": 22,
+    "piResponses": 22,
+    "input": 460217,
+    "output": 11729,
+    "cached": 418304,
+    "responses": [
+      {
+        "responseId": "resp_07c546acfadf4154016ac60cd600a88191b3c22998237b7975",
+        "input": 2197,
+        "output": 35,
+        "cached": 0,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60cd9b7d08191872ce4a4adc36d66",
+        "input": 2475,
+        "output": 140,
+        "cached": 2048,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60cdea68081919c7853a6825a931d",
+        "input": 4770,
+        "output": 1465,
+        "cached": 2304,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60d0120e48191b4e0d4b45f6f1aff",
+        "input": 6567,
+        "output": 315,
+        "cached": 4608,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60d0a7d7c8191a61f78f08a766e4b",
+        "input": 7214,
+        "output": 19,
+        "cached": 6400,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60d0d52148191b1109499de681275",
+        "input": 7680,
+        "output": 217,
+        "cached": 7040,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60d16ff9c8191bd534a9cf26f01fd",
+        "input": 9658,
+        "output": 1498,
+        "cached": 7552,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60d381ad48191b83faef03b226c20",
+        "input": 13184,
+        "output": 54,
+        "cached": 9472,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60d3b62a88191ab7e386a200fc03f",
+        "input": 19371,
+        "output": 20,
+        "cached": 13056,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60d3f612c81919b3666d113eaf9c2",
+        "input": 19460,
+        "output": 2768,
+        "cached": 19200,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60d7ea7e08191885c6b810b35a57d",
+        "input": 22631,
+        "output": 209,
+        "cached": 19328,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60d8572708191b362379fc6054eda",
+        "input": 23249,
+        "output": 19,
+        "cached": 22528,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60d8886d481918f1b5d0acfade2de",
+        "input": 23795,
+        "output": 1142,
+        "cached": 23168,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60da83ed48191b57e6339ac8cc7d4",
+        "input": 25341,
+        "output": 2301,
+        "cached": 23680,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60dde31a481919ebc8c917f401e33",
+        "input": 28441,
+        "output": 23,
+        "cached": 25216,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60de2f448819185b22d5df3cc59d2",
+        "input": 29637,
+        "output": 127,
+        "cached": 28288,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60deaba4c81918d4fc02669fa2cff",
+        "input": 30569,
+        "output": 1023,
+        "cached": 29440,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60e09626c819189ac202cfdb55b10",
+        "input": 32388,
+        "output": 63,
+        "cached": 30464,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60e0ec0f881918e212426ab5c3b8d",
+        "input": 36721,
+        "output": 74,
+        "cached": 32256,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60e1632308191be870f1b3c95ab53",
+        "input": 37000,
+        "output": 108,
+        "cached": 36608,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60e34925481918016b65e92619a97",
+        "input": 38890,
+        "output": 20,
+        "cached": 36864,
+        "passed": true
+      },
+      {
+        "responseId": "resp_07c546acfadf4154016ac60e370e508191b6a529406a910769",
+        "input": 38979,
+        "output": 89,
+        "cached": 38784,
+        "passed": true
+      }
+    ]
+  },
+  "exposures": [
+    {
+      "eventId": "ci-event-1",
+      "firstExposureMs": 23021.33037495613,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-2",
+      "firstExposureMs": 5124.736957967281,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-3",
+      "firstExposureMs": 12308.209500014782,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-4",
+      "firstExposureMs": 5961.386541962624,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-5",
+      "firstExposureMs": 40132.77591699362,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-6",
+      "firstExposureMs": 41.45558398962021,
+      "exposed": true,
+      "nonnegative": true
+    }
+  ]
+}

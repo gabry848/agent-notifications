@@ -1,0 +1,53 @@
+{
+  "id": "ci-0019",
+  "group": "http",
+  "revision": "97e735619608e443a8c919b44c4186b95827ef962edbec5ffa3cf8d5cad9b865",
+  "status": "passed",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/catalog.mjs": "1070349625bfb658070bc948b4709570cf86c196d9c5910ebb3eaef1d769b6d9",
+    "src/csv.mjs": "91febb89727e1b1a7da8ed812a4ca785b5fddb81869a96190c1568b2b0b87cfc",
+    "src/graph.mjs": "5c03d7142c705dc6a9247c5d1175e1b17654faa5e54e3e9b2fff0a617a4ef3b6",
+    "src/search.mjs": "7aab1e336695e175566b936c9a8608c7b34faf424b42f6477581c6d461538816",
+    "src/server.mjs": "e3b5e8dd6fedb394f52b546686499df78b87f059a1efc2fe26dadc2268986218",
+    "src/transfer.mjs": "3420f80bd490f9fc0a20999c5b46bfef26fdb7e40cbbe0e47d13554ee61cd934",
+    "src/version.mjs": "4b7e09e827cbf772e6e50a08a3780d83f97d0ea23b7b809915da916e302e117a"
+  },
+  "queued": {
+    "time": "2026-10-07T08:51:59.894Z",
+    "monoMs": 492871779.28
+  },
+  "sourceFiles": [
+    "src/catalog.mjs",
+    "src/csv.mjs",
+    "src/graph.mjs",
+    "src/search.mjs",
+    "src/server.mjs",
+    "src/transfer.mjs",
+    "src/version.mjs"
+  ],
+  "started": {
+    "time": "2026-10-07T08:52:09.898Z",
+    "monoMs": 492881782.879
+  },
+  "completed": {
+    "time": "2026-10-07T08:52:09.998Z",
+    "monoMs": 492881882.766291
+  },
+  "classification": "passed",
+  "result": {
+    "passed": true,
+    "groups": [
+      "http"
+    ],
+    "assertions": 18,
+    "durationMs": 61
+  },
+  "exitCode": 0,
+  "staleAtCompletion": false,
+  "published": {
+    "time": "2026-10-07T08:52:09.998Z",
+    "monoMs": 492881883.350875
+  }
+}

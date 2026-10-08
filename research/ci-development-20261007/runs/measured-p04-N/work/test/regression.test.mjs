@@ -1,0 +1,106 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,readFile,writeFile,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {once} from 'node:events';
+import {parseCSV,stringifyCSV} from '../src/csv.mjs';
+import {parseVersion,compareVersions} from '../src/version.mjs';
+import {createCatalog} from '../src/catalog.mjs';
+import {searchRecords} from '../src/search.mjs';
+import {planDependencies,reverseDependencies} from '../src/graph.mjs';
+import {exportCSV,importCSV,exportNDJSON,importNDJSON} from '../src/transfer.mjs';
+import {createServer} from '../src/server.mjs';
+const record=(id,extra={})=>({id,name:id,version:'1.0.0',tags:[],dependencies:[],...extra});
+test('CSV quoting, whitespace, empty fields, and malformed syntax',()=>{
+  const rows=[[' a ','b,c','d"e','line\r\nbreak',''],['','tail']];
+  assert.deepEqual(parseCSV(stringifyCSV(rows)+'\r\n'),rows);
+  assert.deepEqual(parseCSV(''),[]);
+  assert.deepEqual(parseCSV(',\n'),[['','']]);
+  for(const text of ['"unclosed','a"b','"a"x']) assert.throws(()=>parseCSV(text));
+});
+test('semantic versions include hyphens and exact large numeric ordering',()=>{
+  assert.deepEqual(parseVersion('1.2.3-alpha-beta.2').prerelease,['alpha-beta','2']);
+  const ordered=['1.0.0-alpha','1.0.0-alpha.2','1.0.0-alpha.10','1.0.0-beta','1.0.0','2.0.0'];
+  for(let i=1;i<ordered.length;i++) assert.equal(compareVersions(ordered[i-1],ordered[i]),-1);
+  assert.equal(compareVersions('9007199254740992.0.0','9007199254740993.0.0'),-1);
+  for(const v of ['01.0.0','1.2','1.2.3+build','1.2.3-01','1.2.3-']) assert.throws(()=>parseVersion(v));
+});
+test('catalog isolates callers and rolls back all writes on failure',()=>{
+  const source=record(' a ',{tags:[' TOOLS ','tools','','Web'],dependencies:['b','b']});
+  const c=createCatalog([source]);source.tags.push('new');
+  assert.deepEqual(c.get('a').tags,['tools','web']);
+  const out=c.get('a');out.dependencies.push('c');assert.deepEqual(c.get('a').dependencies,['b']);
+  const before=c.list();
+  assert.throws(()=>c.applyBatch([{type:'update',id:'a',patch:{name:'Changed'}},{type:'add',record:record('a')}]));
+  assert.deepEqual(c.list(),before);
+  assert.throws(()=>c.update('a',{id:'other'}));
+  assert.throws(()=>c.update('missing',{}));
+});
+test('search semantic filtering, stable tie breaks, paging and isolation',()=>{
+  const records=[record('b',{name:'Same',version:'1.10.0',tags:['tools']}),record('a',{name:'Same',version:'1.2.0',tags:['tools']})];
+  const before=structuredClone(records);
+  assert.deepEqual(searchRecords(records,{sortBy:'name',order:'desc'}).items.map(r=>r.id),['a','b']);
+  assert.equal(searchRecords(records,{text:' SAME ',tags:[' Tools '],versionMin:'1.3.0'}).items[0].id,'b');
+  assert.equal(searchRecords(records,{offset:1,limit:1}).total,2);
+  assert.throws(()=>searchRecords(records,{limit:0}));
+  searchRecords(records).items[0].tags.push('x');assert.deepEqual(records,before);
+});
+test('graph honors DFS order, diamonds, cycles and missing nodes',()=>{
+  const records=[record('a',{dependencies:['c','b']}),record('b',{dependencies:['d']}),record('c',{dependencies:['d']}),record('d')];
+  assert.deepEqual(planDependencies(records,['a','b']),['d','c','b','a']);
+  assert.deepEqual(reverseDependencies(records,'d'),['a','b','c']);
+  assert.throws(()=>planDependencies([record('a',{dependencies:['missing']})],['a']),/missing/);
+  assert.throws(()=>planDependencies([record('a',{dependencies:['b']}),record('b',{dependencies:['a']})],['a']),/cycle.*a.*b/);
+});
+test('CSV and NDJSON imports are atomic; UTF-8 may split at every byte',async()=>{
+  const records=[record('a',{name:'Café 😀, "quoted"\nname',tags:['tools']}),record('b')];
+  const csvCatalog=createCatalog();assert.deepEqual(importCSV(exportCSV(records),csvCatalog),records);
+  const before=csvCatalog.list();assert.throws(()=>importCSV(exportCSV([record('c'),record('a')]),csvCatalog));assert.deepEqual(csvCatalog.list(),before);
+  let text='';for await(const line of exportNDJSON(records)) text+=line;
+  const bytes=Buffer.from(text.trimEnd());
+  async function* chunks() {for(const byte of bytes) yield Buffer.from([byte]);}
+  const c=createCatalog();assert.deepEqual(await importNDJSON(chunks(),c),records);
+  await assert.rejects(importNDJSON([JSON.stringify(record('c'))+'\n{bad}\n'],c));assert.deepEqual(c.list(),records);
+  await assert.rejects(importNDJSON([JSON.stringify(record('c'))+'\n'+JSON.stringify(record('bad',{version:'oops'}))],c));assert.deepEqual(c.list(),records);
+});
+test('HTTP CRUD, encoded ids, imports, errors and body limits',async t=>{
+  const c=createCatalog(),server=createServer(c);server.listen(0,'127.0.0.1');await once(server,'listening');
+  t.after(()=>new Promise(resolve=>server.close(resolve)));
+  const base='http://127.0.0.1:'+server.address().port;
+  const request=(path,method='GET',body)=>fetch(base+path,{method,body});
+  assert.deepEqual(await (await request('/health')).json(),{ok:true});
+  const r=record('a/b');assert.equal((await request('/records','POST',JSON.stringify(r))).status,201);
+  assert.equal((await request('/records','POST',JSON.stringify(r))).status,409);
+  assert.equal((await request('/records/a%2Fb')).status,200);
+  assert.equal((await request('/records/a%2Fb','PATCH','{"name":"New"}')).status,200);
+  assert.equal((await request('/records?limit=0')).status,400);
+  assert.equal((await request('/records','POST','{bad')).status,400);
+  assert.equal((await request('/records','POST','x'.repeat(1024*1024+1))).status,413);
+  assert.equal((await request('/records/missing')).status,404);
+  assert.equal((await request('/unknown')).status,404);
+  assert.equal((await request('/import.ndjson','POST',JSON.stringify(record('b'))+'\n')).status,201);
+  assert.deepEqual(await (await request('/plan?ids=b')).json(),{ids:['b']});
+  assert.match(await (await request('/export.csv')).text(),/^id,name,version,tags,dependencies/);
+  assert.match((await request('/export.ndjson')).headers.get('content-type'),/application\/x-ndjson/);
+  assert.equal((await request('/records/a%2Fb','DELETE')).status,204);
+});
+test('CLI persists atomically and failures preserve exact file bytes',async t=>{
+  const dir=await mkdtemp(join(tmpdir(),'catalog-'));t.after(()=>rm(dir,{recursive:true,force:true}));
+  const file=join(dir,'data.json');
+  const cli=(...args)=>spawnSync(process.execPath,['src/cli.mjs',...args],{encoding:'utf8'});
+  assert.equal(cli('list','--file',file).status,0);
+  assert.equal(cli('add','--file',file,'--record',JSON.stringify(record('a'))).status,0);
+  const before=await readFile(file,'utf8');
+  assert.notEqual(cli('add','--file',file,'--record',JSON.stringify(record('a'))).status,0);
+  assert.equal(await readFile(file,'utf8'),before);
+  const input=join(dir,'bad.csv');await writeFile(input,exportCSV([record('b'),record('a')]));
+  assert.notEqual(cli('import-csv','--file',file,'--input',input).status,0);
+  assert.equal(await readFile(file,'utf8'),before);
+  assert.deepEqual(JSON.parse(cli('plan','--file',file,'--ids','a').stdout),{ids:['a']});
+  assert.match(cli('export-csv','--file',file).stdout,/id,name,version,tags,dependencies/);
+  assert.equal(cli('remove','--file',file,'--id','a').status,0);
+  assert.deepEqual(JSON.parse(await readFile(file,'utf8')),[]);
+  assert.notEqual(cli('list').status,0);
+});

@@ -1,0 +1,53 @@
+{
+  "suite": "mcp",
+  "seed": 7100,
+  "passed": false,
+  "checks": [
+    {
+      "name": "official MCP SDK compatibility",
+      "passed": true
+    },
+    {
+      "name": "standard initialize and notifications",
+      "passed": true
+    },
+    {
+      "name": "all tool descriptors",
+      "passed": true
+    },
+    {
+      "name": "external CRUD/tag client",
+      "passed": true
+    },
+    {
+      "name": "read resource",
+      "passed": true
+    },
+    {
+      "name": "invalid calls and unknown methods",
+      "passed": true
+    },
+    {
+      "name": "atomic import and portable export",
+      "passed": true
+    },
+    {
+      "name": "later invalid tags leave no earlier imported records",
+      "passed": false,
+      "failureKind": "assertion",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  {\n    notes: [\n      {\n        tags: [\n          'sdk'\n...\n      },\n+     {\n+       tags: [\n+         'valid'\n+       ],\n+       text: 'must not persist'\n+     }\n    ],\n    version: 1\n  }\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:43:384\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:35)\n    at async file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:43:5"
+    },
+    {
+      "name": "seeded client calls across restarts",
+      "passed": true
+    }
+  ],
+  "failures": [
+    {
+      "name": "later invalid tags leave no earlier imported records",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  {\n    notes: [\n      {\n        tags: [\n          'sdk'\n...\n      },\n+     {\n+       tags: [\n+         'valid'\n+       ],\n+       text: 'must not persist'\n+     }\n    ],\n    version: 1\n  }\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:43:384\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:13:35)\n    at async file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/ci-worker.mjs:43:5"
+    }
+  ],
+  "exitCode": 1,
+  "wallMs": 307
+}

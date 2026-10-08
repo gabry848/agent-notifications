@@ -1,0 +1,22 @@
+{
+  "id": "ci-0008",
+  "group": "integrity",
+  "revision": "0e1ceae93effd50e229af9a052061a5feb5600b6f1635c9f57fe8a4ca64cb707",
+  "status": "queued",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+    "src/csv.mjs": "cc5795e7a338d9dfab7bc4a77821eee6170cac4de508339075f802eddaef9773",
+    "src/version.mjs": "fc01867280e2880f8d0f859ca8a6822c58776ed82adf909e1f10538458b3f14d"
+  },
+  "queued": {
+    "time": "2026-10-07T08:24:54.504Z",
+    "monoMs": 491246274.229958
+  },
+  "sourceFiles": [
+    "src/catalog.mjs",
+    "src/csv.mjs",
+    "src/version.mjs"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "exit": 0,
+  "passed": true,
+  "groups": [
+    "integrity"
+  ],
+  "assertions": 3,
+  "durationMs": 59
+}

@@ -1,0 +1,245 @@
+{
+  "generatedAt": "2026-10-08T14:23:33.110Z",
+  "auditRevision": "e32dd950db2e296afe0dbc5fee1458fe94972c3a89e7a0337ff14f5159b3b426",
+  "frozenInputs": [
+    {
+      "file": "contract.md",
+      "passed": true
+    },
+    {
+      "file": "plan.md",
+      "passed": true
+    },
+    {
+      "file": "bench-extension.ts",
+      "passed": true
+    },
+    {
+      "file": "runtime.mjs",
+      "passed": true
+    },
+    {
+      "file": "run.mjs",
+      "passed": true
+    },
+    {
+      "file": "ci-worker.mjs",
+      "passed": true
+    },
+    {
+      "file": "clients.mjs",
+      "passed": true
+    },
+    {
+      "file": "oracle.mjs",
+      "passed": true
+    },
+    {
+      "file": "freeze.mjs",
+      "passed": true
+    },
+    {
+      "file": "preflight.mjs",
+      "passed": true
+    },
+    {
+      "file": "offline-provider.ts",
+      "passed": true
+    },
+    {
+      "file": "../../src/pi-extension.ts",
+      "passed": true
+    },
+    {
+      "file": "../../src/store.mjs",
+      "passed": true
+    },
+    {
+      "file": "../../src/http.mjs",
+      "passed": true
+    },
+    {
+      "file": "../../src/notification-context.mjs",
+      "passed": true
+    },
+    {
+      "file": "../../prompts/v2.txt",
+      "passed": true
+    },
+    {
+      "file": "scaffold/package.json",
+      "passed": true
+    },
+    {
+      "file": "scaffold/src/import.mjs",
+      "passed": true
+    },
+    {
+      "file": "scaffold/src/store.mjs",
+      "passed": true
+    },
+    {
+      "file": "scaffold/test/smoke.test.mjs",
+      "passed": true
+    },
+    {
+      "file": "reference/src/import.mjs",
+      "passed": true
+    },
+    {
+      "file": "reference/src/mcp.mjs",
+      "passed": true
+    },
+    {
+      "file": "reference/src/store.mjs",
+      "passed": true
+    },
+    {
+      "file": "reference/src/web.mjs",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "runs": [
+    {
+      "runId": "measured-p1-N-a1",
+      "passed": true,
+      "checks": {
+        "frozenManifest": true,
+        "snapshots": true,
+        "requiredCI": true,
+        "lockedInputs": true,
+        "oracle": true,
+        "rawAccounting": true,
+        "exposureIntervals": true,
+        "noPackagedAuth": true
+      }
+    },
+    {
+      "runId": "measured-p1-PA-a1",
+      "passed": true,
+      "checks": {
+        "frozenManifest": true,
+        "snapshots": true,
+        "requiredCI": true,
+        "lockedInputs": true,
+        "oracle": true,
+        "rawAccounting": true,
+        "exposureIntervals": true,
+        "noPackagedAuth": true
+      }
+    },
+    {
+      "runId": "measured-p2-N-a1",
+      "passed": true,
+      "checks": {
+        "frozenManifest": true,
+        "snapshots": true,
+        "requiredCI": true,
+        "lockedInputs": true,
+        "oracle": true,
+        "rawAccounting": true,
+        "exposureIntervals": true,
+        "noPackagedAuth": true
+      }
+    },
+    {
+      "runId": "measured-p2-PA-a1",
+      "passed": true,
+      "checks": {
+        "frozenManifest": true,
+        "snapshots": true,
+        "requiredCI": true,
+        "lockedInputs": true,
+        "oracle": true,
+        "rawAccounting": true,
+        "exposureIntervals": true,
+        "noPackagedAuth": true
+      }
+    },
+    {
+      "runId": "measured-p3-N-a1",
+      "passed": true,
+      "checks": {
+        "frozenManifest": true,
+        "snapshots": true,
+        "requiredCI": true,
+        "lockedInputs": true,
+        "oracle": true,
+        "rawAccounting": true,
+        "exposureIntervals": true,
+        "noPackagedAuth": true
+      }
+    },
+    {
+      "runId": "measured-p3-PA-a1",
+      "passed": true,
+      "checks": {
+        "frozenManifest": true,
+        "snapshots": true,
+        "requiredCI": true,
+        "lockedInputs": true,
+        "oracle": true,
+        "rawAccounting": true,
+        "exposureIntervals": true,
+        "noPackagedAuth": true
+      }
+    },
+    {
+      "runId": "measured-p4-N-a1",
+      "passed": true,
+      "checks": {
+        "frozenManifest": true,
+        "snapshots": true,
+        "requiredCI": true,
+        "lockedInputs": true,
+        "oracle": true,
+        "rawAccounting": true,
+        "exposureIntervals": true,
+        "noPackagedAuth": true
+      }
+    },
+    {
+      "runId": "measured-p4-PA-a1",
+      "passed": true,
+      "checks": {
+        "frozenManifest": true,
+        "snapshots": true,
+        "requiredCI": true,
+        "lockedInputs": true,
+        "oracle": true,
+        "rawAccounting": true,
+        "exposureIntervals": true,
+        "noPackagedAuth": true
+      }
+    },
+    {
+      "runId": "measured-p5-N-a1",
+      "passed": true,
+      "checks": {
+        "frozenManifest": true,
+        "snapshots": true,
+        "requiredCI": true,
+        "lockedInputs": true,
+        "oracle": true,
+        "rawAccounting": true,
+        "exposureIntervals": true,
+        "noPackagedAuth": true
+      }
+    },
+    {
+      "runId": "measured-p5-PA-a1",
+      "passed": true,
+      "checks": {
+        "frozenManifest": true,
+        "snapshots": true,
+        "requiredCI": true,
+        "lockedInputs": true,
+        "oracle": true,
+        "rawAccounting": true,
+        "exposureIntervals": true,
+        "noPackagedAuth": true
+      }
+    }
+  ]
+}

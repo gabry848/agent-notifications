@@ -1,0 +1,30 @@
+{
+  "id": "ci-0027",
+  "group": "http",
+  "revision": "203ab26068142ee0f3b9e417c84716462ba0cf219cbd8f02df76d58ed997bcbd",
+  "status": "queued",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/catalog.mjs": "b70556ad39615842992f573aaf7df002b30b49e84f4fb8304f82345638c61712",
+    "src/csv.mjs": "cb96efab63f8d1cc8c2a353b72d10e1ba43a4109c4519f6875cb45a64907d759",
+    "src/graph.mjs": "0500964b613b56f70ff3487cec18fdcf97680d8b4c97da4149de8e4ef810a65a",
+    "src/search.mjs": "70daee7e5489793af76f1dbdbb4dc784ffb83a5853bd73c1fbbbf1b181cadf7f",
+    "src/server.mjs": "4366ff788b931fdb4064a4d01ceeaa881838b545ca31d058e1d21b4afb6e611f",
+    "src/transfer.mjs": "8a4025313388823ed904cb8c09652a2888a8a2e0e7d31ecdf349a387ffb36620",
+    "src/version.mjs": "f4f0eb7b50069b4757fb787c0175fee442e7541353e2d8a178e2d335324b0332"
+  },
+  "queued": {
+    "time": "2026-10-07T12:35:25.307Z",
+    "monoMs": 506277129.909708
+  },
+  "sourceFiles": [
+    "src/catalog.mjs",
+    "src/csv.mjs",
+    "src/graph.mjs",
+    "src/search.mjs",
+    "src/server.mjs",
+    "src/transfer.mjs",
+    "src/version.mjs"
+  ]
+}

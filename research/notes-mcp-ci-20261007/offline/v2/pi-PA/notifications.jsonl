@@ -1,0 +1,13 @@
+{"time":"2026-10-07T08:26:13.659Z","monoMs":491325451.081291,"type":"session_selected","url":"http://127.0.0.1:49843","sessionId":"01a11578-62d6-73dc-9c52-c350174bda74","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/offline/v2/pi-PA/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-07T08:26:13.659Z","monoMs":491325451.156166,"type":"server_ready","url":"http://127.0.0.1:49843","sessionId":"01a11578-62d6-73dc-9c52-c350174bda74","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/offline/v2/pi-PA/notifications.sqlite"}
+{"time":"2026-10-07T08:26:13.682Z","monoMs":491325473.924208,"type":"notification_received","notification":{"id":"notif_42abf912-fb7a-4182-a78b-aab8e79d254c","sessionId":"01a11578-62d6-73dc-9c52-c350174bda74","source":"CI","message":"{\"eventId\":\"ci-event-1\",\"sequence\":1,\"jobId\":\"offline-job\",\"suite\":\"storage\",\"revision\":\"offline-revision\",\"status\":\"failed\",\"summary\":\"offline transport check\",\"failures\":[{\"name\":\"external fixture\",\"error\":\"fixture\"}]}","createdAt":"2026-10-07T08:26:13.681Z","firstVisibleCall":null,"dismissedAt":null},"lastContextCall":0}
+{"time":"2026-10-07T08:26:13.715Z","monoMs":491325507.65075,"type":"provider_request","attempt":1}
+{"time":"2026-10-07T08:26:13.717Z","monoMs":491325509.5265,"type":"provider_response","status":200}
+{"time":"2026-10-07T08:26:13.728Z","monoMs":491325520.00075,"type":"provider_request","attempt":2}
+{"time":"2026-10-07T08:26:13.728Z","monoMs":491325520.521791,"type":"provider_response","status":200}
+{"time":"2026-10-07T08:26:13.731Z","monoMs":491325523.23975,"type":"provider_request","attempt":3}
+{"time":"2026-10-07T08:26:13.731Z","monoMs":491325523.659458,"type":"provider_response","status":200}
+{"time":"2026-10-07T08:26:13.733Z","monoMs":491325525.890625,"type":"provider_request","attempt":4}
+{"time":"2026-10-07T08:26:13.734Z","monoMs":491325526.363666,"type":"provider_response","status":200}
+{"time":"2026-10-07T08:26:13.736Z","monoMs":491325528.3965,"type":"provider_request","attempt":5}
+{"time":"2026-10-07T08:26:13.736Z","monoMs":491325528.855708,"type":"provider_response","status":200}

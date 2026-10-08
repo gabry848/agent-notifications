@@ -1,0 +1,248 @@
+{
+  "runId": "measured-p4-N-a1",
+  "generatedAt": "2026-10-08T14:23:33.099Z",
+  "frozenManifestSha256": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+  "checks": {
+    "frozenManifest": true,
+    "snapshots": true,
+    "requiredCI": true,
+    "lockedInputs": true,
+    "oracle": true,
+    "rawAccounting": true,
+    "exposureIntervals": true,
+    "noPackagedAuth": true
+  },
+  "passed": true,
+  "snapshots": [
+    {
+      "jobId": "job-1",
+      "suite": "legacy_smoke",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 20000,
+      "actualQueueMs": 20000.93974995613,
+      "ordered": true
+    },
+    {
+      "jobId": "job-2",
+      "suite": "legacy_integrity",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 60000,
+      "actualQueueMs": 60002.565875053406,
+      "ordered": true
+    },
+    {
+      "jobId": "job-3",
+      "suite": "storage",
+      "revision": "37457a059aafba3d68160808ca6002c4817dd83f725d9717da97c95932766266",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 30000,
+      "actualQueueMs": 30000.502332925797,
+      "ordered": true
+    },
+    {
+      "jobId": "job-4",
+      "suite": "mcp",
+      "revision": "1baedd03637228d8f02f0eaba801aa311b8d676d5f9013c1f05fcf815dd94656",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 60000,
+      "actualQueueMs": 60001.71754205227,
+      "ordered": true
+    },
+    {
+      "jobId": "job-5",
+      "suite": "web",
+      "revision": "98b39def0f04574c169092fcacbd305cc0d4062d0003839caa1ea50fd5fe77bd",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 45000,
+      "actualQueueMs": 45000.97699999809,
+      "ordered": true
+    }
+  ],
+  "required": [
+    {
+      "suite": "storage",
+      "passed": true
+    },
+    {
+      "suite": "mcp",
+      "passed": true
+    },
+    {
+      "suite": "web",
+      "passed": true
+    }
+  ],
+  "locked": [
+    {
+      "file": "CONTRACT.md",
+      "passed": true
+    },
+    {
+      "file": "package.json",
+      "passed": true
+    },
+    {
+      "file": "test/smoke.test.mjs",
+      "passed": true
+    }
+  ],
+  "accounting": {
+    "httpAttempts": 15,
+    "numericResponses": 15,
+    "piResponses": 15,
+    "input": 198321,
+    "output": 10623,
+    "cached": 160128,
+    "responses": [
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a1b8aed48191959eb23f0c709b86",
+        "input": 2197,
+        "output": 35,
+        "cached": 0,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a1bee2148191adbb7203baabdf6c",
+        "input": 2475,
+        "output": 140,
+        "cached": 0,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a1c525908191bdd8fde4581768ea",
+        "input": 4770,
+        "output": 1360,
+        "cached": 0,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a1ea00548191b71d8c01f4c138c7",
+        "input": 6462,
+        "output": 269,
+        "cached": 0,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a1f2d0648191b1f451b8412e3398",
+        "input": 7063,
+        "output": 19,
+        "cached": 6272,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a1f5e1a88191b34cdc8eb583cd13",
+        "input": 8956,
+        "output": 1302,
+        "cached": 6912,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a214f43c8191b3f2fd1b52c488af",
+        "input": 12289,
+        "output": 123,
+        "cached": 8832,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a21ad79481918f032f99d0e0190f",
+        "input": 12707,
+        "output": 2231,
+        "cached": 12160,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a25849a8819184b99f28303829df",
+        "input": 15312,
+        "output": 19,
+        "cached": 12544,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a25b521881919b6842f52f84f53b",
+        "input": 15824,
+        "output": 1231,
+        "cached": 15232,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a27ca7308191afa1c170e3f86a10",
+        "input": 17430,
+        "output": 2367,
+        "cached": 15744,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a2b6a4f88191bc7ba387302fb6f4",
+        "input": 20541,
+        "output": 27,
+        "cached": 17280,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a2ba5564819190c87d6efad41c83",
+        "input": 21495,
+        "output": 1277,
+        "cached": 20352,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a2e488d48191b22c39ad2da6db62",
+        "input": 23513,
+        "output": 130,
+        "cached": 21376,
+        "passed": true
+      },
+      {
+        "responseId": "resp_05ed47db7233e4de016ac7a2eb24488191a4588b78aecc41f3",
+        "input": 27287,
+        "output": 93,
+        "cached": 23424,
+        "passed": true
+      }
+    ]
+  },
+  "exposures": [
+    {
+      "eventId": "ci-event-1",
+      "firstExposureMs": 29804.881624937057,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-2",
+      "firstExposureMs": 1749.8723330497742,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-3",
+      "firstExposureMs": 669.1326251029968,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-4",
+      "firstExposureMs": 1243.8698329925537,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-5",
+      "firstExposureMs": 45982.06829202175,
+      "exposed": true,
+      "nonnegative": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "workloadId": "ci-development-20261007-v1",
+  "taskAndRuntimeUnchanged": true,
+  "currentAnalysisHash": "9d179ae5a394784976d7ff3d8d52b043640f812cc46d858e8771ab1ab6ce5e60",
+  "reasons": [
+    "Deduplicate only numeric terminal usage frames",
+    "Add paired median/min-max/IQR separately from ratio-of-means",
+    "Separate staleness at publication and first exposure; exclude repaired-before-exposure failures from reaction attribution"
+  ],
+  "preservedVersions": [
+    {
+      "version": "initial",
+      "manifestHash": "4f334b91883e0d89cc58b36d96f96d46e26f7338a5a329fe62dc55c69cd84de4",
+      "priorAnalysisHash": "174e2c519fa7c0af00379fbf916808d0a9e3f58542c131b237083e9152ce4fcf",
+      "changedSinceThisVersion": [
+        "research/ci-development-20261007/analyze.mjs"
+      ]
+    },
+    {
+      "version": "numeric-usage",
+      "manifestHash": "15599605ff4e0676503efa72dd4508aca486303c81d9864f1a8c2df4a15579a2",
+      "priorAnalysisHash": "378e469581884b282e948dcf509feecf3bc3fe7239b60b7c0dae23b73f0bda7b",
+      "changedSinceThisVersion": [
+        "research/ci-development-20261007/analyze.mjs"
+      ]
+    },
+    {
+      "version": "paired-spread",
+      "manifestHash": "c43f3060cec4990423b194380cd7180a7a0fea6253473ee28d4bdc49d67058e9",
+      "priorAnalysisHash": "450e5144e4872010f9244bf43eccaf4a2626a003a01b5964f6d11f1900534612",
+      "changedSinceThisVersion": [
+        "research/ci-development-20261007/analyze.mjs"
+      ]
+    }
+  ]
+}

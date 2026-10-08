@@ -1,0 +1,15 @@
+✔ explicit cache never marks mutable notifications or current input (0.625542ms)
+✔ at most four endpoints retain the previous history boundary (0.109375ms)
+✔ native cache projection preserves delivered snapshots before growing assistant/tool history (2.502375ms)
+✔ dismiss changes only the last active section; archive stays immutable and history remains (1.028917ms)
+✔ prefix anchors ignore snapshots belonging to a different or compacted history (0.457ms)
+✔ before-input retains old snapshot and old input batch in their original order (0.298167ms)
+✔ repeated context preparation and serialized metadata keep an append-only prefix (0.295083ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 39.854

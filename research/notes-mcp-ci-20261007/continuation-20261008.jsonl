@@ -1,0 +1,16 @@
+{"time":"2026-10-08T13:37:08.134Z","runId":"measured-p2-N-a1","event":"started"}
+{"time":"2026-10-08T13:42:50.273Z","runId":"measured-p2-N-a1","event":"finished","exitCode":0,"completed":true,"totalWallMs":339431.1687499285,"error":null}
+{"time":"2026-10-08T13:42:50.273Z","runId":"measured-p2-PA-a1","event":"started"}
+{"time":"2026-10-08T13:49:32.023Z","runId":"measured-p2-PA-a1","event":"finished","exitCode":0,"completed":true,"totalWallMs":399160.375,"error":null}
+{"time":"2026-10-08T13:49:32.024Z","runId":"measured-p3-PA-a1","event":"started"}
+{"time":"2026-10-08T13:54:15.347Z","runId":"measured-p3-PA-a1","event":"finished","exitCode":0,"completed":true,"totalWallMs":280630.3891659975,"error":null}
+{"time":"2026-10-08T13:54:15.348Z","runId":"measured-p3-N-a1","event":"started"}
+{"time":"2026-10-08T13:59:19.138Z","runId":"measured-p3-N-a1","event":"finished","exitCode":0,"completed":true,"totalWallMs":301072.3243329525,"error":null}
+{"time":"2026-10-08T13:59:19.138Z","runId":"measured-p4-N-a1","event":"started"}
+{"time":"2026-10-08T14:04:35.622Z","runId":"measured-p4-N-a1","event":"finished","exitCode":0,"completed":true,"totalWallMs":313650.83599996567,"error":null}
+{"time":"2026-10-08T14:04:35.622Z","runId":"measured-p4-PA-a1","event":"started"}
+{"time":"2026-10-08T14:11:27.183Z","runId":"measured-p4-PA-a1","event":"finished","exitCode":0,"completed":true,"totalWallMs":408864.55820798874,"error":null}
+{"time":"2026-10-08T14:11:27.183Z","runId":"measured-p5-PA-a1","event":"started"}
+{"time":"2026-10-08T14:16:34.552Z","runId":"measured-p5-PA-a1","event":"finished","exitCode":0,"completed":true,"totalWallMs":304637.5086250305,"error":null}
+{"time":"2026-10-08T14:16:34.553Z","runId":"measured-p5-N-a1","event":"started"}
+{"time":"2026-10-08T14:23:15.468Z","runId":"measured-p5-N-a1","event":"finished","exitCode":0,"completed":true,"totalWallMs":398181.86687505245,"error":null}

@@ -1,0 +1,70 @@
+{
+  "createdAt": "2026-10-07T08:17:00.946Z",
+  "phase": "calibration",
+  "hashes": {
+    "contract.md": "f8b376ecb047dc82387e8af296269edc1f12c606984b2e09e5e7dfe2dd27e8b7",
+    "plan.md": "f57f00201f5de56476a77fb96dd7a638818a273de3549f2205cfb571ffee7bfa",
+    "bench-extension.ts": "f696cbdad4bfda1b5082de6e1c87aa9faa226c7d3eae2f59a2f7225b18c72e9f",
+    "runtime.mjs": "eccee4ba7aa64fbf9461a401656739ebf3be7be047a88b685153121c3830bfbb",
+    "run.mjs": "e88a78d32570a03463e5572019c743df21c17de552e1ccc7f60df780c4ffde75",
+    "ci-worker.mjs": "f3022681679d0e63bfc0572d1abc1025d90d70fe1d8180f046832026af8541d3",
+    "clients.mjs": "9f7f6d2c27e459bcb52f7a4e02d9fe3cb8a8ddf3fef74ab5bd4e4fbb0844fe75",
+    "oracle.mjs": "73e5a595ff10ebb747d51fd9d152bb03fc30d58316d0c65631ead20575d197bc",
+    "freeze.mjs": "faa90f9f8bb622a0a5774af32716538ed04365cfdb6dd0ca37c4804a55bad984",
+    "../../src/pi-extension.ts": "f63002aacc2814eb7643ba29cdccd340d4db26d71ca9d4502a4ec061c833eaeb",
+    "../../src/store.mjs": "050bb0f524589a3064fc0e7625c86ab2e4d3359db6fe64302411f0d6b577c06a",
+    "../../src/http.mjs": "58caa96d0502d51022b452d3b4a037979c712f9526b2d03ca9dea06348ccc760",
+    "../../src/notification-context.mjs": "4192d234844aca40ee49c0bd6883c18884242e25ab1dd9c211fb0c9052b88f9c",
+    "../../prompts/v2.txt": "867fdd05c1f8c791436d26de3996bbe858adea3512ef9a2ec049db0f9d361a40",
+    "scaffold/package.json": "b2af5f484a94937a395c3d85e0005b73ce3d2978310b2c8f520ca72a0afd8de9",
+    "scaffold/src/store.mjs": "ab8952a9540c8f36f22a8deb8c90c922b649c3a030c96f216d0431ff7c59348a",
+    "scaffold/test/smoke.test.mjs": "1124a0b357a89cdf8ec6bc218e4068abd351c3ecebf0dd05cdf98474543a33dc"
+  },
+  "runtime": {
+    "piVersion": "0.99.2",
+    "defaultModel": "gpt-6.1-sol",
+    "defaultProvider": "openai-codex",
+    "defaultThinkingLevel": "medium",
+    "compaction": {
+      "enabled": true
+    },
+    "sdkVersion": "1.32.1"
+  },
+  "queueMs": {
+    "legacy_smoke": 20000,
+    "legacy_integrity": 60000,
+    "storage": 30000,
+    "mcp": 60000,
+    "web": 45000
+  },
+  "calibrationSeed": 7100,
+  "seeds": [
+    7101,
+    7102,
+    7103,
+    7104,
+    7105
+  ],
+  "measuredOrder": [
+    [
+      "PA",
+      "N"
+    ],
+    [
+      "N",
+      "PA"
+    ],
+    [
+      "PA",
+      "N"
+    ],
+    [
+      "N",
+      "PA"
+    ],
+    [
+      "PA",
+      "N"
+    ]
+  ]
+}

@@ -1,0 +1,1194 @@
+{
+  "formula": "100 * (notifications - polling) / polling, per complete correct pair",
+  "aggregation": "Median paired percentage; workloads and calibration kept separate",
+  "workloads": {
+    "development": {
+      "source": "research/ci-development-20261007/metrics.json",
+      "runs": [
+        {
+          "id": "calibration-p01-N",
+          "phase": "calibration",
+          "pair": "p01",
+          "mode": "N",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 328487.00558298826,
+          "http": 21,
+          "total_tokens": 361558,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 21,
+            "numeric_responses": 21,
+            "input_tokens": 351427,
+            "output_tokens": 10131,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "calibration-p01-PA",
+          "phase": "calibration",
+          "pair": "p01",
+          "mode": "PA",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 295360.9305420518,
+          "http": 19,
+          "total_tokens": 187821,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 19,
+            "numeric_responses": 19,
+            "input_tokens": 176405,
+            "output_tokens": 11416,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p01-N",
+          "phase": "measured",
+          "pair": "p01",
+          "mode": "N",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 236625.3272920251,
+          "http": 17,
+          "total_tokens": 240073,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 17,
+            "numeric_responses": 17,
+            "input_tokens": 231232,
+            "output_tokens": 8841,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p01-PA",
+          "phase": "measured",
+          "pair": "p01",
+          "mode": "PA",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 244084.79550004005,
+          "http": 18,
+          "total_tokens": 161237,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 18,
+            "numeric_responses": 18,
+            "input_tokens": 152363,
+            "output_tokens": 8874,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p02-N",
+          "phase": "measured",
+          "pair": "p02",
+          "mode": "N",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 258159.21945798397,
+          "http": 17,
+          "total_tokens": 253977,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 17,
+            "numeric_responses": 17,
+            "input_tokens": 244913,
+            "output_tokens": 9064,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p02-PA",
+          "phase": "measured",
+          "pair": "p02",
+          "mode": "PA",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 261177.53879100084,
+          "http": 19,
+          "total_tokens": 178462,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 19,
+            "numeric_responses": 19,
+            "input_tokens": 169494,
+            "output_tokens": 8968,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p03-N",
+          "phase": "measured",
+          "pair": "p03",
+          "mode": "N",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 302303.29883402586,
+          "http": 21,
+          "total_tokens": 372290,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 21,
+            "numeric_responses": 21,
+            "input_tokens": 361739,
+            "output_tokens": 10551,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p03-PA",
+          "phase": "measured",
+          "pair": "p03",
+          "mode": "PA",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 251919.23220801353,
+          "http": 20,
+          "total_tokens": 181690,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 20,
+            "numeric_responses": 20,
+            "input_tokens": 173068,
+            "output_tokens": 8622,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p04-N",
+          "phase": "measured",
+          "pair": "p04",
+          "mode": "N",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 243148.3507500291,
+          "http": 17,
+          "total_tokens": 249097,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 17,
+            "numeric_responses": 17,
+            "input_tokens": 240178,
+            "output_tokens": 8919,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p04-PA",
+          "phase": "measured",
+          "pair": "p04",
+          "mode": "PA",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 283351.1984580159,
+          "http": 19,
+          "total_tokens": 172020,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 19,
+            "numeric_responses": 19,
+            "input_tokens": 162492,
+            "output_tokens": 9528,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p05-N",
+          "phase": "measured",
+          "pair": "p05",
+          "mode": "N",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 271907.3475000262,
+          "http": 18,
+          "total_tokens": 263704,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 18,
+            "numeric_responses": 18,
+            "input_tokens": 253741,
+            "output_tokens": 9963,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p05-PA",
+          "phase": "measured",
+          "pair": "p05",
+          "mode": "PA",
+          "cohort": "frozen-development",
+          "correct": true,
+          "verified_ms": 316809.90291696787,
+          "http": 20,
+          "total_tokens": 199066,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 20,
+            "numeric_responses": 20,
+            "input_tokens": 187780,
+            "output_tokens": 11286,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        }
+      ],
+      "pairs": [
+        {
+          "cohort": "frozen-development",
+          "manifest": null,
+          "pair": "p01",
+          "seed": null,
+          "attempts": [
+            "measured-p01-N",
+            "measured-p01-PA"
+          ],
+          "eligible": true,
+          "PA": {
+            "id": "measured-p01-PA",
+            "phase": "measured",
+            "pair": "p01",
+            "mode": "PA",
+            "cohort": "frozen-development",
+            "correct": true,
+            "verified_ms": 244084.79550004005,
+            "http": 18,
+            "total_tokens": 161237,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 18,
+              "numeric_responses": 18,
+              "input_tokens": 152363,
+              "output_tokens": 8874,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "N": {
+            "id": "measured-p01-N",
+            "phase": "measured",
+            "pair": "p01",
+            "mode": "N",
+            "cohort": "frozen-development",
+            "correct": true,
+            "verified_ms": 236625.3272920251,
+            "http": 17,
+            "total_tokens": 240073,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 17,
+              "numeric_responses": 17,
+              "input_tokens": 231232,
+              "output_tokens": 8841,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "changes_percent": {
+            "verified_ms": -3.0560970390364774,
+            "http": -5.555555555555555,
+            "total_tokens": 48.89448451658118
+          }
+        },
+        {
+          "cohort": "frozen-development",
+          "manifest": null,
+          "pair": "p02",
+          "seed": null,
+          "attempts": [
+            "measured-p02-N",
+            "measured-p02-PA"
+          ],
+          "eligible": true,
+          "PA": {
+            "id": "measured-p02-PA",
+            "phase": "measured",
+            "pair": "p02",
+            "mode": "PA",
+            "cohort": "frozen-development",
+            "correct": true,
+            "verified_ms": 261177.53879100084,
+            "http": 19,
+            "total_tokens": 178462,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 19,
+              "numeric_responses": 19,
+              "input_tokens": 169494,
+              "output_tokens": 8968,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "N": {
+            "id": "measured-p02-N",
+            "phase": "measured",
+            "pair": "p02",
+            "mode": "N",
+            "cohort": "frozen-development",
+            "correct": true,
+            "verified_ms": 258159.21945798397,
+            "http": 17,
+            "total_tokens": 253977,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 17,
+              "numeric_responses": 17,
+              "input_tokens": 244913,
+              "output_tokens": 9064,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "changes_percent": {
+            "verified_ms": -1.1556580810849084,
+            "http": -10.526315789473685,
+            "total_tokens": 42.31433022155977
+          }
+        },
+        {
+          "cohort": "frozen-development",
+          "manifest": null,
+          "pair": "p03",
+          "seed": null,
+          "attempts": [
+            "measured-p03-N",
+            "measured-p03-PA"
+          ],
+          "eligible": true,
+          "PA": {
+            "id": "measured-p03-PA",
+            "phase": "measured",
+            "pair": "p03",
+            "mode": "PA",
+            "cohort": "frozen-development",
+            "correct": true,
+            "verified_ms": 251919.23220801353,
+            "http": 20,
+            "total_tokens": 181690,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 20,
+              "numeric_responses": 20,
+              "input_tokens": 173068,
+              "output_tokens": 8622,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "N": {
+            "id": "measured-p03-N",
+            "phase": "measured",
+            "pair": "p03",
+            "mode": "N",
+            "cohort": "frozen-development",
+            "correct": true,
+            "verified_ms": 302303.29883402586,
+            "http": 21,
+            "total_tokens": 372290,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 21,
+              "numeric_responses": 21,
+              "input_tokens": 361739,
+              "output_tokens": 10551,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "changes_percent": {
+            "verified_ms": 20.000087402778934,
+            "http": 5.0,
+            "total_tokens": 104.90395728988938
+          }
+        },
+        {
+          "cohort": "frozen-development",
+          "manifest": null,
+          "pair": "p04",
+          "seed": null,
+          "attempts": [
+            "measured-p04-N",
+            "measured-p04-PA"
+          ],
+          "eligible": true,
+          "PA": {
+            "id": "measured-p04-PA",
+            "phase": "measured",
+            "pair": "p04",
+            "mode": "PA",
+            "cohort": "frozen-development",
+            "correct": true,
+            "verified_ms": 283351.1984580159,
+            "http": 19,
+            "total_tokens": 172020,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 19,
+              "numeric_responses": 19,
+              "input_tokens": 162492,
+              "output_tokens": 9528,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "N": {
+            "id": "measured-p04-N",
+            "phase": "measured",
+            "pair": "p04",
+            "mode": "N",
+            "cohort": "frozen-development",
+            "correct": true,
+            "verified_ms": 243148.3507500291,
+            "http": 17,
+            "total_tokens": 249097,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 17,
+              "numeric_responses": 17,
+              "input_tokens": 240178,
+              "output_tokens": 8919,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "changes_percent": {
+            "verified_ms": -14.188345744351485,
+            "http": -10.526315789473685,
+            "total_tokens": 44.80699918614115
+          }
+        },
+        {
+          "cohort": "frozen-development",
+          "manifest": null,
+          "pair": "p05",
+          "seed": null,
+          "attempts": [
+            "measured-p05-N",
+            "measured-p05-PA"
+          ],
+          "eligible": true,
+          "PA": {
+            "id": "measured-p05-PA",
+            "phase": "measured",
+            "pair": "p05",
+            "mode": "PA",
+            "cohort": "frozen-development",
+            "correct": true,
+            "verified_ms": 316809.90291696787,
+            "http": 20,
+            "total_tokens": 199066,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 20,
+              "numeric_responses": 20,
+              "input_tokens": 187780,
+              "output_tokens": 11286,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "N": {
+            "id": "measured-p05-N",
+            "phase": "measured",
+            "pair": "p05",
+            "mode": "N",
+            "cohort": "frozen-development",
+            "correct": true,
+            "verified_ms": 271907.3475000262,
+            "http": 18,
+            "total_tokens": 263704,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 18,
+              "numeric_responses": 18,
+              "input_tokens": 253741,
+              "output_tokens": 9963,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "changes_percent": {
+            "verified_ms": -14.173343384632163,
+            "http": -10.0,
+            "total_tokens": 32.470637878894436
+          }
+        }
+      ],
+      "summary": {
+        "verified_ms": {
+          "n": 5,
+          "median_percent": -3.0560970390364774,
+          "min_percent": -14.188345744351485,
+          "max_percent": 20.000087402778934,
+          "median_values": {
+            "PA": 261177.53879100084,
+            "N": 258159.21945798397
+          }
+        },
+        "http": {
+          "n": 5,
+          "median_percent": -10.0,
+          "min_percent": -10.526315789473685,
+          "max_percent": 5.0,
+          "median_values": {
+            "PA": 19,
+            "N": 17
+          }
+        },
+        "total_tokens": {
+          "n": 5,
+          "median_percent": 44.80699918614115,
+          "min_percent": 32.470637878894436,
+          "max_percent": 104.90395728988938,
+          "median_values": {
+            "PA": 178462,
+            "N": 253977
+          }
+        }
+      },
+      "correct_measured_runs": 10,
+      "attempted_measured_runs": 10
+    },
+    "notes": {
+      "source": "research/notes-mcp-ci-20261007/metrics.json",
+      "runs": [
+        {
+          "id": "calibration-p0-N-a1",
+          "phase": "calibration",
+          "pair": 0,
+          "mode": "N",
+          "cohort": "v3",
+          "manifest": "a331a5c1bfe8a7142a8faca1d92e1447176653884a0f458b320c0a517fbf687a",
+          "seed": 7100,
+          "correct": false,
+          "verified_ms": 326034.98383402824,
+          "http": 22,
+          "total_tokens": 396410,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 22,
+            "numeric_responses": 22,
+            "input_tokens": 385934,
+            "output_tokens": 10476,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "calibration-p0-PA-a1",
+          "phase": "calibration",
+          "pair": 0,
+          "mode": "PA",
+          "cohort": "v1",
+          "manifest": null,
+          "seed": 7100,
+          "correct": true,
+          "verified_ms": 283383.5139160156,
+          "http": 24,
+          "total_tokens": 312723,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 24,
+            "numeric_responses": 24,
+            "input_tokens": 303452,
+            "output_tokens": 9271,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "calibration-p0-PA-a2",
+          "phase": "calibration",
+          "pair": 0,
+          "mode": "PA",
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "seed": 7100,
+          "correct": true,
+          "verified_ms": 231033.01104199886,
+          "http": 15,
+          "total_tokens": 129810,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 15,
+            "numeric_responses": 15,
+            "input_tokens": 121986,
+            "output_tokens": 7824,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p1-N-a1",
+          "phase": "measured",
+          "pair": 1,
+          "mode": "N",
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "seed": 7101,
+          "correct": true,
+          "verified_ms": 357917.59866702557,
+          "http": 22,
+          "total_tokens": 471946,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 22,
+            "numeric_responses": 22,
+            "input_tokens": 460217,
+            "output_tokens": 11729,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p1-PA-a1",
+          "phase": "measured",
+          "pair": 1,
+          "mode": "PA",
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "seed": 7101,
+          "correct": true,
+          "verified_ms": 352175.63420802355,
+          "http": 28,
+          "total_tokens": 465759,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 28,
+            "numeric_responses": 28,
+            "input_tokens": 453152,
+            "output_tokens": 12607,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p2-N-a1",
+          "phase": "measured",
+          "pair": 2,
+          "mode": "N",
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "seed": 7102,
+          "correct": true,
+          "verified_ms": 339431.1687499285,
+          "http": 20,
+          "total_tokens": 345193,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 20,
+            "numeric_responses": 20,
+            "input_tokens": 334989,
+            "output_tokens": 10204,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p2-PA-a1",
+          "phase": "measured",
+          "pair": 2,
+          "mode": "PA",
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "seed": 7102,
+          "correct": true,
+          "verified_ms": 399160.375,
+          "http": 20,
+          "total_tokens": 238964,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 20,
+            "numeric_responses": 20,
+            "input_tokens": 229340,
+            "output_tokens": 9624,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p3-N-a1",
+          "phase": "measured",
+          "pair": 3,
+          "mode": "N",
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "seed": 7103,
+          "correct": true,
+          "verified_ms": 301072.3243329525,
+          "http": 20,
+          "total_tokens": 321792,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 20,
+            "numeric_responses": 20,
+            "input_tokens": 312550,
+            "output_tokens": 9242,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p3-PA-a1",
+          "phase": "measured",
+          "pair": 3,
+          "mode": "PA",
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "seed": 7103,
+          "correct": true,
+          "verified_ms": 280630.3891659975,
+          "http": 20,
+          "total_tokens": 229712,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 20,
+            "numeric_responses": 20,
+            "input_tokens": 221093,
+            "output_tokens": 8619,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p4-N-a1",
+          "phase": "measured",
+          "pair": 4,
+          "mode": "N",
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "seed": 7104,
+          "correct": true,
+          "verified_ms": 313650.83599996567,
+          "http": 15,
+          "total_tokens": 208944,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 15,
+            "numeric_responses": 15,
+            "input_tokens": 198321,
+            "output_tokens": 10623,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p4-PA-a1",
+          "phase": "measured",
+          "pair": 4,
+          "mode": "PA",
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "seed": 7104,
+          "correct": true,
+          "verified_ms": 408864.55820798874,
+          "http": 27,
+          "total_tokens": 430954,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 27,
+            "numeric_responses": 27,
+            "input_tokens": 419047,
+            "output_tokens": 11907,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p5-N-a1",
+          "phase": "measured",
+          "pair": 5,
+          "mode": "N",
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "seed": 7105,
+          "correct": true,
+          "verified_ms": 398181.86687505245,
+          "http": 24,
+          "total_tokens": 496678,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 24,
+            "numeric_responses": 24,
+            "input_tokens": 484691,
+            "output_tokens": 11987,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        },
+        {
+          "id": "measured-p5-PA-a1",
+          "phase": "measured",
+          "pair": 5,
+          "mode": "PA",
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "seed": 7105,
+          "correct": true,
+          "verified_ms": 304637.5086250305,
+          "http": 23,
+          "total_tokens": 304646,
+          "complete_usage": true,
+          "raw_accounting": {
+            "http": 23,
+            "numeric_responses": 23,
+            "input_tokens": 293421,
+            "output_tokens": 11225,
+            "matches_reported": true,
+            "all_attempts_metered": true
+          }
+        }
+      ],
+      "pairs": [
+        {
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "pair": 1,
+          "seed": 7101,
+          "attempts": [
+            "measured-p1-N-a1",
+            "measured-p1-PA-a1"
+          ],
+          "eligible": true,
+          "PA": {
+            "id": "measured-p1-PA-a1",
+            "phase": "measured",
+            "pair": 1,
+            "mode": "PA",
+            "cohort": "v3.1",
+            "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+            "seed": 7101,
+            "correct": true,
+            "verified_ms": 352175.63420802355,
+            "http": 28,
+            "total_tokens": 465759,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 28,
+              "numeric_responses": 28,
+              "input_tokens": 453152,
+              "output_tokens": 12607,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "N": {
+            "id": "measured-p1-N-a1",
+            "phase": "measured",
+            "pair": 1,
+            "mode": "N",
+            "cohort": "v3.1",
+            "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+            "seed": 7101,
+            "correct": true,
+            "verified_ms": 357917.59866702557,
+            "http": 22,
+            "total_tokens": 471946,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 22,
+              "numeric_responses": 22,
+              "input_tokens": 460217,
+              "output_tokens": 11729,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "changes_percent": {
+            "verified_ms": 1.6304263842427973,
+            "http": -21.428571428571427,
+            "total_tokens": 1.328369392754622
+          }
+        },
+        {
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "pair": 2,
+          "seed": 7102,
+          "attempts": [
+            "measured-p2-N-a1",
+            "measured-p2-PA-a1"
+          ],
+          "eligible": true,
+          "PA": {
+            "id": "measured-p2-PA-a1",
+            "phase": "measured",
+            "pair": 2,
+            "mode": "PA",
+            "cohort": "v3.1",
+            "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+            "seed": 7102,
+            "correct": true,
+            "verified_ms": 399160.375,
+            "http": 20,
+            "total_tokens": 238964,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 20,
+              "numeric_responses": 20,
+              "input_tokens": 229340,
+              "output_tokens": 9624,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "N": {
+            "id": "measured-p2-N-a1",
+            "phase": "measured",
+            "pair": 2,
+            "mode": "N",
+            "cohort": "v3.1",
+            "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+            "seed": 7102,
+            "correct": true,
+            "verified_ms": 339431.1687499285,
+            "http": 20,
+            "total_tokens": 345193,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 20,
+              "numeric_responses": 20,
+              "input_tokens": 334989,
+              "output_tokens": 10204,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "changes_percent": {
+            "verified_ms": -14.963711327826948,
+            "http": 0.0,
+            "total_tokens": 44.453976331162856
+          }
+        },
+        {
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "pair": 3,
+          "seed": 7103,
+          "attempts": [
+            "measured-p3-N-a1",
+            "measured-p3-PA-a1"
+          ],
+          "eligible": true,
+          "PA": {
+            "id": "measured-p3-PA-a1",
+            "phase": "measured",
+            "pair": 3,
+            "mode": "PA",
+            "cohort": "v3.1",
+            "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+            "seed": 7103,
+            "correct": true,
+            "verified_ms": 280630.3891659975,
+            "http": 20,
+            "total_tokens": 229712,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 20,
+              "numeric_responses": 20,
+              "input_tokens": 221093,
+              "output_tokens": 8619,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "N": {
+            "id": "measured-p3-N-a1",
+            "phase": "measured",
+            "pair": 3,
+            "mode": "N",
+            "cohort": "v3.1",
+            "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+            "seed": 7103,
+            "correct": true,
+            "verified_ms": 301072.3243329525,
+            "http": 20,
+            "total_tokens": 321792,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 20,
+              "numeric_responses": 20,
+              "input_tokens": 312550,
+              "output_tokens": 9242,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "changes_percent": {
+            "verified_ms": 7.2842913512346845,
+            "http": 0.0,
+            "total_tokens": 40.08497596991015
+          }
+        },
+        {
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "pair": 4,
+          "seed": 7104,
+          "attempts": [
+            "measured-p4-N-a1",
+            "measured-p4-PA-a1"
+          ],
+          "eligible": true,
+          "PA": {
+            "id": "measured-p4-PA-a1",
+            "phase": "measured",
+            "pair": 4,
+            "mode": "PA",
+            "cohort": "v3.1",
+            "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+            "seed": 7104,
+            "correct": true,
+            "verified_ms": 408864.55820798874,
+            "http": 27,
+            "total_tokens": 430954,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 27,
+              "numeric_responses": 27,
+              "input_tokens": 419047,
+              "output_tokens": 11907,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "N": {
+            "id": "measured-p4-N-a1",
+            "phase": "measured",
+            "pair": 4,
+            "mode": "N",
+            "cohort": "v3.1",
+            "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+            "seed": 7104,
+            "correct": true,
+            "verified_ms": 313650.83599996567,
+            "http": 15,
+            "total_tokens": 208944,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 15,
+              "numeric_responses": 15,
+              "input_tokens": 198321,
+              "output_tokens": 10623,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "changes_percent": {
+            "verified_ms": -23.287350369847417,
+            "http": -44.44444444444444,
+            "total_tokens": -51.51593905614056
+          }
+        },
+        {
+          "cohort": "v3.1",
+          "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+          "pair": 5,
+          "seed": 7105,
+          "attempts": [
+            "measured-p5-N-a1",
+            "measured-p5-PA-a1"
+          ],
+          "eligible": true,
+          "PA": {
+            "id": "measured-p5-PA-a1",
+            "phase": "measured",
+            "pair": 5,
+            "mode": "PA",
+            "cohort": "v3.1",
+            "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+            "seed": 7105,
+            "correct": true,
+            "verified_ms": 304637.5086250305,
+            "http": 23,
+            "total_tokens": 304646,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 23,
+              "numeric_responses": 23,
+              "input_tokens": 293421,
+              "output_tokens": 11225,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "N": {
+            "id": "measured-p5-N-a1",
+            "phase": "measured",
+            "pair": 5,
+            "mode": "N",
+            "cohort": "v3.1",
+            "manifest": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+            "seed": 7105,
+            "correct": true,
+            "verified_ms": 398181.86687505245,
+            "http": 24,
+            "total_tokens": 496678,
+            "complete_usage": true,
+            "raw_accounting": {
+              "http": 24,
+              "numeric_responses": 24,
+              "input_tokens": 484691,
+              "output_tokens": 11987,
+              "matches_reported": true,
+              "all_attempts_metered": true
+            }
+          },
+          "changes_percent": {
+            "verified_ms": 30.706776283797335,
+            "http": 4.3478260869565215,
+            "total_tokens": 63.03447279793596
+          }
+        }
+      ],
+      "summary": {
+        "verified_ms": {
+          "n": 5,
+          "median_percent": 1.6304263842427973,
+          "min_percent": -23.287350369847417,
+          "max_percent": 30.706776283797335,
+          "median_values": {
+            "PA": 352175.63420802355,
+            "N": 339431.1687499285
+          }
+        },
+        "http": {
+          "n": 5,
+          "median_percent": 0.0,
+          "min_percent": -44.44444444444444,
+          "max_percent": 4.3478260869565215,
+          "median_values": {
+            "PA": 23,
+            "N": 20
+          }
+        },
+        "total_tokens": {
+          "n": 5,
+          "median_percent": 40.08497596991015,
+          "min_percent": -51.51593905614056,
+          "max_percent": 63.03447279793596,
+          "median_values": {
+            "PA": 304646,
+            "N": 345193
+          }
+        }
+      },
+      "correct_measured_runs": 10,
+      "attempted_measured_runs": 10
+    }
+  }
+}

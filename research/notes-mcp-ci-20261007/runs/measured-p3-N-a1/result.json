@@ -1,0 +1,335 @@
+{
+  "runId": "measured-p3-N-a1",
+  "phase": "measured",
+  "pair": 3,
+  "mode": "N",
+  "seed": 7103,
+  "protocolRevision": "v3.1",
+  "inputManifestSha256": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+  "queue": {
+    "legacy_smoke": 20000,
+    "legacy_integrity": 60000,
+    "storage": 30000,
+    "mcp": 60000,
+    "web": 45000
+  },
+  "settings": {
+    "defaultModel": "gpt-6.1-sol",
+    "defaultProvider": "openai-codex",
+    "defaultThinkingLevel": "medium",
+    "compaction": {
+      "enabled": true
+    },
+    "transport": "sse",
+    "retry": {
+      "enabled": false,
+      "maxRetries": 0
+    },
+    "packages": [],
+    "extensions": []
+  },
+  "startedAt": "2026-10-08T13:54:15.406Z",
+  "runtimeDeviations": [
+    "isolated config and fresh work directory",
+    "transport SSE in both modes",
+    "agent retries disabled in both modes",
+    "auto-loaded extensions/skills/context disabled",
+    "same notification instructions and tools in both modes; PA context projection disabled"
+  ],
+  "completed": true,
+  "jobsAtSettlement": [
+    {
+      "jobId": "job-1",
+      "suite": "legacy_smoke",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "componentHash": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-08T13:54:15.565Z",
+      "startedAt": "2026-10-08T13:54:35.565Z",
+      "completedAt": "2026-10-08T13:54:35.673Z",
+      "eventSeq": 1,
+      "passed": true
+    },
+    {
+      "jobId": "job-2",
+      "suite": "legacy_integrity",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "componentHash": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-08T13:54:15.567Z",
+      "startedAt": "2026-10-08T13:55:15.566Z",
+      "completedAt": "2026-10-08T13:55:15.683Z",
+      "eventSeq": 2,
+      "passed": false
+    },
+    {
+      "jobId": "job-3",
+      "suite": "storage",
+      "revision": "9705a6e06b46733d2e7bcb4370bb6bd7b27b2823b871690e76cc47f4c9ca061a",
+      "componentHash": "9705a6e06b46733d2e7bcb4370bb6bd7b27b2823b871690e76cc47f4c9ca061a",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-08T13:55:07.147Z",
+      "startedAt": "2026-10-08T13:55:37.148Z",
+      "completedAt": "2026-10-08T13:55:37.394Z",
+      "eventSeq": 3,
+      "passed": true
+    },
+    {
+      "jobId": "job-4",
+      "suite": "mcp",
+      "revision": "9efc6077f53e2c445066912b0efe2551975cabe8e439b9fe9da32f7a5a4cf347",
+      "componentHash": "9efc6077f53e2c445066912b0efe2551975cabe8e439b9fe9da32f7a5a4cf347",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-08T13:55:48.654Z",
+      "startedAt": "2026-10-08T13:56:48.653Z",
+      "completedAt": "2026-10-08T13:56:49.008Z",
+      "eventSeq": 4,
+      "passed": true
+    },
+    {
+      "jobId": "job-5",
+      "suite": "web",
+      "revision": "4a63b9014ad1bdb104a57b740e91a6f936239a3ee62fefe47142176029192d82",
+      "componentHash": "a4afc46e4170334384ffc5723031ef3012db66a51dfb97e38f13890283dd2d46",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-08T13:56:40.506Z",
+      "startedAt": "2026-10-08T13:57:25.506Z",
+      "completedAt": "2026-10-08T13:57:25.835Z",
+      "eventSeq": 5,
+      "passed": true
+    },
+    {
+      "jobId": "job-6",
+      "suite": "web",
+      "revision": "7b17a2fe0eabc37b48b254d31d78a57cc8bcd05672d45c9aa5437b07c2eb80f6",
+      "componentHash": "21928d98c6e71dacf67c380d3b0454795ff599d8ec41ba2c3c557dc503fec84c",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-08T13:58:13.023Z",
+      "startedAt": "2026-10-08T13:58:58.024Z",
+      "completedAt": "2026-10-08T13:58:58.361Z",
+      "eventSeq": 6,
+      "passed": true
+    },
+    {
+      "jobId": "job-7",
+      "suite": "storage",
+      "revision": "7b17a2fe0eabc37b48b254d31d78a57cc8bcd05672d45c9aa5437b07c2eb80f6",
+      "componentHash": "84a7589ffe17ff10ef79d6879f9238a51fc69d93e3e2b08a319f14c80c183003",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-08T13:58:37.664Z",
+      "startedAt": "2026-10-08T13:59:07.664Z",
+      "completedAt": "2026-10-08T13:59:07.905Z",
+      "eventSeq": 7,
+      "passed": true
+    }
+  ],
+  "oracle": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "SDK client writes persistent tagged notes",
+        "passed": true
+      },
+      {
+        "name": "dashboard displays MCP-created note with safe HTML",
+        "passed": true
+      },
+      {
+        "name": "web form edit and filters share persisted state",
+        "passed": true
+      },
+      {
+        "name": "invalid import across web is atomic",
+        "passed": true
+      },
+      {
+        "name": "pagination retains all notes without duplication",
+        "passed": true
+      },
+      {
+        "name": "MCP restart sees web edits and accepts independent export/import",
+        "passed": true
+      },
+      {
+        "name": "SQLite integrity and cascade constraints",
+        "passed": true
+      },
+      {
+        "name": "web restart retains imported note and deleted state",
+        "passed": true
+      },
+      {
+        "name": "MCP and web both execute the shared import helper",
+        "passed": true
+      }
+    ],
+    "coverage": "Official MCP SDK, cross-process SQLite persistence, HTML forms and HTTP APIs. No browser JavaScript or visual-layout automation."
+  },
+  "requiredCI": [
+    {
+      "jobId": "job-7",
+      "suite": "storage",
+      "revision": "7b17a2fe0eabc37b48b254d31d78a57cc8bcd05672d45c9aa5437b07c2eb80f6",
+      "componentHash": "84a7589ffe17ff10ef79d6879f9238a51fc69d93e3e2b08a319f14c80c183003",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-08T13:58:37.664Z",
+      "startedAt": "2026-10-08T13:59:07.664Z",
+      "completedAt": "2026-10-08T13:59:07.905Z",
+      "eventSeq": 7,
+      "passed": true
+    },
+    {
+      "jobId": "job-4",
+      "suite": "mcp",
+      "revision": "9efc6077f53e2c445066912b0efe2551975cabe8e439b9fe9da32f7a5a4cf347",
+      "componentHash": "9efc6077f53e2c445066912b0efe2551975cabe8e439b9fe9da32f7a5a4cf347",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-08T13:55:48.654Z",
+      "startedAt": "2026-10-08T13:56:48.653Z",
+      "completedAt": "2026-10-08T13:56:49.008Z",
+      "eventSeq": 4,
+      "passed": true
+    },
+    {
+      "jobId": "job-6",
+      "suite": "web",
+      "revision": "7b17a2fe0eabc37b48b254d31d78a57cc8bcd05672d45c9aa5437b07c2eb80f6",
+      "componentHash": "21928d98c6e71dacf67c380d3b0454795ff599d8ec41ba2c3c557dc503fec84c",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-08T13:58:13.023Z",
+      "startedAt": "2026-10-08T13:58:58.024Z",
+      "completedAt": "2026-10-08T13:58:58.361Z",
+      "eventSeq": 6,
+      "passed": true
+    }
+  ],
+  "lockedInputChecks": [
+    {
+      "file": "CONTRACT.md",
+      "passed": true
+    },
+    {
+      "file": "package.json",
+      "passed": true
+    },
+    {
+      "file": "test/smoke.test.mjs",
+      "passed": true
+    }
+  ],
+  "oracleFinishedAt": {
+    "time": "2026-10-08T13:59:16.628Z",
+    "monoMs": 597708897.632208,
+    "type": "oracle_finished",
+    "passed": true,
+    "requiredCIPassed": true
+  },
+  "agentWallMs": 300718.4765409231,
+  "totalWallMs": 301072.3243329525,
+  "postSettlementMs": 353.8477920293808,
+  "oracleMs": 351.95937502384186,
+  "finishedAt": "2026-10-08T13:59:16.841Z",
+  "jobs": [
+    {
+      "jobId": "job-1",
+      "suite": "legacy_smoke",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "componentHash": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-08T13:54:15.565Z",
+      "startedAt": "2026-10-08T13:54:35.565Z",
+      "completedAt": "2026-10-08T13:54:35.673Z",
+      "eventSeq": 1,
+      "passed": true
+    },
+    {
+      "jobId": "job-2",
+      "suite": "legacy_integrity",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "componentHash": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-08T13:54:15.567Z",
+      "startedAt": "2026-10-08T13:55:15.566Z",
+      "completedAt": "2026-10-08T13:55:15.683Z",
+      "eventSeq": 2,
+      "passed": false
+    },
+    {
+      "jobId": "job-3",
+      "suite": "storage",
+      "revision": "9705a6e06b46733d2e7bcb4370bb6bd7b27b2823b871690e76cc47f4c9ca061a",
+      "componentHash": "9705a6e06b46733d2e7bcb4370bb6bd7b27b2823b871690e76cc47f4c9ca061a",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-08T13:55:07.147Z",
+      "startedAt": "2026-10-08T13:55:37.148Z",
+      "completedAt": "2026-10-08T13:55:37.394Z",
+      "eventSeq": 3,
+      "passed": true
+    },
+    {
+      "jobId": "job-4",
+      "suite": "mcp",
+      "revision": "9efc6077f53e2c445066912b0efe2551975cabe8e439b9fe9da32f7a5a4cf347",
+      "componentHash": "9efc6077f53e2c445066912b0efe2551975cabe8e439b9fe9da32f7a5a4cf347",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-08T13:55:48.654Z",
+      "startedAt": "2026-10-08T13:56:48.653Z",
+      "completedAt": "2026-10-08T13:56:49.008Z",
+      "eventSeq": 4,
+      "passed": true
+    },
+    {
+      "jobId": "job-5",
+      "suite": "web",
+      "revision": "4a63b9014ad1bdb104a57b740e91a6f936239a3ee62fefe47142176029192d82",
+      "componentHash": "a4afc46e4170334384ffc5723031ef3012db66a51dfb97e38f13890283dd2d46",
+      "state": "complete",
+      "current": false,
+      "queuedAt": "2026-10-08T13:56:40.506Z",
+      "startedAt": "2026-10-08T13:57:25.506Z",
+      "completedAt": "2026-10-08T13:57:25.835Z",
+      "eventSeq": 5,
+      "passed": true
+    },
+    {
+      "jobId": "job-6",
+      "suite": "web",
+      "revision": "7b17a2fe0eabc37b48b254d31d78a57cc8bcd05672d45c9aa5437b07c2eb80f6",
+      "componentHash": "21928d98c6e71dacf67c380d3b0454795ff599d8ec41ba2c3c557dc503fec84c",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-08T13:58:13.023Z",
+      "startedAt": "2026-10-08T13:58:58.024Z",
+      "completedAt": "2026-10-08T13:58:58.361Z",
+      "eventSeq": 6,
+      "passed": true
+    },
+    {
+      "jobId": "job-7",
+      "suite": "storage",
+      "revision": "7b17a2fe0eabc37b48b254d31d78a57cc8bcd05672d45c9aa5437b07c2eb80f6",
+      "componentHash": "84a7589ffe17ff10ef79d6879f9238a51fc69d93e3e2b08a319f14c80c183003",
+      "state": "complete",
+      "current": true,
+      "queuedAt": "2026-10-08T13:58:37.664Z",
+      "startedAt": "2026-10-08T13:59:07.664Z",
+      "completedAt": "2026-10-08T13:59:07.905Z",
+      "eventSeq": 7,
+      "passed": true
+    }
+  ]
+}

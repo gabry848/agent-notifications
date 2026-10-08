@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "passed": true,
+  "groups": [
+    "integrity",
+    "csv",
+    "version",
+    "catalog",
+    "search",
+    "graph",
+    "transfer",
+    "http",
+    "cli"
+  ],
+  "assertions": 7230,
+  "durationMs": 354
+}

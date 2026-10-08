@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-08T14:26:55.197391+00:00",
+  "passed": true,
+  "sessionId": "s_457e148b-efcd-46f4-a7d4-4ee36fa1a9a6",
+  "correctMeasuredRuns": 20,
+  "correctPairsPerWorkload": 5,
+  "unstartedRuns": 0,
+  "catalogAuditPassed": true,
+  "notesReview": "../notes-mcp-ci-20261007/final-review.json",
+  "pairedAuditSha256": "8f454b9edec2cb8681d4ba9441641349578dc228e813c98c7377912d536492ee",
+  "readyToClose": true,
+  "aoverviewClosure": {
+    "verifiedAt": "2026-10-08T14:28:44.778149+00:00",
+    "source": "GET /api/v1/sessions/s_457e148b-efcd-46f4-a7d4-4ee36fa1a9a6",
+    "allThreeAgentsCompleted": true,
+    "bothGoalsCompleted": true,
+    "bothContributionsIntegrated": true,
+    "remainingCurrentBlocks": 0,
+    "rootRevision": 27,
+    "notesRevision": 19
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ci-0015",
+  "group": "graph",
+  "revision": "7c1481da6c81dd42ec8a3162e7b63a9003e014da581107eb3ac527c03bd4b22b",
+  "status": "queued",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/graph.mjs": "28323982abe2e689ed9d9e3790e327c3882dd293653a0f6cfb253992f61fcb2a"
+  },
+  "queued": {
+    "time": "2026-10-07T09:20:00.727Z",
+    "monoMs": 494552605.5025
+  },
+  "sourceFiles": [
+    "src/graph.mjs"
+  ]
+}

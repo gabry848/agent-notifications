@@ -1,0 +1,6 @@
+# Never package Pi configuration/session credentials or raw model sessions.
+offline/**/config/
+offline/**/sessions/
+runs/**/config/
+runs/**/sessions/
+**/auth.json

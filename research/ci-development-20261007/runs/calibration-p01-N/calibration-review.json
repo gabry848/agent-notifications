@@ -1,0 +1,50 @@
+{
+  "correct": true,
+  "agentWallMs": 328047.67787498236,
+  "fullVerifiedWallMs": 328487.00558298826,
+  "oracle": {
+    "passed": true,
+    "groups": [
+      "integrity",
+      "csv",
+      "version",
+      "catalog",
+      "search",
+      "graph",
+      "transfer",
+      "http",
+      "cli"
+    ],
+    "assertions": 7230,
+    "durationMs": 391
+  },
+  "logical": 21,
+  "http": 21,
+  "validRawResponses": 21,
+  "reconciliationMismatches": 0,
+  "totalInput": 351427,
+  "totalOutput": 10131,
+  "cachedInput": 294528,
+  "ciJobs": 23,
+  "failed": [
+    {
+      "group": "csv",
+      "stale": false
+    },
+    {
+      "group": "catalog",
+      "stale": false
+    },
+    {
+      "group": "version",
+      "stale": true
+    },
+    {
+      "group": "catalog",
+      "stale": true
+    }
+  ],
+  "statusChecks": 2,
+  "waits": 0,
+  "sourceEditsDuringCI": 6
+}

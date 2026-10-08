@@ -1,0 +1,1 @@
+{"passed":true,"groups":["catalog"],"assertions":513,"durationMs":4}

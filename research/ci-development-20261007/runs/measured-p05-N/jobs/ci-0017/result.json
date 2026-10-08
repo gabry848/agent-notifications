@@ -1,0 +1,47 @@
+{
+  "id": "ci-0017",
+  "group": "transfer",
+  "revision": "ac58fddea70f43cab321f8de78da2f5a66622550b412099d89c64417d306179c",
+  "status": "passed",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/catalog.mjs": "457e4172a32bc545d405a58ee08c8f7c3337a97886d6a5312b59031d8d1ceb40",
+    "src/csv.mjs": "7a8544a2d4655859a723031af6b1f88325b3e88c8b87686e01e82d62199758a8",
+    "src/transfer.mjs": "833edce172b947ba6d21b95ab88b5ab81a47b3ece0fbcb0ad8a0ec95653ef7a6",
+    "src/version.mjs": "97760099ec1348836897de3817da3b163eb2d81fd45c9a4305117439efdc854e"
+  },
+  "queued": {
+    "time": "2026-10-07T09:39:30.834Z",
+    "monoMs": 495722726.082083
+  },
+  "sourceFiles": [
+    "src/catalog.mjs",
+    "src/csv.mjs",
+    "src/transfer.mjs",
+    "src/version.mjs"
+  ],
+  "started": {
+    "time": "2026-10-07T09:39:40.838Z",
+    "monoMs": 495732729.876875
+  },
+  "completed": {
+    "time": "2026-10-07T09:39:40.890Z",
+    "monoMs": 495732781.359666
+  },
+  "classification": "passed",
+  "result": {
+    "passed": true,
+    "groups": [
+      "transfer"
+    ],
+    "assertions": 7,
+    "durationMs": 3
+  },
+  "exitCode": 0,
+  "staleAtCompletion": false,
+  "published": {
+    "time": "2026-10-07T09:39:40.890Z",
+    "monoMs": 495732781.935
+  }
+}

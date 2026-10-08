@@ -1,0 +1,107 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { spawn } from 'node:child_process';
+import { once } from 'node:events';
+import { createInterface } from 'node:readline';
+import { mkdtempSync, rmSync } from 'node:fs';
+import { join } from 'node:path';
+
+function fixture(t) {
+  const dir = mkdtempSync(join(process.cwd(),'.test-service-'));
+  t.after(()=>rmSync(dir,{recursive:true,force:true}));
+  return join(dir,'notes.sqlite');
+}
+function launch(t, script, args) {
+  const child = spawn(process.execPath,[`src/${script}.mjs`,...args],{stdio:['pipe','pipe','pipe']});
+  let stderr = ''; child.stderr.on('data', chunk=>{stderr += chunk;});
+  const exit = once(child,'exit');
+  const queue = [], waiters = [];
+  const reader = createInterface({input:child.stdout});
+  reader.on('line', line=>{const value = JSON.parse(line); if(waiters.length) waiters.shift()(value); else queue.push(value);});
+  t.after(async()=>{if(child.exitCode === null && child.signalCode === null) child.kill('SIGTERM'); await exit; reader.close();});
+  return {child,exit,next:()=>queue.length ? Promise.resolve(queue.shift()) : new Promise(resolve=>waiters.push(resolve)), stderr:()=>stderr};
+}
+test('MCP stdio protocol, eight tools, atomic import, resources, export and clean EOF', {timeout:15000}, async t => {
+  const {child,next,exit} = launch(t,'mcp',['--db',fixture(t)]);
+  let sequence = 0;
+  const rpc = async(method,params) => {
+    const id = ++sequence;
+    child.stdin.write(JSON.stringify({jsonrpc:'2.0',id,method,params})+'\n');
+    const response = await next(); assert.equal(response.id,id); return response;
+  };
+  child.stdin.write('\n{broken\n'); assert.equal((await next()).error.code,-32700);
+  assert.equal((await rpc('initialize',{})).result.protocolVersion,'2024-11-05');
+  child.stdin.write(JSON.stringify({jsonrpc:'2.0',method:'notifications/initialized'})+'\n');
+  assert.deepEqual((await rpc('ping')).result,{});
+  const tools = (await rpc('tools/list')).result.tools;
+  assert.equal(tools.length,8); assert.ok(tools.every(t=>t.inputSchema.type==='object'));
+  const call = async(name,args={}) => (await rpc('tools/call',{name,arguments:args})).result;
+  const value = result => JSON.parse(result.content[0].text);
+  const a = value(await call('notes_create',{text:'first',tags:['B','b']}));
+  assert.equal(value(await call('notes_get',{id:a.id})).text,'first');
+  assert.equal((await call('notes_import',{notes:[{text:'good'},{text:'bad',tags:[4]}]})).isError,true);
+  assert.equal(value(await call('notes_list')).length,1);
+  const b = value(await call('notes_import',{notes:[{text:'second'}]}))[0];
+  assert.equal(value(await call('notes_update',{id:a.id,text:'changed'})).text,'changed');
+  assert.deepEqual(value(await call('tags_list')),[{name:'b',count:1}]);
+  assert.equal((await rpc('resources/list')).result.resources[0].uri,'notes://all');
+  const resource = (await rpc('resources/read',{uri:'notes://all'})).result.contents[0];
+  assert.equal(resource.mimeType,'application/json'); assert.deepEqual(JSON.parse(resource.text).map(n=>n.id),[b.id,a.id]);
+  assert.deepEqual(value(await call('notes_export')).notes.map(n=>n.text),['changed','second']);
+  assert.equal(value(await call('notes_delete',{id:a.id})),true);
+  assert.equal(value(await call('notes_get',{id:a.id})),null);
+  assert.equal((await rpc('resources/read',{uri:'unknown'})).error.code,-32002);
+  assert.equal((await rpc('unknown')).error.code,-32601);
+  assert.equal((await call('notes_get',{id:'bad'})).isError,true);
+  child.stdin.end(); assert.equal((await exit)[0],0);
+});
+test('web dashboard forms, escaping, API validation, atomic imports and pagination', {timeout:20000}, async t => {
+  const {next} = launch(t,'web',['--db',fixture(t),'--port','0']);
+  const startup = await next(); const base = `http://127.0.0.1:${startup.port}`;
+  const request = (path,method='GET',data) => fetch(base+path,{method,redirect:'manual',...(data===undefined?{}:{headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})});
+  const form = (path,data) => fetch(base+path,{method:'POST',redirect:'manual',body:new URLSearchParams(data)});
+  let response = await form('/notes',{text:' <script>alert(1)</script> ',tags:' Work,work, <b> '});
+  assert.equal(response.status,303); assert.equal(response.headers.get('location'),'/');
+  assert.equal((await request('/api/notes','POST',{text:'API created',tags:[]})).status,201);
+  assert.equal((await fetch(base+'/api/notes',{method:'POST',body:'{broken'})).status,400);
+  const notes = await (await request('/api/notes')).json(); const id = notes.at(-1).id;
+  await request(`/api/notes/${notes[0].id}`,'DELETE');
+  const html = await (await request('/')).text(); assert.ok(html.includes('&lt;script&gt;')); assert.ok(!html.includes('<script>')); assert.ok(html.includes('work (1)'));
+  const edit = await (await request(`/notes/${id}/edit`)).text(); assert.ok(edit.includes('&lt;script&gt;'));
+  assert.equal((await form(`/notes/${id}`,{text:'Edited',tags:'new'})).status,303);
+  response = await request(`/api/notes/${id}`); assert.equal((await response.json()).text,'Edited');
+  assert.equal((await request(`/api/notes/${id}`,'PATCH',{text:'bad',tags:[null]})).status,400);
+  assert.equal((await (await request(`/api/notes/${id}`)).json()).text,'Edited');
+  assert.equal((await request(`/api/notes/${id}`,'PATCH',{tags:['NEW']})).status,200);
+  response = await form('/notes',{text:' ',tags:''}); assert.equal(response.status,400); assert.ok((await response.text()).includes('role="alert"'));
+  assert.equal((await request('/api/import','POST',{notes:[{text:'valid'},{text:'bad',tags:[9]}]})).status,400);
+  assert.equal((await (await request('/api/notes')).json()).length,1);
+  const imported = await (await request('/api/import','POST',{notes:Array.from({length:23},(_,i)=>({text:`page-note-${i}`,tags:['page']}))})).json();
+  assert.equal(imported.length,23);
+  response = await request('/?tag=PAGE&page=2'); const page = await response.text(); assert.equal(response.status,200); assert.ok(page.includes('page-note-0')); assert.ok(!page.includes('page-note-22')); assert.ok(page.includes('Previous'));
+  assert.equal((await (await request('/api/notes?tag=PAGE&limit=2&offset=1')).json()).length,2);
+  assert.equal((await (await request('/api/export')).json()).notes[0].text,'Edited');
+  assert.ok((await (await request('/api/tags')).json()).some(t=>t.name==='page' && t.count===23));
+  response = await request('/?q=%22%3E%3Cscript%3E'); assert.ok(!(await response.text()).includes('"><script>'));
+  for (const path of ['/api/notes?limit=0','/api/notes?offset=-1','/?page=0']) assert.equal((await request(path)).status,400);
+  assert.equal((await request('/api/notes/99999')).status,404); assert.equal((await request('/missing')).status,404);
+  assert.equal((await request(`/api/notes/${id}`,'DELETE')).status,200);
+  assert.equal((await request(`/api/notes/${id}`,'DELETE')).status,404);
+  assert.equal((await form(`/notes/${imported[0].id}/delete`,{})).status,303);
+});
+test('MCP and web share persistent data across sequential processes', {timeout:15000}, async t => {
+  const db = fixture(t);
+  const mcp = launch(t,'mcp',['--db',db]);
+  mcp.child.stdin.end(JSON.stringify({jsonrpc:'2.0',id:'create',method:'tools/call',params:{name:'notes_create',arguments:{text:'Shared across processes',tags:['shared']}}})+'\n');
+  const note = JSON.parse((await mcp.next()).result.content[0].text);
+  assert.equal((await mcp.exit)[0],0);
+  const web = launch(t,'web',['--db',db,'--port','0']);
+  const {port} = await web.next();
+  const response = await fetch(`http://127.0.0.1:${port}/api/notes/${note.id}`);
+  assert.deepEqual(await response.json(),note);
+  web.child.kill('SIGTERM'); assert.equal((await web.exit)[0],0);
+  const again = launch(t,'mcp',['--db',db]);
+  again.child.stdin.end(JSON.stringify({jsonrpc:'2.0',id:1,method:'tools/call',params:{name:'notes_get',arguments:{id:note.id}}})+'\n');
+  assert.deepEqual(JSON.parse((await again.next()).result.content[0].text),note);
+  assert.equal((await again.exit)[0],0);
+});

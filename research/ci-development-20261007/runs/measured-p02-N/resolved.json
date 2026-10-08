@@ -1,0 +1,122 @@
+{
+  "state": {
+    "model": {
+      "id": "gpt-6.1-sol",
+      "name": "GPT-6.1 Sol",
+      "api": "openai-codex-responses",
+      "provider": "openai-codex",
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "reasoning": true,
+      "input": [
+        "text",
+        "image"
+      ],
+      "cost": {
+        "input": 2,
+        "output": 10,
+        "cacheRead": 0.1,
+        "cacheWrite": 2.5,
+        "tiers": [
+          {
+            "inputTokensAbove": 272000,
+            "input": 4,
+            "output": 15,
+            "cacheRead": 0.2,
+            "cacheWrite": 5
+          }
+        ]
+      },
+      "contextWindow": 272000,
+      "maxTokens": 128000,
+      "thinkingLevelMap": {
+        "off": null,
+        "minimal": "low",
+        "low": "low",
+        "medium": "medium",
+        "high": "high",
+        "xhigh": "xhigh",
+        "max": "max"
+      },
+      "compat": {
+        "supportsOpenAIGrammarTools": true,
+        "supportsAdditionalTools": true,
+        "supportsToolSearch": true,
+        "supportsMidConvoSystemMessages": true
+      },
+      "inputLimits": {
+        "images": {
+          "resize": {
+            "maxWidth": 2000,
+            "maxHeight": 2000,
+            "maxBytes": 4718592,
+            "jpegQuality": 80
+          }
+        }
+      },
+      "type": "chat"
+    },
+    "thinkingLevel": "medium",
+    "isStreaming": false,
+    "isCompacting": false,
+    "steeringMode": "one-at-a-time",
+    "followUpMode": "one-at-a-time",
+    "sessionId": "89132380-30ec-428d-bc93-9099fae3600c",
+    "autoCompactionEnabled": true,
+    "messageCount": 0,
+    "pendingMessageCount": 0
+  },
+  "args": [
+    "--mode",
+    "rpc",
+    "--no-session",
+    "--offline",
+    "--no-extensions",
+    "--no-skills",
+    "--no-prompt-templates",
+    "--no-context-files",
+    "--no-themes",
+    "--no-approve",
+    "--session-id",
+    "89132380-30ec-428d-bc93-9099fae3600c",
+    "--tools",
+    "read,edit,write,bash,grep,find,ls,ci_status,ci_wait,notifications_dismiss,notifications_history",
+    "-e",
+    "/Users/gabry848/Documents/Projects/pi-notifications/src/pi-extension.ts",
+    "-e",
+    "/Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/extension.ts"
+  ],
+  "config": {
+    "settings": {
+      "defaultModel": "gpt-6.1-sol",
+      "defaultProvider": "openai-codex",
+      "defaultThinkingLevel": "medium",
+      "compaction": {
+        "enabled": true
+      },
+      "transport": "sse",
+      "retry": {
+        "enabled": false,
+        "maxRetries": 0
+      },
+      "packages": [],
+      "extensions": []
+    },
+    "accounting": {
+      "mode": "observational",
+      "monetaryCaps": false,
+      "requestCaps": false
+    },
+    "authReused": true,
+    "deviations": [
+      "isolated config",
+      "transport=sse equally across modes",
+      "agent retries disabled; provider-internal retries still guarded",
+      "installed extensions/skills/context files disabled; explicit extensions and native file tools only"
+    ]
+  },
+  "ready": {
+    "url": "http://127.0.0.1:52211",
+    "sessionId": "89132380-30ec-428d-bc93-9099fae3600c",
+    "databasePath": "/Users/gabry848/Documents/Projects/pi-notifications/research/ci-development-20261007/runs/measured-p02-N/notifications.sqlite"
+  }
+}

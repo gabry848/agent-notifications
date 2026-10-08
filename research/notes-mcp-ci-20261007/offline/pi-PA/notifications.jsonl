@@ -1,0 +1,11 @@
+{"time":"2026-10-07T08:07:39.917Z","monoMs":490211701.519208,"type":"session_selected","url":"http://127.0.0.1:64585","sessionId":"01a11567-643c-70d6-b614-98204dcc0c68","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/offline/pi-PA/notifications.sqlite","reason":"startup","call":0}
+{"time":"2026-10-07T08:07:39.917Z","monoMs":490211701.604708,"type":"server_ready","url":"http://127.0.0.1:64585","sessionId":"01a11567-643c-70d6-b614-98204dcc0c68","databasePath":"/Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/offline/pi-PA/notifications.sqlite"}
+{"time":"2026-10-07T08:07:39.950Z","monoMs":490211734.119916,"type":"notification_received","notification":{"id":"notif_a7f6e5a5-cd5e-4cfc-a4c1-e76ef0826eac","sessionId":"01a11567-643c-70d6-b614-98204dcc0c68","source":"CI","message":"{\"eventId\":\"ci-event-1\",\"sequence\":1,\"jobId\":\"offline-job\",\"suite\":\"storage\",\"revision\":\"offline-revision\",\"status\":\"failed\",\"summary\":\"offline transport check\",\"failures\":[{\"name\":\"external fixture\",\"error\":\"fixture\"}]}","createdAt":"2026-10-07T08:07:39.950Z","firstVisibleCall":null,"dismissedAt":null},"lastContextCall":0}
+{"time":"2026-10-07T08:07:39.988Z","monoMs":490211772.004166,"type":"provider_request","attempt":1}
+{"time":"2026-10-07T08:07:39.990Z","monoMs":490211774.125833,"type":"provider_response","status":200}
+{"time":"2026-10-07T08:07:40.001Z","monoMs":490211785.244125,"type":"provider_request","attempt":2}
+{"time":"2026-10-07T08:07:40.002Z","monoMs":490211785.755666,"type":"provider_response","status":200}
+{"time":"2026-10-07T08:07:40.004Z","monoMs":490211788.600833,"type":"provider_request","attempt":3}
+{"time":"2026-10-07T08:07:40.005Z","monoMs":490211789.062875,"type":"provider_response","status":200}
+{"time":"2026-10-07T08:07:40.007Z","monoMs":490211791.494375,"type":"provider_request","attempt":4}
+{"time":"2026-10-07T08:07:40.008Z","monoMs":490211792.000416,"type":"provider_response","status":200}

@@ -1,0 +1,1 @@
+{"private":true,"type":"module","scripts":{"preflight":"node preflight.mjs","run":"node run.mjs","report":"node summarize.mjs"}}

@@ -1,0 +1,118 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp, readFile, writeFile, readdir, rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join, resolve} from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {parseCSV,stringifyCSV} from '../src/csv.mjs';
+import {parseVersion,compareVersions} from '../src/version.mjs';
+import {createCatalog} from '../src/catalog.mjs';
+import {searchRecords} from '../src/search.mjs';
+import {planDependencies,reverseDependencies} from '../src/graph.mjs';
+import {exportCSV,importCSV,exportNDJSON,importNDJSON} from '../src/transfer.mjs';
+import {createServer} from '../src/server.mjs';
+const record = (id, dependencies = [], extra = {}) => ({id,name:id,version:'1.0.0',tags:[],dependencies,...extra});
+
+test('CSV preserves quoted newlines, whitespace, empty records and rejects malformed quotes', () => {
+  const rows = [[' a ','b,c','d"e','line\r\nbreak'],['','','','']];
+  assert.deepEqual(parseCSV(stringifyCSV(rows) + '\r\n'),rows);
+  assert.deepEqual(parseCSV(''),[]);
+  assert.deepEqual(parseCSV('\n'),[['']]);
+  for (const text of ['a"b,c','"a','"a"x']) assert.throws(() => parseCSV(text));
+});
+test('semantic ordering, numeric prereleases and strict syntax', () => {
+  const versions = ['1.0.0-alpha','1.0.0-alpha.2','1.0.0-alpha.10','1.0.0-beta','1.0.0','2.0.0','10.0.0'];
+  for (let i = 1; i < versions.length; i++) assert.equal(compareVersions(versions[i-1],versions[i]),-1);
+  assert.equal(compareVersions('1.0.0-99999999999999999999','1.0.0-100000000000000000000'),-1);
+  assert.deepEqual(parseVersion('1.2.3-pre-release'),{major:1,minor:2,patch:3,prerelease:['pre-release']});
+  for (const v of ['01.0.0','1.2','1.2.3+build','1.2.3-01','1.2.3-',' 1.2.3']) assert.throws(() => parseVersion(v));
+});
+test('catalog isolates copies and rolls back multi-operation failures', () => {
+  const seed = record(' a ',[],{name:' A ',tags:[' TOOL ','tool','','Web']});
+  const catalog = createCatalog([seed]); seed.tags.push('oops');
+  assert.deepEqual(catalog.get('a').tags,['tool','web']);
+  const got = catalog.get('a'); got.dependencies.push('evil');
+  assert.deepEqual(catalog.get('a').dependencies,[]);
+  const before = catalog.list();
+  assert.throws(() => catalog.applyBatch([{type:'update',id:'a',patch:{name:'changed'}},{type:'add',record:record('a')}]));
+  assert.deepEqual(catalog.list(),before);
+  assert.throws(() => catalog.update('a',{id:'b'}));
+  assert.throws(() => catalog.add(record('b',[],{version:'bad'})));
+  assert.equal(catalog.get('b'),null);
+  catalog.applyBatch([{type:'add',record:record('b')},{type:'remove',id:'a'}]);
+  assert.deepEqual(catalog.list().map(r => r.id),['b']);
+});
+test('search applies all filters before paging, with ascending id tie-breaks', () => {
+  const records = [record('b',[],{name:'Same',tags:['tool','web'],version:'2.0.0'}),record('a',[],{name:'Same',tags:['tool','web'],version:'2.0.0'}),record('c',[],{name:'Other',tags:['tool'],version:'1.0.0'})];
+  const before = structuredClone(records);
+  const result = searchRecords(records,{text:' SAME ',tags:[' WEB ','tool'],versionMin:'1.0.0',versionMax:'2.0.0',sortBy:'name',order:'desc',offset:1,limit:1});
+  assert.equal(result.total,2); assert.equal(result.items[0].id,'b');
+  result.items[0].tags.push('new'); assert.deepEqual(records,before);
+  for (const q of [{offset:-1},{limit:101},{limit:0},{sortBy:'x'},{order:'x'},{versionMin:'bad'}]) assert.throws(() => searchRecords(records,q));
+});
+test('graph respects DFS order, sharing, cycles, and transitive reverse edges', () => {
+  const records = [record('a',['b','c']),record('b',['d']),record('c',['d']),record('d')];
+  assert.deepEqual(planDependencies(records,['a','c']),['d','b','c','a']);
+  assert.deepEqual(reverseDependencies(records,'d'),['a','b','c']);
+  assert.throws(() => planDependencies([record('a',['missing'])],['a']),/missing/);
+  assert.throws(() => planDependencies([record('a',['b']),record('b',['a'])],['a']),/cycle.*a.*b/);
+  assert.deepEqual(reverseDependencies([record('a',['b']),record('b',['a'])],'a'),['b']);
+});
+test('transfers normalize atomically and decode split UTF-8 buffers', async () => {
+  const records = [record('a',[],{name:'你好, "world"\nnext',tags:['web']}),record('b',['a'])];
+  const catalog = createCatalog();
+  assert.deepEqual(importCSV(exportCSV(records),catalog),records);
+  assert.throws(() => importCSV(exportCSV([record('c'),record('a')]),catalog),/duplicate/);
+  assert.equal(catalog.get('c'),null);
+  let text = ''; for await (const line of exportNDJSON(records)) text += line;
+  const bytes = Buffer.from(text.trimEnd());
+  async function* chunks() { yield '\n'; for (const byte of bytes) yield Buffer.from([byte]); }
+  const dest = createCatalog(); assert.deepEqual(await importNDJSON(chunks(),dest),records);
+  await assert.rejects(importNDJSON([JSON.stringify(record('c'))+'\n{bad}\n'],dest));
+  await assert.rejects(importNDJSON([JSON.stringify(record('c'))+'\n'+JSON.stringify(record('d',[],{version:'bad'}))],dest));
+  assert.equal(dest.get('c'),null);
+  assert.throws(() => importCSV('name,id,version,tags,dependencies',dest),/header/);
+});
+test('HTTP CRUD, URL ids, queries, transfers and bad requests remain usable', async t => {
+  const catalog = createCatalog(), server = createServer(catalog);
+  await new Promise(resolve => server.listen(0,'127.0.0.1',resolve));
+  t.after(() => new Promise(resolve => server.close(resolve)));
+  const base = `http://127.0.0.1:${server.address().port}`;
+  const request = (path,method='GET',body) => fetch(base+path,{method,body});
+  assert.deepEqual(await (await request('/health')).json(),{ok:true});
+  assert.equal((await request('/records','POST',JSON.stringify(record('a/b')))).status,201);
+  assert.equal((await request('/records/a%2Fb')).status,200);
+  assert.equal((await request('/records','POST',JSON.stringify(record('a/b')))).status,409);
+  assert.equal((await request('/records/a%2Fb','PATCH','{"tags":[" WEB "]}')).status,200);
+  assert.equal((await (await request('/records?tags=web')).json()).total,1);
+  assert.equal((await request('/records?limit=')).status,400);
+  assert.equal((await request('/records','POST','{')).status,400);
+  assert.equal((await request('/records','POST','x'.repeat(1024*1024+1))).status,413);
+  assert.equal((await request('/import.ndjson','POST',JSON.stringify(record('b',['a/b'])))).status,201);
+  assert.deepEqual(await (await request('/plan?ids=b')).json(),{ids:['a/b','b']});
+  const csv = await (await request('/export.csv')).text();
+  assert.equal(parseCSV(csv).length,3);
+  assert.equal((await request('/import.csv','POST',csv)).status,409);
+  assert.equal((await request('/export.ndjson')).headers.get('content-type'),'application/x-ndjson');
+  assert.equal((await request('/records/a%2Fb','DELETE')).status,204);
+  assert.equal((await request('/records/a%2Fb')).status,404);
+  assert.equal((await request('/nope')).status,404);
+  assert.equal((await request('/health')).status,200);
+});
+test('CLI creates files atomically and preserves bytes on invalid writes', async t => {
+  const directory = await mkdtemp(join(tmpdir(),'catalog-test-')); t.after(() => rm(directory,{recursive:true,force:true}));
+  const file = join(directory,'data.json');
+  const cli = (...args) => spawnSync(process.execPath,[resolve('src/cli.mjs'),...args],{encoding:'utf8'});
+  assert.notEqual(cli('list').status,0);
+  const empty = cli('list','--file',file); assert.equal(empty.status,0); assert.equal(JSON.parse(empty.stdout).total,0);
+  assert.equal(cli('add','--file',file,'--record',JSON.stringify(record('a'))).status,0);
+  const before = await readFile(file,'utf8');
+  assert.notEqual(cli('add','--file',file,'--record',JSON.stringify(record('a'))).status,0);
+  assert.equal(await readFile(file,'utf8'),before);
+  assert.deepEqual(JSON.parse(cli('plan','--file',file,'--ids','a').stdout),{ids:['a']});
+  const input = join(directory,'input.csv'); await writeFile(input,exportCSV([record('b',['a'])]));
+  assert.equal(cli('import-csv','--file',file,'--input',input).status,0);
+  assert.equal(parseCSV(cli('export-csv','--file',file).stdout).length,3);
+  assert.equal(cli('remove','--file',file,'--id','b').status,0);
+  assert.deepEqual((await readdir(directory)).sort(),['data.json','input.csv']);
+});

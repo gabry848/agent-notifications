@@ -1,6 +1,99 @@
-# Benchmarks, evidence and technical files
+# Benchmarks
 
-This index covers the recorded research, including unfavorable and incomplete results. The tables summarize selected questions; the linked exports contain every measured run and all 196 paired metric comparisons. [README](../README.md) · [Research story](research-story.md) · [Interactive report](../research/final-20261006/research.html).
+This index covers the recorded research, including unfavorable and incomplete results. The tables summarize selected questions; linked exports retain every attempt in the current CI study and the historical campaign's 196 paired metric comparisons. [README](../README.md) · [Research story](research-story.md) · [Historical interactive report](../research/final-20261006/research.html).
+
+## README summary
+
+The README highlights three positive observations from the completed CI coding study. Both modes continue useful development during CI; the control uses adaptive batch polling. Each workload has five complete correct pairs (ten runs), using Pi 0.99.2, `openai-codex/gpt-6.1-sol`, medium thinking and the current notification adapter.
+
+| README result | Exact comparison | Matched sample | Source |
+|---|---|---:|---|
+| 94.6% less CI delivery delay | First model exposure minus result publication; per-run median over four identical initial jobs, then median paired change vs polling | 5 Catalog pairs | [Delivery evidence](../research/ci-development-20261007/delivery.json) |
+| 10% fewer model requests | Actual provider HTTP attempts, including notification lifecycle tools and waits in the full run | 5 Catalog pairs | [Independent paired audit](../research/ci-comparison-20261007/paired-audit.json) |
+| 50% fewer manual CI checks | `ci_status` batch reads; median paired reduction, not a count of model requests or all tool calls | 5 Notes pairs | [Notes metrics](../research/notes-mcp-ci-20261007/metrics.json) |
+
+For each eligible pair, reduction is `100 × (polling − notifications) / polling`; the README shows the median. For delivery, first calculate each run's median over the same four initial jobs. The 94.6% value is a median of paired reductions, not a percentage calculated from the group medians (4.04 s with notifications and 95.43 s with polling). Delivery is a secondary analysis requested after Catalog pair 3; it is not a preregistered primary endpoint. Old/stale outcomes remain included in this delivery comparison, so it does not measure current-bug repair speed.
+
+All 20 measured applications passed independent acceptance and latest applicable CI. Notes has no actionable current-source failure at first exposure: agents had already changed the defective code before seeing the old failure. Neither workload's polling agent simply sat idle. These small cohorts support earlier result visibility and fewer retrieval/model requests on the named workloads, not a general speed or token-saving claim.
+
+## CI while coding
+
+Change vs adaptive polling; negative means less:
+
+| Workload | Correct pairs | Verified task time | Model requests | Total tokens |
+|---|---:|---:|---:|---:|
+| Catalog CI | 5 | -3.1% | -10.0% | +44.8% |
+| Notes MCP + dashboard | 5 | +1.6% | 0.0% | +40.1% |
+
+These are median paired changes, kept separate by workload. Tokens include cached input reread across requests plus output. The journal cache mode was active: across the five Notes runs per mode, 86.2% of input was served from cache with notifications versus 85.5% with polling (fractions of summed cached/input tokens, not request hit frequencies). High cache reuse does not remove those input tokens from cumulative totals.
+
+Verified runs lasted roughly 4–7 minutes, below the intended 10–15-minute workload. Fixed simulated queue delays precede real tests on immutable source snapshots. Mode order alternates, inference is sequential, and calibration/technical failures remain separate. Notes pair 1 ran on October 7; pairs 2–5 resumed on October 8 with unchanged inputs/settings. Provider/time variation and five-pair samples limit generalization.
+
+[Final comparison](../research/ci-comparison-20261007/report.md) · [Protocol](../research/ci-comparison-20261007/protocol.md) · [Catalog report](../research/ci-development-20261007/report.md) · [Notes behavioral review](../research/notes-mcp-ci-20261007/final-behavior.md) · [Final verification](../research/ci-comparison-20261007/final-review.json).
+
+## Earlier requirement-change pilot
+
+Three Pi agents were writing ingest, delivery and view modules when the message-length limit changed to 192 characters. Each mode ran its own three-agent group using `openai-codex/gpt-6.1-sol`, thinking medium.
+
+| Update delivery | First correct code edit |
+|---|---:|
+| Adaptive polling | 32.3 s |
+| Agent Notifications | 20.5 s |
+
+Both times start at the producer acknowledgement and end at the view actor's first correct code edit. The other two actors' turns were still open at that point. These are single observations per mode, rounded to one decimal, not repeated latency estimates. The polling group completed in about 3.5 minutes; the notification group was interrupted before completion. This supports the observed response to the requirement change, not a complete-run efficiency percentage.
+
+[Audited action timestamps](../research/notification-work-pilot-20261006/audit/contract-action-evidence.json) · [Full pilot results](#concurrent-work-and-agent-coordinator).
+
+## Controlled cache probe
+
+The applied native Pi/Codex cache fix was measured separately in the second controlled triplet. The coding workloads in the historical polling summary below were measured before the current journal implementation. No historical run has been repriced or given a hypothetical cache hit.
+
+| Layout | Episode | Cached input / cumulative input | Exact API-equivalent USD |
+|---|---|---:|---:|
+| No notifications | `baseline-pair2` | 93,056 / 120,695 = 77.1% | $0.0663836 |
+| Old notifications | `current-pair2` | 72,960 / 121,439 = 60.1% | $0.1060540 |
+| Current notifications | `fixed-pair2` | 87,040 / 123,069 = 70.7% | $0.0825620 |
+
+The episode ID `current-pair2` means the **old frozen layout**, which was current at the start of the investigation; `fixed-pair2` exercises the applied journal implementation. Each variant made seven model HTTP requests and six fixture tool calls, with the same provider, model, settings and facts. Cost includes the complete episode. The percentage calculations use the exact values:
+
+- Fix versus old layout: `100 × (0.0825620 / 0.1060540 − 1) = −22.2%`, a $0.0234920 reduction.
+- Fix versus no notifications: `100 × (0.0825620 / 0.0663836 − 1) = +24.4%`, a $0.0161784 increase.
+
+This is one controlled comparison of the applied fix, not a replicated coding benchmark or a polling comparison. It includes a second-request cache miss before any nonempty notification in both the old and fixed runs. Requests 4–7 had 84.47% cached input with the fix versus 84.88% without notifications, but that warm-window view does not replace full-episode cost. The earlier prototype triplet is separate: its −47.4% cost versus its old-layout control is not the applied-fix result.
+
+[Cache report](../research/cache-fix-20261006/report.md) · [Six-episode metrics](../research/cache-fix-20261006/metrics.json) · [Verification](../research/cache-fix-20261006/verification.json). The facts also appear in common tool outputs to isolate caching; these tests establish no productivity gain. There is no recorded post-journal rerun of the coding workloads below, so their percentages cannot be updated by applying the cache probe's reduction.
+
+## Historical polling summary
+
+These earlier comparisons used `openai/gpt-6.1-sol`, not the later native `openai-codex` journal implementation. Main S3/S4 used implicit caching; GitHub and confirmation S6 used the earlier provider-specific stable-prefix adapter. That adapter and the native journal fix are distinct implementations.
+
+Change **vs polling**; negative means less usage/time/cost, positive means more:
+
+| Workload | Model requests | Total tokens | Time | Est. cost |
+|---|---:|---:|---:|---:|
+| One job + coding · 5 pairs | −27.3% | −12.5% | −9.3% | +92.5% |
+| Six jobs + coding · 4 pairs | −41.9% | −41.0% | −16.7% | +88.2% |
+| GitHub CI success · 2 pairs | −11.1% | +15.2% | −7.1% | −15.2% |
+| Noisy updates + coding · 10 pairs | −22.2% | +26.3% | −18.3% | +63.0% |
+
+The +92.5% and +88.2% figures are historical measured costs, not estimates for the current adapter. In S3, median cached-input fractions were 43.9% for notifications and 82.9% for adaptive polling; S4 had 34.2% and 87.0%, respectively (correct runs within each mode). For example, seed 301 used 19,199 total tokens with notifications versus 22,324 with polling, but wrote 10,360 versus 2,672 cache tokens and read only 8,120 versus 17,873. Its estimated cost was $0.0337100 versus $0.0182573. Cache reads and writes have different tariffs; fewer total tokens alone do not imply lower cost. The later native-cache probe does not establish the cause of every historical miss.
+
+For each complete, correct pair, change is `100 × (notification − control) / control`; the displayed value is the median of those percentages, rounded to one decimal. This reverses the sign of `medianSavingPct` in the [original results](../artifacts/benchmark-real-20261006-r1/results.json) and [comparison export](../research/final-20261006/comparisons.csv). It is not a percentage calculated from group medians or an average across workloads.
+
+| Historical workload | Recorded comparison | Polling baseline | Valid pairs | Evidence |
+|---|---|---|---:|---|
+| One job + coding | Main S3, N vs PA | Adaptive pauses: 2/4/8/16/30 s | 5 | Exploratory |
+| Six jobs + coding | Main S4, N vs PA | Adaptive pauses: 2/4/8/16/30 s | 4 | Exploratory; one N run failed |
+| GitHub CI success | GitHub GH-success, N vs P10 | Checks at least 10 s apart | 2 | Exploratory; scheduling uncontrolled |
+| Noisy updates + coding | Confirmation S6, N vs P10 | Checks at least 10 s apart | 10 | Frozen confirmation |
+
+The job fixtures take 20 seconds (S3), or finish out of order after 10–60 seconds (S4), while the agent edits/tests files. S6 combines a ten-second job with diagnostics and 19 irrelevant updates. The CI row uses real GitHub Actions runs. These are separate workloads, not a single pooled savings claim.
+
+The four columns map to `providerAttempts` (model HTTP attempts, not calls to the notification endpoint), `tokens.totalTokens` (cumulative input, output and cached input), `wallMs` (the full turn, including the final response and verification, excluding process startup), and `estimatedUsd` (frozen API tariffs, not invoices). Lifecycle tools and any await fallback remain counted. Fewer tokens can still cost more when the cache mix changes.
+
+S3's token-saving interval and GitHub's timing interval include zero: their displayed medians do not establish consistent improvements. S4 excludes its failed notification run from the four valid pairs; the failure and its cost remain in the exports. The GitHub success adapter failure is retained too. The historical table includes S6's higher token use and cost, and the sections below retain all other unfavorable and incomplete results.
+
+The confirmed waiting-only S2 case reduced requests versus adaptive polling, but used an await fallback in every notification run and did not beat the wait-only control under the frozen benefit criteria. The Agent Coordinator group is incomplete and supplies no valid efficiency percentage; the earlier pilot records only its observed response to one requirement change.
 
 ## Reading the numbers
 
@@ -11,6 +104,8 @@ Costs are **API-equivalent estimates at frozen tariffs**, including cache catego
 Comparisons use complete, correct pairs matched by scenario, seed and phase, with paired bootstrap intervals. The exports also retain failures and their costs. A seed fixes fixture/order, not model sampling. “Median saved” is the median of paired control-minus-notification differences; a negative saving means N used more. Exploratory selection is distinct from frozen confirmation.
 
 ## Consolidated data
+
+This frozen export covers the campaigns completed on October 6. The later 20-run CI coding study above is reported separately and is not included in these historical totals.
 
 | Metered campaign | Episodes | Model HTTP attempts | Cumulative tokens | API-equivalent USD | Scope |
 |---|---:|---:|---:|---:|---|

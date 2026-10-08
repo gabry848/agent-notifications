@@ -1,0 +1,64 @@
+{
+  "paidInference": false,
+  "externalProviderRequests": 0,
+  "checks": [
+    {
+      "check": "reference legacy_smoke",
+      "passed": true,
+      "wallMs": 72
+    },
+    {
+      "check": "reference legacy_integrity",
+      "passed": true,
+      "wallMs": 76
+    },
+    {
+      "check": "reference storage",
+      "passed": true,
+      "wallMs": 244
+    },
+    {
+      "check": "reference mcp",
+      "passed": true,
+      "wallMs": 334
+    },
+    {
+      "check": "reference web",
+      "passed": true,
+      "wallMs": 272
+    },
+    {
+      "check": "independent reference oracle",
+      "passed": true,
+      "wallMs": 312
+    },
+    {
+      "check": "scaffold legacy_smoke",
+      "passed": true,
+      "observedCI": "green",
+      "failedChecks": 0
+    },
+    {
+      "check": "scaffold legacy_integrity",
+      "passed": true,
+      "observedCI": "red",
+      "failedChecks": 10
+    },
+    {
+      "check": "independent oracle rejects removed FK enforcement",
+      "passed": true
+    },
+    {
+      "check": "Pi PA mocked provider, tools, exposure and usage",
+      "passed": true,
+      "paidInference": false,
+      "modelResponses": 4
+    },
+    {
+      "check": "Pi N mocked provider, tools, exposure and usage",
+      "passed": true,
+      "paidInference": false,
+      "modelResponses": 4
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "ci-0009",
+  "group": "csv",
+  "revision": "3b030c4b66305cca611446ae0fed588cfaac3e9e3d4d5bcf4b965889479381aa",
+  "status": "passed",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/csv.mjs": "62c95ad0c6351447200583dbbb5b773588b083fa735ce350769a5f43e9d59524"
+  },
+  "queued": {
+    "time": "2026-10-07T08:39:06.693Z",
+    "monoMs": 492098480.004208
+  },
+  "sourceFiles": [
+    "src/csv.mjs"
+  ],
+  "started": {
+    "time": "2026-10-07T08:39:16.697Z",
+    "monoMs": 492108483.830208
+  },
+  "completed": {
+    "time": "2026-10-07T08:39:16.749Z",
+    "monoMs": 492108535.635125
+  },
+  "classification": "passed",
+  "result": {
+    "passed": true,
+    "groups": [
+      "csv"
+    ],
+    "assertions": 2505,
+    "durationMs": 9
+  },
+  "exitCode": 0,
+  "staleAtCompletion": false,
+  "published": {
+    "time": "2026-10-07T08:39:16.750Z",
+    "monoMs": 492108536.106416
+  }
+}

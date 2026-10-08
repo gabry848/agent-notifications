@@ -1,0 +1,41 @@
+{
+  "id": "ci-0014",
+  "group": "graph",
+  "revision": "2bb3d93722a52b32f55babeee0bb6092fc6a446178ae66170e5d30bdee2f320e",
+  "status": "passed",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/graph.mjs": "690fd4b951fec339be8bd717e0f6b076c7f2af7be67cce7faba495f28f2ecd74"
+  },
+  "queued": {
+    "time": "2026-10-07T09:34:55.603Z",
+    "monoMs": 495447499.412333
+  },
+  "sourceFiles": [
+    "src/graph.mjs"
+  ],
+  "started": {
+    "time": "2026-10-07T09:35:05.607Z",
+    "monoMs": 495457502.859666
+  },
+  "completed": {
+    "time": "2026-10-07T09:35:05.653Z",
+    "monoMs": 495457549.428208
+  },
+  "classification": "passed",
+  "result": {
+    "passed": true,
+    "groups": [
+      "graph"
+    ],
+    "assertions": 5,
+    "durationMs": 1
+  },
+  "exitCode": 0,
+  "staleAtCompletion": false,
+  "published": {
+    "time": "2026-10-07T09:35:05.654Z",
+    "monoMs": 495457549.683916
+  }
+}

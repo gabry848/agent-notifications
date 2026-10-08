@@ -1,93 +1,83 @@
-# Dynamic Notification Memory
+# Agent Notifications
 
-External events become part of an agent’s context on its next model request. A script, an MCP integration or another agent can publish an update while the agent continues working. The model receives the fact without calling a tool to check whether it arrived.
+**Give your agent updates while it works.**
 
-This is an experimental runtime capability and a research project. **Pi is the first adapter**: a convenient place to implement and measure the idea, rather than the scope of the idea itself.
+Agent Notifications is an experimental runtime extension for AI agents. It delivers CI results, background job updates and messages from other agents directly into the next model request, without a tool call to check for them.
 
-[Research story](docs/research-story.md) · [Detailed specification](docs/notification-spec.md) · [All benchmarks and technical artifacts](docs/benchmarks.md) · [Interactive research report](research/final-20261006/research.html)
+Available today as a **[Pi extension](docs/pi-adapter.md)**.
 
-## How it works
+## See the difference
 
-A producer sends an event to a local HTTP receiver. SQLite stores it for the destination session. Before the next model request, the runtime adds a snapshot of the active notifications near the end of the context. Each event has an ID, a receive timestamp and an age measured in context preparations. The agent can dismiss incorporated events, including all active events with `*`, and consult their history later.
+CI is running while the agent edits another file. An illustrative flow:
 
-```text
-External producer ── POST /notify ──► SQLite, per session
-                                             │
-                                    next context preparation
-                                             ▼
-┌─────────────────────────────────────────────────────────┐
-│ System prompt + static notification instructions        │
-│ Tools                                                   │
-│ Conversation                                            │
-│ Current input / latest tool results                      │
-├─────────────────────────────────────────────────────────┤
-│ Runtime Notifications — latest active queue              │
-└─────────────────────────────────────────────────────────┘
-                         next model request
-```
+| Polling | Agent Notifications |
+|---|---|
+| “Is CI done?” → Still running. | Keep editing. |
+| “Is CI done?” → Still running. | Keep editing. |
+| “Is CI done?” → `auth.test.ts failed`. | Receive `CI: auth.test.ts failed` in the next request. |
+| Inspect the failing test. | Inspect the failing test. |
 
-This shows Pi’s default `tail` placement. `before-input` is also supported. With the native Codex journal mode, immutable earlier snapshots remain at their original positions in the conversation projection; **only the last notification section is the active queue**. See the [memory layout and lifecycle](docs/notification-spec.md#context-layout).
+**The agent gets the result without asking for it.**
 
-Arrival does not wake an idle agent or interrupt a running tool or model request. Delivery happens at the next natural context preparation. No retrieval call is needed to acquire the event, but its text still uses context tokens, and managing it can require tools.
+## Try it
 
-## Try the Pi adapter
-
-Requires Node.js 24+ and a configured Pi installation. The adapter was tested with Pi **0.99.2**. Run from this checkout:
+Requires Node.js 24+ and a configured Pi installation. Tested with Pi 0.99.2. From this checkout:
 
 ```sh
 PI_NOTIFY_PORT=8765 pi -e ./src/pi-extension.ts
 ```
 
-From another terminal:
+Send an update from another terminal:
 
 ```sh
 curl -X POST http://127.0.0.1:8765/notify \
   -H 'Content-Type: application/json' \
-  -d '{"source":"CI","message":"CI run 4821 finished: one test failed."}'
+  -d '{"source":"CI","message":"CI: auth.test.ts failed."}'
 ```
 
-Continue working in Pi, or send it a message if it is idle. The next request includes the event. The default tool can clear the queue with `notifications_dismiss({id:"*"})`; removed events remain in history.
+If Pi is idle, ask it: **“What update did you receive?”** Its next request includes the notification. [Full setup](docs/pi-adapter.md).
 
-The minimal adapter needs no separate notification MCP server or local npm installation. [Full installation, persistence, session routing and configuration](docs/pi-adapter.md).
+## How it works
 
-## What this is designed for
+1. A script, an MCP bridge or another agent sends an update to `POST /notify`.
+2. The runtime saves it for the session and adds it to the next model request.
+3. The agent can dismiss it when handled; it stays available in history.
 
-The main target is **useful work continuing while external facts change**: background jobs finishing out of order, a peer changing a shared contract, a CI result arriving during another edit, or a relevant event the agent never explicitly requested.
+Updates follow the normal agent loop. They do not wake an idle agent or interrupt a running call. [Specification](docs/notification-spec.md).
 
-We tested those capabilities, then broadened the experiments to polling, waiting, noise, lifecycle errors and cache behavior. The measurements show that fewer checks can mean fewer model requests; they also show that fewer requests do not automatically mean fewer tokens or lower cost.
+## Benchmarks
 
-| Workload | Evidence | Median model HTTP requests saved | Median total tokens saved | Median full-turn time saved | API-equivalent cost change |
-|---|---|---:|---:|---:|---:|
-| One 20-second background job + file work, vs adaptive polling | Exploratory, 5 pairs | 3 | 2,740 | 3.07 s | **+$0.0162561** |
-| Six out-of-order jobs + file work, vs adaptive polling | Exploratory, 4 valid pairs; one notification run failed | 6.5 | 20,680.5 | 16.49 s | **+$0.0219337** |
-| Real GitHub Actions success, webhook delivery vs status polling | Exploratory, 2 pairs | 1 | **−2,544** | 3.79 s | **−$0.0032735** |
+**Get CI results sooner while the agent keeps coding.**
 
-These are medians of paired differences, not differences between group medians. Negative tokens saved means more tokens used. The first workload’s token interval and the GitHub timing interval include zero. Costs are frozen-tariff estimates, not subscription invoices. [Methods, intervals, all outcomes and raw files](docs/benchmarks.md).
+Both agents built real applications while tests ran in the background. One received notifications; the other kept working and checked CI at useful boundaries.
 
-With **Agent Coordinator**, three Pi agents edited nearby files using a real adapted MCP server. One agent received an externally published contract change and made the correct code edit **20.53 seconds after acknowledgement**, while peer turns were still open, without retrieving that fact. The notification group later stopped at a budget-reservation guard: this is evidence of a useful action, **not a completed efficiency win**. [Action evidence and limitations](docs/benchmarks.md#concurrent-work-and-agent-coordinator).
+| Measured benefit | Reduction vs adaptive polling | Workload |
+|---|---:|---|
+| Delay before the model sees CI results | **94.6%** | Catalog CI |
+| Requests to the model | **10%** | Catalog CI |
+| Manual CI status checks | **50%** | Notes MCP + dashboard |
 
-## Where it performs poorly
+Median paired reductions, **5 complete correct pairs per workload; 20 successful runs**. Delivery measures identical initial CI results from publication to the first model request containing them.
 
-When the only useful next step depends on a result, a competitive wait tool is a strong choice. In the confirmed 90-second waiting case, the notification mode used an await fallback in every run: it saved 11 model requests and $0.00639075 versus adaptive polling, but used one more request and 4,050 more tokens than the wait-only control. No advantage over that control met the frozen benefit criteria.
+Small exploratory samples: overall completion time was mixed and total tokens were higher. Earlier CI visibility does not establish faster bug fixing. [Full results](research/ci-comparison-20261007/report.md) · [Methods and evidence](docs/benchmarks.md#readme-summary).
 
-Noise is costly. In the confirmed noisy case, notifications saved two requests and 6.07 seconds versus fixed polling, but used **4,517 more tokens** and cost **$0.012648 more** per paired median. Oversized messages were rejected rather than silently truncated. Repeated active events, unnecessary dismiss calls and unstable context prefixes also created overhead. [Negative results and implementation lessons](docs/benchmarks.md#unfavorable-results).
+**Earlier pilot: a requirement changes while three agents are coding.**
 
-## Use cases I want to explore
+```mermaid
+flowchart TB
+    U["New requirement:<br/>messages must fit in 192 characters"]
 
-- **Agent Coordinator:** deliver scoped activity changes, contract revisions and directed messages while peers work; retain explicit conflict checks before overlapping edits.
-- **MCP servers and read-only resources:** bridge source events into the runtime queue so relevant changes become visible without repeated model-driven reads.
-- **GitHub Actions during PR work:** open a PR, continue another task, then receive a result tied to its run ID and commit; act only if that revision is still relevant.
+    U --> P["Polling<br/>The agent checks for updates"]
+    U --> N["Agent Notifications<br/>The update enters the next model request"]
 
-[Proposed flows, diagrams and what has actually been tested](docs/use-cases.md).
+    P --> PA["Code updated<br/>32.3 seconds"]
+    N --> NA["Code updated<br/>20.5 seconds"]
+```
 
-## Roadmap
+Observed response to one update; the notification group was interrupted before completion. [Pilot evidence](docs/benchmarks.md#earlier-requirement-change-pilot).
 
-Pi is implemented. Adapters for **Codex, a DeepSeek harness and oh-my-pi** are planned, without a promised schedule. The next research steps are complete concurrent-work comparisons, followed by calibrated 30–60-minute workloads, plus an independent receiver for events arriving while the agent process is off.
+## Next
 
-I also want to test **Jev**, TypeSafe AI’s classification model, for agent-defined relevance filters. That remains a proposal: classifier calls, latency, cost and missed important events must be measured alongside any reduction in context noise. [Roadmap and official Jev references](docs/roadmap.md).
+Pi works today. Codex, DeepSeek and oh-my-pi adapters, relevance filtering and longer benchmarks are planned. [Roadmap](docs/roadmap.md).
 
-## Author’s note
-
-I built this because I wanted to send notifications to an agent without making it call something to look for them. I was especially interested in read-only MCP servers and resources: the agent can inspect them, but I wanted changes to reach its working context while it was doing something else.
-
-Pi gave me a practical way to test the idea. The research is about that capability and where it helps. I want to keep the useful cases, the failures and the costs visible, and find out when notifications deserve a place in an agent’s runtime.
+[Use cases](docs/use-cases.md) · [Research story](docs/research-story.md) · [All benchmarks](docs/benchmarks.md) · [Interactive report](research/final-20261006/research.html)

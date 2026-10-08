@@ -1,0 +1,62 @@
+{
+  "suite": "legacy_integrity",
+  "seed": 7100,
+  "passed": true,
+  "checks": [
+    {
+      "name": "create and retrieve simple note",
+      "passed": true
+    },
+    {
+      "name": "database survives close/reopen",
+      "passed": true
+    },
+    {
+      "name": "normalize text and duplicate tags",
+      "passed": true
+    },
+    {
+      "name": "atomic invalid create",
+      "passed": true
+    },
+    {
+      "name": "empty text rejected",
+      "passed": true
+    },
+    {
+      "name": "oversized text rejected",
+      "passed": true
+    },
+    {
+      "name": "literal percent and underscore filters",
+      "passed": true
+    },
+    {
+      "name": "exact normalized tag and newest-first pagination",
+      "passed": true
+    },
+    {
+      "name": "update replaces tag set",
+      "passed": true
+    },
+    {
+      "name": "atomic invalid update",
+      "passed": true
+    },
+    {
+      "name": "missing identifiers",
+      "passed": true
+    },
+    {
+      "name": "delete cascades relations and excludes unused tags",
+      "passed": true
+    },
+    {
+      "name": "invalid pagination rejected",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "exitCode": 0,
+  "wallMs": 69
+}

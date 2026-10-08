@@ -1,0 +1,45 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "name": "SDK client writes persistent tagged notes",
+      "passed": true
+    },
+    {
+      "name": "dashboard displays MCP-created note with safe HTML",
+      "passed": true
+    },
+    {
+      "name": "web form edit and filters share persisted state",
+      "passed": true
+    },
+    {
+      "name": "invalid import across web is atomic",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  {\n    notes: [\n      {\n        tags: [\n          'done'\n...\n      },\n+     {\n+       tags: [\n+         'valid'\n+       ],\n+       text: 'would leak'\n+     }\n    ],\n    version: 1\n  }\n\n    at file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:22:275\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async check (file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:15:34)\n    at async file:///Users/gabry848/Documents/Projects/pi-notifications/research/notes-mcp-ci-20261007/oracle.mjs:22:1"
+    },
+    {
+      "name": "pagination retains all notes without duplication",
+      "passed": true
+    },
+    {
+      "name": "MCP restart sees web edits and accepts independent export/import",
+      "passed": true
+    },
+    {
+      "name": "SQLite integrity and cascade constraints",
+      "passed": true
+    },
+    {
+      "name": "web restart retains imported note and deleted state",
+      "passed": true
+    },
+    {
+      "name": "MCP and web both execute the shared import helper",
+      "passed": true
+    }
+  ],
+  "coverage": "Official MCP SDK, cross-process SQLite persistence, HTML forms and HTTP APIs. No browser JavaScript or visual-layout automation.",
+  "exitCode": 1,
+  "wallMs": 316
+}

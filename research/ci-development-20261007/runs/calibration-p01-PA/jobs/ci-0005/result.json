@@ -1,0 +1,45 @@
+{
+  "id": "ci-0005",
+  "group": "integrity",
+  "revision": "508bd32b0beb2a921d8b5cc2e5cec606de742117865a1b554dfc5fe8167ab1b2",
+  "status": "passed",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+    "src/csv.mjs": "8ba71f56d24a53893b041f74ad47ff2bce0a89b435715863e25d856dfc3b0a8d",
+    "src/version.mjs": "fc01867280e2880f8d0f859ca8a6822c58776ed82adf909e1f10538458b3f14d"
+  },
+  "queued": {
+    "time": "2026-10-07T08:24:42.010Z",
+    "monoMs": 491233780.307041
+  },
+  "sourceFiles": [
+    "src/catalog.mjs",
+    "src/csv.mjs",
+    "src/version.mjs"
+  ],
+  "started": {
+    "time": "2026-10-07T08:24:52.013Z",
+    "monoMs": 491243783.438583
+  },
+  "completed": {
+    "time": "2026-10-07T08:24:52.126Z",
+    "monoMs": 491243896.756166
+  },
+  "classification": "passed",
+  "result": {
+    "passed": true,
+    "groups": [
+      "integrity"
+    ],
+    "assertions": 3,
+    "durationMs": 66
+  },
+  "exitCode": 0,
+  "staleAtCompletion": false,
+  "published": {
+    "time": "2026-10-07T08:24:52.127Z",
+    "monoMs": 491243897.160708
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "version": "v2",
+  "paidInferenceRuns": 0,
+  "offlinePreflight": "offline/v2/preflight.json",
+  "status": "Preserved before proposed v3; no N or measured provider run has started."
+}

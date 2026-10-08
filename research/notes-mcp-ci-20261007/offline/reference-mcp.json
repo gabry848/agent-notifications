@@ -1,0 +1,42 @@
+{
+  "suite": "mcp",
+  "seed": 7100,
+  "passed": true,
+  "checks": [
+    {
+      "name": "official MCP SDK compatibility",
+      "passed": true
+    },
+    {
+      "name": "standard initialize and notifications",
+      "passed": true
+    },
+    {
+      "name": "all tool descriptors",
+      "passed": true
+    },
+    {
+      "name": "external CRUD/tag client",
+      "passed": true
+    },
+    {
+      "name": "read resource",
+      "passed": true
+    },
+    {
+      "name": "invalid calls and unknown methods",
+      "passed": true
+    },
+    {
+      "name": "atomic import and portable export",
+      "passed": true
+    },
+    {
+      "name": "seeded client calls across restarts",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "exitCode": 0,
+  "wallMs": 334
+}

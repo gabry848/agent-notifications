@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-08T09:38:18.930Z",
+  "taskRuntimeHashesChecked": 28,
+  "allTaskRuntimeHashesMatchInitial": true,
+  "artifactFilesScanned": 1577,
+  "credentialOrSignatureFindingPaths": [],
+  "authSymlinksSkipped": true,
+  "runs": [
+    {
+      "name": "calibration-p01-N",
+      "correct": true,
+      "snapshotsChecked": 23,
+      "eventsChecked": 23,
+      "oracle": true,
+      "piExitCode": 0
+    },
+    {
+      "name": "calibration-p01-PA",
+      "correct": true,
+      "snapshotsChecked": 21,
+      "eventsChecked": 21,
+      "oracle": true,
+      "piExitCode": 0
+    },
+    {
+      "name": "measured-p01-N",
+      "correct": true,
+      "snapshotsChecked": 19,
+      "eventsChecked": 19,
+      "oracle": true,
+      "piExitCode": 0
+    },
+    {
+      "name": "measured-p01-PA",
+      "correct": true,
+      "snapshotsChecked": 21,
+      "eventsChecked": 21,
+      "oracle": true,
+      "piExitCode": 0
+    },
+    {
+      "name": "measured-p02-N",
+      "correct": true,
+      "snapshotsChecked": 24,
+      "eventsChecked": 24,
+      "oracle": true,
+      "piExitCode": 0
+    },
+    {
+      "name": "measured-p02-PA",
+      "correct": true,
+      "snapshotsChecked": 21,
+      "eventsChecked": 21,
+      "oracle": true,
+      "piExitCode": 0
+    },
+    {
+      "name": "measured-p03-N",
+      "correct": true,
+      "snapshotsChecked": 28,
+      "eventsChecked": 28,
+      "oracle": true,
+      "piExitCode": 0
+    },
+    {
+      "name": "measured-p03-PA",
+      "correct": true,
+      "snapshotsChecked": 30,
+      "eventsChecked": 30,
+      "oracle": true,
+      "piExitCode": 0
+    },
+    {
+      "name": "measured-p04-N",
+      "correct": true,
+      "snapshotsChecked": 20,
+      "eventsChecked": 20,
+      "oracle": true,
+      "piExitCode": 0
+    },
+    {
+      "name": "measured-p04-PA",
+      "correct": true,
+      "snapshotsChecked": 23,
+      "eventsChecked": 23,
+      "oracle": true,
+      "piExitCode": 0
+    },
+    {
+      "name": "measured-p05-N",
+      "correct": true,
+      "snapshotsChecked": 21,
+      "eventsChecked": 21,
+      "oracle": true,
+      "piExitCode": 0
+    },
+    {
+      "name": "measured-p05-PA",
+      "correct": true,
+      "snapshotsChecked": 28,
+      "eventsChecked": 28,
+      "oracle": true,
+      "piExitCode": 0
+    }
+  ],
+  "issues": []
+}

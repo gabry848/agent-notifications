@@ -1,0 +1,383 @@
+{
+  "runId": "measured-p4-PA-a1",
+  "generatedAt": "2026-10-08T14:23:33.103Z",
+  "frozenManifestSha256": "e96f50dedf160322423e711206643074dc687c46e13b884802c72d43be03c032",
+  "checks": {
+    "frozenManifest": true,
+    "snapshots": true,
+    "requiredCI": true,
+    "lockedInputs": true,
+    "oracle": true,
+    "rawAccounting": true,
+    "exposureIntervals": true,
+    "noPackagedAuth": true
+  },
+  "passed": true,
+  "snapshots": [
+    {
+      "jobId": "job-1",
+      "suite": "legacy_smoke",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 20000,
+      "actualQueueMs": 20001.839375019073,
+      "ordered": true
+    },
+    {
+      "jobId": "job-2",
+      "suite": "legacy_integrity",
+      "revision": "bce3d4192df319cbb933dd29afa229365dd7e9f89fdbfc1bfbe18fbb7f0d2062",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 60000,
+      "actualQueueMs": 60001.470458984375,
+      "ordered": true
+    },
+    {
+      "jobId": "job-3",
+      "suite": "storage",
+      "revision": "ea2a9606b6f1bba4985762e3b72b0110ea2d062bf208bce69dc6271aca40729b",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 30000,
+      "actualQueueMs": 30002.00499999523,
+      "ordered": true
+    },
+    {
+      "jobId": "job-4",
+      "suite": "mcp",
+      "revision": "72f64d566a10f431114d3d896cfbf641b256e3357a83aea01b44850c094eda82",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 60000,
+      "actualQueueMs": 60006.670542001724,
+      "ordered": true
+    },
+    {
+      "jobId": "job-5",
+      "suite": "web",
+      "revision": "dddb929c7ec8938bf57e8427e6c6f8c0d5d6167809e54b1ad767afd5cb3ae500",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 45000,
+      "actualQueueMs": 45001.68695795536,
+      "ordered": true
+    },
+    {
+      "jobId": "job-6",
+      "suite": "storage",
+      "revision": "280a625a886c3409e1335969eb28ea64de3cdb132812ff3c33c5adb32d59f833",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 30000,
+      "actualQueueMs": 30002.11333298683,
+      "ordered": true
+    },
+    {
+      "jobId": "job-7",
+      "suite": "mcp",
+      "revision": "280a625a886c3409e1335969eb28ea64de3cdb132812ff3c33c5adb32d59f833",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 60000,
+      "actualQueueMs": 60001.36112499237,
+      "ordered": true
+    },
+    {
+      "jobId": "job-8",
+      "suite": "web",
+      "revision": "280a625a886c3409e1335969eb28ea64de3cdb132812ff3c33c5adb32d59f833",
+      "revisionMatches": true,
+      "componentMatches": true,
+      "eventMatches": true,
+      "queueMs": 45000,
+      "actualQueueMs": 45002.034625053406,
+      "ordered": true
+    }
+  ],
+  "required": [
+    {
+      "suite": "storage",
+      "passed": true
+    },
+    {
+      "suite": "mcp",
+      "passed": true
+    },
+    {
+      "suite": "web",
+      "passed": true
+    }
+  ],
+  "locked": [
+    {
+      "file": "CONTRACT.md",
+      "passed": true
+    },
+    {
+      "file": "package.json",
+      "passed": true
+    },
+    {
+      "file": "test/smoke.test.mjs",
+      "passed": true
+    }
+  ],
+  "accounting": {
+    "httpAttempts": 27,
+    "numericResponses": 27,
+    "piResponses": 27,
+    "input": 419047,
+    "output": 11907,
+    "cached": 351872,
+    "responses": [
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a2f4b66c81919248fde59942b1e4",
+        "input": 2163,
+        "output": 35,
+        "cached": 0,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a2fa447881918647378c27c4c38d",
+        "input": 2406,
+        "output": 140,
+        "cached": 2048,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a2ffa3cc8191a13e3d523fe7b1c6",
+        "input": 4666,
+        "output": 410,
+        "cached": 0,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a30f2c3081918f98dce6f724cd81",
+        "input": 5094,
+        "output": 1224,
+        "cached": 2304,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a32f8bd48191afdb7bcce12a89ad",
+        "input": 6335,
+        "output": 245,
+        "cached": 4992,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a3379e208191a0e806de4fd2fe47",
+        "input": 6597,
+        "output": 19,
+        "cached": 4480,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a33ab12081919600775262a1262a",
+        "input": 6756,
+        "output": 196,
+        "cached": 6144,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a3422dfc81919dbc616a74701682",
+        "input": 6970,
+        "output": 1263,
+        "cached": 6656,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a364a2bc8191945fef335a97a334",
+        "input": 8251,
+        "output": 20,
+        "cached": 6784,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a367870c8191b0fa9b6cdbac421c",
+        "input": 8404,
+        "output": 2237,
+        "cached": 8064,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a3a477248191a242050a1e70775d",
+        "input": 10658,
+        "output": 19,
+        "cached": 8320,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a3a7827881918a523eaa291a7ba3",
+        "input": 10821,
+        "output": 28,
+        "cached": 0,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a3ab93e88191a94ce94d7e964414",
+        "input": 13809,
+        "output": 57,
+        "cached": 10496,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a3b0b38081919f5151d56c34de98",
+        "input": 17856,
+        "output": 351,
+        "cached": 13696,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a3c0d40481918abb94bf003f0a98",
+        "input": 18230,
+        "output": 196,
+        "cached": 17664,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a3c9476c8191b441db4afc9b2062",
+        "input": 18449,
+        "output": 1100,
+        "cached": 10624,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a3ea812881919996ce856a02d8c3",
+        "input": 19567,
+        "output": 1924,
+        "cached": 18048,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a41fdf9081919e2fb6c527937c62",
+        "input": 21509,
+        "output": 1049,
+        "cached": 18304,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a440859c819192f285693f9a20e4",
+        "input": 22573,
+        "output": 27,
+        "cached": 19456,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a444b3788191bdb7133bc6849606",
+        "input": 22819,
+        "output": 66,
+        "cached": 21376,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a449500c819194d4d826991661ee",
+        "input": 23301,
+        "output": 509,
+        "cached": 22656,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a45e34548191a1e2eb8eadb795fb",
+        "input": 23834,
+        "output": 106,
+        "cached": 22400,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a46498488191bff6cf93f64604a8",
+        "input": 25825,
+        "output": 476,
+        "cached": 23680,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a475426c8191a93b5ba161ccc77d",
+        "input": 26325,
+        "output": 23,
+        "cached": 23168,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a4794a4c8191b0cbf5bface1d00c",
+        "input": 26578,
+        "output": 86,
+        "cached": 25728,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a47fcdd48191bde04557262119c0",
+        "input": 28743,
+        "output": 20,
+        "cached": 26240,
+        "passed": true
+      },
+      {
+        "responseId": "resp_02692dcfe66cd63e016ac7a4860d8c8191a7f3a1ccea60cfcc",
+        "input": 30508,
+        "output": 81,
+        "cached": 28544,
+        "passed": true
+      }
+    ]
+  },
+  "exposures": [
+    {
+      "eventId": "ci-event-1",
+      "firstExposureMs": 162930.5320841074,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-2",
+      "firstExposureMs": 122918.76495909691,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-3",
+      "firstExposureMs": 82602.00475001335,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-4",
+      "firstExposureMs": 7480.708084106445,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-5",
+      "firstExposureMs": 143006.03791606426,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-6",
+      "firstExposureMs": 23637.906875014305,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-7",
+      "firstExposureMs": 8575.71491599083,
+      "exposed": true,
+      "nonnegative": true
+    },
+    {
+      "eventId": "ci-event-8",
+      "firstExposureMs": 27.379167079925537,
+      "exposed": true,
+      "nonnegative": true
+    }
+  ]
+}

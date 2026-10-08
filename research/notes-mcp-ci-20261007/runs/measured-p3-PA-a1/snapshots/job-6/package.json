@@ -1,0 +1,1 @@
+{"private":true,"type":"module","scripts":{"test":"node --test test/*.test.mjs","mcp":"node src/mcp.mjs --db data/notes.sqlite","web":"node src/web.mjs --db data/notes.sqlite --port 8080"}}

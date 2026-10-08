@@ -1,0 +1,10 @@
+{
+  "protocolRevision": "v1",
+  "runId": "calibration-p0-PA-a1",
+  "measurementEligible": false,
+  "reason": "Calibration only. Resource JSON bare-array shape was enforced by acceptance but not explicit in public contract; schema is to be clarified before v2 measured comparisons.",
+  "correctnessUnderV1Oracle": true,
+  "operatorSteering": false,
+  "inputsChangedDuringRun": false,
+  "cleanupIssue": "Completed operator process retains an uncancelled 120-second oracle timeout after Pi shutdown; reported full-time metric ends at completed final oracle and is unaffected."
+}

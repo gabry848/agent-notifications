@@ -1,0 +1,42 @@
+{
+  "id": "ci-0007",
+  "group": "catalog",
+  "revision": "d94f8637b3e88d51d03b9a0d9018144a273445820fcb4383850cc214047ae600",
+  "status": "failed",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/catalog.mjs": "4fefa0b0a4ddb7f734b5171882df6130094357ef5e7bb95847531fce11fa4f5c",
+    "src/version.mjs": "4b7e09e827cbf772e6e50a08a3780d83f97d0ea23b7b809915da916e302e117a"
+  },
+  "queued": {
+    "time": "2026-10-07T08:50:30.999Z",
+    "monoMs": 492782883.125291
+  },
+  "sourceFiles": [
+    "src/catalog.mjs",
+    "src/version.mjs"
+  ],
+  "started": {
+    "time": "2026-10-07T08:50:41.002Z",
+    "monoMs": 492792886.2095
+  },
+  "completed": {
+    "time": "2026-10-07T08:50:41.048Z",
+    "monoMs": 492792931.957375
+  },
+  "classification": "source_failure",
+  "result": {
+    "passed": false,
+    "group": "catalog",
+    "assertions": 0,
+    "durationMs": 2,
+    "error": "normalize unique tags: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   ' TOOLS ',\n    'tools',\n+   '',\n+   ' Web '\n-   'web'\n  ]\n"
+  },
+  "exitCode": 1,
+  "staleAtCompletion": false,
+  "published": {
+    "time": "2026-10-07T08:50:41.049Z",
+    "monoMs": 492792932.544708
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "ci-0003",
+  "group": "version",
+  "revision": "eaada441ef200d22cc18a3b2fad0ae4a88a17be38c0871100a4e0181e900eff3",
+  "status": "failed",
+  "queueMs": 60000,
+  "trigger": "initial",
+  "sourceHashes": {
+    "src/version.mjs": "c63f6d2de862a4583c089c7b0689237cc1c2334ebe234ff50c21ebc8a72a6bf3"
+  },
+  "queued": {
+    "time": "2026-10-07T08:54:37.901Z",
+    "monoMs": 493029788.553791
+  },
+  "sourceFiles": [
+    "src/version.mjs"
+  ],
+  "started": {
+    "time": "2026-10-07T08:55:37.903Z",
+    "monoMs": 493089790.819291
+  },
+  "completed": {
+    "time": "2026-10-07T08:55:37.947Z",
+    "monoMs": 493089835.2975
+  },
+  "classification": "source_failure",
+  "result": {
+    "passed": false,
+    "group": "version",
+    "assertions": 8,
+    "durationMs": 2,
+    "error": "semantic order 1.0.0-alpha vs 1.0.0: Expected values to be strictly equal:\n\n1 !== -1\n"
+  },
+  "exitCode": 1,
+  "staleAtCompletion": true,
+  "published": {
+    "time": "2026-10-07T08:55:37.949Z",
+    "monoMs": 493089836.953166
+  }
+}

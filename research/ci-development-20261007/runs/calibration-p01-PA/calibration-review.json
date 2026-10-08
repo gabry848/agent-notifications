@@ -1,0 +1,123 @@
+{
+  "correct": true,
+  "agentWallMs": 294912.52799999714,
+  "wallMs": 295360.9305420518,
+  "requests": {
+    "logical": 19,
+    "http": 19,
+    "settledResponses": 19,
+    "unresolvedAttempts": []
+  },
+  "tokens": {
+    "input": 176405,
+    "output": 11416,
+    "cachedInput": 150528,
+    "cacheWrite": 0,
+    "total": 187821,
+    "uncachedInput": 25877,
+    "reasoningOutputSubset": 306
+  },
+  "reconciliation": {
+    "passed": true,
+    "mismatches": [],
+    "attributionOnlyTerminalFrames": 0
+  },
+  "oracle": {
+    "passed": true,
+    "groups": [
+      "integrity",
+      "csv",
+      "version",
+      "catalog",
+      "search",
+      "graph",
+      "transfer",
+      "http",
+      "cli"
+    ],
+    "assertions": 7230,
+    "durationMs": 370
+  },
+  "workDuringCI": {
+    "sourceEditToolResults": 5,
+    "sourcePaths": [
+      "src/version.mjs",
+      "src/csv.mjs",
+      "src/catalog.mjs",
+      "src/search.mjs",
+      "src/graph.mjs"
+    ],
+    "definition": "Source-changing tool results overlapping a queued/running real CI job. Final oracle verifies the finished functionality; this count does not prove causal benefit."
+  },
+  "ci": {
+    "jobs": 21,
+    "statusChecks": 2,
+    "emptyChecks": 0,
+    "waits": 0,
+    "technicalErrors": 0,
+    "staleResults": 2,
+    "unexposedResults": 0,
+    "failedExposures": [
+      {
+        "eventId": "ci-result-ci-0002-2",
+        "jobId": "ci-0002",
+        "group": "csv",
+        "status": "failed",
+        "staleAtPublication": false,
+        "classification": "source_failure",
+        "publishedMs": 491234012.178,
+        "firstProviderExposureMs": 491351266.96125,
+        "retrievalMs": 491351263.92125,
+        "exposureLatencyMs": 117254.78325003386,
+        "sourceActionLatencyMs": null,
+        "verificationLatencyMs": null,
+        "exposed": true
+      },
+      {
+        "eventId": "ci-result-ci-0007-3",
+        "jobId": "ci-0007",
+        "group": "catalog",
+        "status": "failed",
+        "staleAtPublication": false,
+        "classification": "source_failure",
+        "publishedMs": 491243838.823208,
+        "firstProviderExposureMs": 491351266.96125,
+        "retrievalMs": 491351263.92125,
+        "exposureLatencyMs": 107428.13804203272,
+        "sourceActionLatencyMs": null,
+        "verificationLatencyMs": null,
+        "exposed": true
+      },
+      {
+        "eventId": "ci-result-ci-0003-8",
+        "jobId": "ci-0003",
+        "group": "version",
+        "status": "failed",
+        "staleAtPublication": true,
+        "classification": "source_failure",
+        "publishedMs": 491264010.172333,
+        "firstProviderExposureMs": 491351266.96125,
+        "retrievalMs": 491351263.92125,
+        "exposureLatencyMs": 87256.78891700506,
+        "sourceActionLatencyMs": null,
+        "verificationLatencyMs": null,
+        "exposed": true
+      },
+      {
+        "eventId": "ci-result-ci-0004-13",
+        "jobId": "ci-0004",
+        "group": "catalog",
+        "status": "failed",
+        "staleAtPublication": true,
+        "classification": "source_failure",
+        "publishedMs": 491294011.624375,
+        "firstProviderExposureMs": 491351266.96125,
+        "retrievalMs": 491351263.92125,
+        "exposureLatencyMs": 57255.33687502146,
+        "sourceActionLatencyMs": null,
+        "verificationLatencyMs": null,
+        "exposed": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+import {readFileSync,appendFileSync} from 'node:fs';
+import {revision} from './ci-engine.mjs';
+export function status(path,since=0){const state=JSON.parse(readFileSync(path,'utf8'));if(process.env.CI_WORK)for(const group of Object.keys(state.latest)){const current=revision(process.env.CI_WORK,group),job=state.jobs.filter(j=>j.group===group&&j.revision===current).at(-1);state.latest[group]={...state.latest[group],revision:current,status:job?.status??'not_started',jobId:job?.id};}return{seq:state.seq,latest:state.latest,results:state.events.filter(e=>e.seq>since)};}
+export async function wait(path,since=0,timeoutMs=60000){const start=Date.now();let value;do{value=status(path,since);if(value.results.length||Object.values(value.latest).every(j=>!['queued','running'].includes(j.status)))break;await new Promise(r=>setTimeout(r,100));}while(Date.now()-start<timeoutMs);return{...value,waitedMs:Date.now()-start,timedOut:!value.results.length&&Date.now()-start>=timeoutMs};}

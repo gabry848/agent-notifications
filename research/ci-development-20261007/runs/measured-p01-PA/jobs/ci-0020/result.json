@@ -1,0 +1,55 @@
+{
+  "id": "ci-0020",
+  "group": "integrity",
+  "revision": "3a438a4ff31c7140c938164efbac3681f6677a56fc63b446f66aa13958f6c446",
+  "status": "passed",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/catalog.mjs": "afac33e89652d02c1b6dd4c81d577b91f25f8994aab9921a2ee89173062bb233",
+    "src/cli.mjs": "9b051cf1e0f42c4deceadc6e8932f9cd70c751429652874439c667d3a465ff88",
+    "src/csv.mjs": "62c95ad0c6351447200583dbbb5b773588b083fa735ce350769a5f43e9d59524",
+    "src/graph.mjs": "3abc35336eb5c85613394ecf68ec4279357d5a665e38083f420f02d0f332aa3f",
+    "src/search.mjs": "571b4f3431aa704308b5caea867bb3dbeab460a7556f6eee6dc5187c8f1865be",
+    "src/server.mjs": "983535719d4b5b7b3b48bc7cf0bcf8c77473343e1fe0d89a108dc6ad88c3b712",
+    "src/transfer.mjs": "c71099c980d980b82b0fafa3dfa6cc084b5232fc8bd175575fc155a6eaaa9023",
+    "src/version.mjs": "a2e707add48cda2b5276425873969ebf2a41333225da6e2c798e76b8e5bc3c1e"
+  },
+  "queued": {
+    "time": "2026-10-07T08:40:43.180Z",
+    "monoMs": 492194965.678083
+  },
+  "sourceFiles": [
+    "src/catalog.mjs",
+    "src/cli.mjs",
+    "src/csv.mjs",
+    "src/graph.mjs",
+    "src/search.mjs",
+    "src/server.mjs",
+    "src/transfer.mjs",
+    "src/version.mjs"
+  ],
+  "started": {
+    "time": "2026-10-07T08:40:53.184Z",
+    "monoMs": 492204969.574333
+  },
+  "completed": {
+    "time": "2026-10-07T08:40:53.393Z",
+    "monoMs": 492205178.526625
+  },
+  "classification": "passed",
+  "result": {
+    "passed": true,
+    "groups": [
+      "integrity"
+    ],
+    "assertions": 8,
+    "durationMs": 157
+  },
+  "exitCode": 0,
+  "staleAtCompletion": false,
+  "published": {
+    "time": "2026-10-07T08:40:53.393Z",
+    "monoMs": 492205179.130625
+  }
+}

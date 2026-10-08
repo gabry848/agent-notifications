@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-10-07T12:40:09.542Z",
+  "markdownLinksChecked": 10,
+  "missingLinks": [],
+  "measuredRuns": 10,
+  "completeCorrectPairs": 5,
+  "allCorrect": true,
+  "allUsageReconciled": true,
+  "allPiExited0": true,
+  "totalRequests": 226,
+  "totalSnapshots": 279,
+  "passed": true
+}

@@ -1,0 +1,96 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {mkdtemp,readFile,writeFile,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {execFile} from 'node:child_process';
+import {promisify} from 'node:util';
+import {parseCSV,stringifyCSV} from '../src/csv.mjs';
+import {parseVersion,compareVersions} from '../src/version.mjs';
+import {createCatalog} from '../src/catalog.mjs';
+import {searchRecords} from '../src/search.mjs';
+import {planDependencies,reverseDependencies} from '../src/graph.mjs';
+import {importCSV,exportCSV,importNDJSON,exportNDJSON} from '../src/transfer.mjs';
+import {createServer} from '../src/server.mjs';
+const record=(id,dependencies=[],extra={})=>({id,name:id,version:'1.0.0',tags:[],dependencies,...extra});
+test('CSV state machine preserves whitespace, multiline fields and terminal separators',()=>{
+  const rows=[[' a ','comma,quote"','line\r\nnext'],['','','end']];
+  assert.deepEqual(parseCSV(stringifyCSV(rows)+'\r\n'),rows);
+  assert.deepEqual(parseCSV(''),[]);assert.deepEqual(parseCSV('a,\n'),[['a','']]);
+  for(const text of ['a"b','"open','"closed"junk']) assert.throws(()=>parseCSV(text));
+});
+test('strict semantic versions including large numeric comparison',()=>{
+  for(const v of ['01.0.0','1.0','1.0.0-01','1.0.0+x','1.0.0-','1.0.0\n']) assert.throws(()=>parseVersion(v));
+  const ordered=['1.0.0-alpha','1.0.0-alpha.2','1.0.0-alpha.10','1.0.0-beta','1.0.0','2.0.0'];
+  for(let i=1;i<ordered.length;i++) assert.equal(compareVersions(ordered[i-1],ordered[i]),-1);
+  assert.equal(compareVersions('9007199254740992.0.0','9007199254740993.0.0'),-1);
+});
+test('catalog normalization, defensive copies and transaction rollback',()=>{
+  const seed=record(' a ',[],{name:' A ',tags:[' Web ','web','TOOLS','']});const c=createCatalog([seed]);
+  seed.tags.push('bad');assert.deepEqual(c.get('a').tags,['tools','web']);
+  c.get('a').dependencies.push('bad');assert.deepEqual(c.get('a').dependencies,[]);
+  const before=c.list();
+  assert.throws(()=>c.applyBatch([{type:'update',id:'a',patch:{name:'changed'}},{type:'add',record:record('b')},{type:'add',record:record('a')}]));
+  assert.deepEqual(c.list(),before);assert.throws(()=>c.update('a',{id:'z'}));
+});
+test('search bounds, normalization, stable tie order and input independence',()=>{
+  const records=[record('b',[],{name:'Same',tags:['web'],version:'2.0.0'}),record('a',[],{name:'Same',tags:['web'],version:'1.0.0'})];
+  const before=structuredClone(records);
+  const result=searchRecords(records,{text:' SAME ',tags:[' WEB '],sortBy:'name',order:'desc',limit:1});
+  assert.equal(result.total,2);assert.equal(result.items[0].id,'a');result.items[0].tags.push('x');assert.deepEqual(records,before);
+  assert.equal(searchRecords(records,{versionMin:'2.0.0'}).total,1);
+  for(const query of [{limit:0},{offset:-1},{sortBy:'bad'},{order:'bad'}]) assert.throws(()=>searchRecords(records,query));
+});
+test('dependency postorder, reverse closure and diagnostics',()=>{
+  const records=[record('a',['b','c']),record('b',['c']),record('c'),record('d',['a'])];
+  assert.deepEqual(planDependencies(records,['a','d']),['c','b','a','d']);
+  assert.deepEqual(reverseDependencies(records,'c'),['a','b','d']);
+  assert.throws(()=>planDependencies([record('a',['missing'])],['a']),/missing/);
+  assert.throws(()=>planDependencies([record('a',['b']),record('b',['a'])],['a']),/cycle.*a.*b/);
+});
+test('transfer round trips split UTF-8 and rolls back invalid imports',async()=>{
+  const records=[record('a',[],{name:'Café, "世界"\nnext',tags:['web']})];const c=createCatalog();
+  assert.deepEqual(importCSV(exportCSV(records),c),records);
+  let text='';for await(const line of exportNDJSON(records)) text+=line;
+  const buf=Buffer.from(text);const chunks=Array.from(buf,b=>Buffer.from([b]));
+  const d=createCatalog();assert.deepEqual(await importNDJSON(chunks,d),records);
+  const before=d.list();
+  await assert.rejects(importNDJSON([JSON.stringify(record('b'))+'\n{bad'],d));assert.deepEqual(d.list(),before);
+  assert.throws(()=>importCSV(exportCSV([record('b'),record('a')]),d));assert.deepEqual(d.list(),before);
+});
+test('HTTP CRUD, search, plan, transfer and recoverable errors',async t=>{
+  const server=createServer(createCatalog());await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  t.after(()=>new Promise(resolve=>server.close(resolve)));
+  const base='http://127.0.0.1:'+server.address().port;
+  const request=(path,method='GET',body)=>fetch(base+path,{method,body});
+  assert.deepEqual(await (await request('/health')).json(),{ok:true});
+  assert.equal((await request('/records','POST',JSON.stringify(record('a/b')))).status,201);
+  assert.equal((await request('/records/a%2Fb')).status,200);
+  assert.equal((await request('/records','POST',JSON.stringify(record('a/b')))).status,409);
+  assert.equal((await request('/records/a%2Fb','PATCH',JSON.stringify({tags:[' WEB ']}))).status,200);
+  assert.equal((await (await request('/records?tags=web')).json()).total,1);
+  assert.deepEqual(await (await request('/plan?ids=a%2Fb')).json(),{ids:['a/b']});
+  assert.equal((await request('/records?limit=wat')).status,400);
+  assert.equal((await request('/records','POST','{bad')).status,400);
+  assert.equal((await request('/records','POST','x'.repeat(1024*1024+1))).status,413);
+  assert.equal((await request('/health')).status,200);
+  assert.equal((await request('/import.csv','POST',exportCSV([record('c')]))).status,201);
+  assert.equal((await request('/import.ndjson','POST',JSON.stringify(record('d')))).status,201);
+  assert.equal(parseCSV(await (await request('/export.csv')).text()).length,4);
+  assert.equal((await (await request('/export.ndjson')).text()).trim().split('\n').length,3);
+  assert.equal((await request('/records/a%2Fb','DELETE')).status,204);
+  assert.equal((await request('/records/a%2Fb')).status,404);
+});
+test('CLI atomic writes, absent file, imports, and validation errors',async t=>{
+  const dir=await mkdtemp(join(tmpdir(),'catalog-'));t.after(()=>rm(dir,{recursive:true,force:true}));
+  const file=join(dir,'records.json'),run=promisify(execFile);
+  const cli=(...args)=>run(process.execPath,['src/cli.mjs',...args,'--file',file]);
+  assert.equal(JSON.parse((await cli('list')).stdout).total,0);
+  await cli('add','--record',JSON.stringify(record('a')));const before=await readFile(file,'utf8');
+  await assert.rejects(cli('add','--record',JSON.stringify(record('a'))));assert.equal(await readFile(file,'utf8'),before);
+  assert.deepEqual(JSON.parse((await cli('plan','--ids','a')).stdout),{ids:['a']});
+  const input=join(dir,'input.csv');await writeFile(input,exportCSV([record('b')]));await cli('import-csv','--input',input);
+  assert.equal(parseCSV((await cli('export-csv')).stdout).length,3);
+  await cli('remove','--id','a');assert.equal(JSON.parse(await readFile(file,'utf8')).length,1);
+  await assert.rejects(run(process.execPath,['src/cli.mjs','list']));
+});

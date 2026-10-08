@@ -1,0 +1,18 @@
+{
+  "id": "ci-0006",
+  "group": "csv",
+  "revision": "d156dd761b0c328e8029485e457df1bb6fb199cf6ffc195c58057860cae01557",
+  "status": "queued",
+  "queueMs": 10000,
+  "trigger": "source-change",
+  "sourceHashes": {
+    "src/csv.mjs": "7a8544a2d4655859a723031af6b1f88325b3e88c8b87686e01e82d62199758a8"
+  },
+  "queued": {
+    "time": "2026-10-07T09:38:22.849Z",
+    "monoMs": 495654747.418583
+  },
+  "sourceFiles": [
+    "src/csv.mjs"
+  ]
+}

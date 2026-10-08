@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "SDK client writes persistent tagged notes",
+      "passed": true
+    },
+    {
+      "name": "dashboard displays MCP-created note with safe HTML",
+      "passed": true
+    },
+    {
+      "name": "web form edit and filters share persisted state",
+      "passed": true
+    },
+    {
+      "name": "invalid import across web is atomic",
+      "passed": true
+    },
+    {
+      "name": "pagination retains all notes without duplication",
+      "passed": true
+    },
+    {
+      "name": "MCP restart sees web edits and accepts independent export/import",
+      "passed": true
+    },
+    {
+      "name": "SQLite integrity and cascade constraints",
+      "passed": true
+    },
+    {
+      "name": "web restart retains imported note and deleted state",
+      "passed": true
+    }
+  ],
+  "coverage": "Official MCP SDK, cross-process SQLite persistence, HTML forms and HTTP APIs. No browser JavaScript or visual-layout automation.",
+  "exitCode": 0,
+  "stderr": ""
+}
