@@ -84,6 +84,45 @@ flowchart TB
 
 Observed response to one update; the notification group was interrupted before completion. [Pilot evidence](docs/benchmarks.md#earlier-requirement-change-pilot).
 
+### Latest, longer coding benchmarks
+
+The latest completed application-building trials (October 7–8, 2026) ran for roughly **4–7 minutes**. Catalog CI built a package catalog with an HTTP API and CLI; Notes built an MCP server, SQLite storage and a web dashboard. Both agents kept coding while real tests ran against frozen source snapshots.
+
+| Workload | Strongest measured benefit | Verified task time | Model requests | Token totals: polling → notifications |
+|---|---|---:|---:|---:|
+| [Catalog CI](research/ci-development-20261007/report.md) | **−94.6% CI result delivery delay** | −3.1% | −10.0% | 892,475 → 1,379,141 |
+| [Notes MCP + dashboard](research/notes-mcp-ci-20261007/report.md) | **−50.0% manual CI status checks** | +1.6% | 0.0% | 1,670,035 → 1,844,553 |
+
+Benefits, time and request changes are **median paired percentages vs adaptive polling**. The token column instead sums **five complete runs per mode**, including cached input and output across every request. Each workload has **5 complete correct pairs; all 20 measured runs passed independent acceptance and required CI**. Task time includes final verification.
+
+**Observations**
+
+- **Earlier CI visibility and fewer checks are the clearest benefits.** Catalog's delivery-delay reduction ranged from 90.6% to 97.9% across all five pairs; Notes' manual-check reduction ranged from 50.0% to 100.0%.
+- **Completion time remains mixed.** Catalog's paired time changes ranged from −14.2% to +20.0%; Notes ranged from −23.3% to +30.7%. The strongest individual speedups do not represent the cohort as a whole.
+- **Token differences varied substantially between runs.** One Notes pair used 6,187 extra cumulative tokens; another used 222,010 fewer. The table measures complete agent workloads, including their different coding and testing paths.
+- **Faster delivery does not establish faster bug fixing.** Both modes sometimes repaired code before receiving the old failure; Notes had no actionable current-source failure at first exposure.
+
+### Understanding the token increase
+
+Across the five runs per mode, the extra cumulative tokens were **486,666 for Catalog** and **174,518 for Notes**. These totals repeatedly count conversation history, including input served from cache; they are not the size of an individual update or the amount of newly generated text.
+
+For a concrete single-run comparison, Notes p3 made **20 model requests in each mode**:
+
+| Token component | Polling | Notifications | Difference |
+|---|---:|---:|---:|
+| Cached input | 170,368 | 246,528 | +76,160 |
+| Uncached input | 50,725 | 66,022 | +15,297 |
+| Output | 8,619 | 9,242 | +623 |
+| **Whole-run total** | **229,712** | **321,792** | **+92,080** |
+
+Most of this difference was **input already served from cache**. Cache reuse across all five Notes runs was 86.2% of input with notifications and 85.5% with polling. Cached input remains in the token counts above; these counts do not establish the change in billed cost.
+
+The current journal keeps previous notification snapshots in later requests to preserve the cache prefix. An active CI result can appear in several snapshots, and dismissal does not erase already delivered history. Notes p3's final request retained **19 earlier snapshots**. Repeated history, plus different coding, test-log and cleanup paths, contributes to the cumulative totals. The study does not isolate a fixed token count attributable solely to a notification.
+
+To illustrate why the base matters: **100 extra tokens** on a 200-token request is **50%**; the same 100 on a 10,000-token request is **1%**. This is an example of scale, not a measured 100-token overhead in these trials. A per-update addition and a full run's repeated, partly cached input are different quantities. [Every pair and the accounting evidence](research/ci-comparison-20261007/token-accounting.md).
+
+These are small exploratory samples, and their duration fell below the intended 10–15-minute target. [Paired comparison and evidence](research/ci-comparison-20261007/report.md) · [Methods](docs/benchmarks.md#ci-while-coding).
+
 ## Next
 
 Pi works today. Codex, DeepSeek and oh-my-pi adapters, relevance filtering and longer benchmarks are planned. [Roadmap](docs/roadmap.md).
