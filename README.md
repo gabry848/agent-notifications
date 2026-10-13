@@ -35,7 +35,15 @@ curl -X POST http://127.0.0.1:8765/notify \
   -d '{"source":"CI","message":"CI: auth.test.ts failed."}'
 ```
 
-If Pi is idle, ask it: **“What update did you receive?”** Its next request includes the notification. [Full setup](docs/pi-adapter.md).
+If Pi is idle, ask it: **“What update did you receive?”** Its next request includes the notification. [Quickstart](docs/quickstart.md) · [Full setup](docs/pi-adapter.md).
+
+For a runnable CI example, start a fresh demo project:
+
+```sh
+node demo/ci.mjs launch
+```
+
+Pi's task and the CI worker start automatically. While Pi builds a receipt formatter, the worker runs real shipping tests and delivers the failure. Follow the [demo steps](docs/hn-demo.md). The queue delay is simulated; this demonstrates delivery and reaction, not a speed benchmark. [Current limits](docs/limitations.md).
 
 ## How it works
 

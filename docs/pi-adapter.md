@@ -1,6 +1,6 @@
 # Install and try the Pi adapter
 
-This is a local research checkout, not a published notification package. The setup below is for the current [Pi extension](../src/pi-extension.ts); other harness adapters are planned. [README](../README.md) · [Specification](notification-spec.md).
+This is a local research checkout, not a published notification package. The setup below is for the current [Pi extension](../src/pi-extension.ts); other harness adapters are planned. [Quickstart](quickstart.md) · [Runnable CI demo](hn-demo.md) · [README](../README.md) · [Specification](notification-spec.md).
 
 ## Prerequisites
 
