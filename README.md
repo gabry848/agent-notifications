@@ -91,3 +91,7 @@ Notification history remains in later model requests and contributes to token us
 Pi works today. Codex, DeepSeek and oh-my-pi adapters, relevance filtering and longer benchmarks are planned. [Roadmap](docs/roadmap.md).
 
 [Use cases](docs/use-cases.md) · [Research story](docs/research-story.md) · [All benchmarks](docs/benchmarks.md) · [Interactive report](research/final-20261006/research.html)
+
+## License
+
+[MIT](LICENSE) © 2026 Gabry848.
